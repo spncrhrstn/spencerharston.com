@@ -1,3 +1,3 @@
-# Portfolio
+# spencerharston.com
 
-The portfolio for Spencer Harston - coming soon!
+The website of Spencer Harston - coming soon!
