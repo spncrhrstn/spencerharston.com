@@ -1,3 +1,3 @@
 # spencerharston.com
 
-The website of Spencer Harston - coming soon!
+The website of Spencer Harston - an eternal WIP...

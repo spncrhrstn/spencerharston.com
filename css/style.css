@@ -1,0 +1,54 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #1c293b;
+    font-family: Barlow,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    color: #e7eef2;
+}
+
+header, nav, main, footer {
+    width: 100%;
+    padding: 1rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.25em;
+}
+
+main{
+    flex-grow: 1;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+footer{
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
