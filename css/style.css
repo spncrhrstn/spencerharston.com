@@ -1,3 +1,7 @@
+:root {
+    --width-content: 65rem;
+}
+
 html {
     box-sizing: border-box;
     font-size: 100%;
@@ -28,25 +32,109 @@ body {
 
 header, nav, main, footer {
     width: 100%;
+    padding: 0;
+}
+
+/* header */
+header {
+
+}
+
+header .site-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+
+
+    width: 100%;
+    max-width: var(--width-content);
+    margin: 0 auto;
     padding: 1rem;
 }
 
-header p {
-    margin: 0;
-    font-size: 1.25em;
+header .site-logo-link{
+    max-height: 3rem;
 }
 
+header .site-logo-image{
+    max-height: 3rem;
+    border: 1px solid #e7eef2;
+    padding: .5rem;
+}
+
+
+
+header .site-nav{
+    width: 100%;
+    max-width: var(--width-content);
+    margin: 0 auto;
+}
+
+header .site-nav ul {
+    max-width: var(--width-content);
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+    padding: 0 1rem;
+    margin: 0 auto;
+
+}
+
+header .site-nav li {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+}
+
+header .site-nav li a {
+    text-decoration: none;
+}
+
+header .site-nav li a:visited{
+
+}
+
+/* main */
 main{
     flex-grow: 1;
-    padding: 1rem;
     max-width: 100%;
 }
 
+main section{
+    padding: 1rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--width-content);
+}
+
+/* footer */
 footer{
+
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+
+
+    width: 100%;
+    max-width: var(--width-content);
+    margin: 0 auto;
+    padding: 1rem;
+
 }
 
 footer p {
-    margin: 0;
+    margin: .5rem 0;
 }
 
 a {
