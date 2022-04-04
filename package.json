@@ -1,0 +1,24 @@
+{
+  "name": "spencerharston.com",
+  "version": "1.0.0",
+  "description": "The website of Spencer Harston",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "clean": "rm -rf dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sphars/spencerharston.com.git"
+  },
+  "author": "Spencer Harston",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sphars/spencerharston.com/issues"
+  },
+  "homepage": "https://github.com/sphars/spencerharston.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
