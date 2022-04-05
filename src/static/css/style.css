@@ -34,30 +34,24 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 
     background-color: #1c293b;
     font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     color: #e7eef2;
 }
 
-header, nav, main, footer {
+header, main, footer {
     width: 100%;
     padding: 0;
 }
 
-/* header */
 header {
-
-}
-
-header .site-logo {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: stretch;
-    align-content: center;
-
+    align-items: center;
 
     width: 100%;
     max-width: var(--width-content);
@@ -65,8 +59,16 @@ header .site-logo {
     padding: 1rem;
 }
 
+header .site-logo {
+    
+}
+
 header .site-logo-link{
     max-height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
 }
 
 header .site-logo-image{
@@ -78,23 +80,16 @@ header .site-logo-image{
 
 
 header .site-nav{
-    width: 100%;
-    max-width: var(--width-content);
-    margin: 0 auto;
 }
 
 header .site-nav ul {
-    max-width: var(--width-content);
-    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
     list-style: none;
-    padding: 0 1rem;
-    margin: 0 auto;
-
+    padding: 0;
 }
 
 header .site-nav li {
@@ -103,7 +98,7 @@ header .site-nav li {
     padding: 0;
 }
 
-header .site-nav li a {
+header a {
     text-decoration: none;
 }
 
@@ -111,7 +106,6 @@ header .site-nav li a:visited{
 
 }
 
-/* main */
 main{
     flex-grow: 1;
     max-width: 100%;
@@ -124,7 +118,6 @@ main section{
     max-width: var(--width-content);
 }
 
-/* footer */
 footer{
 
 }
@@ -150,4 +143,4 @@ footer p {
 
 a {
     color: inherit;
-}
+} 
