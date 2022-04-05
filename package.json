@@ -2,7 +2,7 @@
   "name": "spencerharston.com",
   "version": "1.0.0",
   "description": "The website of Spencer Harston",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",

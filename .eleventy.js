@@ -1,5 +1,7 @@
 module.exports = function(eleventyConfig){
 
+    eleventyConfig.setDataDeepMerge(true);
+
     eleventyConfig.addPassthroughCopy({
         'src/static': 'static/'
     })
@@ -7,7 +9,9 @@ module.exports = function(eleventyConfig){
     return {
         dir: {
             input: 'src',
-            output: 'dist'
+            output: 'dist',
+            includes: "_includes",
+            data: "_data"
         },
         templateFormats: [
             'md',
