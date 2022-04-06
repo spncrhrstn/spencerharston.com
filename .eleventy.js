@@ -3,7 +3,8 @@ module.exports = function(eleventyConfig){
     eleventyConfig.setDataDeepMerge(true);
 
     eleventyConfig.addPassthroughCopy({
-        'src/static': 'static/'
+        'src/static': 'static/',
+        'src/favicon.ico': '/favicon.ico'
     })
 
     return {

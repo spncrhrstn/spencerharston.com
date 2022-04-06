@@ -11,6 +11,8 @@
 
 :root {
     --width-content: 70rem;
+    --background-color: #0f1720;
+    --text-color: #f2f2f2;
 }
 
 html {
@@ -36,9 +38,9 @@ body {
     flex-direction: column;
     align-items: center;
 
-    background-color: #1c293b;
+    background-color: var(--background-color);
     font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    color: #e7eef2;
+    color: var(--text-color);
 }
 
 header, main, footer {
@@ -73,7 +75,7 @@ header .site-logo-link{
 
 header .site-logo-image{
     max-height: 3rem;
-    border: 1px solid #e7eef2;
+    border: 1px solid var(--text-color);
     padding: .5rem;
 }
 
@@ -102,16 +104,16 @@ header a {
     text-decoration: none;
 }
 
+header a:hover{
+    text-decoration: underline;
+}
+
 header .site-nav li a:visited{
 
 }
 
 main{
     flex-grow: 1;
-    max-width: 100%;
-}
-
-main section{
     padding: 1rem;
     margin: 0 auto;
     width: 100%;
@@ -141,6 +143,22 @@ footer p {
     margin: .5rem 0;
 }
 
+footer a {
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
 a {
     color: inherit;
 } 
+
+
+/* media queries */
+@media (prefers-color-scheme: light){
+    :root{
+        --background-color: #f2f2f2;    
+        --text-color: #242424;    
+    }
+}
