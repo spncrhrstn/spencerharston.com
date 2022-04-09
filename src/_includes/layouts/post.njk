@@ -4,7 +4,10 @@ layout: layouts/base
 
 <h1>{{ title }}</h1>
 <p>
-    {{ page.date | prettyDate }}
+    Published: <time datetime="{{ page.date | dateISO }}">{{ page.date | datePretty }}</time>
+    {% if updated %}
+    <br>Updated: <time datetime="{{ updated | dateISO }}">{{ updated | datePretty }}</time>
+    {% endif %}
 </p>
 <hr>
 {{ content | safe }}

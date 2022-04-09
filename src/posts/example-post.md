@@ -1,5 +1,8 @@
 ---
 title: Example Post
+description: Updating Python on WSL isn't as straightforward as it appears, but there are some simple steps to take to make it easier.
+date: 2022-04-08
+updated: 2022-04-09
 ---
 
 I've been using WSL as my main development on my personal machines and it was been very successful. Recently, due to using Python more often at work, I wanted to start using Python for some personal projects.

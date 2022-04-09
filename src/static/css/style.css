@@ -60,6 +60,7 @@ header {
     max-width: var(--width-content);
     margin: 0 auto;
     padding: 1rem;
+    border-bottom: 2px dashed #ffe135;
 }
 
 header .site-logo {
@@ -162,7 +163,7 @@ footer > div {
     max-width: var(--width-content);
     margin: 0 auto;
     padding: 1rem;
-
+    border-top: 2px dashed #ffe135;
 }
 
 footer p {
