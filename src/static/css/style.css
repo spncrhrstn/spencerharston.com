@@ -10,7 +10,7 @@
 }
 
 :root {
-    --width-content: 65rem;
+    --width-content: 64rem;
     --background-color: #0f1720;
     --text-color: #f2f2f2;
     --pre-text-color: #f2f2f2;
@@ -49,10 +49,14 @@ header, main, footer {
     padding: 0;
 }
 
-header {
+header, footer{
+    background-color: #1c2a3b;
+}
+
+header > div {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     justify-content: space-between;
     align-items: center;
 
@@ -60,7 +64,6 @@ header {
     max-width: var(--width-content);
     margin: 0 auto;
     padding: 1rem;
-    border-bottom: 2px dashed #ffe135;
 }
 
 header .site-logo {
@@ -154,16 +157,14 @@ footer{
 footer > div {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
-    align-items: stretch;
-    align-content: center;
-
+    align-items: center;
 
     width: 100%;
     max-width: var(--width-content);
     margin: 0 auto;
     padding: 1rem;
-    border-top: 2px dashed #ffe135;
 }
 
 footer p {
@@ -189,5 +190,11 @@ a {
         --text-color: #242424;    
     }
 
-    
+    header, footer{
+        color: #f2f2f2;
+    }
+
+    header .site-logo-image {
+        border: 1px solid #f2f2f2;
+    }
 }
