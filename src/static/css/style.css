@@ -49,8 +49,9 @@ header, main, footer {
     padding: 0;
 }
 
-header, footer{
+header{
     background-color: #1c2a3b;
+    border-bottom: 1px solid #283d55;
 }
 
 header > div {
@@ -63,7 +64,7 @@ header > div {
     width: 100%;
     max-width: var(--width-content);
     margin: 0 auto;
-    padding: 1rem;
+    padding: .5rem 1rem;
 }
 
 header .site-logo {
@@ -79,9 +80,10 @@ header .site-logo-link{
 }
 
 header .site-logo-image{
-    max-height: 3rem;
+    max-height: 2.75rem;
     border: 1px solid var(--text-color);
-    padding: .5rem;
+    padding: .25rem;
+    background-color: #0f1720;
 }
 
 
@@ -131,12 +133,13 @@ pre, code, kbd{
 
 pre{
     white-space: pre-wrap;
-    overflow-x: auto;
+    overflow: auto;
+    border: 1px solid #283d55;
 }
 
 pre code{
     display: inline-block;
-    border-left: 4px solid #ffe135;
+    /* border-left: 4px solid #ffe135; */
     background-color: #1c2a3b;
     width: 100%;
     padding: 1rem calc(2rem - 6px);
@@ -151,7 +154,8 @@ code {
 
 
 footer{
-
+    background: #1c2a3b;
+    border-top: 1px solid #283d55;
 }
 
 footer > div {
@@ -164,7 +168,7 @@ footer > div {
     width: 100%;
     max-width: var(--width-content);
     margin: 0 auto;
-    padding: 1rem;
+    padding: .5rem 1rem;
 }
 
 footer p {

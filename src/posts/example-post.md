@@ -2,16 +2,16 @@
 title: Example Post
 description: Updating Python on WSL isn't as straightforward as it appears, but there are some simple steps to take to make it easier.
 date: 2022-04-08
-updated: 2022-04-09
+updated: 2022-04-10
 ---
 
-I've been using WSL as my main development on my personal machines and it was been very successful. Recently, due to using Python more often at work, I wanted to start using Python for some personal projects.
+I've been using WSL as my main development on my personal machines and it's been pretty successful. Recently, due to using Python more often at work, I wanted to start using Python for some personal projects.
 
 Ubuntu on WSL currently comes loaded with Python v3.8, which is the default in Ubuntu 20.04. I wanted to update to Python v3.10, as I try to use more recent software releases when starting new projects. Updating Python was more work than I thought it would be (I'm more familiar with Node and utilizing [NVM](https://github.com/nvm-sh/nvm) to manage Node versions), and updating was not as simple as I hoped. Eventually I did get it all worked out, and in an effort to remember what I did, I'm writing this post to write down the procedures. 
 
 Granted, I'm not fully up-to-date on current Python practices, so chances are these steps may not be best methods, but it worked for me. Also, I'm having to use my bash history to find all the commands I ran...
 
-All instructions assume you're running them in WSL, not a Windows host.
+All instructions assume you're running them in a WSL terminal, not a Windows host terminal.
 
 ## Steps
 
