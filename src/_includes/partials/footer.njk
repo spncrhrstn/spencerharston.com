@@ -4,6 +4,9 @@
             <small>
             &copy; 2022 spencer harston<br>
             <a href="https://github.com/sphars/{{ git.repo }}/blob/master{{ page.inputPath.slice(1) }}">
+                {%- if git.curr_branch != 'HEAD' -%}
+                    {{- git.curr_branch-}}@
+                {%- endif -%}
                 {{- git.commit_sha -}}
             </a></small>
         </p>
