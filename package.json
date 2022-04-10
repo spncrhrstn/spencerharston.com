@@ -4,9 +4,9 @@
   "description": "The website of Spencer Harston",
   "private": true,
   "scripts": {
-    "build": "eleventy",
+    "build": "npm run clean; eleventy",
     "serve": "eleventy --serve",
-    "clean": "rm -rf dist/"
+    "clean": "rm -rf ./dist"
   },
   "repository": {
     "type": "git",
