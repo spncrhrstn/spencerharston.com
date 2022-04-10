@@ -1,6 +1,12 @@
 <footer>
     <div>
-        <p>&copy; 2022 spencer harston</p>
+        <p>
+            <small>
+            &copy; 2022 spencer harston<br>
+            <a href="https://github.com/sphars/{{ git.name }}/blob/master{{ page.inputPath.slice(1) }}">
+                {{- git.commit_sha -}}
+            </a></small>
+        </p>
         <p>
             <a href="https://github.com/sphars">github</a> | <a href="https://twitter.com/sphars_">twitter</a>
         </p>
