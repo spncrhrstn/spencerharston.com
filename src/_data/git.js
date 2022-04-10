@@ -6,7 +6,6 @@ module.exports = async function () {
         curr_branch: await git.branch,
         commit_date: await git.date,
         origin: await git.origin,
-        name: await git.name,
         repo: "spencerharston.com"
     }
 
