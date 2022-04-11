@@ -1,0 +1,19 @@
+{%- macro postsList(posts) -%}
+
+<ul class="post-list">
+    {% for post in posts | sortDesc %}
+    <li class="post-list-item">
+        <a class="post-list-item-title" href="{{ post.url }}">{{ post.data.title }}</a>
+        <div class="post-list-item-meta">
+            <time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | datePretty }}</time>
+        </div>
+        <p>
+            {{ post.data.description }}
+            <i><a href="{{ post.url }}">read more...</a></i>
+        </p>
+    </li>
+
+    {% endfor %}
+</ul>
+
+{% endmacro %}

@@ -19,6 +19,24 @@ module.exports = function(eleventyConfig){
         return DateTime.fromJSDate(dateObj).toUTC().toLocaleString(DateTime.DATE_FULL);
     });
 
+    // filter for sorting a list descending
+    eleventyConfig.addFilter('sortDesc' , (posts) => {
+        posts.sort(function(a,b){
+            return b.date - a.date;
+        });
+        return posts;
+    });
+
+    eleventyConfig.addFilter('mostRecent', (collection) => {
+        console.log(collection);
+        return collection;
+    })
+
+    // collection of posts
+    eleventyConfig.addCollection('posts', (collection) => {
+        return collection.getFilteredByGlob('./src/posts/*.md');
+    });
+
     return {
         dir: {
             input: 'src',

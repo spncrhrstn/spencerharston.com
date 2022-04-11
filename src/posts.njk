@@ -1,0 +1,28 @@
+---
+pagination:
+    data: collections.posts
+    size: 10
+    alias: posts
+    reverse: true
+layout: layouts/default
+title: posts
+---
+{% from "macros/posts-list.njk" import postsList %}
+
+<p>Occasionally, I have some ideas/thoughts/tidbits/cool stuff I feel like sharing and wanted a place to put them. So here they are. <em>Occasionally is the keyword here.</em></p>
+
+<h2>recent posts</h2>
+<p>Number of posts: {{ collections.posts.length }} </p>
+{{ postsList(pagination.items) }}
+
+<nav class="posts-nav">
+    <ul class="page-nav">
+        <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">&lt;&lt;</a>{% else %}&lt;&lt;{% endif %}</li>
+        <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt;</a>{% else %}&lt;{% endif %}</li>
+        {%- for pageEntry in pagination.pages %}
+        <li><a href="{{ pagination.hrefs[loop.index0] }}"{% if page.url == pagination.hrefs[loop.index0] %}aria-current="page"{% endif %} class="page-nav-page-num">{{ loop.index }}</a></li>
+        {% endfor -%}
+        <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">&gt;</a>{% else %}&gt;{% endif %}</li>
+        <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">&gt;&gt;</a>{% else %}&gt;&gt;{% endif %}</li>
+    </ul>
+</nav>

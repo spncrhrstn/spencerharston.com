@@ -186,6 +186,41 @@ a {
     color: inherit;
 } 
 
+/* posts stuff */
+.post-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.post-list .post-list-item-title{
+    font-size: 1.25rem;
+}
+
+.post-list .post-list-item-meta{
+    font-style: italic;
+    font-size: .9rem;
+}
+
+.page-nav {
+    list-style-type: none;
+    margin: .5rem 0;
+    padding: 0;
+    text-align: center;
+}
+
+.page-nav li{
+    display: inline-block;
+    margin: 0 .25rem;
+    padding: 0;
+}
+
+.page-nav li .page-nav-page-num{
+    padding: .25rem .5rem;
+}
+
+[aria-current]{
+    background-color: #283d55;
+}
 
 /* media queries */
 @media (prefers-color-scheme: light){
