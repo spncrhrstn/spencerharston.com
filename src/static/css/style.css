@@ -40,8 +40,20 @@ body {
     align-items: center;
 
     background-color: var(--background-color);
-    font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    /* font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+    font-family: "Open Sans",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     color: var(--text-color);
+    font-size: 1.125rem;
+}
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header, main, footer {
@@ -52,6 +64,7 @@ header, main, footer {
 header{
     background-color: #1c2a3b;
     border-bottom: 1px solid #283d55;
+    font-size: 1.25rem;
 }
 
 header > div {
@@ -107,24 +120,13 @@ header .site-nav li {
     padding: 0;
 }
 
-header a {
-    text-decoration: none;
-}
-
-header a:hover{
-    text-decoration: underline;
-}
-
-header .site-nav li a:visited{
-
-}
-
 main{
     flex-grow: 1;
     padding: 1rem;
     margin: 0 auto;
     width: 100%;
     max-width: var(--width-content);
+    line-height: 1.75rem;
 }
 
 pre, code, kbd{
@@ -175,25 +177,19 @@ footer p {
     margin: .5rem 0;
 }
 
-footer a {
-    text-decoration: none;
-}
-footer a:hover{
-    text-decoration: underline;
-}
-
-a {
-    color: inherit;
-} 
-
 /* posts stuff */
 .post-list{
     list-style-type: none;
     padding: 0;
 }
 
+.post-list .post-list-item{
+    padding: .5rem 0;
+}
+
 .post-list .post-list-item-title{
-    font-size: 1.25rem;
+    font-size: 1.35rem;
+    margin-bottom: 0;
 }
 
 .post-list .post-list-item-meta{
