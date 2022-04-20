@@ -3,6 +3,7 @@
 <meta name="description" content="{{ description or metadata.description }}">
 <meta name="author" content="{{ author or metadata.author }}"/>
 <title>{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.site_title }}</title>
+<meta name="generator" content="{{ eleventy.generator }}">
 
 <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/static/img/icons/favicon-32x32.png">

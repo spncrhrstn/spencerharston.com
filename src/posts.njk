@@ -9,10 +9,8 @@ title: posts
 ---
 {% from "macros/posts-list.njk" import postsList %}
 
-<p>Occasionally, I have some ideas/thoughts/tidbits/cool stuff I feel like sharing and wanted a place to put them. So here they are. <em>Occasionally is the keyword here.</em></p>
+<p>The occasional thought/idea/tidbit/neat thing I feel like sharing. <em>Occasionally is the keyword here.</em></p>
 
-<h2>recent posts</h2>
-<p>Number of posts: {{ collections.posts.length }} </p>
 {{ postsList(pagination.items) }}
 
 <nav class="posts-nav">
