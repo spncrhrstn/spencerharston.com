@@ -10,8 +10,9 @@
 }
 
 :root {
-    --width-content: 64rem;
+    --width-content: 62rem;
     --background-color: #0f1720;
+    --border-color: #406188;
     --text-color: #f2f2f2;
     --pre-text-color: #f2f2f2;
 }
@@ -61,10 +62,14 @@ header, main, footer {
     padding: 0;
 }
 
+header a, footer a{
+    font-weight: 400;
+}
+
 header{
     background-color: #1c2a3b;
-    border-bottom: 1px solid #283d55;
-    font-size: 1.25rem;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.2rem;
 }
 
 header > div {
@@ -73,6 +78,7 @@ header > div {
     flex-flow: wrap;
     justify-content: space-between;
     align-items: center;
+    column-gap: .5rem;
 
     width: 100%;
     max-width: var(--width-content);
@@ -136,7 +142,6 @@ pre, code, kbd{
 pre{
     white-space: pre-wrap;
     overflow: auto;
-    border: 1px solid #283d55;
 }
 
 pre code{
@@ -148,16 +153,17 @@ pre code{
 }
 
 code {
-    padding: 0 4px;
+    padding: 2px 6px;
     word-wrap: break-word;
     background-color: #1c2a3b;
     color: var(--pre-text-color);
+    border: 1px solid var(--border-color);
 }
 
 
 footer{
     background: #1c2a3b;
-    border-top: 1px solid #283d55;
+    border-top: 1px solid var(--border-color);
 }
 
 footer > div {
@@ -166,6 +172,7 @@ footer > div {
     flex-wrap: wrap-reverse;
     justify-content: space-between;
     align-items: center;
+    column-gap: .5rem;
 
     width: 100%;
     max-width: var(--width-content);
@@ -193,7 +200,6 @@ footer p {
 }
 
 .post-list .post-list-item-meta{
-    font-style: italic;
     font-size: .9rem;
 }
 
@@ -215,7 +221,7 @@ footer p {
 }
 
 [aria-current]{
-    background-color: #283d55;
+    border: 1px solid var(--border-color);
 }
 
 /* media queries */

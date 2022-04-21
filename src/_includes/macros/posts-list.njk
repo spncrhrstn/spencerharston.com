@@ -5,7 +5,10 @@
     <li class="post-list-item">
         <a class="post-list-item-title" href="{{ post.url }}">{{ post.data.title }}</a>
         <div class="post-list-item-meta">
-            <time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | datePretty }}</time>
+            P: <time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | datePretty }}</time>
+            {% if post.data.updated %}
+                | U: <time datetime="{{ post.data.updated | dateISO }}">{{ post.data.updated | datePretty }}</time>
+            {% endif %}
         </div>
         <p>
             {{ post.data.description }}
