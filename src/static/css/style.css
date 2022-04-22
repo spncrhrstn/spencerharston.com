@@ -10,8 +10,9 @@
 }
 
 :root {
-    --width-content: 62rem;
+    --width-content: 60rem;
     --background-color: #0f1720;
+    --secondary-background-color: #1c2a3b;
     --border-color: #406188;
     --text-color: #f2f2f2;
     --pre-text-color: #f2f2f2;
@@ -67,7 +68,7 @@ header a, footer a{
 }
 
 header{
-    background-color: #1c2a3b;
+    background-color: var(--secondary-background-color);
     border-bottom: 1px solid var(--border-color);
     font-size: 1.2rem;
 }
@@ -162,7 +163,7 @@ code {
 
 
 footer{
-    background: #1c2a3b;
+    background-color: var(--secondary-background-color);
     border-top: 1px solid var(--border-color);
 }
 
