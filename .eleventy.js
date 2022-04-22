@@ -42,7 +42,7 @@ module.exports = function(eleventyConfig){
     });
 
     eleventyConfig.addNunjucksShortcode('commit_link', function(inner_text){
-        return `<a href=${this.ctx.metadata.repo}/tree/${ this.ctx.git.curr_branch }>${ this.ctx.git.curr_branch }@${ inner_text }</a>`;
+        return `<a href=${this.ctx.metadata.repo}/tree/${ this.ctx.git.long_sha }>${ inner_text }</a>`;
     });
 
 
