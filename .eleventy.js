@@ -30,7 +30,21 @@ module.exports = function(eleventyConfig){
     eleventyConfig.addFilter('mostRecent', (collection) => {
         console.log(collection);
         return collection;
-    })
+    });
+
+    eleventyConfig.addFilter('debug', (item) => {
+        console.log(item);
+        return item;
+    });
+
+    eleventyConfig.addNunjucksShortcode('page_source_link', function(inner_text){
+        return `<a href=${this.ctx.metadata.repo}/blob/${ this.ctx.git.curr_branch }${ this.page.inputPath.slice(1) }>${ inner_text }</a>`;
+    });
+
+    eleventyConfig.addNunjucksShortcode('commit_link', function(inner_text){
+        return `<a href=${this.ctx.metadata.repo}/tree/${ this.ctx.git.curr_branch }>${ this.ctx.git.curr_branch }@${ inner_text }</a>`;
+    });
+
 
     // collection of posts
     eleventyConfig.addCollection('posts', (collection) => {

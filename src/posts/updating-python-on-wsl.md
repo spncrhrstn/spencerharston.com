@@ -1,8 +1,7 @@
 ---
 title: Updating Python on WSL
 description: Updating Python on WSL can be done in a few simple steps.
-date: 2022-04-08
-updated: 2022-04-10
+date: 2022-04-21
 ---
 
 I've been using WSL as my main development on my personal machines and it's been pretty successful. Recently, due to using Python more often at work, I wanted to start using Python for some personal projects.
@@ -11,7 +10,7 @@ Ubuntu on WSL currently comes loaded with Python v3.8, which is the default in U
 
 Granted, I'm not fully up-to-date on current Python practices, so chances are these steps may not be best methods, but it worked for me. Also, I'm having to use my bash history to find all the commands I ran...
 
-All instructions assume you're running them in a WSL terminal, not a Windows host terminal.
+All instructions assume you're running them in a WSL2 terminal, not a Windows host terminal.
 
 ## Steps
 
@@ -74,13 +73,31 @@ Now when you run `python --version` you should get `Python 3.10.4`.
 ### Install pip and other dependencies
 
 TODO: finish these commands:
+To finish up, there's a few other Python tools necessary for development. You'll need `pip` for package management, `venv` for virtual environments, and a couple other tools:
 
 ```bash
 sudo apt install python3-pip
 sudo apt install python3.10-pip
-source ~/.bashrc
 curl -sS htps://bootstrap.pypa.io/get-pip.py | python3.10
+source ~/.bashrc
 pip --version
-sudo apt install python3.10-distutils
 sudo apt install python3.10-venv
+sudo apt install python3.10-distutils
 ```
+*Note: I'm also not sure which pip package to install, but definitely the 3.10 versions, since that's the version of Python we just installed.*
+
+#### Virtual Environments
+I always use a virtual environment when I do any Python project. You never know if you'll need to use a package not included in the standard library. Since we just installed a compatible version of `venv`, we can create a virtual environment in our project's root directory and activate it by
+
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+I usually also make sure the latest version of pip is installed in the venv and can do so by
+
+```bash
+pip install -U pip
+```
+
+## Final Thoughts
+By no means am I a Python expert, but I wanted to jot down how I managed to update to a newer version of Python in WSL2. Hopefully these steps will at least point you in the right direction.
