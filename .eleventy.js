@@ -9,7 +9,7 @@ module.exports = function(eleventyConfig){
         'src/favicon.ico': '/favicon.ico'
     })
 
-    // fitler to return a date as an ISO string
+    // filter to return a date as an ISO string
     eleventyConfig.addFilter('dateISO', (dateObj) => {
         return DateTime.fromJSDate(dateObj).toUTC().toISO();
     });
