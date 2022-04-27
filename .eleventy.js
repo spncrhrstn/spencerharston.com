@@ -6,8 +6,10 @@ module.exports = function(eleventyConfig){
 
     eleventyConfig.addPassthroughCopy({
         'src/static': 'static/',
-        'src/favicon.ico': '/favicon.ico'
-    })
+        'src/favicon.ico': '/favicon.ico',
+        'node_modules/@fontsource/inter/': 'static/fonts/inter/',
+        'node_modules/@fontsource/jetbrains-mono/': 'static/fonts/jetbrains-mono/'
+    });
 
     // filter to return a date as an ISO string
     eleventyConfig.addFilter('dateISO', (dateObj) => {
