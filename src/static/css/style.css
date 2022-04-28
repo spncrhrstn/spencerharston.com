@@ -1,4 +1,4 @@
-@import url('../fonts/inter/400.css');
+@import url('../fonts/public-sans/400.css');
 @import url('../fonts/jetbrains-mono/400.css');
 
 :root {
@@ -8,6 +8,7 @@
     --border-color: #406188;
     --text-color: #f2f2f2;
     --pre-text-color: #f2f2f2;
+    --hyperlink-color: #759fc3;
 }
 
 html {
@@ -35,19 +36,23 @@ body {
 
     background-color: var(--background-color);
     /* font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
-    font-family: "Inter",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: "Public Sans",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     color: var(--text-color);
-    font-size: 1.125rem;
+    font-size: 1.25rem;
 }
 
-a {
+a{
+    color: inherit;
     font-weight: 700;
     text-decoration: none;
-    color: inherit;
 }
 
-a:hover {
-    text-decoration: underline;
+a:hover{
+    text-decoration: underline solid 2px;
+}
+
+main a {
+    color: var(--hyperlink-color);
 }
 
 header, main, footer {
@@ -193,7 +198,7 @@ article h1{
 }
 
 .post-list .post-list-item-title{
-    font-size: 1.35rem;
+    font-size: 1.75rem;
     margin-top: .5rem;
     margin-bottom: 0;
     display: block;

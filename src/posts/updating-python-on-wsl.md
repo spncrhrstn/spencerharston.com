@@ -6,7 +6,7 @@ date: 2022-04-25
 
 I've been using WSL as my main development on my personal machines and it's been pretty successful. Recently, due to using Python more often at work, I wanted to start using Python for some personal projects.
 
-Ubuntu on WSL currently comes loaded with Python v3.8, which is the default in Ubuntu 20.04. I wanted to update to Python v3.10, as I try to use more recent software releases when starting new projects. Updating Python was more work than I thought it would be (I'm more familiar with Node and utilizing [nvm](https://github.com/nvm-sh/nvm) to manage Node versions), and updating was not as simple as I hoped. Eventually I did get it all worked out, and in an effort to remember what I did, I'm writing this post to jot down the steps. 
+Ubuntu on WSL currently comes loaded with Python v3.8, which is the default in Ubuntu 20.04. I wanted to update to Python v3.10, as I try to use more recent software releases when starting new projects. Updating Python was more work than I thought it would be (I'm more familiar with Node and utilizing [node version manager](https://github.com/nvm-sh/nvm) to manage Node versions), and updating was not as simple as I hoped. Eventually I did get it all worked out, and in an effort to remember what I did, I'm writing this post to jot down the steps. 
 
 Please be aware, I'm not fully up-to-date on current Python practices, so chances are these steps may not be best methods, but it worked for me. Also, I'm having to use my bash history to find all the commands I ran...
 
@@ -97,6 +97,9 @@ I usually also make sure the latest version of pip is installed in the venv and 
 ```bash
 pip install -U pip
 ```
+
+## Alternatives
+There is [pyenv](https://github.com/pyenv/pyenv) that can perform similarly to node version manager. I did try to install this at one point a while ago, but I messed something up. I do think it'd be worthwhile to check out and try again in the future. 
 
 ## Final Thoughts
 By no means am I a Python expert, but I wanted to jot down how I managed to update to a newer version of Python in WSL2. Hopefully these steps will at least point you in the right direction.

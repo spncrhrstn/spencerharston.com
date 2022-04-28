@@ -23,7 +23,7 @@
     "async-git": "^1.13.3"
   },
   "dependencies": {
-    "@fontsource/inter": "^4.5.7",
-    "@fontsource/jetbrains-mono": "^4.5.5"
+    "@fontsource/jetbrains-mono": "^4.5.5",
+    "@fontsource/public-sans": "^4.5.5"
   }
 }
