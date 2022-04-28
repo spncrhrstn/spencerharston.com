@@ -1,7 +1,7 @@
 ---
 title: Updating Python on WSL
 description: Updating Python on WSL can be done in a few simple steps.
-date: 2022-04-25
+date: 2022-04-28
 ---
 
 I've been using WSL as my main development on my personal machines and it's been pretty successful. Recently, due to using Python more often at work, I wanted to start using Python for some personal projects.
