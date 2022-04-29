@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig){
     eleventyConfig.addPassthroughCopy({
         'src/static': 'static/',
         'src/favicon.ico': '/favicon.ico',
-        'node_modules/@fontsource/public-sans/': 'static/fonts/public-sans/',
+        'node_modules/@fontsource/noto-sans/': 'static/fonts/noto-sans/',
         'node_modules/@fontsource/jetbrains-mono/': 'static/fonts/jetbrains-mono/'
     });
 

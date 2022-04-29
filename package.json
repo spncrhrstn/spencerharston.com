@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "@fontsource/jetbrains-mono": "^4.5.5",
-    "@fontsource/public-sans": "^4.5.5"
+    "@fontsource/noto-sans": "^4.5.9"
   }
 }
