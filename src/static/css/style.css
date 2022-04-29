@@ -3,16 +3,17 @@
 
 :root {
     --width-content: 60rem;
-    --background-color: #0f1720;
-    --secondary-background-color: #1c2a3b;
-    --border-color: #406188;
-    --text-color: #f2f2f2;
-    --pre-text-color: #f2f2f2;
-    --hyperlink-color: #759fc3;
 
     --font-family: "Noto Sans",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     --font-family-mono: 'JetBrains Mono', monospace;
-
+    
+    --blueish-0: #0f1720;
+    --blueish-1: #1c2a3b;
+    --blueish-2: #406188;
+    --blueish-3: #759fc3;
+    --blueish-4: #f0f4f8;
+    --gray-0: #262626;
+    --gray-1: #f2f2f2;
 }
 
 html {
@@ -38,9 +39,9 @@ body {
     flex-direction: column;
     align-items: center;
 
-    background-color: var(--background-color);
+    background-color: var(--blueish-0);
     font-family: var(--font-family);
-    color: var(--text-color);
+    color: var(--blueish-4);
     font-size: 1.125rem;
 }
 
@@ -54,7 +55,8 @@ a:hover{
 }
 
 main a {
-    color: var(--hyperlink-color);
+    color: var(--blueish-3);
+    /* text-decoration: underline solid 2px; */
 }
 
 header, main, footer {
@@ -63,8 +65,8 @@ header, main, footer {
 }
 
 header{
-    background-color: var(--secondary-background-color);
-    border-bottom: 1px solid var(--border-color);
+    background-color: var(--blueish-1);
+    border-bottom: 1px solid var(--blueish-2);
     font-size: 1.2rem;
 }
 
@@ -96,9 +98,9 @@ header .site-logo-link{
 
 header .site-logo-image{
     max-height: 2.75rem;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--blueish-4);
     padding: .25rem;
-    background-color: var(--background-color);
+    background-color: var(--blueish-0);
 }
 
 
@@ -147,7 +149,7 @@ pre{
 pre code{
     display: inline-block;
     /* border-left: 4px solid #ffe135; */
-    background-color: var(--secondary-background-color);
+    background-color: var(--blueish-1);
     width: 100%;
     padding: 1rem calc(2rem - 6px);
 }
@@ -155,15 +157,15 @@ pre code{
 code {
     padding: 2px 6px;
     word-wrap: break-word;
-    background-color: var(--secondary-background-color);
-    color: var(--pre-text-color);
-    border: 1px solid var(--border-color);
+    background-color: var(--blueish-1);
+    color: var(--blueish-4);
+    border: 1px solid var(--blueish-2);
 }
 
 
 footer{
-    background-color: var(--secondary-background-color);
-    border-top: 1px solid var(--border-color);
+    background-color: var(--blueish-1);
+    border-top: 1px solid var(--blueish-2);
 }
 
 footer > div {
@@ -209,7 +211,7 @@ article h1{
 }
 
 .post-list hr{
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--blueish-2);
 }
 .post-list hr:last-of-type{
     display: none;
@@ -233,11 +235,15 @@ article h1{
 }
 
 [aria-current]{
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--blueish-2);
+}
+
+.subheading {
+    font-style: italic;
 }
 
 .hr-dashed{
-    border-bottom: 1px dashed var(--text-color);
+    border-bottom: 1px dashed var(--blueish-4);
 }
 
 .text-right{
@@ -246,17 +252,20 @@ article h1{
 
 /* media queries */
 @media (prefers-color-scheme: light){
-    :root{
-        --background-color: #f2f2f2;    
-        --text-color: #242424;    
+    main{
+        background-color: var(--blueish-4);
+        color: var(--blueish-0);
     }
 
-    header, footer{
-        color: var(--background-color);
+    main a {
+        color: var(--blueish-2);
     }
 
-    header .site-logo-image {
-        border: 1px solid var(--text-color);
-        background-color: var(--background-color);
+    hr{
+        border-bottom: 1px solid var(--blueish-1);
+    }
+
+    .hr-dashed{
+        border-bottom: 1px dashed var(--blueish-1);
     }
 }

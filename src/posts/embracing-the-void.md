@@ -2,10 +2,10 @@
 title: Embracing the Void
 description: Like all things in life, great things take time. Creating a personal website is one of those things. 
 date: 2022-04-27
-updated: 2022-04-28
+updated: 2022-04-29
 ---
 
-Great is subjective. 
+Greatness is relative.
 
 ## Thoughts on Writing
 
