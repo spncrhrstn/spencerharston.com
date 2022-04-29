@@ -41,12 +41,11 @@ body {
     background-color: var(--background-color);
     font-family: var(--font-family);
     color: var(--text-color);
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 }
 
 a{
     color: inherit;
-    font-weight: 700;
     text-decoration: none;
 }
 
@@ -61,10 +60,6 @@ main a {
 header, main, footer {
     width: 100%;
     padding: 0;
-}
-
-header a, footer a{
-    font-weight: 400;
 }
 
 header{
@@ -103,7 +98,7 @@ header .site-logo-image{
     max-height: 2.75rem;
     border: 1px solid var(--text-color);
     padding: .25rem;
-    background-color: #0f1720;
+    background-color: var(--background-color);
 }
 
 
@@ -133,7 +128,10 @@ main{
     margin: 0 auto;
     width: 100%;
     max-width: var(--width-content);
-    line-height: 1.75rem;
+}
+
+main p{
+    line-height: 1.5em;
 }
 
 pre, code, kbd{
@@ -149,7 +147,7 @@ pre{
 pre code{
     display: inline-block;
     /* border-left: 4px solid #ffe135; */
-    background-color: #1c2a3b;
+    background-color: var(--secondary-background-color);
     width: 100%;
     padding: 1rem calc(2rem - 6px);
 }
@@ -157,7 +155,7 @@ pre code{
 code {
     padding: 2px 6px;
     word-wrap: break-word;
-    background-color: #1c2a3b;
+    background-color: var(--secondary-background-color);
     color: var(--pre-text-color);
     border: 1px solid var(--border-color);
 }
@@ -186,33 +184,35 @@ footer p {
     margin: .5rem 0;
 }
 
+h1,h2,h3{
+    text-transform: lowercase;
+}
+
+/* blog post article stuff */
 article h1{
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 /* posts stuff */
 .post-list{
     list-style-type: none;
     padding: 0;
+    margin-top: 2rem;
 }
 
 .post-list .post-list-item{
-    padding: .5rem 0;
+    padding: 1rem 0;
 }
 
-.post-list .post-list-item-title{
-    font-size: 1.75rem;
-    margin-top: .5rem;
-    margin-bottom: 0;
-    display: block;
-}
-
-.post-list .post-list-item-meta{
-    font-size: .9rem;
+.post-list h2{
+    margin: .5rem 0;
 }
 
 .post-list hr{
     border: 1px solid var(--border-color);
+}
+.post-list hr:last-of-type{
+    display: none;
 }
 
 .page-nav {
@@ -237,7 +237,7 @@ article h1{
 }
 
 .hr-dashed{
-    border-bottom: 1px dashed #f2f2f2;
+    border-bottom: 1px dashed var(--text-color);
 }
 
 .text-right{
@@ -252,10 +252,11 @@ article h1{
     }
 
     header, footer{
-        color: #f2f2f2;
+        color: var(--background-color);
     }
 
     header .site-logo-image {
-        border: 1px solid #f2f2f2;
+        border: 1px solid var(--text-color);
+        background-color: var(--background-color);
     }
 }

@@ -5,11 +5,11 @@ pagination:
     alias: posts
     reverse: true
 layout: layouts/default
-title: posts
+title: Posts
 ---
 {% from "macros/posts-list.njk" import postsList %}
 
-<p>The occasional thought/idea/tidbit/neat thing I feel like sharing. <em>Occasionally is the keyword here.</em></p>
+<p>The occasional thought/hot take/neat thing I feel like sharing. <em>Occasional is the keyword here.</em></p>
 
 {{ postsList(pagination.items) }}
 
