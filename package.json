@@ -6,11 +6,11 @@
   "scripts": {
     "dev:clean": "rm -rf ./dist",
     "dev:11ty": "eleventy --serve",
-    "dev": "ELEVENTY_ENV=development run-s dev:clean dev:11ty",
+    "dev": "run-s dev:clean dev:11ty",
 
     "prod:clean": "rm -rf ./dist",
     "prod:11ty": "eleventy",
-    "prod": "ELEVENTY_ENV=production run-s prod:clean prod:11ty"
+    "prod": "run-s prod:clean prod:11ty"
   },
   "repository": {
     "type": "git",
