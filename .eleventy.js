@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig){
 
     eleventyConfig.setDataDeepMerge(true);
 
+    // passthrough copying
     eleventyConfig.addPassthroughCopy({
         'src/static': 'static/',
         'src/favicon.ico': '/favicon.ico',
@@ -34,11 +35,7 @@ module.exports = function(eleventyConfig){
         return collection;
     });
 
-    eleventyConfig.addFilter('debug', (item) => {
-        console.log(item);
-        return item;
-    });
-
+    // shortcodes
     eleventyConfig.addNunjucksShortcode('page_source_link', function(inner_text){
         return `<a href=${this.ctx.metadata.repo}/blob/${ this.ctx.git.curr_branch }${ this.page.inputPath.slice(1) }>${ inner_text }</a>`;
     });
@@ -50,8 +47,20 @@ module.exports = function(eleventyConfig){
 
     // collection of posts
     eleventyConfig.addCollection('posts', (collection) => {
-        return collection.getFilteredByGlob('./src/posts/*.md');
+        let publishedPosts = (post) => !post.data.draft;
+
+        return collection
+            .getFilteredByGlob('./src/posts/*.md')
+            .filter(publishedPosts);
     });
+
+    // markdown plugins
+    let markdownItFootnote = require('markdown-it-footnote');
+    let mdiOptions = {
+        html: true
+    };
+    let markdownLib = require('markdown-it')(mdiOptions).use(markdownItFootnote);
+    eleventyConfig.setLibrary('md', markdownLib);
 
     return {
         dir: {

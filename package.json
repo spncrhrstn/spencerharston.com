@@ -4,9 +4,13 @@
   "description": "The website of Spencer Harston",
   "private": true,
   "scripts": {
-    "build": "npm run clean; eleventy",
-    "serve": "eleventy --serve",
-    "clean": "rm -rf ./dist"
+    "dev:clean": "rm -rf ./dist",
+    "dev:11ty": "eleventy --serve",
+    "dev": "ELEVENTY_ENV=development run-s dev:clean dev:11ty",
+
+    "prod:clean": "rm -rf ./dist",
+    "prod:11ty": "eleventy",
+    "prod": "ELEVENTY_ENV=production run-s prod:clean prod:11ty"
   },
   "repository": {
     "type": "git",
@@ -24,6 +28,8 @@
   },
   "dependencies": {
     "@fontsource/jetbrains-mono": "^4.5.5",
-    "@fontsource/noto-sans": "^4.5.9"
+    "@fontsource/noto-sans": "^4.5.9",
+    "markdown-it-footnote": "^3.0.3",
+    "npm-run-all": "^4.1.5"
   }
 }

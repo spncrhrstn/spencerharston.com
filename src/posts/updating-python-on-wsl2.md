@@ -1,7 +1,8 @@
 ---
 title: Updating Python on WSL2
-description: Updating Python on WSL2 can be done in a few simple steps. Is this the best way? Meh.
-date: 2022-04-29
+description: Updating Python on WSL2 can be done in a few simple steps. Is this the best way? Maybe. Probably not.
+date: 2022-05-02
+draft: true
 ---
 
 I've been using WSL2 as my main development on my personal machines and it's been pretty successful. Recently, due to using Python more often at work, I wanted to start using Python for some personal projects.

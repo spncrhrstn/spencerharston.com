@@ -133,7 +133,7 @@ main{
 }
 
 main p{
-    line-height: 1.5em;
+    line-height: 1.65em;
 }
 
 pre, code, kbd{
@@ -193,6 +193,17 @@ h1,h2,h3{
 /* blog post article stuff */
 article h1{
     font-size: 2em;
+    margin-bottom: 0;
+}
+
+article .footnotes{
+    font-size: .95rem;
+}
+
+article blockquote{
+    padding: .25rem 2rem;
+    margin: 1rem 0;
+    background-color: var(--blueish-1);
 }
 
 /* posts stuff */
@@ -252,14 +263,22 @@ article h1{
 
 /* media queries */
 @media (prefers-color-scheme: light){
-    main{
+    body {
         background-color: var(--blueish-4);
+    }
+    
+    main{
         color: var(--blueish-0);
     }
 
     main a {
         color: var(--blueish-2);
     }
+
+    article blockquote{
+        color: var(--blueish-4);
+    }
+    
 
     hr{
         border-bottom: 1px solid var(--blueish-1);
