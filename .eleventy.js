@@ -45,13 +45,12 @@ module.exports = function(eleventyConfig){
     });
 
 
-    // collection of posts
+    // collection of all posts
+    if(process.env.ELEVENTY_ENV == "production"){
+        eleventyConfig.ignores.add("src/posts/drafts");
+    }
     eleventyConfig.addCollection('posts', (collection) => {
-        let publishedPosts = (post) => !post.data.draft;
-
-        return collection
-            .getFilteredByGlob('./src/posts/*.md')
-            .filter(publishedPosts);
+        return collection.getFilteredByGlob(["./src/posts/*.md", "./src/posts/drafts/*.md"]);
     });
 
     // markdown plugins

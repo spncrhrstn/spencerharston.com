@@ -3,7 +3,7 @@ layout: layouts/base
 ---
 
 <article>
-    <h1>{{ title }}</h1>
+    <h1>{% if draft %}[DRAFT] {% endif %}{{ title }}</h1>
     <p class="subheading">{{ description }}</p>
     <p>
         Published: <time datetime="{{ page.date | dateISO }}">{{ page.date | datePretty }}</time>
