@@ -4,16 +4,16 @@
     {% for post in posts | sortDesc %}
     <li class="post-list-item">
         <h2><a href="{{ post.url }}">{% if post.data.draft %}[DRAFT] {% endif %}{{ post.data.title }}</a></h2>
+        <p class="no-margin">
+            {{ post.data.description }}
+            <i><a href="{{ post.url }}">read more...</a></i>
+        </p>
         <div class="post-list-item-meta">
-            <div><time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | datePretty }}</time></div>
+            <p class="text-s"><time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | datePretty }}</time></p>
             <!-- {% if post.data.updated %}
                 <div><i>updated on <time datetime="{{ post.data.updated | dateISO }}">{{ post.data.updated | datePretty }}</time></i></div>
             {% endif %} -->
         </div>
-        <p>
-            {{ post.data.description }}
-            <i><a href="{{ post.url }}">read more...</a></i>
-        </p>
     </li>
     <hr>
 

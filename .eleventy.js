@@ -28,11 +28,8 @@ module.exports = function(eleventyConfig){
         return posts;
     });
 
-    // TODO: filter for getting the most recent post
-    eleventyConfig.addFilter('mostRecent', (collection) => {
-        console.log("NOT YET IMPLEMENTED");
-        return collection;
-    });
+    // filter for limiting how many items are returned in the array
+    eleventyConfig.addFilter('limit', (arr, limit) => arr.slice(0, limit));
 
     // shortcodes
     // shortcode for returing a github link to the current page's source code

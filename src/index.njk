@@ -1,7 +1,15 @@
 ---
 layout: layouts/base
 ---
-<p>You've reached the personal website of Spencer Harston. Things are currently under construction, so in the meantime, please <a href="https://twitter.com/sphars_">leave a message</a> after the beep.</p>
+<p>Hey, you've reached the personal website of Spencer Harston. I'll be posting about my thoughts, experiences and anything else I feel like.
+You can find all my posts over in <a href="/posts">/posts</a> and you can learn more about me in <a href="/about">/about</a>.</p>
 
-<em>*beep*</em>
+<p class="text-s"><em>This site is currently under active development and things will change.</em></p>
 
+<hr>
+
+<h2>Latest Post</h2>
+{%- for post in collections.posts | sortDesc | limit(1) -%}
+    <h3 class="no-margin"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+    <p class="no-margin text-s">{{ post.data.date | datePretty }}</p>
+{%- endfor -%}
