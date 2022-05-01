@@ -2,9 +2,7 @@ const { DateTime } = require('luxon');
 
 module.exports = function(eleventyConfig){
 
-    eleventyConfig.setDataDeepMerge(true);
-
-    // passthrough copying
+    // passthrough copying of static files
     eleventyConfig.addPassthroughCopy({
         'src/static': 'static/',
         'src/favicon.ico': '/favicon.ico',
@@ -30,30 +28,34 @@ module.exports = function(eleventyConfig){
         return posts;
     });
 
+    // TODO: filter for getting the most recent post
     eleventyConfig.addFilter('mostRecent', (collection) => {
-        console.log(collection);
+        console.log("NOT YET IMPLEMENTED");
         return collection;
     });
 
     // shortcodes
+    // shortcode for returing a github link to the current page's source code
     eleventyConfig.addNunjucksShortcode('page_source_link', function(inner_text){
         return `<a href=${this.ctx.metadata.repo}/blob/${ this.ctx.git.curr_branch }${ this.page.inputPath.slice(1) }>${ inner_text }</a>`;
     });
 
+    // shortcode for returning a github link to the current build commit
     eleventyConfig.addNunjucksShortcode('commit_link', function(inner_text){
         return `<a href=${this.ctx.metadata.repo}/tree/${ this.ctx.git.long_sha }>${ inner_text }</a>`;
     });
 
 
-    // collection of all posts
+    // if we're on production, skip any post drafts
     if(process.env.ELEVENTY_ENV == "production"){
         eleventyConfig.ignores.add("src/posts/drafts");
     }
+    // collection of all posts
     eleventyConfig.addCollection('posts', (collection) => {
         return collection.getFilteredByGlob(["./src/posts/*.md", "./src/posts/drafts/*.md"]);
     });
 
-    // markdown plugins
+    // configure markdown plugins
     let markdownItFootnote = require('markdown-it-footnote');
     let mdiOptions = {
         html: true
