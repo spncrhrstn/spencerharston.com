@@ -21,4 +21,6 @@
 
 <link rel="stylesheet" type="text/css" href="/static/css/style.css">
 
+{% if env.environment == "production" %}
 <script data-goatcounter="https://suave-sandwich.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+{% endif %}
