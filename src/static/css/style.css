@@ -198,6 +198,10 @@ article h1{
     margin-bottom: 1rem;
 }
 
+article a{
+    text-decoration: underline solid 2px;
+}
+
 article .footnotes{
     font-size: .95rem;
 }
