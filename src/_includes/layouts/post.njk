@@ -4,12 +4,15 @@ layout: layouts/base
 
 <article>
     <h1>{{ title }}</h1>
-    <p>
+    <p class="subheading text-s no-margin">{{ description }}</p>
+    <p class="text-s no-margin">
         Published: <time datetime="{{ page.date | dateISO }}">{{ page.date | datePretty }}</time>
         {% if updated %}
-        <br>Updated: <time datetime="{{ updated | dateISO }}">{{ updated | datePretty }}</time>
+        | Updated: <time datetime="{{ updated | dateISO }}">{{ updated | datePretty }}</time>
         {% endif %}
     </p>
     <hr>
     {{ content | safe }}
 </article>
+<div class="hr-dashed"></div>
+<p class="text-right text-s">Got something to share? The source for this page is available on {% page_source_link 'GitHub' %}</p>

@@ -1,6 +1,6 @@
 ---
 layout: layouts/default
-title: about me
+title: About Me
 ---
 
 *Hey! I'm Spencer 👋*️

@@ -1,17 +1,7 @@
 <footer>
     <div>
-        <p>
-            <small>
-            &copy; 2022 spencer harston<br>
-            <a href="https://github.com/sphars/{{ git.repo }}/blob/master{{ page.inputPath.slice(1) }}">
-                {%- if git.curr_branch != 'HEAD' -%}
-                    {{- git.curr_branch-}}@
-                {%- endif -%}
-                {{- git.commit_sha -}}
-            </a></small>
-        </p>
-        <p>
-            <small><a href="https://github.com/sphars">github</a> | <a href="https://twitter.com/sphars_">twitter</a></small>
+        <p class="text-xs text-center">
+            &copy;2022 • Powered by <a href="https://www.11ty.dev/">Eleventy</a> and ❤ • {% commit_link git.short_sha %}
         </p>
     </div>
 </footer>
