@@ -1,5 +1,9 @@
 const { DateTime } = require('luxon');
 
+/**
+ * @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig 
+ * @returns {ReturnType<import("@11ty/eleventy/src/defaultConfig")>}
+ */
 module.exports = function(eleventyConfig){
 
     // passthrough copying of static files
