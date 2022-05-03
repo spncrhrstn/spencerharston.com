@@ -202,6 +202,7 @@ h1,h2,h3{
 
 .hero p{
     line-height: 3rem;
+    color: var(--blueish-4)
 }
 
 /* blog post article stuff */
