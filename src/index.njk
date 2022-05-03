@@ -1,15 +1,16 @@
 ---
 layout: layouts/base
 ---
-<p>Hey, you've reached the personal website of Spencer Harston. I'll be posting about my thoughts, experiences and anything else I feel like.
-You can find all my posts over in <a href="/posts">/posts</a> and you can learn more about me in <a href="/about">/about</a>.</p>
 
-<p class="text-s"><em>This site is currently under active development and things will change.</em></p>
+<div class="hero">
+    <p class="text-center text-xl">the personal website of spencer harston</p>
+</div>
+
+<p class="text-center">A home of my thoughts, experiences and anything else I feel like.</p>
+<p class="text-center">You can find all my blog posts over in <a href="/posts">/posts</a> and you can learn more about me in <a href="/about">/about</a>.</p>
+<p class="text-center text-s"><em>This site is currently under active development and things will change.</em></p>
 
 <hr>
 
-<h2>Latest Post</h2>
-{%- for post in collections.posts | sortDesc | limit(1) -%}
-    <h3 class="no-margin"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-    <p class="no-margin text-s">{{ post.data.date | datePretty }}</p>
-{%- endfor -%}
+{% set latestPost = collections.posts | sortDesc | first %}
+<h2>Latest Post: <a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></h2>
