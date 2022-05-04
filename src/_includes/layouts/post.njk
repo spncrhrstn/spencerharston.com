@@ -11,6 +11,12 @@ layout: layouts/base
         | Updated: <time datetime="{{ updated | dateISO }}">{{ updated | datePretty }}</time>
         {% endif %}
     </p>
+    <p>filed under:</p>
+    <ul>
+        {% for tag in tags %}
+        <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
+        {% endfor %}
+    </ul>
     <hr>
     {{ content | safe }}
 </article>
