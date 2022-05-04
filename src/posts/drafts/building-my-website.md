@@ -2,6 +2,10 @@
 title: Building My Website
 description: It's taken years...
 date: 2022-05-03
+tags:
+    - development
+    - eleventy
+    - personal
 ---
 
 ## Building This Website

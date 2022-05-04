@@ -2,6 +2,8 @@
 title: A Drop of Noise
 description: The Internet is a vast ocean of noise. And I'm just a tiny drop. 
 date: 2022-05-01
+tags: 
+     - personal
 ---
 
 Having a personal website can be liberating. Sharing my thoughts into the world, even in the tiniest corner, still gets something out there. I have a public presence! But on the other hand, it's public, and that's intimidating. Any random stranger can view my thoughts and judge me for it. Even in the midst of writing this post, I still feel that sense of knowing that someone is going to laugh at me. I've always been self-consicious about various things, and I tend to stay pretty private, especially on the Internet. 
