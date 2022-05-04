@@ -303,7 +303,7 @@ article blockquote{
 /* media queries */
 @media (prefers-color-scheme: light){
     body {
-        background-color: var(--blueish-4);
+        background-color: var(--gray-1);
     }
     
     main{

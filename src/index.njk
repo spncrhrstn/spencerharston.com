@@ -6,11 +6,11 @@ layout: layouts/base
     <p class="text-center text-xl">the personal website of spencer harston</p>
 </div>
 
-<p class="text-center">A home of my thoughts, experiences and anything else I feel like.</p>
+<p class="text-center">A home for my thoughts, experiences and anything else I feel like.</p>
 <p class="text-center">You can find all my blog posts over in <a href="/posts">/posts</a> and you can learn more about me in <a href="/about">/about</a>.</p>
 <p class="text-center text-s"><em>This site is currently under active development and things will change.</em></p>
 
 <hr>
 
 {% set latestPost = collections.posts | sortDesc | first %}
-<h2>Latest Post: <a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></h2>
+<h2 class="text-center">Latest Post: <a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></h2>
