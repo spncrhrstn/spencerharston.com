@@ -4,8 +4,8 @@ title: All Post Tags
 permalink: /tags/
 ---
 
-<ul>
+<ul class="tag-list">
     {% for tag in collections.tagList %}
-    <li><a href="{{ tag }}/">{{ tag }}</a></li>
+    <li class="tag"><a href="{{ tag }}/">{{ tag }}</a></li>
     {% endfor %}
 </ul>

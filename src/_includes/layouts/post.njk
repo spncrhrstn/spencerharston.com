@@ -4,19 +4,20 @@ layout: layouts/base
 
 <article>
     <h1>{{ title }}</h1>
-    <p class="subheading text-s no-margin">{{ description }}</p>
-    <p class="text-s no-margin">
-        Published: <time datetime="{{ page.date | dateISO }}">{{ page.date | datePretty }}</time>
-        {% if updated %}
-        | Updated: <time datetime="{{ updated | dateISO }}">{{ updated | datePretty }}</time>
-        {% endif %}
-    </p>
-    <p>filed under:</p>
-    <ul>
-        {% for tag in tags %}
-        <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
-        {% endfor %}
-    </ul>
+    <p class="subheading no-margin">{{ description }}</p>
+    <div class="post-item-meta">
+        <div class="text-s">
+            <time datetime="{{ page.date | dateISO }}">{{ page.date | datePretty }}</time>
+            {% if updated %}
+            | Updated: <time datetime="{{ updated | dateISO }}">{{ updated | datePretty }}</time>
+            {% endif %}
+        </div>
+        <ul class="tag-list">
+            {% for tag in tags %}
+            <li class="tag"><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
     <hr>
     {{ content | safe }}
 </article>

@@ -12,11 +12,13 @@ title: Posts
 <p>The occasional thought/hot take/neat thing I feel like sharing. <em>Occasional is the keyword here.</em></p>
 
 <div>
-    Filter posts by:
-    {% for tag in collections.tagList %}
-    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-    <a href="{{ tagUrl }}" class="post-meta-tags-tag">{{ tag }}</a>
-    {% endfor %}
+    <span>Filter posts by: </span>
+    <ul class="tag-list">
+        {% for tag in collections.tagList %}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <li class="tag"><a href="{{ tagUrl }}">{{ tag }}</a></li>
+        {% endfor %}
+    </ul>
 </div>
 
 {{ postsList(pagination.items) }}
