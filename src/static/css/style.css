@@ -40,7 +40,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    background-color: var(--blueish-0);
+    background-color: var(--gray-0);
     font-family: var(--font-family);
     color: var(--blueish-4);
     /* font-size: 1.125rem; */
@@ -290,7 +290,6 @@ article blockquote{
 
 .tag{
     display: inline-block;
-    
     border: 2px solid #689d6a;
     border-radius: 16px;
 }
@@ -300,7 +299,7 @@ article blockquote{
 }
 
 .tag:hover a{
-    color: var(--blueish-4);
+    color: var(--gray-1);
 }
 
 .tag a{
