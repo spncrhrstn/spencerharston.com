@@ -13,7 +13,7 @@
     --blueish-2: #406188;
     --blueish-3: #759fc3;
     --blueish-4: #f0f4f8;
-    --gray-0: #262626;
+    --gray-0: #1b1b1e;
     --gray-1: #f2f2f2;
 }
 
@@ -53,6 +53,7 @@ a{
 
 a:hover{
     text-decoration: underline solid 2px;
+    color: #d2603a;
 }
 
 main a {
@@ -206,6 +207,9 @@ h1,h2,h3{
 }
 
 /* blog post article stuff */
+article{
+    margin-bottom: 3rem;
+}
 article h1{
     font-size: 2em;
 }
@@ -218,10 +222,22 @@ article .footnotes{
     font-size: .95rem;
 }
 
+article hr{
+    border-bottom: #889199;
+}
+
 article blockquote{
     padding: .25rem 2rem;
     margin: 1rem 0;
     background-color: var(--blueish-1);
+}
+
+.post-header{
+    padding-bottom: 1rem;
+}
+
+.post-footer{
+    margin-top: 2rem;
 }
 
 /* posts stuff */
@@ -232,16 +248,16 @@ article blockquote{
 }
 
 .post-list .post-item{
-    padding: 1rem 0;
+    padding: 1rem 0 1.5rem 0;
+    border-bottom: 1px solid #2c2c2d;
 }
 
 .post-list h2{
     margin-top: .5rem;
 }
 
-.post-item-meta {
+.post-meta {
     display: inline-flex;
-    margin-top: 4px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -266,14 +282,19 @@ article blockquote{
     display: inline-block;
     margin: 0 .25rem;
     padding: 0;
+    font-weight: 700;
 }
 
 .page-nav li .page-nav-page-num{
     padding: .25rem .5rem;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
 }
 
 [aria-current]{
     border: 1px solid var(--blueish-2);
+    border-radius: 50%;
 }
 
 /* tag lists */
@@ -290,12 +311,13 @@ article blockquote{
 
 .tag{
     display: inline-block;
-    border: 2px solid #689d6a;
-    border-radius: 16px;
+    border: 1px solid #6c757d;
+    border-radius: 1rem;
 }
 
 .tag:hover{
-    background-color: #458588;
+    background-color: var(--blueish-2);
+    border: 1px solid var(--blueish-2);
 }
 
 .tag:hover a{
@@ -308,7 +330,7 @@ article blockquote{
     text-decoration: none;
     text-align: center;
     font-size: .9rem;
-    color: #689d6a;
+    color: #6c757d;
 }
 
 .tag a:hover{
@@ -321,7 +343,7 @@ article blockquote{
 }
 
 .hr-dashed{
-    border-bottom: 1px dashed var(--blueish-4);
+    border-bottom: 1px dashed #889199;
 }
 
 .text-right{
@@ -342,6 +364,10 @@ article blockquote{
 
 .text-xs{
     font-size: .8rem;
+}
+
+.text-muted{
+    color: #889199;
 }
 
 .no-margin{

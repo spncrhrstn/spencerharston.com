@@ -3,23 +3,29 @@ layout: layouts/base
 ---
 
 <article>
-    <h1>{{ title }}</h1>
-    <p class="subheading no-margin">{{ description }}</p>
-    <div class="post-item-meta">
-        <div class="text-s">
-            <time datetime="{{ page.date | dateISO }}">{{ page.date | datePretty }}</time>
-            {% if updated %}
-            | Updated: <time datetime="{{ updated | dateISO }}">{{ updated | datePretty }}</time>
-            {% endif %}
+    <div class="post-header">
+        <h1>{{ title }}</h1>
+        <p class="subheading">{{ description }}</p>
+        <div class="post-meta text-muted">
+            <div class="text-s">
+                <time datetime="{{ page.date | dateISO }}">{{ page.date | datePretty }}</time>
+                {% if updated %}
+                | Updated: <time datetime="{{ updated | dateISO }}">{{ updated | datePretty }}</time>
+                {% endif %}
+            </div>
         </div>
-        <ul class="tag-list">
-            {% for tag in tags %}
-            <li class="tag"><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
-            {% endfor %}
-        </ul>
     </div>
     <hr>
     {{ content | safe }}
 </article>
 <div class="hr-dashed"></div>
-<p class="text-right text-s">Got something to share? The source for this page is available on {% page_source_link 'GitHub' %}</p>
+
+<div class="post-footer">
+    <ul class="tag-list">
+        {% for tag in tags %}
+        <li class="tag"><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
+        {% endfor %}
+    </ul>
+    
+    <p class="text-s text-muted">Got something to share? The source for this page is available on {% page_source_link 'GitHub' %}</p>
+</div>

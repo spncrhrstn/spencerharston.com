@@ -24,7 +24,7 @@ title: Posts
 {{ postsList(pagination.items) }}
 
 <nav class="posts-nav">
-    <ul class="page-nav">
+    <ul class="page-nav text-muted">
         <!-- <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">&lt;&lt;</a>{% else %}&lt;&lt;{% endif %}</li> -->
         <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt;</a>{% else %}&lt;{% endif %}</li>
         {%- for pageEntry in pagination.pages %}
