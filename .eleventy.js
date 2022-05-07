@@ -56,6 +56,25 @@ module.exports = function(eleventyConfig){
         return collection.getFilteredByGlob(["./src/posts/*.md", "./src/posts/drafts/*.md"]);
     });
 
+    // get an array of all tags
+    eleventyConfig.addCollection('tagList', (collection) => {
+        let uniqueTags = new Set(); //sets only allow unique items
+
+        collection.getAllSorted().forEach(function (item) {
+            // skip item if there is no tags key
+            if (!('tags' in item.data)) return;
+
+            // get the tags from the item
+            let tags = (typeof item.data.tags === 'string') ? [item.data.tags] : item.data.tags;
+
+            for (const tag of tags)
+                tag.startsWith('_') || uniqueTags.add(tag);
+        });
+
+        console.log('tags: ', [...uniqueTags]);
+        return [...uniqueTags].sort();
+    });
+
     // configure markdown plugins
     let markdownItFootnote = require('markdown-it-footnote');
     let mdiOptions = {

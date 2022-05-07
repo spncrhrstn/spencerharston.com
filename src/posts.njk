@@ -11,10 +11,20 @@ title: Posts
 
 <p>The occasional thought/hot take/neat thing I feel like sharing. <em>Occasional is the keyword here.</em></p>
 
+<div>
+    <span>Filter posts by: </span>
+    <ul class="tag-list">
+        {% for tag in collections.tagList %}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <li class="tag"><a href="{{ tagUrl }}">{{ tag }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
 {{ postsList(pagination.items) }}
 
 <nav class="posts-nav">
-    <ul class="page-nav">
+    <ul class="page-nav text-muted">
         <!-- <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">&lt;&lt;</a>{% else %}&lt;&lt;{% endif %}</li> -->
         <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt;</a>{% else %}&lt;{% endif %}</li>
         {%- for pageEntry in pagination.pages %}
