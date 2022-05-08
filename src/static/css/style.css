@@ -232,6 +232,24 @@ article blockquote{
     background-color: var(--blueish-1);
 }
 
+article figure{
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
+figure img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin: 0 auto .5rem auto;
+}
+
+figure figcaption{
+    text-align: left;
+    font-style: italic;
+    font-size: .9rem;
+}
+
 .post-header{
     padding-bottom: 1rem;
 }

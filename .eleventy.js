@@ -76,11 +76,15 @@ module.exports = function(eleventyConfig){
     });
 
     // configure markdown plugins
+    let markdownIt = require('markdown-it');
     let markdownItFootnote = require('markdown-it-footnote');
+    let markdownItImageFigures = require('markdown-it-image-figures');
     let mdiOptions = {
         html: true
     };
-    let markdownLib = require('markdown-it')(mdiOptions).use(markdownItFootnote);
+    let markdownLib = markdownIt(mdiOptions)
+        .use(markdownItFootnote)
+        .use(markdownItImageFigures, { figcaption: true });
     eleventyConfig.setLibrary('md', markdownLib);
 
     return {

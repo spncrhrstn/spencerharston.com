@@ -7,7 +7,6 @@
     "dev:clean": "rm -rf ./dist",
     "dev:11ty": "eleventy --serve",
     "dev": "run-s dev:clean dev:11ty",
-
     "prod:clean": "rm -rf ./dist",
     "prod:11ty": "eleventy",
     "prod": "run-s prod:clean prod:11ty"
@@ -30,6 +29,7 @@
     "@fontsource/jetbrains-mono": "^4.5.5",
     "@fontsource/noto-sans": "^4.5.9",
     "markdown-it-footnote": "^3.0.3",
+    "markdown-it-image-figures": "^2.1.0",
     "npm-run-all": "^4.1.5"
   }
 }
