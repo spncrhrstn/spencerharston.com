@@ -1,5 +1,5 @@
 ---
-title: A Drop of Noise
+title: A Drop in the Ocean
 description: The Internet is a vast ocean of noise. And I'm just a tiny drop. 
 date: 2022-05-01
 tags: 
