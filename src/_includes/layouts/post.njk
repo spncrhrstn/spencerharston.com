@@ -20,12 +20,12 @@ layout: layouts/base
 </article>
 <div class="hr-dashed"></div>
 
-<div class="post-footer">
+<div class="post-footer text-center">
     <ul class="tag-list">
         {% for tag in tags %}
         <li class="tag"><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
         {% endfor %}
     </ul>
     
-    <p class="text-s text-muted">Got something to share? The source for this page is available on {% page_source_link 'GitHub' %}</p>
+    <p class="text-s text-center text-muted">Got something to share? The source for this page is available on {% page_source_link 'GitHub' %}</p>
 </div>
