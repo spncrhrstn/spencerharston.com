@@ -232,12 +232,13 @@ article blockquote{
     background-color: var(--blueish-1);
 }
 
-article figure{
+figure{
     max-width: 100%;
     margin: 1rem 0;
 }
 
 figure img{
+    display: block;
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -245,7 +246,7 @@ figure img{
 }
 
 figure figcaption{
-    text-align: left;
+    text-align: center;
     font-style: italic;
     font-size: .9rem;
 }

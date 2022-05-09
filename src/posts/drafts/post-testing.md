@@ -39,7 +39,7 @@ tags:
 
 ![statik](/static/img/posts/pfp_nb_high.png "This is statik")
 
-![An image of a dog](https://placedog.net/300 "A glorious dog")
+![An image of a dog](https://placedog.net/1200 "A glorious dog that is oh so gloriously glorious. And how so!")
 
 | Column 1 | Column 2 | Column 3 |
 | -------- | -------- | -------- |
