@@ -380,6 +380,10 @@ figure figcaption{
     color: var(--grayish-3);
 }
 
+.font-mono{
+    font-family: var(--font-family-mono);
+}
+
 .no-margin{
     margin: 0;
 }
