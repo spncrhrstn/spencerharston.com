@@ -1,4 +1,5 @@
 const { DateTime } = require('luxon');
+const readingTime = require('eleventy-plugin-reading-time');
 
 /**
  * @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig 
@@ -86,6 +87,9 @@ module.exports = function(eleventyConfig){
         .use(markdownItFootnote)
         .use(markdownItImageFigures, { figcaption: true });
     eleventyConfig.setLibrary('md', markdownLib);
+
+    // add other plugins
+    eleventyConfig.addPlugin(readingTime);
 
     return {
         dir: {

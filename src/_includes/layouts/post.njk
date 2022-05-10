@@ -12,6 +12,7 @@ layout: layouts/base
                 {% if updated %}
                 | Updated: <time datetime="{{ updated | dateISO }}">{{ updated | datePretty }}</time>
                 {% endif %}
+                <span> | {{ content | readingTime }} read </span>
             </div>
         </div>
     </div>
