@@ -214,7 +214,8 @@ article .footnotes{
 }
 
 article hr{
-    border-bottom: var(--grayish-3);
+    border: none;
+    border-bottom: 1px solid var(--grayish-3);
 }
 
 article blockquote{
@@ -240,6 +241,11 @@ figure figcaption{
     text-align: center;
     font-style: italic;
     font-size: .9rem;
+}
+
+hr.footnotes-sep{
+    border: none;
+    border-bottom: 1px dashed var(--grayish-3);
 }
 
 .post-header{
