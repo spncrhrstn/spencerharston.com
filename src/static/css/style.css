@@ -180,10 +180,6 @@ footer p {
     margin: .5rem 0;
 }
 
-h1,h2,h3{
-    text-transform: lowercase;
-}
-
 .hero{
     background-color: var(--blueish-1);
     border: 1px solid var(--blueish-2);
@@ -203,6 +199,7 @@ article{
 }
 article h1{
     font-size: 2em;
+    margin: 3rem 0;
 }
 
 article a{
