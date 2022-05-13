@@ -85,7 +85,7 @@ module.exports = function(eleventyConfig){
     };
     let markdownLib = markdownIt(mdiOptions)
         .use(markdownItFootnote)
-        .use(markdownItImageFigures, { figcaption: true });
+        .use(markdownItImageFigures, { figcaption: true, lazy: true, async: true });
     eleventyConfig.setLibrary('md', markdownLib);
 
     // add other plugins
