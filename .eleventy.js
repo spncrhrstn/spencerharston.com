@@ -13,7 +13,8 @@ module.exports = function(eleventyConfig){
         'src/static': 'static/',
         'src/favicon.ico': '/favicon.ico',
         'node_modules/@fontsource/noto-sans/': 'static/fonts/noto-sans/',
-        'node_modules/@fontsource/jetbrains-mono/': 'static/fonts/jetbrains-mono/'
+        'node_modules/@fontsource/jetbrains-mono/': 'static/fonts/jetbrains-mono/',
+        'node_modules/feather-icons/dist/feather-sprite.svg':'static/img/icons/feather-sprite.svg'
     });
 
     // filter to return a date as an ISO string
@@ -46,6 +47,11 @@ module.exports = function(eleventyConfig){
     // shortcode for returning a github link to the current build commit
     eleventyConfig.addNunjucksShortcode('commit_link', function(inner_text){
         return `<a href=${this.ctx.metadata.repo}/tree/${ this.ctx.git.long_sha }>${ inner_text }</a>`;
+    });
+
+    // shortcode for returning markup for an icon
+    eleventyConfig.addNunjucksShortcode('iconify', function(iconName, size='20'){
+        return `<svg class="feather" style="width:${size}px; height:${size}px;"><use href="/static/img/icons/feather-sprite.svg#${iconName}" /></svg>`;
     });
 
 

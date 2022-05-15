@@ -173,11 +173,33 @@ footer > div {
     width: 100%;
     max-width: var(--width-90);
     margin: 0 auto;
-    padding: .5rem 1rem;
+    padding: 1rem;
 }
 
-footer p {
-    margin: .5rem 0;
+footer .footer-content{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-content > span:not(:last-child)::after {
+    content: "•";
+    padding: 0 6px;
+}
+
+.feather {
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;   
+}
+
+.has-icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero{
@@ -271,14 +293,6 @@ hr.footnotes-sep{
 
 .post-list h2{
     margin-top: .5rem;
-}
-
-.post-meta {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    column-gap: 16px;
 }
 
 .post-list hr{
@@ -393,6 +407,13 @@ hr.footnotes-sep{
 
 .no-margin{
     margin: 0;
+}
+
+.flex-row{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: .5rem;
 }
 
 /* media queries */

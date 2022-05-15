@@ -1,10 +1,10 @@
 <footer>
     <div>
-        <p class="text-xs text-center">
-            &copy;2022 • 
-            Powered by <a href="https://www.11ty.dev/">Eleventy</a>, <a href="https://https://www.netlify.com">Netlify</a> and 🍀 • 
-            <span class="font-mono">{% commit_link git.short_sha %}</span> •
-            <span><a href="/feed.xml">RSS Feed</a></span>
-        </p>
+        <div class="footer-content">
+            <span>&copy; 2022</span>
+            <span>Powered by <a href="https://www.11ty.dev/">Eleventy</a> and 🍀</span>
+            <span class="font-mono">{% commit_link git.short_sha %}</span>
+            <span class="has-icon"><a href="/feed.xml" class="has-icon">{% iconify "rss", "20" %}</a></span>
+        </div>
     </div>
 </footer>

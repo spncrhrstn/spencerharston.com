@@ -4,4 +4,8 @@
 
 The personal website of Spencer Harston - an eternal WIP.
 
-Built with [Eleventy](https://www.11ty.dev) and deployed on [Netlify](https://www.netlify.com). 
+## Credits
+
+* Built with [Eleventy](https://www.11ty.dev)
+* Deployed on [Netlify](https://www.netlify.com)
+* Icons from [Feather](https://feathericons.com)
