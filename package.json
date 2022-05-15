@@ -23,6 +23,7 @@
   "homepage": "https://github.com/sphars/spencerharston.com#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.2",
     "async-git": "^1.13.3"
   },
   "dependencies": {

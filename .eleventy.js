@@ -1,5 +1,6 @@
 const { DateTime } = require('luxon');
 const readingTime = require('eleventy-plugin-reading-time');
+const pluginRss = require('@11ty/eleventy-plugin-rss');
 
 /**
  * @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig 
@@ -90,6 +91,7 @@ module.exports = function(eleventyConfig){
 
     // add other plugins
     eleventyConfig.addPlugin(readingTime);
+    eleventyConfig.addPlugin(pluginRss);
 
     return {
         dir: {
