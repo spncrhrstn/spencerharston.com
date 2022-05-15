@@ -181,6 +181,7 @@ footer .footer-content{
     flex-flow: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 footer .footer-content > span:not(:last-child)::after {
