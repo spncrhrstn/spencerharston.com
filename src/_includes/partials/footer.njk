@@ -2,11 +2,9 @@
     <div>
         <div class="footer-content text-s">
             <span>&copy; 2020&ndash;2022</span>
-            <span>Powered by <a href="https://www.11ty.dev/">Eleventy</a> and 🍀</span>
-        </div>
-        <div class="footer-content text-s">
-            <span class="font-mono">{% commit_link git.short_sha %}</span>
-            <span class="has-icon"><a href="/feed.xml" class="has-icon">{% iconify "rss", "20" %}</a></span>
+            <span><a href="/colophon">Colophon</a></span>
+            <span class="font-mono" title="{{ git.commit_date }}">{% commit_link git.short_sha %}</span>
+            <span class="has-icon"><a href="/feed.xml" class="has-icon" title="RSS Feed">{% iconify "rss", "20" %}</a></span>
         </div>
     </div>
 </footer>
