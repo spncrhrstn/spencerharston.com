@@ -166,6 +166,10 @@ header .site-logo-image{
     border-top: 1px solid var(--blueish-2);
 }
 
+#site-nav.is-active ul {
+    justify-content: left;
+}
+
 header .site-nav ul {
     display: flex;
     flex-flow: row wrap;
