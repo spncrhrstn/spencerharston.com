@@ -23,9 +23,9 @@
   "homepage": "https://github.com/sphars/spencerharston.com#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
-    "@11ty/eleventy-plugin-rss": "^1.1.2",
-    "@fontsource/jetbrains-mono": "^4.5.5",
-    "@fontsource/noto-sans": "^4.5.9",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@fontsource/jetbrains-mono": "^4.5.10",
+    "@fontsource/noto-sans": "^4.5.11",
     "async-git": "^1.13.3",
     "eleventy-plugin-reading-time": "^0.0.1",
     "feather-icons": "^4.29.0",
