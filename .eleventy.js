@@ -1,6 +1,8 @@
 const { DateTime } = require('luxon');
 const readingTime = require('eleventy-plugin-reading-time');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+const fs = require('node:fs');
+const path = require('node:path');
 
 /**
  * @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig 
@@ -16,6 +18,11 @@ module.exports = function(eleventyConfig){
         'node_modules/@fontsource/jetbrains-mono/': 'static/fonts/jetbrains-mono/',
         'node_modules/feather-icons/dist/feather-sprite.svg':'static/img/icons/feather-sprite.svg'
     });
+
+    // get a count of current draft files
+    const draftsPath = path.join(__dirname, "src/posts/drafts");
+    const draftFiles = fs.readdirSync(draftsPath).filter(file => file.endsWith('.md'));
+    eleventyConfig.addGlobalData("draftCount", draftFiles.length);
 
     // filter to return a date as an ISO string
     eleventyConfig.addFilter('dateISO', (dateObj) => {
