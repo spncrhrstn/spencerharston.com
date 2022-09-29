@@ -1,6 +1,6 @@
 module.exports = {
-    eleventyComputed: {
-        layout: "layouts/post",
-        permalink: "posts/{{ title | slugify }}/"
-    }
-}
+  eleventyComputed: {
+    layout: "layouts/post",
+    permalink: "posts/{{ title | slugify }}/"
+  }
+};

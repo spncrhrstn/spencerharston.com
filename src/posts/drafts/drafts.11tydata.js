@@ -1,6 +1,6 @@
 module.exports = {
-    eleventyComputed: {
-        draft: true,
-        title: data => `[DRAFT] ${data.title}`
-    }
-}
+  eleventyComputed: {
+    draft: true,
+    title: data => `[DRAFT] ${data.title}`
+  }
+};

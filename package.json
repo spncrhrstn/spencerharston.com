@@ -4,6 +4,8 @@
   "description": "The website of Spencer Harston",
   "private": true,
   "scripts": {
+    "lint": "eslint \"./**/*.js\"",
+    "lint:fix": "eslint \"./**/*.js\" --fix",
     "dev:clean": "rm -rf ./dist",
     "dev:11ty": "eleventy --serve",
     "dev": "run-s dev:clean dev:11ty",
@@ -28,6 +30,7 @@
     "@fontsource/noto-sans": "^4.5.11",
     "async-git": "^1.13.3",
     "eleventy-plugin-reading-time": "^0.0.1",
+    "eslint": "^8.24.0",
     "feather-icons": "^4.29.0",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-image-figures": "^2.1.0",
