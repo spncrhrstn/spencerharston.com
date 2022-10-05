@@ -13,11 +13,12 @@
 <!-- <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image:alt" content="Image descriptipn"> -->
 
-<link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/static/img/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/static/img/icons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/static/img/icons/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/img/icons/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/img/icons/favicon-16x16.png?v=1">
+<link rel="shortcut icon" href="/static/img/icons/favicon.ico?v=1">
 
-<title>{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.site_title }}</title>
+<title>{%- if renderData.title %}{{ renderData.title }}{% elif title %}{{ title }}{% else %}{{ metadata.site_title }}{% endif %}</title>
 
 <link rel="stylesheet" type="text/css" href="/static/css/style.css">
 
