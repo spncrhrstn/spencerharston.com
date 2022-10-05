@@ -1,6 +1,6 @@
 ---
-title: Quick and Dirty Method to Update Python on WSL2
-description: Want to update Python to a newer version on WSL2? Here's one way. Is it the best way? Maybe. Probably not.
+title: Updating Python on Ubuntu 20.04 on WSL2
+description: Want to update Python to a newer version on WSL2? Here's one way.
 date: 2022-05-14
 tags: 
     - tutorial
@@ -8,11 +8,9 @@ tags:
     - python
 ---
 
-Ubuntu on WSL2 currently comes loaded with Python v3.8, which is the default in Ubuntu 20.04. I wanted to update to Python v3.10, as I try to use more recent software releases when starting new projects. Updating Python took more work than I thought it would (I'm more familiar with Node and utilizing [node version manager](https://github.com/nvm-sh/nvm) to manage Node versions). Eventually I did get it all worked out, and in an effort to remember what I did, I'm writing this post to jot down the steps. 
+Ubuntu on WSL2 currently comes loaded with Python v3.8, which is the default in Ubuntu 20.04. I wanted to update to Python v3.10, as I try to use more recent software releases when starting new projects. Updating Python took more work than I thought it would (I'm more familiar with Node and utilizing [node version manager](https://github.com/nvm-sh/nvm) to manage Node versions). Eventually I did get it all worked out, and in an effort to remember what I did, I'm writing this post to jot down the steps.^[Also, I had to use my bash history to find all the commands I ran...] 
 
-Please be aware thant I'm not fully up-to-date on current Python practices. Chances are these steps may not be best methods, but it worked for me.^[Also, I'm having to use my bash history to find all the commands I ran...]
-
-*Note that I'm using Ubuntu as my base OS on WSL2, methods will differ for other distros.*
+Please be aware that I'm not fully up-to-date on current Python practices. Chances are these steps may not be best methods, but it worked for me.
 
 ## Steps
 
@@ -77,10 +75,7 @@ Now when you run `python --version` you should get `Python 3.10.4`.^[I'm not 100
 To finish up, there's a few other Python tools necessary for development. You'll need `pip` for package management, `venv` for virtual environments, and a couple other tools:
 
 ```bash
-sudo apt install python3-pip
-sudo apt install python3.10-pip
-sudo apt install python3.10-venv
-sudo apt install python3.10-distutils
+sudo apt install python3-pip python3.10-pip python3.10-venv python3.10-distutils
 curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
 source ~/.bashrc
 pip --version
