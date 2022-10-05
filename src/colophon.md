@@ -8,11 +8,13 @@ title: Colophon
 This site was built with the following:
 
 * Static site generator: [Eleventy](https://www.11ty.dev)
-* Hosting: [Netlify](https://www.netlify.com) and [GitHub](https://github.com/sphars/spencerharston.com)
-* Domain registrar: [Porkbun](https://porkbun.com)
-* Editor: [VS Code](https://code.visualstudio.com) (theme: [Popping and Locking](https://marketplace.visualstudio.com/items?itemName=hedinne.popping-and-locking-vscode))
 * Fonts: [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) and [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 * Icons: [Feather Icons](https://feathericons.com)
+* Hosting: [Netlify](https://www.netlify.com) and [GitHub](https://github.com/sphars/spencerharston.com)
+* Domain registrar: [Porkbun](https://porkbun.com)
+* Editor: [VS Code](https://code.visualstudio.com) 
+  * Theme: [Popping and Locking](https://marketplace.visualstudio.com/items?itemName=hedinne.popping-and-locking-vscode)
+  * Font: [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 * ❤ and 🍀
 
 Made in Ogden, UT
