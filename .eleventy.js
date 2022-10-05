@@ -13,7 +13,7 @@ module.exports = function(eleventyConfig){
   // passthrough copying of static files
   eleventyConfig.addPassthroughCopy({
     "src/static": "static/",
-    "src/favicon.ico": "/favicon.ico",
+    "src/static/img/icons/favicon.ico": "/favicon.ico",
     "node_modules/@fontsource/noto-sans/": "static/fonts/noto-sans/",
     "node_modules/@fontsource/jetbrains-mono/": "static/fonts/jetbrains-mono/",
     "node_modules/feather-icons/dist/feather-sprite.svg":"static/img/icons/feather-sprite.svg"
