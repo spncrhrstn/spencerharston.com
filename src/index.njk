@@ -13,4 +13,4 @@ layout: layouts/base
 <hr>
 
 {% set latestPost = collections.posts | sortDesc | first %}
-<h2 class="text-center">Latest Post: <a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></h2>
+<p class="text-center text-l">Latest Post: <a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></p>
