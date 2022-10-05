@@ -99,11 +99,9 @@ header .site-logo-link{
 }
 
 header .site-logo-image{
-    height: 36px;
-    width: 36px;
-    border: 1px solid var(--blueish-4);
-    padding: .25rem;
-    background-color: var(--blueish-0);
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--grayish-2);
 }
 
 /* Main nav burger */
@@ -451,6 +449,10 @@ hr.footnotes-sep{
 
 .text-xl{
     font-size: 2rem;
+}
+
+.text-l{
+    font-size: 1.25rem;
 }
 
 .text-s{
