@@ -165,7 +165,7 @@ header .site-logo-image{
 }
 
 #site-nav.is-active ul {
-    justify-content: left;
+    justify-content: center;
 }
 
 header .site-nav ul {
@@ -204,7 +204,6 @@ pre, code, kbd{
 
 pre code{
     display: inline-block;
-    background-color: var(--blueish-1);
     width: 100%;
     padding: 1rem calc(2rem - 8px);
     white-space: pre;
