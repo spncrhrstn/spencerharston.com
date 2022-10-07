@@ -165,7 +165,7 @@ header .site-logo-image{
 }
 
 #site-nav.is-active ul {
-    justify-content: left;
+    justify-content: center;
 }
 
 header .site-nav ul {
@@ -202,17 +202,12 @@ pre, code, kbd{
     font-family: var(--font-family-mono);
 }
 
-pre{
-    white-space: pre-wrap;
-    overflow: auto;
-}
-
 pre code{
     display: inline-block;
-    /* border-left: 4px solid #ffe135; */
-    background-color: var(--blueish-1);
     width: 100%;
-    padding: 1rem calc(2rem - 6px);
+    padding: 1rem calc(2rem - 8px);
+    white-space: pre;
+    overflow-x: auto;
 }
 
 code {
@@ -222,7 +217,6 @@ code {
     color: var(--blueish-4);
     border: 1px solid var(--blueish-2);
 }
-
 
 footer{
     background-color: var(--blueish-1);
