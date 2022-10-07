@@ -80,7 +80,6 @@ curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
 source ~/.bashrc
 pip --version
 ```
-*Note: I'm also not sure which pip package to install, but definitely the 3.10 versions, since that's the version of Python we just installed.*
 
 #### 4.1 Virtual Environments
 
