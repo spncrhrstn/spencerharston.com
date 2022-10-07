@@ -4,7 +4,7 @@
 <meta name="description" content="{{ description or metadata.description }}">
 
 <meta name="generator" content="{{ eleventy.generator }}">
-<meta property="og:title" content="{%- if renderData.title %}{{ renderData.title }} | {% elif title %}{{ title }} | {% endif %}{{ metadata.site_title }}">
+<meta property="og:title" content="{%- if renderData.title %}{{ renderData.title }}{% elif title %}{{ title }}{% else %}{{ metadata.site_title }}{% endif %}">
 <meta property="og:description" content="{{ description or metadata.description }}">
 <meta property="og:url" content="{{ metadata.base_url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ metadata.site_title }}">

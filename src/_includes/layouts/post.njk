@@ -7,16 +7,24 @@ layout: layouts/base
         <h1>{{ title }}</h1>
         <p class="subheading">{{ description }}</p>
         <div class="post-meta flex-row text-muted">
-            <div class="flex-row">
+            <div class="flex-row small-gap">
                 <span class="has-icon">{% iconify "calendar", "20" %}</span>
                 <time datetime="{{ page.date | dateISO }}">{{ page.date | datePretty }}</time>
                 {% if updated %}
                 | Updated: <time datetime="{{ updated | dateISO }}">{{ updated | datePretty }}</time>
                 {% endif %}
             </div>
-            <div class="flex-row">
+            <div class="flex-row small-gap">
                 <span class="has-icon">{% iconify "clock", "20" %}</span>
                 <span> {{ content | readingTime }} read </span>
+            </div>
+            <div class="flex-row small-gap">
+                <div class="has-icon">{% iconify "tag" %}</div> 
+                <ul class="tag-list">
+                    {% for tag in tags %}
+                    <li class="tag"><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </div>
@@ -25,14 +33,17 @@ layout: layouts/base
 </article>
 
 <div class="post-footer text-muted">
-    <div class="flex-row">
+    <!-- <div class="flex-row">
         <div class="has-icon">{% iconify "tag" %}</div> 
         <ul class="tag-list">
             {% for tag in tags %}
             <li class="tag"><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
             {% endfor %}
         </ul>
-    </div>
+    </div> -->
     
-    <p class="text-s text-muted">Got something to share? The source for this page is available on {% page_source_link 'GitHub' %}</p>
+    <p class="text-s text-muted">
+        This post is licensed under <a href="http://creativecommons.org/licenses/by/4.0/" rel="noopener noreferrer" target="_blank">CC BY 4.0</a> by the author. 
+        The source is available on {% page_source_link 'GitHub' %}.
+    </p>
 </div>
