@@ -214,7 +214,7 @@ pre code{
     width: 100%;
     padding: 1rem calc(2rem - 8px);
     white-space: no-wrap;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 code {
