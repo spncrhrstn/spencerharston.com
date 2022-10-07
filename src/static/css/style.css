@@ -203,8 +203,8 @@ pre, code, kbd{
 }
 
 pre{
-    white-space: pre-wrap;
-    overflow: auto;
+    /* white-space: pre-wrap;
+    overflow-x: scroll; */
 }
 
 pre code{
@@ -212,7 +212,9 @@ pre code{
     /* border-left: 4px solid #ffe135; */
     background-color: var(--blueish-1);
     width: 100%;
-    padding: 1rem calc(2rem - 6px);
+    padding: 1rem calc(2rem - 8px);
+    white-space: no-wrap;
+    overflow-x: scroll;
 }
 
 code {
