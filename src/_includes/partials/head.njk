@@ -4,7 +4,11 @@
 <meta name="description" content="{{ description or metadata.description }}">
 
 <meta name="generator" content="{{ eleventy.generator }}">
-<meta property="og:title" content="{%- if renderData.title %}{{ renderData.title }}{% elif title %}{{ title }}{% else %}{{ metadata.site_title }}{% endif %}">
+{%- if type == "post" %}
+<meta property="og:type" content="article">
+<meta property="article:author" content="{{ author or metadata.author }}">
+{%- endif %}
+<meta property="og:title" content="{{ renderData.title or title or metadata.site_title }}">
 <meta property="og:description" content="{{ description or metadata.description }}">
 <meta property="og:url" content="{{ metadata.base_url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ metadata.site_title }}">
@@ -18,10 +22,10 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/static/img/icons/favicon-16x16.png?v=1">
 <link rel="shortcut icon" href="/static/img/icons/favicon.ico?v=1">
 
-<title>{%- if renderData.title %}{{ renderData.title }}{% elif title %}{{ title }}{% else %}{{ metadata.site_title }}{% endif %}</title>
+<title>{{ renderData.title or title or metadata.site_title }}</title>
 
 <link rel="stylesheet" type="text/css" href="/static/css/style.css">
 
-{% if env.environment == "production" %}
+{%- if env.environment == "production" %}
 <script data-goatcounter="https://suave-sandwich.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-{% endif %}
+{%- endif %}
