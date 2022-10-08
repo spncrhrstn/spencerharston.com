@@ -16,7 +16,7 @@
     --grayish-0: #1b1b1e;
     --grayish-1: #2c2c2d;
     --grayish-2: #6c757d;
-    --grayish-3: #889199;
+    --grayish-3: #afb5bb;
     --grayish-4: #f2f2f2;
     --orange-0: #d2603a;    
 }
@@ -294,7 +294,7 @@ article .footnotes code{
 
 article hr{
     border: none;
-    border-bottom: 1px solid var(--grayish-3);
+    border-bottom: 1px solid var(--grayish-2);
 }
 
 article blockquote{
@@ -324,11 +324,15 @@ figure figcaption{
 
 hr.footnotes-sep{
     border: none;
-    border-bottom: 1px dashed var(--grayish-3);
+    border-bottom: 1px dashed var(--grayish-2);
 }
 
 .post-header{
     padding-bottom: 1rem;
+}
+
+.post-meta {
+    flex-wrap: wrap;
 }
 
 .post-footer{
@@ -398,7 +402,7 @@ hr.footnotes-sep{
 
 .tag{
     display: inline-block;
-    border: 1px solid var(--grayish-2);
+    border: 1px solid var(--grayish-3);
     border-radius: 1rem;
 }
 
@@ -417,7 +421,7 @@ hr.footnotes-sep{
     text-decoration: none;
     text-align: center;
     font-size: .9rem;
-    color: var(--grayish-2);
+    color: var(--grayish-3);
 }
 
 .tag a:hover{
@@ -430,7 +434,7 @@ hr.footnotes-sep{
 }
 
 .hr-dashed{
-    border-bottom: 1px dashed var(--grayish-3);
+    border-bottom: 1px dashed var(--grayish-2);
 }
 
 .text-right{
