@@ -498,12 +498,37 @@ hr.footnotes-sep{
         color: var(--blueish-2);
     }
 
+    code {
+        background-color: var(--grayish-4);
+        color: var(--grayish-1);
+    }
+
+    .tag {
+        border: 1px solid var(--grayish-2);
+    }
+
+    .tag a {
+        color: var(--grayish-2);
+    }
+
     hr{
         border-bottom: 1px solid var(--blueish-1);
     }
 
     .hr-dashed{
         border-bottom: 1px dashed var(--blueish-1);
+    }
+
+    .hero {
+        background-color: var(--blueish-4);
+    }
+
+    .hero p{
+        color: var(--grayish-1);
+    }
+
+    .text-muted {
+        color: var(--grayish-2);
     }
 }
 
