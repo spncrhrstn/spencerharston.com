@@ -1,8 +1,34 @@
 const { DateTime } = require("luxon");
 const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const image = require("@11ty/eleventy-img");
 const fs = require("node:fs");
 const path = require("node:path");
+
+// functions
+// get and generate an image
+async function imageShortcode(src, alt, sizes) {
+  let metadata = await image(src, {
+    widths: [928, 400],
+    formats: ["webp", "jpeg"],
+    urlPath: "/static/img/posts",
+    outputDir: "./dist/static/img/posts/",
+    sharpJpegOptions: { quality: 90 },
+    sharpWebpOptions: { quality: 90 }
+  });
+
+  let imageAttrs = {
+    alt,
+    sizes,
+    loading: "lazy",
+    decoding: "async",
+    "style": "object-fit: cover; object-position:center center; max-width: 100%; height: auto; aspect-ratio: 24/7;"
+  };
+
+  return image.generateHTML(metadata, imageAttrs, { whitespaceMode: "inline" });
+}
+
+
 
 /**
  * @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig 
@@ -61,6 +87,7 @@ module.exports = function(eleventyConfig){
     return `<svg class="feather" style="width:${size}px; height:${size}px;"><use href="/static/img/icons/feather-sprite.svg#${iconName}" /></svg>`;
   });
 
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
   // if we're on production, skip any post drafts
   if(process.env.ELEVENTY_ENV == "production"){
