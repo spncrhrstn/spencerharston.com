@@ -6,8 +6,8 @@ tags:
     - tutorial
     - development
     - python
-image: https://images.unsplash.com/photo-1521811638546-64c3e3ece9d1
-imageAlt: Dark granite
+image: https://images.unsplash.com/photo-1608501821300-4f99e58bba77
+imageAlt: Dark swirls
 ---
 
 Ubuntu on WSL2 currently comes loaded with Python v3.8, which is the default in Ubuntu 20.04. I wanted to update to Python v3.10, as I try to use more recent software releases when starting new projects. Updating Python took more work than I thought it would (I'm more familiar with Node and utilizing [node version manager](https://github.com/nvm-sh/nvm) to manage Node versions). Eventually I did get it all worked out, and in an effort to remember what I did, I'm writing this post to jot down the steps.^[Also, I had to use my bash history to find all the commands I ran...] 

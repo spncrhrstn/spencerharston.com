@@ -8,13 +8,17 @@ const path = require("node:path");
 // functions
 // get and generate an image
 async function imageShortcode(src, alt, sizes) {
+
+  // add some crop parameters from unsplash
+  src = src + "?ixlib=rb-1.2.1&fit=crop&crop=edges&h=270&w=928&q=100&auto=format";
+
   let metadata = await image(src, {
     widths: [928, 400],
     formats: ["webp", "jpeg"],
     urlPath: "/static/img/posts",
     outputDir: "./dist/static/img/posts/",
     sharpJpegOptions: { quality: 90 },
-    sharpWebpOptions: { quality: 70 }
+    sharpWebpOptions: { quality: 90 }
   });
 
   let imageAttrs = {
