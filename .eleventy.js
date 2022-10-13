@@ -14,7 +14,7 @@ async function imageShortcode(src, alt, sizes) {
     urlPath: "/static/img/posts",
     outputDir: "./dist/static/img/posts/",
     sharpJpegOptions: { quality: 90 },
-    sharpWebpOptions: { quality: 90 }
+    sharpWebpOptions: { quality: 70 }
   });
 
   let imageAttrs = {
@@ -25,7 +25,7 @@ async function imageShortcode(src, alt, sizes) {
     "style": "object-fit: cover; object-position:center center; max-width: 100%; height: auto; aspect-ratio: 24/7;"
   };
 
-  return image.generateHTML(metadata, imageAttrs, { whitespaceMode: "inline" });
+  return image.generateHTML(metadata, imageAttrs);
 }
 
 
