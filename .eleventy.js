@@ -15,10 +15,13 @@ async function imageHeaderShortcode(src, alt, sizes) {
   let metadata = await image(src, {
     widths: [928, 400],
     formats: ["webp", "jpeg"],
-    urlPath: "/static/img/posts",
-    outputDir: "./dist/static/img/posts/",
+    urlPath: `/${this.ctx.permalink}/images`,
+    outputDir: `./dist/${this.ctx.permalink}/images`,
     sharpJpegOptions: { quality: 90 },
-    sharpWebpOptions: { quality: 90 }
+    sharpWebpOptions: { quality: 90 },
+    filenameFormat: function(id, src, width, format, options){
+      return `header-${width}w.${format}`;
+    }
   });
 
   let imageAttrs = {
@@ -33,18 +36,22 @@ async function imageHeaderShortcode(src, alt, sizes) {
 }
 
 async function imageMetaShortcode(src) {
-  src = src + "?ixlib=rb-1.2.1&fit=crop&crop=edges&h=627&w=1200&q=100&auto=format";
+  src = src + "?ixlib=rb-1.2.1&fit=crop&crop=edges&h=630&w=1200&q=100&auto=format";
 
   let metadata = await image(src, {
     widths: [1200],
     formats: ["jpeg"],
-    urlPath: "/static/img/posts/meta",
-    outputDir: "./dist/static/img/posts/meta",
-    sharpJpegOptions: { quality: 90 }
+    urlPath: `/${this.ctx.permalink}/images`,
+    outputDir: `./dist/${this.ctx.permalink}/images`,
+    sharpJpegOptions: { quality: 90 },
+    filenameFormat: function(id, src, width, format, options){
+      const name = `meta`;
+      return `meta-${width}w.${format}`;
+    }
   });
 
   let data = metadata.jpeg[metadata.jpeg.length - 1];
-  return `${data.url}`;
+  return `${this.ctx.metadata.base_url}${data.url}`;
 }
 
 
