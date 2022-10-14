@@ -7,7 +7,7 @@ const path = require("node:path");
 
 // functions
 // get and generate an image
-async function imageShortcode(src, alt, sizes) {
+async function imageHeaderShortcode(src, alt, sizes) {
 
   // add some crop parameters from unsplash
   src = src + "?ixlib=rb-1.2.1&fit=crop&crop=edges&h=270&w=928&q=100&auto=format";
@@ -32,6 +32,20 @@ async function imageShortcode(src, alt, sizes) {
   return image.generateHTML(metadata, imageAttrs);
 }
 
+async function imageMetaShortcode(src) {
+  src = src + "?ixlib=rb-1.2.1&fit=crop&crop=edges&h=627&w=1200&q=100&auto=format";
+
+  let metadata = await image(src, {
+    widths: [1200],
+    formats: ["jpeg"],
+    urlPath: "/static/img/posts/meta",
+    outputDir: "./dist/static/img/posts/meta",
+    sharpJpegOptions: { quality: 90 }
+  });
+
+  let data = metadata.jpeg[metadata.jpeg.length - 1];
+  return `${data.url}`;
+}
 
 
 /**
@@ -91,7 +105,8 @@ module.exports = function(eleventyConfig){
     return `<svg class="feather" style="width:${size}px; height:${size}px;"><use href="/static/img/icons/feather-sprite.svg#${iconName}" /></svg>`;
   });
 
-  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode("imageHeader", imageHeaderShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode("imageMeta", imageMetaShortcode);
 
   // if we're on production, skip any post drafts
   if(process.env.ELEVENTY_ENV == "production"){
