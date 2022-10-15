@@ -277,7 +277,7 @@ article{
 }
 article h1{
     font-size: 2em;
-    margin: 3rem 0;
+    margin: 3rem 0 2rem 0;
 }
 
 article a{
@@ -285,11 +285,11 @@ article a{
 }
 
 article .footnotes{
-    font-size: .95rem;
+    font-size: .9rem;
 }
 
 article .footnotes code{
-    font-size: .9rem;
+    font-size: .85rem;
 }
 
 article hr{
@@ -333,6 +333,7 @@ hr.footnotes-sep{
 
 .post-meta {
     flex-wrap: wrap;
+    row-gap: .5rem;
 }
 
 .post-footer{
