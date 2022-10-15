@@ -11,7 +11,7 @@ layout: layouts/base
         {% endif %}
 
         <p class="subheading">{{ description }}</p>
-        <div class="post-meta flex-row text-muted">
+        <div class="post-meta flex-row text-s">
             <div class="flex-row small-gap">
                 <span class="has-icon">{% iconify "user", 20 %}</span>
                 <span>{{ author or metadata.author }}</span>
@@ -33,7 +33,7 @@ layout: layouts/base
     {{ content | safe }}
 </article>
 
-<div class="post-footer text-muted">
+<div class="post-footer">
     <div class="flex-row small-gap">
         <div class="has-icon">{% iconify "tag" %}</div> 
         <ul class="tag-list">
@@ -43,7 +43,7 @@ layout: layouts/base
         </ul>
     </div>
     
-    <p class="text-s text-muted">
+    <p class="text-s">
         This post is licensed under <a href="http://creativecommons.org/licenses/by/4.0/" rel="noopener noreferrer" target="_blank">CC BY 4.0</a> by the author.
         {%- if image %} Header photo from <a href="{{ image }}">Unsplash</a>.<br>{%- endif %}
         The source for this page is available on {% page_source_link 'GitHub' %}.

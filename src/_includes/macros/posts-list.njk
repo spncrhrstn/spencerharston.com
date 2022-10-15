@@ -7,7 +7,7 @@
         <p class="">
             {{ post.data.description }}
         </p>
-        <div class="post-meta text-muted">
+        <div class="post-meta">
             <div class="text-s">
                 <time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | datePretty }}</time><span> | {{ post | readingTime }} read </span>
             </div>

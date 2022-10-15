@@ -403,7 +403,7 @@ hr.footnotes-sep{
 
 .tag{
     display: inline-block;
-    border: 1px solid var(--grayish-3);
+    border: 1px solid var(--grayish-4);
     border-radius: 1rem;
 }
 
@@ -422,7 +422,7 @@ hr.footnotes-sep{
     text-decoration: none;
     text-align: center;
     font-size: .9rem;
-    color: var(--grayish-3);
+    color: var(--grayish-4);
 }
 
 .tag a:hover{
@@ -460,10 +460,6 @@ hr.footnotes-sep{
 
 .text-xs{
     font-size: .8rem;
-}
-
-.text-muted{
-    color: var(--grayish-3);
 }
 
 .font-mono{
@@ -505,11 +501,11 @@ hr.footnotes-sep{
     }
 
     .tag {
-        border: 1px solid var(--grayish-2);
+        border: 1px solid var(--grayish-1);
     }
 
     .tag a {
-        color: var(--grayish-2);
+        color: var(--grayish-1);
     }
 
     hr{
@@ -526,10 +522,6 @@ hr.footnotes-sep{
 
     .hero p{
         color: var(--grayish-1);
-    }
-
-    .text-muted {
-        color: var(--grayish-2);
     }
 }
 
