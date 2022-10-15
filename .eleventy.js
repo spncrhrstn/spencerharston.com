@@ -19,7 +19,7 @@ async function imageHeaderShortcode(src, alt, sizes) {
     outputDir: `./dist/${this.ctx.permalink}/images`,
     sharpJpegOptions: { quality: 90 },
     sharpWebpOptions: { quality: 90 },
-    filenameFormat: function(width, format){
+    filenameFormat: function(id, src, width, format, options){
       return `header-${width}w.${format}`;
     }
   });
@@ -44,7 +44,8 @@ async function imageMetaShortcode(src) {
     urlPath: `/${this.ctx.permalink}/images`,
     outputDir: `./dist/${this.ctx.permalink}/images`,
     sharpJpegOptions: { quality: 90 },
-    filenameFormat: function(width, format){
+    filenameFormat: function(id, src, width, format, options){
+      const name = "meta";
       return `meta-${width}w.${format}`;
     }
   });
@@ -62,7 +63,8 @@ async function imageMetaTWShortcode(src) {
     urlPath: `/${this.ctx.permalink}/images`,
     outputDir: `./dist/${this.ctx.permalink}/images`,
     sharpJpegOptions: { quality: 90 },
-    filenameFormat: function(width, format){
+    filenameFormat: function(id, src, width, format, options){
+      const name = "meta";
       return `meta-tw-${width}w.${format}`;
     }
   });
