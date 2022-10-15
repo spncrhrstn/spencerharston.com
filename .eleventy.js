@@ -54,6 +54,25 @@ async function imageMetaShortcode(src) {
   return `${this.ctx.metadata.base_url}${data.url}`;
 }
 
+async function imageMetaTWShortcode(src) {
+  src = src + "?ixlib=rb-1.2.1&fit=crop&crop=edges&h=600&w=1200&q=100&auto=format";
+
+  let metadata = await image(src, {
+    widths: [1200],
+    formats: ["jpeg"],
+    urlPath: `/${this.ctx.permalink}/images`,
+    outputDir: `./dist/${this.ctx.permalink}/images`,
+    sharpJpegOptions: { quality: 90 },
+    filenameFormat: function(id, src, width, format, options){
+      const name = `meta`;
+      return `meta-tw-${width}w.${format}`;
+    }
+  });
+
+  let data = metadata.jpeg[metadata.jpeg.length - 1];
+  return `${this.ctx.metadata.base_url}${data.url}`;
+}
+
 
 /**
  * @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig 
@@ -114,6 +133,7 @@ module.exports = function(eleventyConfig){
 
   eleventyConfig.addNunjucksAsyncShortcode("imageHeader", imageHeaderShortcode);
   eleventyConfig.addNunjucksAsyncShortcode("imageMeta", imageMetaShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode("imageMetaTW", imageMetaTWShortcode);
 
   // if we're on production, skip any post drafts
   if(process.env.ELEVENTY_ENV == "production"){
