@@ -31,7 +31,7 @@
     "@fontsource/noto-sans": "^4.5.11",
     "async-git": "^1.13.3",
     "eleventy-plugin-reading-time": "^0.0.1",
-    "eslint": "^8.28.0",
+    "eslint": "^8.30.0",
     "feather-icons": "^4.29.0",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-image-figures": "^2.1.0",
