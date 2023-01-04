@@ -19,4 +19,4 @@ This site was built with the following:
 
 Made in Ogden, UT
 
-&copy; 2020&ndash;2022 Spencer Harston
+&copy; 2020&ndash;2023 Spencer Harston
