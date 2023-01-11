@@ -1,16 +1,16 @@
 ---
 title: Books I've Read in 2023
-description: A list of books I've read this year
-date: 2023-01-09
+description: Just a list of books I've read this year
+date: 2023-01-10
 tags:
     - personal
 image: https://images.unsplash.com/photo-1462392627162-2baa2b3518a8
 imageAlt: a photo of a bookshelf full of books
 ---
 
-Is it cliché to set a goal to read more books at the start of the new year? Yes. Am I doing it anyways? Also yes. I don't have a set number of books to read, I just wanted to read more this year.
+Is it cliché to set a goal to read more books at the start of the new year? Yes. Am I doing it anyways? Also yes. I haven't decided on a firm number of books to read, I just wanted to read more this year.
 
-The following is a list of books I'm currently reading, have finished, decided to not continue (for one reason or another), and potential books. Links are to the Goodreads page of the book.
+The following is a list of books I'm currently reading, have finished, decided to not continue (for one reason or another), and potential books. Links are to the Goodreads entry for the book.
 
 ## Currently Reading
 * [Born a Crime](https://www.goodreads.com/book/show/29780253-born-a-crime) by Trevor Noah
