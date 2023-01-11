@@ -21,10 +21,15 @@ module.exports = function(eleventyConfig){
     "node_modules/feather-icons/dist/feather-sprite.svg":"static/img/icons/feather-sprite.svg"
   });
 
-  // get a count of current draft files
+  // get a count of draft files
   const draftsPath = path.join(__dirname, "src/posts/drafts");
   const draftFiles = fs.readdirSync(draftsPath).filter(file => file.endsWith(".md"));
   eleventyConfig.addGlobalData("draftCount", draftFiles.length);
+
+  // get a count of non-draft files
+  const postsPath = path.join(__dirname, "src/posts");
+  const postsFiles = fs.readdirSync(postsPath).filter(file => file.endsWith(".md"));
+  eleventyConfig.addGlobalData("postCount", postsFiles.length);
 
   // filter to return a date as an ISO string
   eleventyConfig.addFilter("dateISO", (dateObj) => {
