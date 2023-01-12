@@ -3,6 +3,7 @@ const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fs = require("node:fs");
 const path = require("node:path");
+const { isoToDateTime, jsToDateTime } = require("./utils/dates");
 const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode  } = require("./utils/imageGen");
 
 
@@ -33,13 +34,23 @@ module.exports = function(eleventyConfig){
 
   // filter to return a date as an ISO string
   eleventyConfig.addFilter("dateISO", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toUTC().toISO();
+    //console.log("input: ",dateObj);
+    let d = DateTime.fromJSDate(dateObj, { zone: "America/Denver" });
+    //console.log("iso: ", d.toISO());
+    //console.log("pretty: ", d.toLocaleString(DateTime.DATETIME_FULL));
+    return d.toISO();
   });
 
   // filter to return dates as a pretty string, like April 1, 2022
   eleventyConfig.addFilter("datePretty", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toUTC().toLocaleString(DateTime.DATE_FULL);
+    return DateTime.fromJSDate(dateObj, { zone: "America/Denver" }).toLocaleString(DateTime.DATETIME_FULL);
   });
+
+  eleventyConfig.addFilter("dateRFC2822FromISO", (dateObj) => {
+    console.log("date iso:",dateObj, typeof(dateObj));
+    let d = DateTime.fromObject(dateObj).setZone("America/Denver");
+    return d.toISO();
+  })
 
   // filter for sorting a list descending
   eleventyConfig.addFilter("sortDesc" , (posts) => {

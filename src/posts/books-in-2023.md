@@ -1,7 +1,7 @@
 ---
 title: Books I've Read in 2023
 description: Just a list of books I've read this year
-date: 2023-01-11
+date: 2023-01-11 21:56:00 -07:00
 tags:
     - personal
 image: https://images.unsplash.com/photo-1462392627162-2baa2b3518a8
