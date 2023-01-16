@@ -9,7 +9,11 @@
         </p>
         <div class="post-meta">
             <div class="text-s">
-                <time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | datePretty }}</time><span> | {{ post | readingTime }} read </span>
+                <time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | datePretty }}</time>
+                {% if post.data.updated %}
+                | Updated: <time datetime="{{ post.data.updated | dateISO }}">{{ post.data.updated | datePretty }}</time>
+                {% endif %}
+                <span> | {{ post | readingTime }} read </span>
             </div>
         </div>
     </li>
