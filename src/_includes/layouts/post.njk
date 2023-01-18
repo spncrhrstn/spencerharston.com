@@ -19,9 +19,6 @@ layout: layouts/base
             <div class="flex-row small-gap">
                 <span class="has-icon">{% iconify "calendar", "20" %}</span>
                 <time datetime="{{ page.date | dateISO }}" title="{{ page.date | dateISO }}">{{ page.date | datePretty }}</time>
-                {% if updated %}
-                | Updated: <time datetime="{{ updated | dateISO }}" title="{{ updated | dateISO }}">{{ updated | datePretty }}</time>
-                {% endif %}
             </div>
             <div class="flex-row small-gap">
                 <span class="has-icon">{% iconify "clock", "20" %}</span>
@@ -34,6 +31,9 @@ layout: layouts/base
 </article>
 
 <div class="post-footer">
+    {% if updated %}
+        <p class="text-s"><i>Last Updated: <time datetime="{{ updated | dateISO }}" title="{{ updated | dateISO }}">{{ updated | datePretty }}</time></i></p>
+    {% endif %}
     <div class="flex-row small-gap">
         <div class="has-icon">{% iconify "tag" %}</div> 
         <ul class="tag-list">

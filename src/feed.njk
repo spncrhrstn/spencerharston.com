@@ -30,7 +30,7 @@ metadata:
         <title>{{ post.data.title }}</title>
         <link href="{{ absolutePostUrl }}" />
         <summary>{{ post.data.description }}</summary>
-        <updated>{{ post.date | rssDate }}</updated>
+        <updated>{{ post.date | dateToRfc3339 }}</updated>
         <id>{{ absolutePostUrl }}</id>
         <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
     </entry>
