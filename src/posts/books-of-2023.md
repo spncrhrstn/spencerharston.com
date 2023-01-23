@@ -13,14 +13,14 @@ Is it cliché to set a goal to read more books at the start of the new year? Yes
 
 The following is a list of books I'm currently reading, have finished, decided to not continue (for one reason or another), and potential books. Links are to the Goodreads entry for the book.
 
-## Currently Reading
-* [The Count of Monte Cristo](https://www.goodreads.com/book/show/7126.The_Count_of_Monte_Cristo) by Alexandre Dumas
-* [Lamb: The Gospel According to Biff, Christ's Childhood Pal](https://www.goodreads.com/book/show/28881.Lamb) by Christopher Moore
-
 ## Finished Reading
 * [I'm Glad My Mom Died](https://www.goodreads.com/book/show/59364173-i-m-glad-my-mom-died) by Jennette McCurdy
 * [How to Take Over the World](https://www.goodreads.com/book/show/58446218-how-to-take-over-the-world) by Ryan North
 * [Born a Crime](https://www.goodreads.com/book/show/29780253-born-a-crime) by Trevor Noah
+
+## Currently Reading
+* [The Count of Monte Cristo](https://www.goodreads.com/book/show/7126.The_Count_of_Monte_Cristo) by Alexandre Dumas
+* [Lamb: The Gospel According to Biff, Christ's Childhood Pal](https://www.goodreads.com/book/show/28881.Lamb) by Christopher Moore
 
 ## Didn't Finish
 * [The Cartographers](https://www.goodreads.com/book/show/55004093-the-cartographers) by Peng Shepherd
