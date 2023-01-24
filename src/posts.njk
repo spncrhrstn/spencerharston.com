@@ -11,16 +11,6 @@ title: Posts
 
 <p>The occasional thought/hot take/neat thing I feel like sharing. <em>Occasional is the keyword here...</em></p>
 
-<div>
-    <span>Filter posts by: </span>
-    <ul class="tag-list">
-        {% for tag in collections.tagList %}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <li class="tag"><a href="{{ tagUrl }}">{{ tag }}</a></li>
-        {% endfor %}
-    </ul>
-</div>
-
 {{ postsList(pagination.items) }}
 
 <nav class="posts-nav">
@@ -35,4 +25,14 @@ title: Posts
     </ul>
 </nav>
 
-<p class="text-center text-s">Draft to post ratio is currently {{ draftCount }}:{{ postCount }}<br>Want to know when a draft ascends to a post? <a href="/feed.xml">Add the feed to your RSS reader</a>.</p>
+<div class="filters">
+    <div>Filter posts:</div>
+    <ul class="tag-list">
+        {% for tag in collections.tagList %}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <li class="tag"><a href="{{ tagUrl }}">{{ tag }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+<p class="text-center text-s">Want to know when a draft ascends to a post? <a href="/feed.xml">Add the feed to your RSS reader</a>.</p>

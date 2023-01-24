@@ -341,6 +341,10 @@ hr.footnotes-sep{
 }
 
 /* posts stuff */
+.filters {
+    text-align: center;
+}
+
 .post-list{
     list-style-type: none;
     padding: 0;
@@ -398,6 +402,7 @@ hr.footnotes-sep{
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 8px;
 }
 
