@@ -33,12 +33,23 @@ module.exports = function(eleventyConfig){
 
   // filter to return a date as an ISO string
   eleventyConfig.addFilter("dateISO", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toUTC().toISO();
+    return DateTime.fromJSDate(dateObj).toISO();
   });
 
   // filter to return dates as a pretty string, like April 1, 2022
   eleventyConfig.addFilter("datePretty", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toUTC().toLocaleString(DateTime.DATE_FULL);
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL);
+  });
+
+  eleventyConfig.addFilter("dateRFC3339", (dateObj) => {
+    let s = DateTime.fromJSDate(dateObj).toISO();
+    console.log(s);
+
+    // remove milliseconds
+    let split = s.split(".");
+    split.pop();
+  
+    return split.join("") + "Z";
   });
 
   // filter for sorting a list descending
