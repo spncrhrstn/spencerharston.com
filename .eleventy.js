@@ -49,7 +49,7 @@ module.exports = function(eleventyConfig){
 
   // filter to return a date as a valid RFC3339 string
   eleventyConfig.addFilter("dateRFC3339", (dateObj) => {
-    let s = DateTime.fromJSDate(dateObj).toUTC().toISO();
+    let s = DateTime.fromJSDate(dateObj).plus({hours:7}).toUTC().toISO();
 
     // remove milliseconds
     let split = s.split(".");
