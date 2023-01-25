@@ -1,8 +1,8 @@
 ---
 title: Post Testing
 description: Testing various aspects of markdown and how it renders
-date: 2022-05-16 18:00:00 -7
-updated: 2023-01-23 20:42:00 -7
+date: 2022-05-16
+updated: 2023-01-23
 tags:
     - development
     - eleventy

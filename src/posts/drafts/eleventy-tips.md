@@ -1,7 +1,7 @@
 ---
 title: Eleventy Tips
 description: Some little things I've learned while building my Eleventy sites.
-date: 2022-05-04 18:00:00 -7
+date: 2022-05-04
 tags:
     - development
     - eleventy
