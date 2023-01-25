@@ -33,17 +33,23 @@ module.exports = function(eleventyConfig){
 
   // filter to return a date as an ISO string
   eleventyConfig.addFilter("dateISO", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: "America/Denver"}).toISO();
+    return DateTime.fromJSDate(dateObj).toUTC().toISO();
   });
 
   // filter to return a date as a pretty string, like April 1, 2022
-  eleventyConfig.addFilter("datePretty", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: "America/Denver"}).toLocaleString(DateTime.DATETIME_FULL);
+  eleventyConfig.addFilter("dateReadable", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toUTC().toLocaleString(DateTime.DATE_FULL);
   });
+
+  // filter to return a date as a simple date, like 2023-01-01
+  eleventyConfig.addFilter('dateHtmlString', (dateObj) => {
+		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+	});
 
   // filter to return a date as a valid RFC3339 string
   eleventyConfig.addFilter("dateRFC3339", (dateObj) => {
-    let s = DateTime.fromJSDate(dateObj).toISO();
+    let s = DateTime.fromJSDate(dateObj).toUTC().toISO();
 
     // remove milliseconds
     let split = s.split(".");
