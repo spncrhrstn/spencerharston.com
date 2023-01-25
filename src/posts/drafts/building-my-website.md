@@ -1,7 +1,7 @@
 ---
 title: Building My Website
 description: It's taken how long now?
-date: 2022-05-03 18:00:00 -7
+date: 2022-05-03
 tags:
     - development
     - eleventy

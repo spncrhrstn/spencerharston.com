@@ -1,4 +1,5 @@
 [build]
+    TZ = "America/Denver"
     publish = "dist/"
     command = "npm run prod"
 
