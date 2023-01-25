@@ -33,12 +33,12 @@ module.exports = function(eleventyConfig){
 
   // filter to return a date as an ISO string
   eleventyConfig.addFilter("dateISO", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toISO();
+    return DateTime.fromJSDate(dateObj, {zone: "America/Denver"}).toISO();
   });
 
   // filter to return a date as a pretty string, like April 1, 2022
   eleventyConfig.addFilter("datePretty", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL);
+    return DateTime.fromJSDate(dateObj, {zone: "America/Denver"}).toLocaleString(DateTime.DATETIME_FULL);
   });
 
   // filter to return a date as a valid RFC3339 string
