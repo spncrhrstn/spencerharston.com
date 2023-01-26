@@ -1,11 +1,11 @@
-@import url('../fonts/public-sans/400.css');
+@import url('../fonts/archivo/400.css');
 @import url('../fonts/jetbrains-mono/400.css');
 
 :root {
     --width-content: 60rem;
     --width-90: 90rem;
 
-    --font-family: "Public Sans",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family: "Archivo",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     --font-family-mono: "JetBrains Mono",monospace;
     
     --blueish-0: #0f1720;
