@@ -1,6 +1,6 @@
 ---
-title: Books I've Read in 2023
-description: Just a list of books I've read this year
+title: Books of 2023
+description: A list of books I've read, or may read, this year
 date: 2023-01-11
 updated: 2023-01-15
 tags:
