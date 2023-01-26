@@ -8,7 +8,7 @@ title: Colophon
 This site was built with the following:
 
 * Static site generator: [Eleventy](https://www.11ty.dev)
-* Fonts: [Archivo](https://fonts.google.com/specimen/Archivo) and [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+* Fonts: [Chivo](https://fonts.google.com/specimen/Chivo) and [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 * Icons: [Feather Icons](https://feathericons.com)
 * Hosting: [Netlify](https://www.netlify.com) and [GitHub](https://github.com/sphars/spencerharston.com)
 * Domain registrar: [Porkbun](https://porkbun.com)

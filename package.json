@@ -27,7 +27,7 @@
     "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-img": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "@fontsource/archivo": "^4.5.11",
+    "@fontsource/chivo": "^4.5.11",
     "@fontsource/jetbrains-mono": "^4.5.12",
     "@fontsource/noto-sans": "^4.5.11",
     "@fontsource/public-sans": "^4.5.12",
