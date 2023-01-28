@@ -30,6 +30,7 @@
     "@fontsource/jetbrains-mono": "^4.5.12",
     "@fontsource/noto-sans": "^4.5.11",
     "@fontsource/public-sans": "^4.5.12",
+    "@sardine/eleventy-plugin-external-links": "^1.4.0",
     "async-git": "^1.13.3",
     "eleventy-plugin-reading-time": "^0.0.1",
     "eslint": "^8.32.0",
