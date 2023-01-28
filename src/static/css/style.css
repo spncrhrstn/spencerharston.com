@@ -66,8 +66,8 @@ header, main, footer {
 }
 
 header{
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     background-color: var(--blueish-1);
     border-bottom: 1px solid var(--blueish-2);
     font-size: 1.2rem;
