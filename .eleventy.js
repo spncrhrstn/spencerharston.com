@@ -4,6 +4,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fs = require("node:fs");
 const path = require("node:path");
 const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode  } = require("./utils/imageGen");
+const safeLinks = require("@sardine/eleventy-plugin-external-links");
 
 
 /**
@@ -132,6 +133,7 @@ module.exports = function(eleventyConfig){
   // add other plugins
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(safeLinks);
 
   return {
     dir: {
