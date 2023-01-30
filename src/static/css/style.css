@@ -60,12 +60,12 @@ main a {
     color: var(--blueish-3);
 }
 
-header, main, footer {
+body > header, body > main, body > footer {
     width: 100%;
     padding: 0;
 }
 
-header{
+body > header{
     /* position: sticky;
     top: 0; */
     background-color: var(--blueish-1);
@@ -73,7 +73,7 @@ header{
     font-size: 1.2rem;
 }
 
-header > div {
+body > header > div {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
@@ -90,7 +90,7 @@ header > div {
 /* header .site-logo { 
 } */
 
-header .site-logo-link{
+body > header .site-logo-link{
     max-height: 3rem;
     display: flex;
     flex-direction: row;
@@ -98,7 +98,7 @@ header .site-logo-link{
     gap: 1rem;
 }
 
-header .site-logo-image{
+body > header .site-logo-image{
     height: 40px;
     width: 40px;
     border: 1px solid var(--grayish-2);
@@ -168,7 +168,7 @@ header .site-logo-image{
     justify-content: center;
 }
 
-header .site-nav ul {
+body > header .site-nav ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -179,13 +179,13 @@ header .site-nav ul {
     margin: 0;
 }
 
-header .site-nav li {
+body > header .site-nav li {
     display: inline-block;
     text-align: center;
     padding: 0;
 }
 
-main{
+body > main{
     flex-grow: 1;
     padding: 0 1rem;
     margin: 0 auto;
@@ -195,6 +195,10 @@ main{
 
 main p{
     line-height: 1.65em;
+}
+
+article ul li {
+    line-height: 1.5em;
 }
 
 pre, code, kbd{
