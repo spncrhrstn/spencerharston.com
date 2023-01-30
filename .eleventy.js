@@ -43,10 +43,10 @@ module.exports = function(eleventyConfig){
   });
 
   // filter to return a date as a simple date, like 2023-01-01
-  eleventyConfig.addFilter('dateHtmlString', (dateObj) => {
-		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
-	});
+  eleventyConfig.addFilter("dateHtmlString", (dateObj) => {
+    // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+    return DateTime.fromJSDate(dateObj, {zone: "utc"}).toFormat("yyyy-LL-dd");
+  });
 
   // filter to return a date as a valid RFC3339 string
   eleventyConfig.addFilter("dateRFC3339", (dateObj) => {
