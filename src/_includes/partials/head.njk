@@ -17,6 +17,10 @@
 {%- if type == "post" %}
 <meta property="og:type" content="article">
 <meta property="article:author" content="{{ author or metadata.author }}">
+<meta property="article:published_time" content="{{ date | dateISO }}">
+{%- if updated %}
+<meta property="article:modified_time" content="{{ updated | dateISO }}">
+{%- endif %}
 {%- else %}
 <meta property="og:type" content="website">
 {%- endif %}
