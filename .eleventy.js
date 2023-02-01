@@ -17,7 +17,7 @@ module.exports = function(eleventyConfig){
   eleventyConfig.addPassthroughCopy({
     "src/static": "static/",
     "src/static/img/icons/favicon.ico": "/favicon.ico",
-    "node_modules/@fontsource/public-sans/": "static/fonts/public-sans/",
+    "node_modules/@fontsource/inter/": "static/fonts/inter/",
     "node_modules/@fontsource/jetbrains-mono/": "static/fonts/jetbrains-mono/",
     "node_modules/feather-icons/dist/feather-sprite.svg":"static/img/icons/feather-sprite.svg"
   });
