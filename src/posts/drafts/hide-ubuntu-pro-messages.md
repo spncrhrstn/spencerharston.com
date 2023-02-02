@@ -3,8 +3,8 @@ title: Hide Ubuntu Pro Messages in Ubuntu
 description: A simple way to hide Ubuntu Pro messages showing up in your Ubuntu system.
 date: 2023-02-01
 tags:
+    - self-hosting
     - tips
-    - self-host
     - ubuntu
 image: https://images.unsplash.com/photo-1629654297299-c8506221ca97
 imageAlt: Screenshot of a Ubuntu linux bash terminal
