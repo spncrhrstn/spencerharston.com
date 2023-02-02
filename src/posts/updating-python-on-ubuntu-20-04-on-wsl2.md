@@ -3,9 +3,10 @@ title: Updating Python on Ubuntu 20.04 on WSL2
 description: Want to update Python to a newer version on WSL2? Here's one way.
 date: 2022-05-14
 tags: 
-    - tutorial
     - development
     - python
+    - tutorial
+    - ubuntu
 image: https://images.unsplash.com/photo-1608501821300-4f99e58bba77
 imageAlt: Dark swirls
 ---
