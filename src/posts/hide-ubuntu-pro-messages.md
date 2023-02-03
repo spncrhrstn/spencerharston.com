@@ -2,6 +2,7 @@
 title: Hide Ubuntu Pro Messages in Ubuntu
 description: A simple way to hide Ubuntu Pro messages showing up in your Ubuntu system.
 date: 2023-02-01
+updated: 2023-02-02
 tags:
     - self-hosting
     - tips
@@ -46,6 +47,10 @@ sudo touch /etc/apt/apt.conf.d/20apt-esm-hook.conf
 ```
 A reboot should make sure it sticks.
 
-The `ubuntu-advantage-tools` package is the culprit behind these update messages. Some have reported^[See this comment on reddit: [https://www.reddit.com/r/Ubuntu/comments/xxafiu/how_to_remove_advertisements_from_apt/iultkp5/](https://www.reddit.com/r/Ubuntu/comments/xxafiu/how_to_remove_advertisements_from_apt/iultkp5/)] that removing that package will prevent future messages from appearing, but it is a required system package and may break things.
+Note that running `apt` commands shows the messages, whereas using `apt-get` does not. This is because the former is for more human-readable package management, and the latter is used more often in scripts (so you may not see them anyways).
+
+## Alternatives
+
+The `ubuntu-advantage-tools` package is the culprit behind these update messages^[My server currently has version 27.13.3~20.04.1 installed]. Some have reported^[See this [comment on reddit](https://www.reddit.com/r/Ubuntu/comments/xxafiu/how_to_remove_advertisements_from_apt/iultkp5/)] that removing that package will prevent future messages from appearing, but it is a required system package and may break things.
 
 If a future package update changes how this works, I'll try and remember to update this post.
