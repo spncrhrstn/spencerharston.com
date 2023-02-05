@@ -1,4 +1,5 @@
 [build]
+    TZ = "America/Denver"
     publish = "dist/"
     command = "npm run prod"
 
@@ -7,3 +8,12 @@
 
 [context.deploy-preview.environment]
     ELEVENTY_ENV = "staging"
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  buildDir = "dist"
+  prettyURLs = true
+  # Append missing trailing slash to pretty URL
+  trailingSlash = true

@@ -3,29 +3,40 @@ layout: layouts/base
 ---
 
 <article>
-    <div class="post-header">
+    <header class="post-header">
         <h1>{{ title }}</h1>
+
+        {% if image %}
+        {% imageHeader image, imageAlt, "100vw" %}
+        {% endif %}
+
         <p class="subheading">{{ description }}</p>
-        <div class="post-meta flex-row text-muted">
-            <div class="flex-row">
-                <span class="has-icon">{% iconify "calendar", "20" %}</span>
-                <time datetime="{{ page.date | dateISO }}">{{ page.date | datePretty }}</time>
-                {% if updated %}
-                | Updated: <time datetime="{{ updated | dateISO }}">{{ updated | datePretty }}</time>
-                {% endif %}
+        <div class="post-meta flex-row text-s">
+            <div class="flex-row small-gap">
+                <span class="has-icon">{% iconify "user", 20 %}</span>
+                <span>{{ author or metadata.author }}</span>
             </div>
-            <div class="flex-row">
+            <div class="flex-row small-gap">
+                <span class="has-icon">{% iconify "calendar", "20" %}</span>
+                <time datetime="{{ page.date | dateHtmlString }}" title="{{ page.date | dateHtmlString }}">{{ page.date | dateReadable }}</time>
+            </div>
+            <div class="flex-row small-gap">
                 <span class="has-icon">{% iconify "clock", "20" %}</span>
-                <span> {{ content | readingTime }} read </span>
+                <span> {{ content | readingTime }} to read </span>
             </div>
         </div>
-    </div>
+    </header>
     <hr>
-    {{ content | safe }}
+    <div class="post-content">
+        {{ content | safe }}
+    </div>
 </article>
 
-<div class="post-footer text-muted">
-    <div class="flex-row">
+<div class="post-footer">
+    {% if updated %}
+        <p class="text-s"><i>Last Updated: <time datetime="{{ updated | dateHtmlString }}" title="{{ updated | dateHtmlString }}">{{ updated | dateReadable }}</time></i></p>
+    {% endif %}
+    <div class="flex-row small-gap">
         <div class="has-icon">{% iconify "tag" %}</div> 
         <ul class="tag-list">
             {% for tag in tags %}
@@ -34,5 +45,9 @@ layout: layouts/base
         </ul>
     </div>
     
-    <p class="text-s text-muted">Got something to share? The source for this page is available on {% page_source_link 'GitHub' %}</p>
+    <p class="text-s">
+        This post is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> by the author.
+        {%- if image %} Header photo from <a href="{{ image }}">Unsplash</a>.<br>{%- endif %}
+        The source for this page is available on {% page_source_link 'GitHub' %}.
+    </p>
 </div>

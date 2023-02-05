@@ -3,6 +3,9 @@ const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fs = require("node:fs");
 const path = require("node:path");
+const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode  } = require("./utils/imageGen");
+const safeLinks = require("@sardine/eleventy-plugin-external-links");
+
 
 /**
  * @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig 
@@ -14,24 +17,46 @@ module.exports = function(eleventyConfig){
   eleventyConfig.addPassthroughCopy({
     "src/static": "static/",
     "src/static/img/icons/favicon.ico": "/favicon.ico",
-    "node_modules/@fontsource/noto-sans/": "static/fonts/noto-sans/",
+    "node_modules/@fontsource/public-sans/": "static/fonts/public-sans/",
     "node_modules/@fontsource/jetbrains-mono/": "static/fonts/jetbrains-mono/",
     "node_modules/feather-icons/dist/feather-sprite.svg":"static/img/icons/feather-sprite.svg"
   });
 
-  // get a count of current draft files
+  // get a count of draft files
   const draftsPath = path.join(__dirname, "src/posts/drafts");
   const draftFiles = fs.readdirSync(draftsPath).filter(file => file.endsWith(".md"));
   eleventyConfig.addGlobalData("draftCount", draftFiles.length);
+
+  // get a count of non-draft files
+  const postsPath = path.join(__dirname, "src/posts");
+  const postsFiles = fs.readdirSync(postsPath).filter(file => file.endsWith(".md"));
+  eleventyConfig.addGlobalData("postCount", postsFiles.length);
 
   // filter to return a date as an ISO string
   eleventyConfig.addFilter("dateISO", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toUTC().toISO();
   });
 
-  // filter to return dates as a pretty string, like April 1, 2022
-  eleventyConfig.addFilter("datePretty", (dateObj) => {
+  // filter to return a date as a pretty string, like April 1, 2022
+  eleventyConfig.addFilter("dateReadable", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toUTC().toLocaleString(DateTime.DATE_FULL);
+  });
+
+  // filter to return a date as a simple date, like 2023-01-01
+  eleventyConfig.addFilter("dateHtmlString", (dateObj) => {
+    // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+    return DateTime.fromJSDate(dateObj, {zone: "utc"}).toFormat("yyyy-LL-dd");
+  });
+
+  // filter to return a date as a valid RFC3339 string
+  eleventyConfig.addFilter("dateRFC3339", (dateObj) => {
+    let s = DateTime.fromJSDate(dateObj).plus({hours:7}).toUTC().toISO();
+
+    // remove milliseconds
+    let split = s.split(".");
+    split.pop();
+  
+    return split.join("") + "Z";
   });
 
   // filter for sorting a list descending
@@ -61,6 +86,9 @@ module.exports = function(eleventyConfig){
     return `<svg class="feather" style="width:${size}px; height:${size}px;"><use href="/static/img/icons/feather-sprite.svg#${iconName}" /></svg>`;
   });
 
+  eleventyConfig.addNunjucksAsyncShortcode("imageHeader", imageHeaderShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode("imageMeta", imageMetaShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode("imageMetaTW", imageMetaTWShortcode);
 
   // if we're on production, skip any post drafts
   if(process.env.ELEVENTY_ENV == "production"){
@@ -105,6 +133,7 @@ module.exports = function(eleventyConfig){
   // add other plugins
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(safeLinks);
 
   return {
     dir: {

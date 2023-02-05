@@ -3,9 +3,12 @@ title: Updating Python on Ubuntu 20.04 on WSL2
 description: Want to update Python to a newer version on WSL2? Here's one way.
 date: 2022-05-14
 tags: 
-    - tutorial
     - development
     - python
+    - tutorial
+    - ubuntu
+image: https://images.unsplash.com/photo-1608501821300-4f99e58bba77
+imageAlt: Dark swirls
 ---
 
 Ubuntu on WSL2 currently comes loaded with Python v3.8, which is the default in Ubuntu 20.04. I wanted to update to Python v3.10, as I try to use more recent software releases when starting new projects. Updating Python took more work than I thought it would (I'm more familiar with Node and utilizing [node version manager](https://github.com/nvm-sh/nvm) to manage Node versions). Eventually I did get it all worked out, and in an effort to remember what I did, I'm writing this post to jot down the steps.^[Also, I had to use my bash history to find all the commands I ran...] 
@@ -80,7 +83,6 @@ curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
 source ~/.bashrc
 pip --version
 ```
-*Note: I'm also not sure which pip package to install, but definitely the 3.10 versions, since that's the version of Python we just installed.*
 
 #### 4.1 Virtual Environments
 

@@ -9,22 +9,12 @@ title: Posts
 ---
 {% from "macros/posts-list.njk" import postsList %}
 
-<p>The occasional thought/hot take/neat thing I feel like sharing. <em>Occasional is the keyword here.</em>.</p>
-
-<div>
-    <span>Filter posts by: </span>
-    <ul class="tag-list">
-        {% for tag in collections.tagList %}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <li class="tag"><a href="{{ tagUrl }}">{{ tag }}</a></li>
-        {% endfor %}
-    </ul>
-</div>
+<p>The occasional thought/hot take/neat thing I feel like sharing. <em>Occasional is the keyword here...</em></p>
 
 {{ postsList(pagination.items) }}
 
 <nav class="posts-nav">
-    <ul class="page-nav text-muted">
+    <ul class="page-nav">
         <!-- <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">&lt;&lt;</a>{% else %}&lt;&lt;{% endif %}</li> -->
         <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt;</a>{% else %}&lt;{% endif %}</li>
         {%- for pageEntry in pagination.pages %}
@@ -35,4 +25,14 @@ title: Posts
     </ul>
 </nav>
 
-<p>Current number of drafts: {{ draftCount }}<br>Want to know when a draft ascends to a post? <a href="/feed.xml">Add the feed to your RSS reader</a>.</p>
+<div class="filters">
+    <div>Filter posts:</div>
+    <ul class="tag-list">
+        {% for tag in collections.tagList %}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <li class="tag"><a href="{{ tagUrl }}">{{ tag }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+<p class="text-center text-s">Want to know when a draft ascends to a post? <a href="/feed.xml">Add the feed to your RSS reader</a>.</p>

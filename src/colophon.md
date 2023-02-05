@@ -8,7 +8,7 @@ title: Colophon
 This site was built with the following:
 
 * Static site generator: [Eleventy](https://www.11ty.dev)
-* Fonts: [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) and [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+* Fonts: [Public Sans](https://fonts.google.com/specimen/Public+Sans) and [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 * Icons: [Feather Icons](https://feathericons.com)
 * Hosting: [Netlify](https://www.netlify.com) and [GitHub](https://github.com/sphars/spencerharston.com)
 * Domain registrar: [Porkbun](https://porkbun.com)
@@ -19,4 +19,4 @@ This site was built with the following:
 
 Made in Ogden, UT
 
-&copy; 2020&ndash;2022 Spencer Harston
+&copy; 2020&ndash;2023 Spencer Harston

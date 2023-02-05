@@ -2,6 +2,8 @@
     "site_title": "Spencer Harston",
     "description": "The personal website of Spencer Harston",
     "author": "Spencer Harston",
+    "owner": "Spencer Harston",
     "repo": "https://github.com/sphars/spencerharston.com",
-    "base_url": "https://www.spencerharston.com"
+    "base_url": "https://www.spencerharston.com",
+    "twitter_handle": "@sphars_"
 }

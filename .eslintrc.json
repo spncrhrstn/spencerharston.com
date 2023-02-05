@@ -10,7 +10,8 @@
 	"rules": {
         "indent": ["warn", 2],
         "semi": ["warn", "always"],
-		"quotes": ["warn", "double"]
+		"quotes": ["warn", "double"],
+        "no-unused-vars": ["warn"]
 	},
     "ignorePatterns": ["!.eleventy.js", "dist", "node_modules"],
     "overrides": [

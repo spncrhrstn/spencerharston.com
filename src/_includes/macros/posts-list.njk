@@ -7,9 +7,13 @@
         <p class="">
             {{ post.data.description }}
         </p>
-        <div class="post-meta text-muted">
+        <div class="post-meta">
             <div class="text-s">
-                <time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | datePretty }}</time><span> | {{ post | readingTime }} read </span>
+                <time datetime="{{ post.data.date | dateHtmlString }}">{{ post.data.date | dateReadable }}</time>
+                {% if post.data.updated %}
+                | Updated: <time datetime="{{ post.data.updated | dateHtmlString }}">{{ post.data.updated | dateReadable }}</time>
+                {% endif %}
+                <span> | {{ post | readingTime }} read </span>
             </div>
         </div>
     </li>
