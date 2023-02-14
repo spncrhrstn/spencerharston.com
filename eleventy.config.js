@@ -114,7 +114,7 @@ module.exports = function(eleventyConfig){
         tag.startsWith("_") || uniqueTags.add(tag);
     });
 
-    console.log("tags: ", [...uniqueTags]);
+    //console.log("tags: ", [...uniqueTags]);
     return [...uniqueTags].sort();
   });
 
