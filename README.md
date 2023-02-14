@@ -1,7 +1,7 @@
 # spencerharston.com
 
 ![Netlify](https://img.shields.io/netlify/5b157e12-c172-4459-880f-c6d18b71ec0f?)
-![Eleventy](https://img.shields.io/badge/eleventy-1.0.2-blue)
+![Eleventy](https://img.shields.io/badge/eleventy-2.0.0-blue)
 
 The personal website of Spencer Harston - an eternal WIP.
 
