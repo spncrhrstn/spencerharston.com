@@ -22,6 +22,9 @@ module.exports = function(eleventyConfig){
     "node_modules/feather-icons/dist/feather-sprite.svg":"static/img/icons/feather-sprite.svg"
   });
 
+  // add watch target
+  eleventyConfig.addWatchTarget("./src/styles/");
+
   // get a count of draft files
   const draftsPath = path.join(__dirname, "src/posts/drafts");
   const draftFiles = fs.readdirSync(draftsPath).filter(file => file.endsWith(".md"));
