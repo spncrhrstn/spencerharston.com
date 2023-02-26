@@ -29,7 +29,7 @@ I bought the spencerharston.com domain back in early 2020. It was previously own
 
 I put it off so many times. The most I did was setup GitHub pages on a repo that had a sole README, that said 
 
-> "The website of Spencer Harston - coming soon!"^[See it on [GitHub](https://github.com/sphars/spencerharston.com/tree/4c939b3a8ae4962879e49a59411c899a24ec437e) and laugh.]
+> The website of Spencer Harston - coming soon!^[See it on [GitHub](https://github.com/sphars/spencerharston.com/tree/4c939b3a8ae4962879e49a59411c899a24ec437e) and laugh.]
 
 Yeah, pretty exciting, right? It was that way for over two years. Between then and now, I created a couple other one-off projects for kicks, including a [very basic CSS framework](https://github.com/sphars/yacck). Oh, I've also had three jobs since then, bought a house, dealt with a pandemic, and had a kid (who is a very fun and active toddler right now). So yeah, things happened, and this was probably near the bottom of my priority list. But I kept putting it off. I know domains aren't very expensive, but I just kept feeling that I had wasted my money if I wasn't going to do anything with it. 
 
