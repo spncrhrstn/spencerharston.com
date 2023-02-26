@@ -1,17 +1,15 @@
-<header>
-    <div>
-        <div class="site-logo">
-            <a class="site-logo-link" href="/">
-                <img src="/static/img/icons/logo.svg" alt="Logo" class="site-logo-image" width="40" height="40" />
-                <div>Spencer Harston</div>
-            </a>
-        </div>
-
-        <a role="button" aria-label="menu" aria-expanded="false" data-target="site-nav" class="nav-burger">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+<header class="w-full p-0 border-b border-b-cyan-900">
+    <div class="flex flex-row flex-wrap justify-between items-center gap-2 w-full max-w-5xl mx-auto my-0 py-6 px-4">
+        <a class="inline-flex flex-row items-center gap-4 max-h-12 " href="/">
+            <img src="/static/img/icons/logo.svg" alt="Logo" class="site-logo-image" width="40" height="40" />
+            <div>spencerharston.com</div>
         </a>
+
+        <!-- <a role="button" aria-label="menu" aria-expanded="false" data-target="site-nav" class="nav-burger">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a> -->
 
         {% include 'partials/navigation.njk' %}
     </div>

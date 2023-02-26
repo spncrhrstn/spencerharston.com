@@ -86,7 +86,7 @@ module.exports = function(eleventyConfig){
 
   // shortcode for returning markup for an icon
   eleventyConfig.addNunjucksShortcode("iconify", function(iconName, size="20"){
-    return `<svg class="feather" style="width:${size}px; height:${size}px;"><use href="/static/img/icons/feather-sprite.svg#${iconName}" /></svg>`;
+    return `<svg class="feather" width="${size}" height="${size}"><use href="/static/img/icons/feather-sprite.svg#${iconName}" /></svg>`;
   });
 
   eleventyConfig.addNunjucksAsyncShortcode("imageHeader", imageHeaderShortcode);
