@@ -31,7 +31,7 @@ layout: layouts/base
             <a class="link" href="{{ post.url }}">{{ post.data.title }}</a>
         </div>
         <div class="text-sm">
-            {{ post.data.date | dateHtmlString }}
+            {{ post.data.date | dateReadable }}
         </div>
     </div>
     {%- endfor %}

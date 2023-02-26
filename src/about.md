@@ -13,3 +13,5 @@ I'm married to a wonderful wife and I'm father to the cutest girl and the sweete
 If you feel like reaching out, you can find me at
  * Twitter: [@sphars_](https://twitter.com/sphars_) 
  * GitHub: [sphars](https://github.com/sphars)
+
+Learn more about this website on the [colophon page](/colophon/).

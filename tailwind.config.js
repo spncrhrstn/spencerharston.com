@@ -2,7 +2,21 @@
 module.exports = {
   content: ["./src/**/*.{html,njk}"],
   theme: {
-    extend: {},
+    extend: {
+      aria: {
+        current: 'current=page'
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            'ul ul, ul ol, ol ul, ol ol': {
+              marginTop: '0',
+              marginBottom: '0'
+            }
+          }
+        }
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/typography')
