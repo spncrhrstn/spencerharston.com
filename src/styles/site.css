@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @layer components {
-    .link {
+    /* .link {
         @apply text-blue-500 decoration-solid decoration-1;
-    }
+    } */
 }
 
 .feather {

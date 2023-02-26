@@ -6,22 +6,16 @@
   "scripts": {
     "lint": "eslint \"./**/*.js\"",
     "lint:fix": "eslint \"./**/*.js\" --fix",
-
     "start": "run-p start:*",
     "start:eleventy": "eleventy --serve",
     "start:postcss": "postcss src/styles/*.css --dir dist/styles --watch",
-
     "build": "run-s clean build:eleventy build:postcss",
     "build:eleventy": "eleventy",
     "build:postcss": "postcss src/styles/*.css --dir dist/styles",
-
-
     "dev:11ty": "eleventy --serve",
     "dev": "run-s clean dev:11ty",
-
     "prod:11ty": "eleventy",
     "prod": "run-s build",
-
     "clean": "rm -rf ./dist"
   },
   "repository": {
@@ -42,6 +36,7 @@
     "@fontsource/noto-sans": "^4.5.11",
     "@fontsource/public-sans": "^4.5.12",
     "@sardine/eleventy-plugin-external-links": "^1.4.0",
+    "@tailwindcss/typography": "^0.5.9",
     "async-git": "^1.13.3",
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.15",
