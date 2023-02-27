@@ -4,8 +4,11 @@ title: All Post Tags
 permalink: /tags/
 ---
 
-<ul class="tag-list">
+<ul class="inline-flex flex-row flex-wrap justify-center gap-2 my-2 mx-0">
     {% for tag in collections.tagList %}
-    <li class="tag"><a href="{{ tag }}/">{{ tag }}</a></li>
+    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+    <li class="inline-block border border-solid rounded-2xl border-black">
+        <a href="{{ tagUrl }}" class="block py-0.5 px-2 no-underline text-center text-xs">{{ tag }}</a>
+    </li>
     {% endfor %}
 </ul>

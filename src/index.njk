@@ -23,13 +23,13 @@ layout: layouts/base
     {% for post in latestPosts -%}
     <div class="my-2">
         <div>
-            <a class="link" href="{{ post.url }}">{{ post.data.title }}</a>
+            <a class="link underline" href="{{ post.url }}">{{ post.data.title }}</a>
         </div>
         <div class="text-sm">
             {{ post.data.date | dateReadable }}
         </div>
     </div>
     {%- endfor %}
-    <a class="link" href="/posts/">See more posts →</a>
+    <a class="link underline" href="/posts/">See more posts →</a>
     
 </section>
