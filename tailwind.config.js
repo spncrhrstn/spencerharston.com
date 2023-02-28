@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,njk}"],
@@ -5,6 +7,10 @@ module.exports = {
     extend: {
       aria: {
         current: 'current=page'
+      },
+      fontFamily: {
+        'sans':['"Public Sans"', ...defaultTheme.fontFamily.sans],
+        'mono':['"JetBrains Mono"', ...defaultTheme.fontFamily.mono]
       },
       typography: {
         DEFAULT: {

@@ -1,3 +1,6 @@
+@import url('/static/fonts/public-sans/400.css');
+@import url('/static/fonts/jetbrains-mono/400.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
