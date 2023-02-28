@@ -2,14 +2,19 @@
 @import url('/static/fonts/jetbrains-mono/400.css');
 
 @tailwind base;
+
+@layer base {
+    a {
+        @apply hover:underline hover:text-sky-900;
+    }
+    
+    main a {
+        @apply text-sky-900;
+    }
+}
+
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-    /* .link {
-        @apply text-blue-500 decoration-solid decoration-1;
-    } */
-}
 
 .feather {
     stroke: currentColor;

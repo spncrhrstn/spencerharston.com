@@ -76,7 +76,7 @@ module.exports = function(eleventyConfig){
   // shortcodes
   // shortcode for returing a github link to the current page's source code
   eleventyConfig.addNunjucksShortcode("page_source_link", function(inner_text){
-    return `<a class='underline' href=${this.ctx.metadata.repo}/blob/${ this.ctx.git.curr_branch }${ this.page.inputPath.slice(1) }>${ inner_text }</a>`;
+    return `<a href=${this.ctx.metadata.repo}/blob/${ this.ctx.git.curr_branch }${ this.page.inputPath.slice(1) }>${ inner_text }</a>`;
   });
 
   // shortcode for returning a github link to the current build commit

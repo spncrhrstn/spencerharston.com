@@ -12,16 +12,23 @@ module.exports = {
         'sans':['"Public Sans"', ...defaultTheme.fontFamily.sans],
         'mono':['"JetBrains Mono"', ...defaultTheme.fontFamily.mono]
       },
-      typography: {
+      typography: (theme) => ({
         DEFAULT: {
           css: {
+            a: {
+              color: theme('colors.sky.900'),
+              textDecoration: 'none',
+              '&:hover' : {
+                textDecoration: theme('underline')
+              }
+            },
             'ul ul, ul ol, ol ul, ol ol': {
               marginTop: '0',
               marginBottom: '0'
             }
           }
         }
-      }
+      }),
     },
   },
   plugins: [
