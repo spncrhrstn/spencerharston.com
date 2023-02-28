@@ -3,12 +3,6 @@ layout: layouts/default
 title: All Post Tags
 permalink: /tags/
 ---
+{%- from "macros/tags-list.njk" import tagsList %}
 
-<ul class="inline-flex flex-row flex-wrap justify-center gap-2 my-2 mx-0">
-    {% for tag in collections.tagList %}
-    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-    <li class="inline-block border border-solid rounded-2xl border-black">
-        <a href="{{ tagUrl }}" class="block py-0.5 px-2 no-underline text-center text-xs">{{ tag }}</a>
-    </li>
-    {% endfor %}
-</ul>
+{{ tagsList(collections.tagList) }}

@@ -7,7 +7,8 @@ pagination:
 layout: layouts/default
 title: Posts
 ---
-{% from "macros/posts-list.njk" import postsList %}
+{%- from "macros/posts-list.njk" import postsList %}
+{%- from "macros/tags-list.njk" import tagsList %}
 
 <p class="my-4">The occasional thought/hot take/neat thing I feel like sharing. <em>Occasional is the keyword here...</em></p>
 
@@ -37,14 +38,7 @@ title: Posts
 
 <div class="text-center">
     <div>Filter posts:</div>
-    <ul class="inline-flex flex-row flex-wrap justify-center gap-2 my-2 mx-0">
-        {%- for tag in collections.tagList %}
-        {%- set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <li class="inline-block border border-solid rounded-2xl border-black">
-            <a href="{{ tagUrl }}" class="block py-0.5 px-2 no-underline text-center text-xs">{{ tag }}</a>
-        </li>
-        {%- endfor %}
-    </ul>
+    {{ tagsList(collections.tagList) }}
 </div>
 
 <p class="my-2 text-center text-sm">Want to know when a draft ascends to a post? <a class="underline" href="/feed.xml">Add the feed to your RSS reader</a>.</p>

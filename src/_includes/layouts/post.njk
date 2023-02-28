@@ -1,6 +1,7 @@
 ---
 layout: layouts/base
 ---
+{%- from "macros/tags-list.njk" import tagsList %}
 
 <article class="mb-12">
     <header class="pb-4">
@@ -26,13 +27,7 @@ layout: layouts/base
             </div>
             <div class="inline-flex flex-row items-center gap-x-2">
                 <span class="inline-flex items-center justify-center">{% iconify "tag", "18" %}</span> 
-                <ul class="inline-flex flex-row flex-wrap justify-center gap-2 my-2 mx-0">
-                    {% for tag in tags %}
-                    <li class="inline-block border border-solid rounded-2xl border-black">
-                        <a href="/tags/{{ tag }}/" class="block py-0.5 px-2 no-underline text-center text-xs">{{ tag }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
+                {{ tagsList(tags) }}
             </div>
         </div>
     </header>
