@@ -1,7 +1,7 @@
 ---
 pagination:
     data: collections.posts
-    size: 2
+    size: 10
     alias: posts
     reverse: true
 layout: layouts/default
@@ -13,34 +13,37 @@ title: Posts
 
 {{ postsList(pagination.items) }}
 
-<!-- TODO: fix the alignment of the navigation numbers -->
-<nav>
-    <ul class="flex flex-row items-center content-center justify-center my-8 mx-0 p-0 text-center">
-        <!-- <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">&lt;&lt;</a>{% else %}&lt;&lt;{% endif %}</li> -->
-        <li class="inline-block my-0 mx-1 p-0 text-center">
-            {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">{% iconify "chevron-left", "20" %}</a>{% else %}{% iconify "chevron-left", "20" %}{% endif %}
-        </li>
-        {%- for pageEntry in pagination.pages %}
-        <li class="inline-block my-0 mx-1 py-1 text-center">
-            <a href="{{ pagination.hrefs[loop.index0] }}" {% if page.url == pagination.hrefs[loop.index0] %} aria-current="page" {% endif %} class="inline-block py-1 px-2 w-8 h-8 aria-current:border aria-current:border-solid aria-current:rounded-full">{{ loop.index }}</a>
-        </li>
-        {% endfor -%}
-        <li class="inline-block my-0 mx-1 p-0 text-center">
-            {% if pagination.href.next %}<a href="{{ pagination.href.next }}">{% iconify "chevron-right", "20" %}</a>{% else %}{% iconify "chevron-right", "20" %}{% endif %}
-        </li>
-        <!-- <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">&gt;&gt;</a>{% else %}&gt;&gt;{% endif %}</li> -->
-    </ul>
+<nav class="flex flex-row flex-wrap items-center justify-center my-4" aria-label="Pagination">
+{%- if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}">
+        <span class="sr-only">Previous</span> 
+        {% iconify "chevron-left", "22" %}
+    </a>
+{% else %}
+    {% iconify "chevron-left", "22" %}
+{%- endif %}
+{%- for pageEntry in pagination.pages %}
+    <a href="{{ pagination.hrefs[loop.index0] }}" {% if page.url == pagination.hrefs[loop.index0] %} aria-current="page" {% endif %} class="relative inline-flex items-center px-3 py-1 text-sm aria-current:border aria-current:border-gray-500 aria-current:border-solid aria-current:rounded-md">{{ loop.index }}</a>
+{%- endfor -%}
+{%- if pagination.href.next %}
+    <a href="{{ pagination.href.next }}">
+        <span class="sr-only">Next</span>
+        {% iconify "chevron-right", "22" %}
+    </a>
+{%- else %}
+    {% iconify "chevron-right", "22" %}
+{%- endif %}
 </nav>
 
 <div class="text-center">
     <div>Filter posts:</div>
     <ul class="inline-flex flex-row flex-wrap justify-center gap-2 my-2 mx-0">
-        {% for tag in collections.tagList %}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        {%- for tag in collections.tagList %}
+        {%- set tagUrl %}/tags/{{ tag }}/{% endset %}
         <li class="inline-block border border-solid rounded-2xl border-black">
             <a href="{{ tagUrl }}" class="block py-0.5 px-2 no-underline text-center text-xs">{{ tag }}</a>
         </li>
-        {% endfor %}
+        {%- endfor %}
     </ul>
 </div>
 
