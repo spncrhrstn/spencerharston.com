@@ -1,10 +1,10 @@
 const { DateTime } = require("luxon");
 const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const safeLinks = require("@sardine/eleventy-plugin-external-links");
 const fs = require("node:fs");
 const path = require("node:path");
 const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode  } = require("./utils/imageGen");
-const safeLinks = require("@sardine/eleventy-plugin-external-links");
 
 
 /**
@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig){
     "node_modules/feather-icons/dist/feather-sprite.svg":"static/img/icons/feather-sprite.svg"
   });
 
-  // add watch target
+  // add watch target for tailwind
   eleventyConfig.addWatchTarget("./src/styles/");
 
   // get a count of draft files
@@ -125,10 +125,10 @@ module.exports = function(eleventyConfig){
   let markdownIt = require("markdown-it");
   let markdownItFootnote = require("markdown-it-footnote");
   let markdownItImageFigures = require("markdown-it-image-figures");
-  let mdiOptions = {
+  let markdownItOptions = {
     html: true
   };
-  let markdownLib = markdownIt(mdiOptions)
+  let markdownLib = markdownIt(markdownItOptions)
     .use(markdownItFootnote)
     .use(markdownItImageFigures, { figcaption: true, lazy: true, async: true });
   eleventyConfig.setLibrary("md", markdownLib);

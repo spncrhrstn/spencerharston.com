@@ -1,14 +1,14 @@
 <footer class="w-full p-0 text-xs">
     <div class="w-full max-w-5xl flex flex-row flex-wrap items-center justify-between my-0 mx-auto pt-16 pb-8 px-4">
         <div class="flex flex-col gap-y-1">
-            <div>&copy; 2020&ndash;2023 Spencer Harston</div>
+            <div>&copy; 2020&ndash;2023 {{ metadata.owner }}</div>
             <div><a href="/colophon">Colophon</a></div>
         </div>
         <div class="flex flex-col gap-y-1 text-right">
             <div class="flex flex-row items-center gap-x-2">
                 <span class="inline-flex items-center justify-center"><a href="/feed.xml" title="RSS Feed">{% iconify "rss", "16" %}</a></span>
-                <span class="inline-flex items-center justify-center"><a href="#" title="GitHub profile">{% iconify "github", "16" %}</a></span>
-                <span class="inline-flex items-center justify-center"><a href="#" title="Twitter profile">{% iconify "twitter", "16" %}</a></span>
+                <span class="inline-flex items-center justify-center"><a href="https://github.com/{{ metadata.github_handle }}" title="GitHub profile">{% iconify "github", "16" %}</a></span>
+                <span class="inline-flex items-center justify-center"><a href="https://twitter.com/{{ metadata.twitter_handle }}" title="Twitter profile">{% iconify "twitter", "16" %}</a></span>
                 <span class="inline-flex items-center justify-center"><button id="dark-mode-button" class="hover:text-sky-900 dark:hover:text-blue-400" title="Toggle dark mode">{% iconify "moon", "16" %}</button></span>
             </div>
             <div class="font-mono" title="{{ git.commit_date }}">{% commit_link git.short_sha %}</div>

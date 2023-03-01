@@ -13,10 +13,6 @@ layout: layouts/base
  -->
         <p class="italic mb-3">{{ description }}</p>
         <div class="inline-flex flex-row flex-wrap items-center gap-x-4 gap-y-2 text-sm">
-            <!-- <div class="flex-row small-gap">
-                <span class="has-icon">{% iconify "user", 20 %}</span>
-                <span>{{ author or metadata.author }}</span>
-            </div> -->
             <div class="inline-flex flex-row items-center gap-x-2">
                 <span class="inline-flex items-center justify-center">{% iconify "calendar", "18" %}</span>
                 <time datetime="{{ page.date | dateHtmlString }}" title="{{ page.date | dateHtmlString }}">{{ page.date | dateReadable }}</time>
