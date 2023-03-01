@@ -13,7 +13,7 @@
 		"quotes": ["warn", "double"],
         "no-unused-vars": ["warn"]
 	},
-    "ignorePatterns": ["!.eleventy.js", "dist", "node_modules"],
+    "ignorePatterns": ["!eleventy.config.js", "dist", "node_modules"],
     "overrides": [
         {
             "files": ["src/static/js/*.js"],
