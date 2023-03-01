@@ -2,8 +2,8 @@ function isDarkModeEnabled() {
   return localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches);
 }
 
-function enableDarkMode(set) {
-  if(set){
+function enableDarkMode(isSet) {
+  if(isSet){
     document.documentElement.classList.add("dark");
     darkModeButton.innerHTML = `<svg class="feather" width="${16}" height="${16}"><use href="/static/img/icons/feather-sprite.svg#${"sun"}" /></svg>`;
     console.log("( •_•)>⌐■-■");
@@ -27,9 +27,5 @@ darkModeButton.addEventListener("click", () => {
   }
 });
 
-// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-if (isDarkModeEnabled()) {
-  enableDarkMode(true);
-} else {
-  enableDarkMode(false);
-}
+// Run this again now that we have the DOM loaded
+enableDarkMode(isDarkModeEnabled());

@@ -48,6 +48,13 @@
 <link rel="shortcut icon" href="/static/img/icons/favicon.ico?v=1">
 
 <link rel="stylesheet" type="text/css" href="/styles/site.css">
+<script>
+    if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+    } else {
+        document.documentElement.classList.remove("dark");
+    }
+</script>
 <script src="/static/js/darkmode.js" defer></script>
 
 {%- if env.environment == "production" %}
