@@ -46,7 +46,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, optio ut sequi
 
 ![statik](/static/img/posts/pfp_nb_high.png "This is statik")
 
-![An image of a dog](https://placedog.net/600 "A glorious dog that is oh so gloriously glorious. And how so!")
+![An image of a dog](https://picsum.photos/400/ "This is a random image")
 
 | Column 1 | Column 2 | Column 3 |
 | -------- | -------- | -------- |
