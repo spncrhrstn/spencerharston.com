@@ -27,6 +27,9 @@ module.exports = {
             "ul ul, ul ol, ol ul, ol ol": {
               marginTop: "0",
               marginBottom: "0"
+            },
+            "section.footnotes": {
+              fontSize: theme("fontSize.sm")
             }
           }
         },
