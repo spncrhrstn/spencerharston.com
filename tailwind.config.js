@@ -3,6 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,njk}"],
+  darkMode: 'class',
   theme: {
     extend: {
       aria: {
@@ -26,6 +27,14 @@ module.exports = {
             'ul ul, ul ol, ol ul, ol ol': {
               marginTop: '0',
               marginBottom: '0'
+            }
+          }
+        },
+        invert: {
+          css: {
+            color: theme('colors.zinc.200'),
+            a: {
+              color: theme('colors.blue.400'),
             }
           }
         }
