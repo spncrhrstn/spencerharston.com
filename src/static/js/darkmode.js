@@ -6,11 +6,9 @@ function enableDarkMode(isSet) {
   if(isSet){
     document.documentElement.classList.add("dark");
     darkModeButton.innerHTML = `<svg class="feather" width="${16}" height="${16}"><use href="/static/img/icons/feather-sprite.svg#${"sun"}" /></svg>`;
-    console.log("( •_•)>⌐■-■");
   } else {
     document.documentElement.classList.remove("dark");
     darkModeButton.innerHTML = `<svg class="feather" width="${16}" height="${16}"><use href="/static/img/icons/feather-sprite.svg#${"moon"}" /></svg>`;
-    console.log("(⌐■_■)");  
   }
 }
 
@@ -18,12 +16,13 @@ const darkModeButton = document.getElementById("dark-mode-button");
 darkModeButton.addEventListener("click", () => {
   // handle user explicitly enable/disable theme
   if(isDarkModeEnabled()){
-    // disable it
     enableDarkMode(false);
     localStorage.theme = "light";
+    console.log("(•_•)\n( •_•)>⌐■-■\n(⌐■_■)");
   } else{
     enableDarkMode(true);
     localStorage.theme = "dark";
+    console.log("(⌐■_■)\n( •_•)>⌐■-■\n(•_•)");
   }
 });
 
