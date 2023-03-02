@@ -1,9 +1,9 @@
-module.exports = ({env}) => ({
+module.exports = () => ({
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
     cssnano:
-      env === "production"
+      process.env.ELEVENTY_ENV === "production"
         ? {
           preset: ["default", {discardComments: {removeAll:true}}]
         }

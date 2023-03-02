@@ -2,9 +2,24 @@ const { DateTime } = require("luxon");
 const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const safeLinks = require("@sardine/eleventy-plugin-external-links");
+const htmlmin = require("html-minifier");
 const fs = require("node:fs");
 const path = require("node:path");
 const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode  } = require("./utils/imageGen");
+
+function htmlminTransform(content, outputPath) {
+  if( outputPath.endsWith(".html") ) {
+    let minified = htmlmin.minify(content, {
+      useShortDoctype: true,
+      removeComments: true,
+      collapseWhitespace: true,
+      minifyJS: true,
+      minifyCSS: true
+    });
+    return minified;
+  }
+  return content;
+}
 
 
 /**
@@ -12,6 +27,12 @@ const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode  } = requ
  * @returns {ReturnType<import("@11ty/eleventy/src/defaultConfig")>}
  */
 module.exports = function(eleventyConfig){
+
+  // building for production
+  if (process.env.ELEVENTY_ENV === "production") {
+    eleventyConfig.ignores.add("src/posts/drafts");
+    eleventyConfig.addTransform("htmlmin", htmlminTransform);
+  }
 
   // passthrough copying of static files
   eleventyConfig.addPassthroughCopy({
@@ -93,10 +114,6 @@ module.exports = function(eleventyConfig){
   eleventyConfig.addNunjucksAsyncShortcode("imageMeta", imageMetaShortcode);
   eleventyConfig.addNunjucksAsyncShortcode("imageMetaTW", imageMetaTWShortcode);
 
-  // if we're on production, skip any post drafts
-  if(process.env.ELEVENTY_ENV == "production"){
-    eleventyConfig.ignores.add("src/posts/drafts");
-  }
   // collection of all posts
   eleventyConfig.addCollection("posts", (collection) => {
     return collection.getFilteredByGlob(["./src/posts/*.md", "./src/posts/drafts/*.md"]);
