@@ -12,10 +12,6 @@
     "build": "run-s clean build:eleventy build:postcss",
     "build:eleventy": "eleventy",
     "build:postcss": "postcss src/styles/*.css --dir dist/styles",
-    "dev:11ty": "eleventy --serve",
-    "dev": "run-s clean dev:11ty",
-    "prod:11ty": "eleventy",
-    "prod": "run-s build",
     "clean": "rm -rf ./dist"
   },
   "repository": {
