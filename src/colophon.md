@@ -16,6 +16,7 @@ This site was built with the following:
 * Editor: [VS Code](https://code.visualstudio.com) 
   * Theme: [Popping and Locking](https://marketplace.visualstudio.com/items?itemName=hedinne.popping-and-locking-vscode)
   * Font: [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+* Grand Tetons photo by [Sheyenne Shamsa](https://unsplash.com/@sheyenneshamsa) on [Unsplash](https://unsplash.com/photos/EmKG1tdl3ag)  
 * ❤ and 🍀
 
 Made in Ogden, UT

@@ -4,7 +4,7 @@ layout: layouts/base
 {%- from "macros/tags-list.njk" import tagsList %}
 
 <article class="mb-12">
-    <header class="pb-4">
+    <header class="mb-4">
         <h1 class="text-4xl font-semibold mt-12 mb-8 mx-0">{{ title }}</h1>
 
         <!-- {% if image %}
@@ -28,7 +28,7 @@ layout: layouts/base
         </div>
     </header>
 
-    <hr class="my-2">
+    <hr class="my-8">
 
     <div class="prose max-w-none dark:prose-invert">
         {{ content | safe }}

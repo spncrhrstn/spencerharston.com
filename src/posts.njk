@@ -21,7 +21,7 @@ title: Posts
         {% iconify "chevron-left", "22" %}
     </a>
 {% else %}
-    {% iconify "chevron-left", "22" %}
+    <span class="dark:text-gray-700">{% iconify "chevron-left", "22" %}</span>
 {%- endif %}
 {%- for pageEntry in pagination.pages %}
     <a href="{{ pagination.hrefs[loop.index0] }}" {% if page.url == pagination.hrefs[loop.index0] %} aria-current="page" {% endif %} class="relative inline-flex items-center px-3 py-1 text-sm aria-current:border aria-current:border-gray-500 aria-current:border-solid aria-current:rounded-md">{{ loop.index }}</a>
@@ -32,7 +32,7 @@ title: Posts
         {% iconify "chevron-right", "22" %}
     </a>
 {%- else %}
-    {% iconify "chevron-right", "22" %}
+    <span class="dark:text-gray-700">{% iconify "chevron-right", "22" %}</span>
 {%- endif %}
 </nav>
 
@@ -41,4 +41,4 @@ title: Posts
     {{ tagsList(collections.tagList) }}
 </div>
 
-<p class="my-2 text-center text-sm">Want to know when a draft ascends to a post? <a href="/feed.xml">Add the feed to your RSS reader</a>.</p>
+<p class="mt-4 text-center text-sm">Want to know when a draft ascends to a post? <a href="/feed.xml">Add the feed to your RSS reader</a>.</p>
