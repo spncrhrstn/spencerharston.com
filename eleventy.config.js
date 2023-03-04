@@ -6,6 +6,7 @@ const htmlmin = require("html-minifier");
 const fs = require("node:fs");
 const path = require("node:path");
 const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode  } = require("./utils/imageGen");
+const { generateMetaImages } = require("./utils/metaImages.js");
 
 function htmlminTransform(content, outputPath) {
   if( outputPath.endsWith(".html") ) {
@@ -37,7 +38,7 @@ module.exports = function(eleventyConfig){
   // passthrough copying of static files
   eleventyConfig.addPassthroughCopy({
     "src/static": "static/",
-    "src/static/img/icons/favicon.ico": "/favicon.ico",
+    "src/static/favicons/favicon.ico": "/favicon.ico",
     "node_modules/@fontsource/public-sans/": "static/fonts/public-sans/",
     "node_modules/@fontsource/jetbrains-mono/": "static/fonts/jetbrains-mono/",
     "node_modules/feather-icons/dist/feather-sprite.svg":"static/img/icons/feather-sprite.svg"
@@ -110,9 +111,10 @@ module.exports = function(eleventyConfig){
     return `<svg class="feather" width="${size}" height="${size}"><use href="/static/img/icons/feather-sprite.svg#${iconName}" /></svg>`;
   });
 
-  eleventyConfig.addNunjucksAsyncShortcode("imageHeader", imageHeaderShortcode);
-  eleventyConfig.addNunjucksAsyncShortcode("imageMeta", imageMetaShortcode);
-  eleventyConfig.addNunjucksAsyncShortcode("imageMetaTW", imageMetaTWShortcode);
+  // eleventyConfig.addNunjucksAsyncShortcode("imageHeader", imageHeaderShortcode);
+  // eleventyConfig.addNunjucksAsyncShortcode("imageMeta", imageMetaShortcode);
+  // eleventyConfig.addNunjucksAsyncShortcode("imageMetaTW", imageMetaTWShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode("metaImages",  generateMetaImages);
 
   // collection of all posts
   eleventyConfig.addCollection("posts", (collection) => {
