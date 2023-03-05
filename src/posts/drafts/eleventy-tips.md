@@ -13,3 +13,5 @@ Just wanted to do some short snippets on how I did some aspects of my site.
  * Doing draft posts (including count of number of drafts)
  * Environment variables
  * Header images maybe?
+ * tailwinding
+ * generating meta images
