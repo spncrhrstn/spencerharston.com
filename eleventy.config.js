@@ -65,17 +65,15 @@ module.exports = function (eleventyConfig) {
   });
 
   // filter to return a date as a pretty string, like April 1, 2022
-  eleventyConfig.addFilter("dateReadable", (dateObj) => {
-    // console.log(JSON.stringify(metadata));
-    let result = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toLocaleString(DateTime.DATE_FULL);
-    return result;
-  });
+  // eleventyConfig.addFilter("dateReadable", (dateObj) => {
+  //   // console.log(JSON.stringify(metadata));
+  //   let result = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toLocaleString(DateTime.DATE_FULL);
+  //   return result;
+  // });
 
-  // TODO: combine with above!
-  // filter to return a date as a pretty string, like April 1, 2022 at 4:00 PM
-  eleventyConfig.addFilter("dateTimeReadable", (dateObj) => {
-    // console.log(JSON.stringify(metadata));
-    let result = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toLocaleString(DateTime.DATETIME_FULL);
+  // shortcode to return a readable date (like April, 1 2022) or with time (April 1, 2022 at 12:12 PM MST)
+  eleventyConfig.addShortcode("dateReadable", (dateObj, withTime) => {
+    let result = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toLocaleString( withTime ? DateTime.DATETIME_FULL : DateTime.DATE_FULL);
     return result;
   });
 
@@ -86,12 +84,9 @@ module.exports = function (eleventyConfig) {
     return result;
   });
 
-  // TODO: fix this!
   // filter to return a date as a valid RFC3339 string
   eleventyConfig.addFilter("dateRFC3339", (dateObj) => {
-    let s = DateTime.fromJSDate(dateObj).toUTC().toISO();
-
-    //let s = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toUTC().toISO();
+    let s = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toUTC().toISO();
 
     // remove milliseconds
     let split = s.split(".");
