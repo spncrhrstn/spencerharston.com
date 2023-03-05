@@ -5,11 +5,12 @@ const safeLinks = require("@sardine/eleventy-plugin-external-links");
 const htmlmin = require("html-minifier");
 const fs = require("node:fs");
 const path = require("node:path");
-const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode  } = require("./utils/imageGen");
+const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode } = require("./utils/imageGen");
 const { generateMetaImages } = require("./utils/metaImages.js");
+const metadata = require("./src/_data/metadata.json");
 
 function htmlminTransform(content, outputPath) {
-  if( outputPath.endsWith(".html") ) {
+  if (outputPath.endsWith(".html")) {
     let minified = htmlmin.minify(content, {
       useShortDoctype: true,
       removeComments: true,
@@ -27,7 +28,7 @@ function htmlminTransform(content, outputPath) {
  * @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig 
  * @returns {ReturnType<import("@11ty/eleventy/src/defaultConfig")>}
  */
-module.exports = function(eleventyConfig){
+module.exports = function (eleventyConfig) {
 
   // building for production
   if (process.env.ELEVENTY_ENV === "production") {
@@ -41,7 +42,7 @@ module.exports = function(eleventyConfig){
     "src/static/favicons/favicon.ico": "/favicon.ico",
     "node_modules/@fontsource/public-sans/": "static/fonts/public-sans/",
     "node_modules/@fontsource/jetbrains-mono/": "static/fonts/jetbrains-mono/",
-    "node_modules/feather-icons/dist/feather-sprite.svg":"static/img/icons/feather-sprite.svg"
+    "node_modules/feather-icons/dist/feather-sprite.svg": "static/img/icons/feather-sprite.svg"
   });
 
   // add watch target for tailwind
@@ -59,34 +60,49 @@ module.exports = function(eleventyConfig){
 
   // filter to return a date as an ISO string
   eleventyConfig.addFilter("dateISO", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toUTC().toISO();
+    let result = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toUTC().toISO();
+    return result;
   });
 
   // filter to return a date as a pretty string, like April 1, 2022
   eleventyConfig.addFilter("dateReadable", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toUTC().toLocaleString(DateTime.DATE_FULL);
+    // console.log(JSON.stringify(metadata));
+    let result = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toLocaleString(DateTime.DATE_FULL);
+    return result;
+  });
+
+  // TODO: combine with above!
+  // filter to return a date as a pretty string, like April 1, 2022 at 4:00 PM
+  eleventyConfig.addFilter("dateTimeReadable", (dateObj) => {
+    // console.log(JSON.stringify(metadata));
+    let result = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toLocaleString(DateTime.DATETIME_FULL);
+    return result;
   });
 
   // filter to return a date as a simple date, like 2023-01-01
   eleventyConfig.addFilter("dateHtmlString", (dateObj) => {
     // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-    return DateTime.fromJSDate(dateObj, {zone: "utc"}).toFormat("yyyy-LL-dd");
+    let result = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toFormat("yyyy-LL-dd");
+    return result;
   });
 
+  // TODO: fix this!
   // filter to return a date as a valid RFC3339 string
   eleventyConfig.addFilter("dateRFC3339", (dateObj) => {
-    let s = DateTime.fromJSDate(dateObj).plus({hours:7}).toUTC().toISO();
+    let s = DateTime.fromJSDate(dateObj).toUTC().toISO();
+
+    //let s = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toUTC().toISO();
 
     // remove milliseconds
     let split = s.split(".");
     split.pop();
-  
+
     return split.join("") + "Z";
   });
 
   // filter for sorting a list descending
-  eleventyConfig.addFilter("sortDesc" , (posts) => {
-    posts.sort(function(a,b){
+  eleventyConfig.addFilter("sortDesc", (posts) => {
+    posts.sort(function (a, b) {
       return b.date - a.date;
     });
     return posts;
@@ -97,24 +113,24 @@ module.exports = function(eleventyConfig){
 
   // shortcodes
   // shortcode for returing a github link to the current page's source code
-  eleventyConfig.addNunjucksShortcode("page_source_link", function(inner_text){
-    return `<a href=${this.ctx.metadata.repo}/blob/${ this.ctx.git.curr_branch }${ this.page.inputPath.slice(1) }>${ inner_text }</a>`;
+  eleventyConfig.addNunjucksShortcode("page_source_link", function (inner_text) {
+    return `<a href=${this.ctx.metadata.repo}/blob/${this.ctx.git.curr_branch}${this.page.inputPath.slice(1)}>${inner_text}</a>`;
   });
 
   // shortcode for returning a github link to the current build commit
-  eleventyConfig.addNunjucksShortcode("commit_link", function(inner_text){
-    return `<a href=${this.ctx.metadata.repo}/tree/${ this.ctx.git.long_sha }>${ inner_text }</a>`;
+  eleventyConfig.addNunjucksShortcode("commit_link", function (inner_text) {
+    return `<a href=${this.ctx.metadata.repo}/tree/${this.ctx.git.long_sha}>${inner_text}</a>`;
   });
 
   // shortcode for returning markup for an icon
-  eleventyConfig.addNunjucksShortcode("iconify", function(iconName, size="20"){
+  eleventyConfig.addNunjucksShortcode("iconify", function (iconName, size = "20") {
     return `<svg class="feather" width="${size}" height="${size}"><use href="/static/img/icons/feather-sprite.svg#${iconName}" /></svg>`;
   });
 
   // eleventyConfig.addNunjucksAsyncShortcode("imageHeader", imageHeaderShortcode);
   // eleventyConfig.addNunjucksAsyncShortcode("imageMeta", imageMetaShortcode);
   // eleventyConfig.addNunjucksAsyncShortcode("imageMetaTW", imageMetaTWShortcode);
-  eleventyConfig.addNunjucksAsyncShortcode("metaImages",  generateMetaImages);
+  eleventyConfig.addNunjucksAsyncShortcode("metaImages", generateMetaImages);
 
   // collection of all posts
   eleventyConfig.addCollection("posts", (collection) => {

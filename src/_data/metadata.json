@@ -7,5 +7,6 @@
     "base_url": "https://www.spencerharston.com",
     "domain": "spencerharston.com",
     "twitter_handle": "@sphars_",
-    "github_handle": "sphars"
+    "github_handle": "sphars",
+    "timezone": "America/Denver"
 }

@@ -11,7 +11,7 @@ layout: layouts/base
         <div class="inline-flex flex-row flex-wrap items-center gap-x-4 gap-y-2 text-sm">
             <div class="inline-flex flex-row items-center gap-x-2">
                 <span class="inline-flex items-center justify-center">{% iconify "calendar", "18" %}</span>
-                <time datetime="{{ page.date | dateHtmlString }}" title="{{ page.date | dateHtmlString }}">{{ page.date | dateReadable }}</time>
+                <time datetime="{{ page.date | dateISO }}" title="{{ page.date | dateISO }}">{{ page.date | dateTimeReadable }}</time>
             </div>
             <div class="inline-flex flex-row items-center gap-x-2">
                 <span class="inline-flex items-center justify-center">{% iconify "clock", "18" %}</span>
@@ -34,7 +34,7 @@ layout: layouts/base
 
 <div class="mt-8">
     {% if updated %}
-    <p class="mb-2 text-sm"><i>Last Updated: <time datetime="{{ updated | dateHtmlString }}" title="{{ updated | dateHtmlString }}">{{ updated | dateReadable }}</time></i></p>
+    <p class="mb-2 text-sm"><i>Last Updated: <time datetime="{{ updated | dateISO }}" title="{{ updated | dateISO }}">{{ updated | dateTimeReadable  }}</time></i></p>
     {% endif %}
     
     
