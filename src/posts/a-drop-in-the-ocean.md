@@ -1,7 +1,7 @@
 ---
 title: A Drop in the Ocean
 description: The Internet is a vast ocean of noise. And I'm just a tiny drop. 
-date: 2022-05-01
+date: 2022-05-01 12:00:00
 tags: 
      - personal
 image: https://images.unsplash.com/photo-1512772452758-275f069da6bf

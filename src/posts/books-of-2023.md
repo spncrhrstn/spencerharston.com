@@ -1,8 +1,8 @@
 ---
 title: Books of 2023
 description: A list of books I've read, or may read, this year. Updated periodically.
-date: 2023-01-11
-updated: 2023-02-06
+date: 2023-01-11 20:00:00
+updated: 2023-02-06 21:30:00
 tags:
     - personal
 image: https://images.unsplash.com/photo-1462392627162-2baa2b3518a8

@@ -1,7 +1,7 @@
 ---
 title: Making of spencerharston.com
 description: Good things are supposed to take a long time, right?
-date: 2022-06-30
+date: 2022-06-30 12:00:00
 tags:
     - development
     - eleventy
