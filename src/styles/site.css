@@ -5,11 +5,11 @@
 
 @layer base {
     a {
-        @apply hover:underline hover:text-sky-600 dark:hover:text-sky-500;
+        @apply hover:underline hover:text-blue-600 dark:hover:text-sky-500;
     }
     
     main a {
-        @apply text-sky-600 hover:text-sky-600 dark:text-sky-500 dark:hover:text-sky-500;
+        @apply text-blue-600 hover:text-blue-600 dark:text-sky-500 dark:hover:text-sky-500;
     }
 }
 

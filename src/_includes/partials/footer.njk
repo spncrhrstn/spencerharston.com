@@ -9,7 +9,7 @@
                 <span class="inline-flex items-center justify-center"><a href="/feed.xml" title="RSS Feed">{% iconify "rss", "18" %}</a></span>
                 <span class="inline-flex items-center justify-center"><a href="https://github.com/{{ metadata.github_handle }}" title="GitHub profile">{% iconify "github", "18" %}</a></span>
                 <span class="inline-flex items-center justify-center"><a href="https://twitter.com/{{ metadata.twitter_handle }}" title="Twitter profile">{% iconify "twitter", "18" %}</a></span>
-                <span class="inline-flex items-center justify-center"><button id="dark-mode-button" class="hover:text-sky-600 dark:hover:text-sky-500" title="Toggle dark mode">{% iconify "moon", "18" %}</button></span>
+                <span class="inline-flex items-center justify-center"><button id="dark-mode-button" class="hover:text-blue-600 dark:hover:text-sky-500" title="Toggle dark mode">{% iconify "moon", "18" %}</button></span>
             </div>
             <div class="font-mono" title="{{ git.commit_date }}">{% commit_link git.short_sha %}</div>
         </div>
