@@ -5,5 +5,8 @@
     "owner": "Spencer Harston",
     "repo": "https://github.com/sphars/spencerharston.com",
     "base_url": "https://www.spencerharston.com",
-    "twitter_handle": "@sphars_"
+    "domain": "spencerharston.com",
+    "twitter_handle": "@sphars_",
+    "github_handle": "sphars",
+    "timezone": "America/Denver"
 }

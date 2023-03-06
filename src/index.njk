@@ -2,15 +2,30 @@
 layout: layouts/base
 ---
 
-<div class="hero">
-    <p class="text-center text-xl">The Personal Website of Spencer Harston</p>
-</div>
+<div class="flex flex-col lg:flex-row items-center my-2">
+    <img class="rounded-full border border-gray-400 dark:border-gray-600 h-40 w-40 mb-2 lg:mb-0" src="/static/img/grand-tetons-crop.jpg" alt="one of the tetons">
+    <div class="flex flex-col items-center lg:items-start justify-center gap-3 py-0 px-4">
+        <h1 class="text-3xl text-center font-bold">Spencer Harston</h1>
+        <p class="text-center lg:text-left">Welcome to my corner of the internet</p>
+    </div>
+</div>  
 
-<p class="text-center">A home for my thoughts, experiences and anything else I feel like.</p>
-<p class="text-center">You can find all my blog posts over in <a href="/posts">Posts</a> and you can learn more about me in the <a href="/about">About page</a>.</p>
-<p class="text-center text-s"><em>This site is currently under active development so it'll probably change.</em></p>
+<hr class="my-4">
 
-<hr>
+{% set latestPosts = collections.posts | sortDesc | limit(3) %}
+<section>
 
-{% set latestPost = collections.posts | sortDesc | first %}
-<p class="text-center text-l">Latest Post: <a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></p>
+    <p class="text-xl">Latest Posts</p>        
+    {% for post in latestPosts -%}
+    <div class="my-2">
+        <div>
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </div>
+        <div class="text-sm">
+            <time datetime="{{ post.data.date | dateISO }}">{% dateReadable post.data.date %}</time>
+        </div>
+    </div>
+    {%- endfor %}
+    <a href="/posts/">See more posts →</a>
+    
+</section>

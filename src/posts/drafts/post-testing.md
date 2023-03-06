@@ -1,8 +1,8 @@
 ---
 title: Post Testing
 description: Testing various aspects of markdown and how it renders
-date: 2022-05-16
-updated: 2023-01-23
+date: 2022-05-16 21:23:00
+updated: 2023-03-04 21:23:00
 tags:
     - development
     - eleventy
@@ -46,7 +46,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, optio ut sequi
 
 ![statik](/static/img/posts/pfp_nb_high.png "This is statik")
 
-![An image of a dog](https://placedog.net/600 "A glorious dog that is oh so gloriously glorious. And how so!")
+![An image of a dog](https://picsum.photos/400/ "This is a random image")
 
 | Column 1 | Column 2 | Column 3 |
 | -------- | -------- | -------- |

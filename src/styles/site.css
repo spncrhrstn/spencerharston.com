@@ -1,0 +1,25 @@
+@import url('/static/fonts/public-sans/400.css');
+@import url('/static/fonts/jetbrains-mono/400.css');
+
+@tailwind base;
+
+@layer base {
+    a {
+        @apply hover:underline hover:text-blue-600 dark:hover:text-sky-500;
+    }
+    
+    main a {
+        @apply text-blue-600 hover:text-blue-600 dark:text-sky-500 dark:hover:text-sky-500;
+    }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.feather {
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;   
+}

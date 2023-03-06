@@ -7,32 +7,38 @@ pagination:
 layout: layouts/default
 title: Posts
 ---
-{% from "macros/posts-list.njk" import postsList %}
+{%- from "macros/posts-list.njk" import postsList %}
+{%- from "macros/tags-list.njk" import tagsList %}
 
-<p>The occasional thought/hot take/neat thing I feel like sharing. <em>Occasional is the keyword here...</em></p>
+<p class="my-4">The occasional thought/hot take/neat thing I feel like sharing. <em>Occasional is the keyword here...</em></p>
 
 {{ postsList(pagination.items) }}
 
-<nav class="posts-nav">
-    <ul class="page-nav">
-        <!-- <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">&lt;&lt;</a>{% else %}&lt;&lt;{% endif %}</li> -->
-        <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt;</a>{% else %}&lt;{% endif %}</li>
-        {%- for pageEntry in pagination.pages %}
-        <li><a href="{{ pagination.hrefs[loop.index0] }}"{% if page.url == pagination.hrefs[loop.index0] %}aria-current="page"{% endif %} class="page-nav-page-num">{{ loop.index }}</a></li>
-        {% endfor -%}
-        <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">&gt;</a>{% else %}&gt;{% endif %}</li>
-        <!-- <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">&gt;&gt;</a>{% else %}&gt;&gt;{% endif %}</li> -->
-    </ul>
+<nav class="flex flex-row flex-wrap items-center justify-center my-4" aria-label="Pagination">
+{%- if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}">
+        <span class="sr-only">Previous</span> 
+        {% iconify "chevron-left", "22" %}
+    </a>
+{% else %}
+    <span class="dark:text-gray-700">{% iconify "chevron-left", "22" %}</span>
+{%- endif %}
+{%- for pageEntry in pagination.pages %}
+    <a href="{{ pagination.hrefs[loop.index0] }}" {% if page.url == pagination.hrefs[loop.index0] %} aria-current="page" {% endif %} class="relative inline-flex items-center px-3 py-1 text-sm aria-current:border aria-current:border-gray-500 aria-current:border-solid aria-current:rounded-md">{{ loop.index }}</a>
+{%- endfor -%}
+{%- if pagination.href.next %}
+    <a href="{{ pagination.href.next }}">
+        <span class="sr-only">Next</span>
+        {% iconify "chevron-right", "22" %}
+    </a>
+{%- else %}
+    <span class="dark:text-gray-700">{% iconify "chevron-right", "22" %}</span>
+{%- endif %}
 </nav>
 
-<div class="filters">
+<div class="text-center">
     <div>Filter posts:</div>
-    <ul class="tag-list">
-        {% for tag in collections.tagList %}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <li class="tag"><a href="{{ tagUrl }}">{{ tag }}</a></li>
-        {% endfor %}
-    </ul>
+    {{ tagsList(collections.tagList) }}
 </div>
 
-<p class="text-center text-s">Want to know when a draft ascends to a post? <a href="/feed.xml">Add the feed to your RSS reader</a>.</p>
+<p class="mt-4 text-center text-sm">Want to know when a draft ascends to a post? <a href="/feed.xml">Add the feed to your RSS reader</a>.</p>

@@ -3,15 +3,14 @@
 <head>
 {% include 'partials/head.njk' %}
 </head>
-<body>
+<body class="h-screen w-full flex flex-col items-center text-zinc-800 bg-neutral-50 dark:text-zinc-200 dark:bg-neutral-900 transition-colors duration-500 ease-in-out">
 
 {% include 'partials/header.njk' %}
 
-<main>
+<main class="flex-grow p-4 mx-auto my-0 w-full max-w-5xl">
     {{ content | safe }}
 </main>
 
 {% include 'partials/footer.njk' %}
-<script src="/static/js/script.js"></script>
 </body>
 </html>

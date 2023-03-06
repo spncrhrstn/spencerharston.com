@@ -1,17 +1,18 @@
 {
   "name": "spencerharston.com",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "The personal website of Spencer Harston",
   "private": true,
   "scripts": {
     "lint": "eslint \"./**/*.js\"",
     "lint:fix": "eslint \"./**/*.js\" --fix",
-    "dev:clean": "rm -rf ./dist",
-    "dev:11ty": "eleventy --serve --incremental",
-    "dev": "run-s dev:clean dev:11ty",
-    "prod:clean": "rm -rf ./dist",
-    "prod:11ty": "eleventy",
-    "prod": "run-s prod:clean prod:11ty"
+    "start": "run-p start:*",
+    "start:eleventy": "eleventy --serve",
+    "start:postcss": "postcss src/styles/*.css --dir dist/styles --watch",
+    "build": "run-s clean build:eleventy build:postcss",
+    "build:eleventy": "eleventy",
+    "build:postcss": "postcss src/styles/*.css --dir dist/styles",
+    "clean": "rm -rf ./dist"
   },
   "repository": {
     "type": "git",
@@ -31,12 +32,20 @@
     "@fontsource/noto-sans": "^4.5.11",
     "@fontsource/public-sans": "^4.5.12",
     "@sardine/eleventy-plugin-external-links": "^1.4.0",
+    "@tailwindcss/typography": "^0.5.9",
     "async-git": "^1.13.3",
+    "autoprefixer": "^10.4.13",
+    "canvas": "^2.11.0",
+    "cssnano": "^5.1.15",
     "eleventy-plugin-reading-time": "^0.0.1",
     "eslint": "^8.34.0",
     "feather-icons": "^4.29.0",
+    "html-minifier": "^4.0.0",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-image-figures": "^2.1.1",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.2.7"
   }
 }

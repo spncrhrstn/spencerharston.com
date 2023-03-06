@@ -1,7 +1,7 @@
 [build]
     TZ = "America/Denver"
     publish = "dist/"
-    command = "npm run prod"
+    command = "npm run build"
 
 [context.production.environment]
     ELEVENTY_ENV = "production"
