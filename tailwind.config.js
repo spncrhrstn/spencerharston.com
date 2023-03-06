@@ -18,7 +18,7 @@ module.exports = {
           css: {
             color: theme("colors.zinc.800"),
             a: {
-              color: theme("colors.sky.900"),
+              color: theme("colors.sky.600"),
               textDecoration: "none",
               "&:hover" : {
                 textDecoration: theme("underline")
@@ -37,7 +37,7 @@ module.exports = {
           css: {
             color: theme("colors.zinc.200"),
             a: {
-              color: theme("colors.blue.400"),
+              color: theme("colors.sky.500"),
             }
           }
         }
