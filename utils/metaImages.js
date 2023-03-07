@@ -69,7 +69,6 @@ async function drawTextBG(ctx, txt, font, align, x, y) {
 
 // generate images with canvas
 async function generateMetaImages(titleText) {
-
   const width = 1200;
   const height = 630;
   let titleFontSize = 72;
@@ -83,6 +82,10 @@ async function generateMetaImages(titleText) {
   // create rectangle with background
   ctx.fillStyle = "#171717";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  // add the image
+  const bgImage = await loadImage("./utils/sea-photo.jpg");
+  ctx.drawImage(bgImage, 0, 0);
 
   // add subText text
   ctx.fillStyle = "#fafafa";

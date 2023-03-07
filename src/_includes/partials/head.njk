@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-{%- set title = renderData.title or title or metadata.site_title %}
+{%- set title = renderData.title or title or metadata.domain %}
 <title>{{ title }}</title>
 
 <!-- General -->
@@ -30,7 +30,7 @@
 {# only generate meta images on production #}
 {%- setAsync "metaImageUrl" %}
 {%- if env.environment === "production" or env.environment === "staging" %}
-{%- metaImages title %}
+{%- metaImages metaTagline or title %}
 {%- else %}
 
 {%- endif %}

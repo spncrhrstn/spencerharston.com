@@ -1,6 +1,6 @@
 # spencerharston.com
 
-![Netlify](https://img.shields.io/netlify/5b157e12-c172-4459-880f-c6d18b71ec0f?)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5b157e12-c172-4459-880f-c6d18b71ec0f/deploy-status)](https://app.netlify.com/sites/spencerharston/deploys)
 ![Eleventy](https://img.shields.io/badge/eleventy-2.0.0-blue)
 
 The personal website of Spencer Harston - an eternal WIP.
