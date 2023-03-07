@@ -1,7 +1,8 @@
 const image = require("@11ty/eleventy-img");
 
-// functions
-// get and generate an image
+// some functions to fetch an image from unsplash and format it to be an html meta image
+
+// get and generate an image for display on a page
 async function imageHeaderShortcode(src, alt, sizes) {
 
   // add some crop parameters from unsplash
@@ -30,6 +31,7 @@ async function imageHeaderShortcode(src, alt, sizes) {
   return image.generateHTML(metadata, imageAttrs);
 }
 
+// generate the meta image
 async function imageMetaShortcode(src) {
   src = src + "?ixlib=rb-1.2.1&fit=crop&crop=edges&h=630&w=1200&q=100&auto=format";
 
@@ -49,6 +51,7 @@ async function imageMetaShortcode(src) {
   return `${this.ctx.metadata.base_url}${data.url}`;
 }
 
+// generate a meta image for twitter
 async function imageMetaTWShortcode(src) {
   src = src + "?ixlib=rb-1.2.1&fit=crop&crop=edges&h=600&w=1200&q=100&auto=format";
 
