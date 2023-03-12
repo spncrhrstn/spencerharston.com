@@ -56,6 +56,19 @@ ELEVENTY_ENV=production npm run build
 ```
 The site's output will be in the `dist` directory and can be used for deployment.
 
+## Changing Fonts
+To change fonts, there's a few steps to take.
+1. Install the font package from [Fontsource](https://fontsource.org/)
+2. Update the `addPassthroughCopy` function in `./eleventy.config.js` to copy the package contents to the build directory
+3. Update `./src/styles/site.css` to import the needed Fontsource CSS files (at least the `400.css` file)
+4. Update `./tailwind.config.js` under `theme.extend.fontFamily` to set the font family 
+5. Get the font's `.ttf` files (from Fontsource's website directly or Google Fonts) and copy to `./utils` to generate the meta images
+    - The Fontsource npm packages don't include the `.ttf` files
+    - Update the `registerFont` functions and any `ctx.font` variables in `./utils/metaImages.js` to needed values
+6. Go to [favicon.io](https://favicon.io) to create the new favicons and copy them to `./src/static/favicons`
+    - You may need to add a new `v=` value to the link hrefs in `./src/_includes/partials/head.njk` to bust caching
+
+
 ## Credits
 
 * Built with [Eleventy](https://www.11ty.dev)
