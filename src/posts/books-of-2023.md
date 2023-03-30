@@ -2,7 +2,7 @@
 title: Books of 2023
 description: A list of books I've read, or may read, this year. Updated periodically.
 date: 2023-01-11 20:00:00
-updated: 2023-02-06 21:30:00
+updated: 2023-03-29 22:00:00
 tags:
     - personal
 image: https://images.unsplash.com/photo-1462392627162-2baa2b3518a8
@@ -27,12 +27,14 @@ Generally speaking, if I finished a book, that means it was enjoyable enough for
 ## Currently Reading
 * [The Count of Monte Cristo](https://www.goodreads.com/book/show/7126.The_Count_of_Monte_Cristo) by Alexandre Dumas
 * [Permanent Record](https://www.goodreads.com/book/show/46223297-permanent-record) by Edward Snowden
+* [The Help](https://www.goodreads.com/book/show/4667024-the-help) by Kathryn Stockett
 
 ## Didn't Finish
 * [The Cartographers](https://www.goodreads.com/book/show/55004093-the-cartographers) by Peng Shepherd
 
 ## Under Consideration
 * [ADHD Pro: Sustainable Productivity for People with ADHD](https://adhdpro.xyz/) by Robert Merki
+* [Taking Charge of Adult ADHD](https://www.guilford.com/books/Taking-Charge-of-Adult-ADHD/Russell-Barkley/9781462546855) by Russell A. Barkley
 
 ## Not Included
 * The innumerable childrens' books that my toddler wants me to read to her
