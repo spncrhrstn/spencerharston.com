@@ -42,7 +42,7 @@ module.exports = function (eleventyConfig) {
     "src/static/favicons/favicon.ico": "/favicon.ico",
     "node_modules/@fontsource/public-sans/": "static/fonts/public-sans/",
     "node_modules/@fontsource/jetbrains-mono/": "static/fonts/jetbrains-mono/",
-    "node_modules/feather-icons/dist/feather-sprite.svg": "static/img/icons/feather-sprite.svg"
+    "node_modules/@tabler/icons/tabler-sprite.svg": "static/img/icons/tabler-sprite.svg"
   });
 
   // add watch target for tailwind
@@ -119,7 +119,7 @@ module.exports = function (eleventyConfig) {
 
   // shortcode for returning markup for an icon
   eleventyConfig.addNunjucksShortcode("iconify", function (iconName, size = "20") {
-    return `<svg class="feather" width="${size}" height="${size}"><use href="/static/img/icons/feather-sprite.svg#${iconName}" /></svg>`;
+    return `<svg class="tabler-icon" width="${size}" height="${size}"><use xlink:href="/static/img/icons/tabler-sprite.svg#tabler-${iconName}" /></svg>`;
   });
 
   // eleventyConfig.addNunjucksAsyncShortcode("imageHeader", imageHeaderShortcode);
