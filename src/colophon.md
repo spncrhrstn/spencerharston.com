@@ -9,8 +9,8 @@ This site was built with the following:
 
 * Static site generator: [Eleventy](https://www.11ty.dev)
   * Theme: Customized [TailwindCSS](https://www.tailwindcss.com)
-* Fonts: [Public Sans](https://fonts.google.com/specimen/Public+Sans) and [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
-* Icons: [Feather Icons](https://feathericons.com)
+  * Fonts: [Public Sans](https://fonts.google.com/specimen/Public+Sans) and [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+  * Icons: [Tabler Icons](https://tabler.io)
 * Hosting: [Netlify](https://www.netlify.com) (deployed site) and [GitHub](https://github.com/sphars/spencerharston.com) (source code)
 * Domain registrar: [Porkbun](https://porkbun.com)
 * Editor: [VS Code](https://code.visualstudio.com) 

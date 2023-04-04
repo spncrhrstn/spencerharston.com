@@ -7,9 +7,9 @@ title: About Me
 
 ![self](/static/img/self.jpg "Yep that's me")
 
-I'm currently working as a software engineer at Lockheed Martin Corporation.
-
 I'm married to a wonderful wife and I'm father to the cutest girl and the sweetest boy.
+
+I'm currently working as a software engineer for Lockheed Martin Corporation.
 
 ## Contact Me
 If you feel like reaching out, you can find me at

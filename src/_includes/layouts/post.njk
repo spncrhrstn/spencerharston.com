@@ -33,14 +33,12 @@ layout: layouts/base
 </article>
 
 <div class="mt-8">
-    {% if updated %}
+    {%- if updated %}
     <p class="mb-2 text-sm"><i>Last Updated: <time datetime="{{ updated | dateISO }}" title="{{ updated | dateISO }}">{% dateReadable updated, true %}</time></i></p>
-    {% endif %}
-    
-    
+    {%- endif %}
     <p class="text-sm">
         This post is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> by the author.
-        <!-- {%- if image %} Header photo from <a href="{{ image }}">Unsplash</a>.<br>{%- endif %} -->
+        {#- {%- if image %} Header photo from <a href="{{ image }}">Unsplash</a>.<br>{%- endif %} #}
         The source for this page is available on {% page_source_link 'GitHub' %}.
     </p>
 </div>
