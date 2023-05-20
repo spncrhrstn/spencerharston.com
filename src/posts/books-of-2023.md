@@ -18,7 +18,6 @@ Links are to the Goodreads entry or other relevant source for the book.
 ## Currently Reading
 * [The Count of Monte Cristo](https://www.goodreads.com/book/show/7126.The_Count_of_Monte_Cristo) by Alexandre Dumas
 * [Permanent Record](https://www.goodreads.com/book/show/46223297-permanent-record) by Edward Snowden
-* [The Help](https://www.goodreads.com/book/show/4667024-the-help) by Kathryn Stockett
 
 ## Finished Reading
 Generally speaking, if I finish a book, it means the book was enjoyable enough for me to, well, finish it. A ⭐ means the book is recommended, and I think you should read it too.
@@ -28,6 +27,7 @@ Generally speaking, if I finish a book, it means the book was enjoyable enough f
 * [Born a Crime](https://www.goodreads.com/book/show/29780253-born-a-crime) by Trevor Noah ⭐
 * [Lamb: The Gospel According to Biff, Christ's Childhood Pal](https://www.goodreads.com/book/show/28881.Lamb) by Christopher Moore
 * [Futuristic Violence and Fancy Suits](https://www.goodreads.com/book/show/20501606-futuristic-violence-and-fancy-suits) by Jason Pargin
+* [The Help](https://www.goodreads.com/book/show/4667024-the-help) by Kathryn Stockett
 
 ## Didn't Finish
 * [The Cartographers](https://www.goodreads.com/book/show/55004093-the-cartographers) by Peng Shepherd
