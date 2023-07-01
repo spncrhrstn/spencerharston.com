@@ -11,7 +11,7 @@ module.exports = {
       },
       fontFamily: {
         "sans":["\"Public Sans\"", ...defaultTheme.fontFamily.sans],
-        "mono":["\"JetBrains Mono\"", ...defaultTheme.fontFamily.mono]
+        "mono":["\"Cousine\"", ...defaultTheme.fontFamily.mono]
       },
       typography: (theme) => ({
         DEFAULT: {

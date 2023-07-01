@@ -41,7 +41,7 @@ module.exports = function (eleventyConfig) {
     "src/static": "static/",
     "src/static/favicons/favicon.ico": "/favicon.ico",
     "node_modules/@fontsource/public-sans/": "static/fonts/public-sans/",
-    "node_modules/@fontsource/jetbrains-mono/": "static/fonts/jetbrains-mono/",
+    "node_modules/@fontsource/cousine/": "static/fonts/cousine/",
     "node_modules/@tabler/icons/tabler-sprite.svg": "static/img/icons/tabler-sprite.svg"
   });
 
