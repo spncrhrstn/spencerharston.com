@@ -14,8 +14,8 @@ This site was built with the following:
 * Hosting: [Netlify](https://www.netlify.com) (deployed site) and [GitHub](https://github.com/sphars/spencerharston.com) (source code)
 * Domain registrar: [Porkbun](https://porkbun.com)
 * Editor: [VS Code](https://code.visualstudio.com) 
-  * Theme: [Popping and Locking](https://marketplace.visualstudio.com/items?itemName=hedinne.popping-and-locking-vscode)
-  * Font: [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+  * Theme: [Paddy Color Theme (Inkstone variant)](https://marketplace.visualstudio.com/items?itemName=yile-ou.paddy-color-theme)
+  * Font: [Cousine](https://fonts.google.com/specimen/Cousine)
 * Grayscale Sea photo by [Matt Hardy from Pexels](https://www.pexels.com/photo/grayscale-photography-of-sea-3560136/)
 * ❤ and 🍀
 
