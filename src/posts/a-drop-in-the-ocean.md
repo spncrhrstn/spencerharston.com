@@ -2,6 +2,7 @@
 title: A Drop in the Ocean
 description: The Internet is a vast ocean of noise. And I'm just a tiny drop. 
 date: 2022-05-01 12:00:00
+updated: 2023-07-25 16:38:00
 tags: 
      - personal
 image: https://images.unsplash.com/photo-1512772452758-275f069da6bf
@@ -35,7 +36,7 @@ Yeah, pretty exciting, right? It was that way for over two years. Between then a
 
 Given that I had switched jobs twice as well, I need some sort of online presence. Not necessarily for a resume/portfolio purpose, but more to show a sort of "professional" online presence as a software developer. I mean, if I can write software, surely I have the skills to make a website, right? In the end, I still managed to get those jobs without a site, but hey, it's still a nice to have.
 
-When I finally got around to updating spencerharston.com, it took several weeks in January this year just to figure out the layout and create a very basic site. I consider it a rough draft, but at least there were colors! Another couple months went by, and finally, I started really building it. Eleventy had just reached 1.0.0 status, and I decided it was a good time to pick it back up and dive in. It's taken a month and about three dozen-ish CSS revisions^[I probably changed the font a dozen times before I settled on this one (Noto Sans by the way).], but here it is.
+When I finally got around to updating spencerharston.com, it took several weeks in January this year just to figure out the layout and create a very basic site. I consider it a rough draft, but at least there were colors! Another couple months went by, and finally, I started really building it. Eleventy had just reached 1.0.0 status, and I decided it was a good time to pick it back up and dive in. It's taken a month and about three dozen-ish CSS revisions^[I probably changed the font a dozen times before I settled on the current font. And I'll probably do it again.], but here it is.
 
 ### ADHD 
 In addition to the events above, I've come to realize that not only do I deal with procrastination, I also have some subset of ADHD (most likely executive dysfunction, of which procrastination is probably an underlying effect). All these ideas and desires to do things, yet I can't actually *start* them. I've learned more about it and slowly recognized my particular habits when it comes to ADHD. It has improved a little, but like creating this website, things take time.^[Later on, I hope to write up a post detailing some of my life-long struggles with procrastination and ADHD, but given the fact I already struggle with those things, it may never get written.]
