@@ -38,17 +38,18 @@ description: This page contains a somewhat up-to-date list of hardware and softw
 * Windows Terminal
 * VS Code
 * Firefox
+* Chrome (for Google things only)
 * Steam
 * Calibre
 * MusicBee
 * Bitwarden
 
 ### Self-hosted Apps
+* FreshRSS
 * Navidrome
 * Plex
 * Jellyfin
 * Nitter
-* FreshRSS
 
 
 ## Other
