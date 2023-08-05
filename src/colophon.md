@@ -1,6 +1,7 @@
 ---
 layout: layouts/default
 title: Colophon
+description: How this website was made
 ---
 
 *col·​o·​phon (kŏl′ə-fŏn″, -fən): an inscription at the end of a book or manuscript (or website) usually with facts about its production*

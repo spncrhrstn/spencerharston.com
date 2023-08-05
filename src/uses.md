@@ -54,5 +54,6 @@ description: This page contains a somewhat up-to-date list of hardware and softw
 
 ## Other
 * Google Pixel 4a
+* Kindle Paperwhite (7th Gen)
 * Steam Deck (256GB)
 * Nintendo Switch
