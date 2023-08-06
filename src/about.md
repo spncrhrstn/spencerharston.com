@@ -1,6 +1,7 @@
 ---
 layout: layouts/default
 title: About Me
+description: All about me
 ---
 
 *Hey! I'm Spencer 👋*️
@@ -13,6 +14,5 @@ I'm currently working as a software engineer for Lockheed Martin Corporation.
 
 ## Contact Me
 If you feel like reaching out, you can find me at
- * Twitter: [@sphars_](https://twitter.com/sphars_) 
  * Mastodon: [@sphars@mastodon.social](https://mastodon.social/@sphars)
  * GitHub: [sphars](https://github.com/sphars)
