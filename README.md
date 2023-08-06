@@ -10,7 +10,7 @@ The personal website of Spencer Harston - an eternal WIP.
 This site can be copied and modified for personal use by forking and modifying as needed.
 
 > **Note**  
-> While you are free to copy this website, be aware that the site generation process is rather opinionated, not optimized, and may not fit your personal preferences. And of course the content is of my own creation.
+> While you are free to copy the source code of this website, be aware that the site generation process is rather opinionated, not optimized, and may not fit your needs. And of course the content is of my own creation. See [LICENSE](#LICENCE) below.
 
 ### Requirements
 * Node v16 or greater (using [nvm](https://github.com/nvm-sh/nvm) is suggested)
@@ -74,3 +74,7 @@ To change fonts, there's a few steps to take.
 * Built with [Eleventy](https://www.11ty.dev)
 * Deployed on [Netlify](https://www.netlify.com)
 * More on the [Colophon page](https://www.spencerharston.com/colophon)
+
+
+# LICENSE
+The source code to generate this website is licensed under the [MIT license](/LICENSE). The content of this site is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
