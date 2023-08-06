@@ -37,12 +37,12 @@ description: This page contains a somewhat up-to-date list of hardware and softw
 * WSL2
 * Windows Terminal
 * VS Code
-* Firefox
-* Chrome (for Google things only)
+* Firefox & Chrome (for Google things only)
 * Steam
 * Calibre
 * MusicBee
 * Bitwarden
+* ...and many more
 
 ### Self-hosted Apps
 * FreshRSS
