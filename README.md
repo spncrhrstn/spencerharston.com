@@ -10,7 +10,7 @@ The personal website of Spencer Harston - an eternal WIP.
 This site can be copied and modified for personal use by forking and modifying as needed.
 
 > **Note**  
-> While you are free to copy the source code of this website, be aware that the site generation process is rather opinionated, not optimized, and may not fit your needs. And of course the content is of my own creation. See [LICENSE](#LICENSE) below.
+> While you are free to copy the source code of this website, be aware that the site generation process is rather opinionated, not optimized, and may not fit your needs. And of course the content is of my own creation. See [LICENSE](#license) below.
 
 ### Requirements
 * Node v16 or greater (using [nvm](https://github.com/nvm-sh/nvm) is suggested)

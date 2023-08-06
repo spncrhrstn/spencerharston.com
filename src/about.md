@@ -6,7 +6,7 @@ description: All about this website
 
 *Hey! I'm Spencer 👋*️
 
-![self](/static/img/self.jpg "Yep that's me")
+![selfie](/static/img/self.jpg "Yep that's me")
 
 I'm married to a wonderful wife and I'm father to the cutest girl and the sweetest boy.
 
