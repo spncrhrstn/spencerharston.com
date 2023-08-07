@@ -18,6 +18,6 @@ If you feel like reaching out, you can find me at
  * GitHub: [sphars](https://github.com/sphars)
 
 ## About this Website
-The source code to generate this website is licensed under the [MIT license]({{ metadata.repo }}/blob/main/LICENSE). The content of this site is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). 
+The source code of this website is licensed under the [MIT license]({{ metadata.repo }}/blob/main/LICENSE). The content of this site is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). 
 
 More info about the creation of this site on the [Colophon](/colophon) page.

@@ -10,7 +10,7 @@ title: Posts
 {%- from "macros/posts-list.njk" import postsList %}
 {%- from "macros/tags-list.njk" import tagsList %}
 
-<p class="my-4">The occasional thought/hot take/neat thing I feel like sharing. <em>Occasional is the keyword here...</em></p>
+<p>The occasional thought/tip/hot take/neat thing I feel like sharing. <em>Occasional is the keyword here...</em></p>
 
 {{ postsList(pagination.items) }}
 
@@ -36,9 +36,9 @@ title: Posts
 {%- endif %}
 </nav>
 
-<div class="text-center">
+<div class="text-center my-4">
     <div>Filter posts:</div>
     {{ tagsList(collections.tagList) }}
 </div>
 
-<p class="mt-4 text-center text-sm">Want to know when a draft ascends to a post? <a href="/feed.xml">Add the feed to your RSS reader</a>.</p>
+<p class="text-center text-sm">Want to know when a draft becomes a post? <a href="/feed.xml">Add the feed to your RSS reader</a>.</p>
