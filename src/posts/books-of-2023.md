@@ -2,7 +2,7 @@
 title: Books of 2023
 description: A list of books I'm reading, have read, or may read this year. Updated periodically.
 date: 2023-01-11 20:00:00
-updated: 2023-07-05 21:16:00
+updated: 2023-08-10 23:51:00
 tags:
     - personal
 image: https://images.unsplash.com/photo-1462392627162-2baa2b3518a8
@@ -17,7 +17,6 @@ Links are to the Goodreads entry or other relevant source for the book.
 
 ## Currently Reading
 * [The Count of Monte Cristo](https://www.goodreads.com/book/show/7126.The_Count_of_Monte_Cristo) by Alexandre Dumas
-* [The Institute](https://www.goodreads.com/book/show/43798285-the-institute) by Stephen King
 
 ## Finished Reading
 Generally speaking, if I finish a book, it means the book was enjoyable enough for me to, well, finish it. A ⭐ means the book is recommended, and I think you should read it too.
@@ -29,6 +28,7 @@ Generally speaking, if I finish a book, it means the book was enjoyable enough f
 * [Futuristic Violence and Fancy Suits](https://www.goodreads.com/book/show/20501606-futuristic-violence-and-fancy-suits) by Jason Pargin
 * [The Help](https://www.goodreads.com/book/show/4667024-the-help) by Kathryn Stockett
 * [Permanent Record](https://www.goodreads.com/book/show/46223297-permanent-record) by Edward Snowden
+* [The Institute](https://www.goodreads.com/book/show/43798285-the-institute) by Stephen King
 
 ## Didn't Finish
 * [The Cartographers](https://www.goodreads.com/book/show/55004093-the-cartographers) by Peng Shepherd
