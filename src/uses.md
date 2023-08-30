@@ -52,6 +52,8 @@ I'll update this as often as I remember.
 * Plex
 * Jellyfin
 * Nitter
+* Libreddit
+* Audiobookshelf
 
 ### Browser Extensions
 * uBlock Origin
