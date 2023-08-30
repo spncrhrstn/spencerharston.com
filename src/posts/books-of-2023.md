@@ -2,7 +2,7 @@
 title: Books of 2023
 description: A list of books I'm reading, have read, or may read this year. Updated periodically.
 date: 2023-01-11 20:00:00
-updated: 2023-08-10 23:51:00
+updated: 2023-08-29 21:22:00
 tags:
     - personal
 image: https://images.unsplash.com/photo-1462392627162-2baa2b3518a8
@@ -17,6 +17,7 @@ Links are to the Goodreads entry or other relevant source for the book.
 
 ## Currently Reading
 * [The Count of Monte Cristo](https://www.goodreads.com/book/show/7126.The_Count_of_Monte_Cristo) by Alexandre Dumas
+* [Parable of the Sower](https://www.goodreads.com/book/show/52397.Parable_of_the_Sower) by Octavia Butler
 
 ## Finished Reading
 Generally speaking, if I finish a book, it means the book was enjoyable enough for me to, well, finish it. A ⭐ means the book is recommended, and I think you should read it too.

@@ -1,10 +1,12 @@
 ---
 layout: layouts/default
 title: Things I Use
-description: This page contains a somewhat up-to-date list of hardware and software I use. Inspired by many others' personal websites.
+description: A somewhat up-to-date list of hardware and software I use. Inspired by many others' personal websites.
 ---
 
 {{ description }}
+
+I'll update this as often as I remember.
 
 ## PCs
 
@@ -51,6 +53,14 @@ description: This page contains a somewhat up-to-date list of hardware and softw
 * Jellyfin
 * Nitter
 
+### Browser Extensions
+* uBlock Origin
+* SponsorBlock
+* Hover Zoom+
+* Bitwarden
+* Augmented Steam
+* LibRedirect
+* Stylus
 
 ## Other
 * Google Pixel 4a
