@@ -2,7 +2,7 @@
 title: Books of 2023
 description: A list of books I'm reading, have read, or may read this year. Updated periodically.
 date: 2023-01-11 20:00:00
-updated: 2023-10-09 21:17:00
+updated: 2023-10-22 21:51:00
 tags:
     - personal
 image: https://images.unsplash.com/photo-1462392627162-2baa2b3518a8
@@ -13,12 +13,10 @@ Is it cliché to set a goal to read more books at the start of the new year? Yes
 
 I haven't decided on a set number of books to read, I simply wanted to read more this year. At the end of the year, I'll try to do a little reflection post about the books I've read this year.
 
-The following is a list of books I'm currently reading, have finished, decided to not continue (for one reason or another), and potential books. 
-
-Links are to the Goodreads entry or other relevant source for the book.
+The following is a list of books I'm currently reading, have finished, decided to not continue (for one reason or another), and potential books. Links are to the Goodreads entry or other relevant source for the book.
 
 ## Currently Reading
-* [Because I Said So!](https://www.goodreads.com/book/show/13547494-because-i-said-so) by Ken Jennings
+* [All the Sinners Bleed](https://www.goodreads.com/book/show/61884832-all-the-sinners-bleed) by S.A. Cosby
 
 ## Finished Reading
 Generally speaking, if I finish a book, it means the book was enjoyable enough for me to, well, finish it. A ⭐ means the book is recommended, and I think you should read it too.
@@ -32,6 +30,7 @@ Generally speaking, if I finish a book, it means the book was enjoyable enough f
 * [Permanent Record](https://www.goodreads.com/book/show/46223297-permanent-record) by Edward Snowden
 * [The Institute](https://www.goodreads.com/book/show/43798285-the-institute) by Stephen King
 * [Parable of the Sower](https://www.goodreads.com/book/show/52397.Parable_of_the_Sower) by Octavia Butler
+* [Because I Said So!](https://www.goodreads.com/book/show/13547494-because-i-said-so) by Ken Jennings
 
 ## Didn't Finish
 * [The Cartographers](https://www.goodreads.com/book/show/55004093-the-cartographers) by Peng Shepherd
