@@ -28,6 +28,7 @@
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-img": "^3.1.0",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@fontsource/arimo": "^5.0.17",
     "@fontsource/cousine": "^5.0.5",
     "@fontsource/public-sans": "^5.0.5",
     "@sardine/eleventy-plugin-external-links": "^1.4.0",
