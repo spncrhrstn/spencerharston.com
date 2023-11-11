@@ -19,7 +19,7 @@ The following is a list of books I'm currently reading, have finished, decided t
 * [All the Sinners Bleed](https://www.goodreads.com/book/show/61884832-all-the-sinners-bleed) by S.A. Cosby
 
 ## Finished Reading
-Generally speaking, if I finish a book, it means the book was enjoyable enough for me to, well, finish it. A ⭐ means the book is recommended, and I think you should read it too.
+Generally speaking, if I finish a book, it means the book was enjoyable enough for me to, well, finish it. A ⭐ means I really enjoyed the book, which is all the qualifications it needs.
 
 * [I'm Glad My Mom Died](https://www.goodreads.com/book/show/59364173-i-m-glad-my-mom-died) by Jennette McCurdy ⭐
 * [How to Take Over the World](https://www.goodreads.com/book/show/58446218-how-to-take-over-the-world) by Ryan North ⭐

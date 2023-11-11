@@ -2,8 +2,8 @@ const { createCanvas, registerFont, loadImage } = require("canvas");
 const image = require("@11ty/eleventy-img");
 
 // register fonts
-registerFont("./utils/public-sans-latin-400-normal.ttf", { family: "Public Sans" });
-registerFont("./utils/public-sans-latin-400-italic.ttf", { family: "Public Sans", style: "italic" });
+registerFont("./utils/Arimo-Regular.ttf", { family: "Arimo Regular" });
+registerFont("./utils/Arimo-Italic.ttf", { family: "Arimo Regular", style: "italic" });
 
 // wrap text in a canvas
 // adapted from https://urre.me/writings/dynamic-open-graph-images/
@@ -84,18 +84,18 @@ async function generateMetaImages(titleText) {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   // add the image
-  const bgImage = await loadImage("./utils/sea-photo.jpg");
+  const bgImage = await loadImage("./utils/clouds-photo.jpg");
   ctx.drawImage(bgImage, 0, 0);
 
   // add subText text
   ctx.fillStyle = "#fafafa";
-  ctx.font = "italic 48px 'Public Sans'";
+  ctx.font = "italic 48px 'Arimo'";
   ctx.textAlign = "end";
   // ctx.fillText(imageFooterText, canvas.width - 48, canvas.height - 50);
   drawTextBG(ctx, subText, ctx.font, ctx.textAlign, canvas.width - 48, canvas.height - 50);
 
   // add image title text
-  ctx.font = `normal ${titleFontSize}px "Public Sans"`;
+  ctx.font = `normal ${titleFontSize}px "Arimo"`;
   ctx.textAlign = "start";
   ctx.fillStyle = "#fafafa";
   wrapText(ctx, titleText, 64, 144, canvas.width - 96, titleLineHeight);

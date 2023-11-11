@@ -17,7 +17,7 @@ This site was built with the following:
 * Editor: [VS Code](https://code.visualstudio.com) 
   * Theme: [Paddy Color Theme (Inkstone variant)](https://marketplace.visualstudio.com/items?itemName=yile-ou.paddy-color-theme)
   * Font: [Cousine](https://fonts.google.com/specimen/Cousine)
-* Grayscale Sea photo by [Matt Hardy from Pexels](https://www.pexels.com/photo/grayscale-photography-of-sea-3560136/)
+* Fluffy bird sitting on twig photo by [Skyer Ewing on Pexels](https://www.pexels.com/photo/fluffy-bird-sitting-on-twig-4756803/)
 * ❤ and 🍀
 
 Made in Ogden, UT
