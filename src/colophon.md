@@ -10,14 +10,14 @@ This site was built with the following:
 
 * Static site generator: [Eleventy](https://www.11ty.dev)
   * Theme: Customized [TailwindCSS](https://www.tailwindcss.com)
-  * Fonts: [Public Sans](https://fonts.google.com/specimen/Public+Sans) and [Cousine](https://fonts.google.com/specimen/Cousine)
+  * Fonts: [Arimo](https://fonts.google.com/specimen/Arimo) and [Cousine](https://fonts.google.com/specimen/Cousine)
   * Icons: [Tabler Icons](https://tabler.io)
 * Hosting: [Netlify](https://www.netlify.com) (deployed site) and [GitHub](https://github.com/sphars/spencerharston.com) (source code)
 * Domain registrar: [Porkbun](https://porkbun.com)
 * Editor: [VS Code](https://code.visualstudio.com) 
   * Theme: [Paddy Color Theme (Inkstone variant)](https://marketplace.visualstudio.com/items?itemName=yile-ou.paddy-color-theme)
   * Font: [Cousine](https://fonts.google.com/specimen/Cousine)
-* Grayscale Sea photo by [Matt Hardy from Pexels](https://www.pexels.com/photo/grayscale-photography-of-sea-3560136/)
+* Fluffy bird sitting on twig photo by [Skyer Ewing on Pexels](https://www.pexels.com/photo/fluffy-bird-sitting-on-twig-4756803/)
 * ❤ and 🍀
 
 Made in Ogden, UT

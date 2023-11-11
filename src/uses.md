@@ -39,7 +39,7 @@ I'll update this as often as I remember.
 * WSL2
 * Windows Terminal
 * VS Code
-* Firefox & Chrome (for Google things only)
+* Firefox & Chrome
 * Steam
 * Calibre
 * MusicBee
@@ -47,13 +47,12 @@ I'll update this as often as I remember.
 * ...and many more
 
 ### Self-hosted Apps
-* FreshRSS
-* Navidrome
-* Plex
-* Jellyfin
-* Nitter
-* Libreddit
-* Audiobookshelf
+* FreshRSS (RSS aggregator)
+* Navidrome (music server)
+* Plex (media server)
+* Jellyfin (media server)
+* Libreddit (reddit alternative frontend)
+* Audiobookshelf (audiobook server)
 
 ### Browser Extensions
 * uBlock Origin
@@ -65,7 +64,7 @@ I'll update this as often as I remember.
 * Stylus
 
 ## Other
-* Google Pixel 4a
+* Google Pixel 8
 * Kindle Paperwhite (7th Gen)
 * Steam Deck (256GB)
 * Nintendo Switch
