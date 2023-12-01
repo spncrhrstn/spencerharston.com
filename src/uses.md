@@ -66,5 +66,5 @@ I'll update this as often as I remember.
 ## Other
 * Google Pixel 8
 * Kindle Paperwhite (7th Gen)
-* Steam Deck (256GB)
+* Steam Deck LCD (256GB)
 * Nintendo Switch
