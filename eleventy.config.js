@@ -42,7 +42,8 @@ module.exports = function (eleventyConfig) {
     "src/static/favicons/favicon.ico": "/favicon.ico",
     "node_modules/@fontsource/arimo/": "static/fonts/arimo/",
     "node_modules/@fontsource/cousine/": "static/fonts/cousine/",
-    "node_modules/@tabler/icons/tabler-sprite.svg": "static/img/icons/tabler-sprite.svg"
+    "node_modules/@tabler/icons/tabler-sprite.svg": "static/img/icons/tabler-sprite.svg",
+    "node_modules/@zachleat/snow-fall/snow-fall.js":"static/js/snow-fall.js"
   });
 
   // add watch target for tailwind

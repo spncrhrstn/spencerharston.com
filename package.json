@@ -33,6 +33,7 @@
     "@sardine/eleventy-plugin-external-links": "^1.4.0",
     "@tabler/icons": "^2.41.0",
     "@tailwindcss/typography": "^0.5.10",
+    "@zachleat/snow-fall": "^1.0.2",
     "async-git": "^1.13.3",
     "autoprefixer": "^10.4.16",
     "canvas": "^2.11.2",
