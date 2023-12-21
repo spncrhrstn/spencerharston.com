@@ -21,7 +21,7 @@ I follow Ryan North's [SMBC comic](https://www.smbc-comics.com/) but I didn't kn
 ### *All the Sinners Bleed* by S.A. Cosby
 Some years ago, I stumbled across S.A. Cosby's book, *Blacktop Wasteland*, at the library (I judged the book by its cover). I read it and thoroughly enjoyed Cosby's writing. I've since read all his books (except *My Darkest Prayer*) and his latest, *All the Sinners Bleed*, was an enjoyable thriller. I liked the perspective Cosby provided via the characters, and trying to tackle current events. Looking forward to his next book.
 
-As an aside, I've also started listening to audiobooks, thanks to self-hosting the Audiobookshelf server. The only books I've listened to so far are the *Harry Potter* series. It started out as testing the deployment of the server, but I ended up just listening to them all. Ah nostalgia. Next up is the *The Lord of the Rings* series.
+Additionally, I've also started listening to audiobooks, thanks to self-hosting the [Audiobookshelf server](https://www.audiobookshelf.org/). The only books I've listened to so far are the *Harry Potter* series. It started out as testing the deployment of the server, but I ended up just listening to them all. Ah nostalgia. Next up is the *The Lord of the Rings* series.
 
 ## Music
 Here are some artists/bands that I enjoyed listening to this year. You can see all my listening habits over on [last.fm](https://www.last.fm/user/spencer314).
@@ -116,3 +116,6 @@ I'm only including this because I love *Rocket League* (1300+ hours), or at leas
 For posterity, here's my Steam 2023 Year in Review
 
 ![2023 steam year in review](../../static/img/posts/games-of-2023.webp "Steam 2023 Year in Review")
+
+## Next Year
+I don't really have anything I'm looking forward to. The only show I was waiting for was *Andor*, season 2, which was set to be released in August 2024, but as of today, it's been delayed. Probably to sometime in 2025. Maybe if *The Unbrella Academy* releases its final seaon...
