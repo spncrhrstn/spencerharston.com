@@ -2,6 +2,7 @@
 title: Media Reflection of 2023
 description: My thoughts on some of the media I've consumed this past year.
 date: 2023-12-20 22:45:00
+updated: 2023-12-21 23:09:00
 tags:
     - personal
     - reviews
@@ -46,6 +47,14 @@ I've been on a bit of a kick trying to listen to more bands featuring female lea
 
 ### Broken Bells
 And yet one more instance of re-picking up a band that I hadn't listened to in years. The albums *After the Disco* and *INTO THE BLUE* are great albums. Standout track is "Good Luck".
+
+### Honorable Mention
+I just wanted to share a song that I stumbled across on reddit of all places. It's "Can't Get You Out Of My Head (ft. Parcels)" by AnnenMayKantereit. It's a cover of the immortal song by Kylie Minogue, and dangit, *I can't get it out of my head*. My tracking isn't accurate because it's only available on YouTube, but it's probably in my top five played songs this year.
+
+<details>
+<summary>Click to open a YouTube embed of "Can't Get You Out of My Head (Cover)"</summary>
+<iframe class="w-100 mx-auto" width="560" height="315" src="https://www.youtube-nocookie.com/embed/RacxNskxySo?rel=0&iv_load_policy=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy"></iframe>
+</details>
 
 ## Podcasts
 I need to find some new podcasts, but here's a couple I've listened to this year.
