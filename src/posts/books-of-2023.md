@@ -2,7 +2,7 @@
 title: Books of 2023
 description: A list of books I'm reading, have read, or may read this year. Updated periodically.
 date: 2023-01-11 20:00:00
-updated: 2023-12-19 10:44:00
+updated: 2023-12-22 22:03:00
 tags:
     - personal
 image: https://images.unsplash.com/photo-1462392627162-2baa2b3518a8
@@ -16,7 +16,7 @@ I haven't decided on a set number of books to read, I simply wanted to read more
 The following is a list of books I'm currently reading, have finished, decided to not continue (for one reason or another), and potential books. Links are to the Goodreads entry or other relevant source for the book.
 
 ## Currently Reading
-* [Blankets](https://www.goodreads.com/book/show/25179.Blankets) by Craig Thompson
+* [Flux](https://www.goodreads.com/book/show/61774690-flux) by Jinwoo Chong
 
 ## Finished Reading
 Generally speaking, if I finish a book, it means the book was enjoyable enough for me to, well, finish it. A ⭐ means I really enjoyed the book, which is all the qualifications it needs.
@@ -33,6 +33,7 @@ Generally speaking, if I finish a book, it means the book was enjoyable enough f
 * [Because I Said So!](https://www.goodreads.com/book/show/13547494-because-i-said-so) by Ken Jennings
 * [All the Sinners Bleed](https://www.goodreads.com/book/show/61884832-all-the-sinners-bleed) by S.A. Cosby ⭐
 * [How to (Almost) Make Friends on the Internet](https://www.goodreads.com/book/show/55204812-how-to-almost-make-friends-on-the-internet) by Michael Cunningham
+* [Blankets](https://www.goodreads.com/book/show/25179.Blankets) by Craig Thompson
 
 ## Didn't Finish
 * [The Cartographers](https://www.goodreads.com/book/show/55004093-the-cartographers) by Peng Shepherd
