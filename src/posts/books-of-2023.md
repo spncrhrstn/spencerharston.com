@@ -2,7 +2,7 @@
 title: Books of 2023
 description: A list of books I'm reading, have read, or may read this year. Updated periodically.
 date: 2023-01-11 20:00:00
-updated: 2023-12-22 22:03:00
+updated: 2023-12-31 12:15:00
 tags:
     - personal
 image: https://images.unsplash.com/photo-1462392627162-2baa2b3518a8
@@ -16,7 +16,7 @@ I haven't decided on a set number of books to read, I simply wanted to read more
 The following is a list of books I'm currently reading, have finished, decided to not continue (for one reason or another), and potential books. Links are to the Goodreads entry or other relevant source for the book.
 
 ## Currently Reading
-* [Flux](https://www.goodreads.com/book/show/61774690-flux) by Jinwoo Chong
+* [Ascension](https://www.goodreads.com/book/show/61813107-ascension) by Nicholas Binge
 
 ## Finished Reading
 Generally speaking, if I finish a book, it means the book was enjoyable enough for me to, well, finish it. A ⭐ means I really enjoyed the book, which is all the qualifications it needs.
@@ -40,6 +40,7 @@ Generally speaking, if I finish a book, it means the book was enjoyable enough f
 * [The Count of Monte Cristo](https://www.goodreads.com/book/show/7126.The_Count_of_Monte_Cristo) by Alexandre Dumas
 * [This is How You Lose the Time War](https://www.goodreads.com/book/show/43352954-this-is-how-you-lose-the-time-war) by Amal El-Mohtar, Max Gladstone
 * [Tomorrow, and Tomorrow, and Tomorrow](https://www.goodreads.com/book/show/58784475-tomorrow-and-tomorrow-and-tomorrow) by Gabrielle Zevin
+*  [Flux](https://www.goodreads.com/book/show/61774690-flux) by Jinwoo Chong
 
 ## Under Consideration
 So far, these are all about ADHD and procrastination. So I'll get to them. Someday...
