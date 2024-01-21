@@ -2,7 +2,7 @@
 title: Books of 2024
 description: A list of books I'm reading, have read, or may read in 2024.
 date: 2024-01-01 22:25:00
-updated: 2024-01-06 21:15:00
+updated: 2024-01-20 22:48:00
 tags:
     - personal
 ---
@@ -13,9 +13,12 @@ As with last year, I don't have a firm number of books I want to read. However, 
 
 The following is a list of books I'm currently reading, have finished, decided to not continue (for one reason or another), and books I'd like to read. Links are to the Goodreads entry or other relevant source for the book.
 
+If an entry is prefaced with 🎧, that means I'm listening to the audiobook version. Otherwise, it's the physical/ebook version of the book.
+
 ## Currently Reading
 * [Ascension](https://www.goodreads.com/book/show/61813107-ascension) by Nicholas Binge
 * [A City on Mars](https://www.goodreads.com/book/show/125084292-a-city-on-mars) by Kelly and Zach Weinersmith
+* 🎧 [The Hobbit](https://www.goodreads.com/book/show/59733167-the-hobbit) by J.R.R. Tolkien
 
 ## Finished Reading
 Generally speaking, if I finished a book, it means the book was good enough for me to, well, finish it. A ⭐ means I really enjoyed the book, which is all the qualifications it needs.
