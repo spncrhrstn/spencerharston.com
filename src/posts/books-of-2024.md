@@ -16,14 +16,14 @@ The following is a list of books I'm currently reading, have finished, decided t
 If an entry is prefaced with 🎧, that means I'm listening to the audiobook version. Otherwise, it's the physical/ebook version of the book.
 
 ## Currently Reading
-* [Ascension](https://www.goodreads.com/book/show/61813107-ascension) by Nicholas Binge
 * [A City on Mars](https://www.goodreads.com/book/show/125084292-a-city-on-mars) by Kelly and Zach Weinersmith
 * 🎧 [The Hobbit](https://www.goodreads.com/book/show/59733167-the-hobbit) by J.R.R. Tolkien
+* [The Kaiju Preservation Society](https://www.goodreads.com/book/show/57693406-the-kaiju-preservation-society) by John Scalzi
 
 ## Finished Reading
 Generally speaking, if I finished a book, it means the book was good enough for me to, well, finish it. A ⭐ means I really enjoyed the book, which is all the qualifications it needs.
 
-None so far... 
+* [Ascension](https://www.goodreads.com/book/show/61813107-ascension) by Nicholas Binge
 
 ## Didn't Finish
 None so far...
