@@ -25,7 +25,7 @@ I'll update this as often as I remember.
   * OS: Windows 10 Pro
   * Mouse: Corsair Katar Pro
   * Keyboard: Cooler Master MasterKeys Pro L
-  * Monitor: Lenovo 1440p 75Hz monitor
+  * Monitor: Lenovo L24q-30 1440p 75Hz monitor
 
 * Server: Asus X53SV Laptop (2012)
   * CPU: Intel Core i7-2670QM
@@ -35,10 +35,13 @@ I'll update this as often as I remember.
 
 
 ## Software
+
+### Applications
 * Windows 10
 * WSL2
 * Windows Terminal
 * VS Code
+* Docker
 * Firefox & Chrome
 * Steam
 * Calibre
@@ -46,12 +49,14 @@ I'll update this as often as I remember.
 * Bitwarden
 * ...and many more
 
+See also my Default Applications of [2023](/posts/app-defaults-2023)
+
 ### Self-hosted Apps
 * FreshRSS (RSS aggregator)
 * Navidrome (music server)
 * Plex (media server)
 * Jellyfin (media server)
-* Libreddit (reddit alternative frontend)
+* Redlib (reddit alternative frontend)
 * Audiobookshelf (audiobook server)
 
 ### Browser Extensions
@@ -62,6 +67,7 @@ I'll update this as often as I remember.
 * Augmented Steam
 * LibRedirect
 * Stylus
+* Dark Reader
 
 ## Other
 * Google Pixel 8

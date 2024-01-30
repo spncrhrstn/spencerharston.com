@@ -15,7 +15,7 @@ This website was built with the following:
 * Hosting: [Netlify](https://www.netlify.com) (deployment) and [GitHub](https://github.com/sphars/spencerharston.com) (source code)
 * Domain registrar: [Porkbun](https://porkbun.com)
 * Editor: [VS Code](https://code.visualstudio.com) 
-  * Theme: [Gruvbox Material Dark](https://marketplace.visualstudio.com/items?itemName=sainnhe.gruvbox-material)
+  * Theme: [Catppuccin Macchiato](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc)
   * Font: [Cousine](https://fonts.google.com/specimen/Cousine)
 * Fluffy bird sitting on twig photo by [Skyer Ewing on Pexels](https://www.pexels.com/photo/fluffy-bird-sitting-on-twig-4756803/)
 * ❤ and 🍀
