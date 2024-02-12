@@ -2,14 +2,14 @@
 title: Books of 2024
 description: A list of books I'm reading, have read, or may read in 2024.
 date: 2024-01-01 22:25:00
-updated: 2024-02-04 23:36:00
+updated: 2024-02-11 21:11:00
 tags:
     - personal
 ---
 
 I decided on a whim last January to list the books I read throughout 2023. While there are better tools out there to track books, it was fun to share it on my blog (even if no one reads it). So I'm doing it again this year. 
 
-As with last year, I don't have a firm number of books I want to read. However, I managed to read 13 books last year, so 12-14 books seems reasonable. I also started listening to audiobooks last year and though I didn't add them to my list, I may do it this year. 
+As with last year, I don't have a firm number of books I want to read. However, I managed to read 13 books last year, so 12-14 books seems reasonable. I also started listening to audiobooks last year and though I didn't add them to my list, I ~~may~~ will do it this year. 
 
 The following is a list of books I'm currently reading, have finished, decided to not continue (for one reason or another), and books I'd like to read. Links are to the Goodreads entry or other relevant source for the book.
 
@@ -18,6 +18,8 @@ If an entry is prefaced with 🎧, that means I'm listening to the audiobook ver
 ## Currently Reading
 * [A City on Mars](https://www.goodreads.com/book/show/125084292-a-city-on-mars) by Kelly and Zach Weinersmith
 * 🎧 [The Hobbit](https://www.goodreads.com/book/show/59733167-the-hobbit) by J.R.R. Tolkien
+* [What If? 2: Additional Serious Scientific Answers to Absurd Hypothetical Questions
+](https://www.goodreads.com/book/show/60190659-what-if-2) by Randall Munroe
 
 ## Finished Reading
 Generally speaking, if I finished a book, it means the book was good enough for me to, well, finish it. A ⭐ means I really enjoyed the book, which is all the qualifications it needs.
@@ -37,4 +39,4 @@ None so far...
 I'll get to those ADHD books one day...
 
 ## Not Included
-* The innumerable childrens' books that my daughter has me read to her
+* The innumerable childrens' books that my kids have me read to them
