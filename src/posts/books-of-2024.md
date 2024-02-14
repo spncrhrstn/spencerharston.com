@@ -2,7 +2,7 @@
 title: Books of 2024
 description: A list of books I'm reading, have read, or may read in 2024.
 date: 2024-01-01 22:25:00
-updated: 2024-02-11 21:11:00
+updated: 2024-02-13 21:24:00
 tags:
     - personal
 ---
@@ -35,6 +35,7 @@ None so far...
 * [ADHD Pro: Sustainable Productivity for People with ADHD](https://adhdpro.xyz/) by Robert Merki
 * [Taking Charge of Adult ADHD](https://www.guilford.com/books/Taking-Charge-of-Adult-ADHD/Russell-Barkley/9781462546855) by Russell A. Barkley
 * [Extra Focus: The Quick Start Guide to Adult ADHD](https://www.goodreads.com/book/show/197655262-extra-focus) by Jesse J. Anderson
+* [Doom Guy: Life in First Person](https://www.goodreads.com/book/show/60310722-doom-guy) by John Romero 
 
 I'll get to those ADHD books one day...
 
