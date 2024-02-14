@@ -2,6 +2,7 @@ module.exports = {
   eleventyComputed: {
     layout: "layouts/post",
     permalink: "posts/{% dateByFormat page.date, 'yyyy' %}/{{ title | slugify }}/",
-    type: "post"
+    type: "post",
+    redirectFrom: "/posts/{{ page.fileSlug }}/"
   }
 };
