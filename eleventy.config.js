@@ -95,6 +95,12 @@ module.exports = function (eleventyConfig) {
     return split.join("") + "Z";
   });
 
+  // shortcode to format date with supplied format string
+  eleventyConfig.addShortcode("dateByFormat", (dateObj, format) => {
+    let result = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toFormat(format);
+    return result;
+  })
+
   // filter for sorting a list descending
   eleventyConfig.addFilter("sortDesc", (posts) => {
     posts.sort(function (a, b) {
@@ -129,7 +135,7 @@ module.exports = function (eleventyConfig) {
 
   // collection of all posts
   eleventyConfig.addCollection("posts", (collection) => {
-    return collection.getFilteredByGlob(["./src/posts/*.md", "./src/posts/drafts/*.md"]);
+    return collection.getFilteredByGlob(["./src/posts/**/*.md", "./src/posts/drafts/*.md"]);
   });
 
   // get an array of all tags
