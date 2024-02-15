@@ -2,7 +2,7 @@
 title: Books of 2024
 description: A list of books I'm reading, have read, or may read in 2024.
 date: 2024-01-01 22:25:00
-updated: 2024-02-13 21:24:00
+updated: 2024-02-15 16:11:00
 tags:
     - personal
 ---
@@ -18,8 +18,7 @@ If an entry is prefaced with 🎧, that means I'm listening to the audiobook ver
 ## Currently Reading
 * [A City on Mars](https://www.goodreads.com/book/show/125084292-a-city-on-mars) by Kelly and Zach Weinersmith
 * 🎧 [The Hobbit](https://www.goodreads.com/book/show/59733167-the-hobbit) by J.R.R. Tolkien
-* [What If? 2: Additional Serious Scientific Answers to Absurd Hypothetical Questions
-](https://www.goodreads.com/book/show/60190659-what-if-2) by Randall Munroe
+* [Starter Villain](https://www.goodreads.com/book/show/61885029-starter-villain) by John Scalzi
 
 ## Finished Reading
 Generally speaking, if I finished a book, it means the book was good enough for me to, well, finish it. A ⭐ means I really enjoyed the book, which is all the qualifications it needs.
@@ -27,6 +26,8 @@ Generally speaking, if I finished a book, it means the book was good enough for 
 * [Ascension](https://www.goodreads.com/book/show/61813107-ascension) by Nicholas Binge
 * [Never Lie](https://www.goodreads.com/book/show/62080187-never-lie) by Freida McFadden
 * [The Kaiju Preservation Society](https://www.goodreads.com/book/show/57693406-the-kaiju-preservation-society) by John Scalzi
+* [What If? 2: Additional Serious Scientific Answers to Absurd Hypothetical Questions
+](https://www.goodreads.com/book/show/60190659-what-if-2) by Randall Munroe ⭐
 
 ## Didn't Finish
 None so far...
