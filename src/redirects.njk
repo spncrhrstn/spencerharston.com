@@ -2,11 +2,15 @@
 permalink: /_redirects
 eleventyExcludeFromCollections: true
 ---
-{# {%- for page in collections.posts -%}
+{#- The following snippet will generate a netlify redirect rule if 
+    the post has a `redirectFrom` property -#}
+
+{#- {%- for page in collections.posts -%}
     {%- if page.url and page.data.redirectFrom and not page.data.draft %}
 {{ page.data.redirectFrom }}    {{ page.url }}
     {%- endif -%}
-{%- endfor -%} #}
+{%- endfor -%} -#}
+{#- Manually set redirects, only for these pages because these were the only affected before reorganizing posts by year -#}
 /posts/books-of-2024/    /posts/2024/books-of-2024/
 /posts/media-reflection-of-2023/    /posts/2023/media-reflection-of-2023/
 /posts/app-defaults-2023/    /posts/2023/app-defaults-in-2023/
