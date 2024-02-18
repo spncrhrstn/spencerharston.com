@@ -112,6 +112,11 @@ module.exports = function (eleventyConfig) {
   // filter for limiting how many items are returned in the array
   eleventyConfig.addFilter("limit", (arr, limit) => arr.slice(0, limit));
 
+  // filter collection by year
+  eleventyConfig.addFilter("postsByYear", (collection, year) => {
+    return collection.filter((entry) => DateTime.fromJSDate(entry.date).year == year);
+  });
+
   // shortcodes
   // shortcode for returing a github link to the current page's source code
   eleventyConfig.addNunjucksShortcode("page_source_link", function (inner_text) {
@@ -155,6 +160,22 @@ module.exports = function (eleventyConfig) {
 
     //console.log("tags: ", [...uniqueTags]);
     return [...uniqueTags].sort();
+  });
+
+  // get an array of all post years
+  eleventyConfig.addCollection("yearList", (collection) => {
+    let uniqueYears = new Set();
+
+    collection.getAllSorted().forEach((item) => {
+      if(!("date" in item.data)) return;
+      
+      // get the year of the post
+      let dateObj = item.date;
+      let itemYear = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toFormat("yyyy");
+      uniqueYears.add(itemYear);
+    });
+
+    return [...uniqueYears];
   });
 
   // configure markdown plugins
