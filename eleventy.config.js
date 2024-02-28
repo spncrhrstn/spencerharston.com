@@ -30,8 +30,10 @@ function htmlminTransform(content, outputPath) {
  */
 module.exports = function (eleventyConfig) {
 
+  console.log(process.env);
   // building for production
   if (process.env.ELEVENTY_ENV === "production") {
+    console.log("BUILDING FOR PRODUCTION");
     eleventyConfig.ignores.add("src/posts/drafts");
     eleventyConfig.addTransform("htmlmin", htmlminTransform);
   }
