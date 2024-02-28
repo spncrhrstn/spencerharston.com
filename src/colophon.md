@@ -12,7 +12,7 @@ This website was built with the following:
   * Theme: Customized [TailwindCSS](https://www.tailwindcss.com)
   * Fonts: [Arimo](https://fonts.google.com/specimen/Arimo) and [Cousine](https://fonts.google.com/specimen/Cousine)
   * Icons: [Tabler Icons](https://tabler.io)
-* Hosting: [Netlify](https://www.netlify.com) (deployment) and [GitHub](https://github.com/sphars/spencerharston.com) (source code)
+* Hosting: [Cloudflare Pages](https://pages.cloudflare.com/) (deployment) and [GitHub](https://github.com/sphars/spencerharston.com) (source code)
 * Domain registrar: [Porkbun](https://porkbun.com)
 * Editor: [VS Code](https://code.visualstudio.com) 
   * Theme: [Catppuccin Macchiato](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc)
