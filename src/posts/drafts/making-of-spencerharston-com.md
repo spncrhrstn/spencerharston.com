@@ -26,8 +26,8 @@ Now, it's true, you don't need a domain name to have a website. But how personal
  * Fun times
 ### Hosting
  * To self-host or outsource?
-### Netlify and GH Pages
- * Continuous deployment and Netlify's free tier
+### ~~Netlify~~Cloudflare Pages and GH Pages
+ * Continuous deployment and ~~Netlify's~~Cloudflare Pages free tier
 ### Creating this Website in details
  * Eleventy and such
  * [Eleventy Tips](/posts/eleventy-tips/)

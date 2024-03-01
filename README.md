@@ -1,6 +1,5 @@
 # spencerharston.com
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5b157e12-c172-4459-880f-c6d18b71ec0f/deploy-status)](https://app.netlify.com/sites/spencerharston/deploys)
 ![Eleventy](https://img.shields.io/badge/eleventy-2.0.1-blue)
 
 The personal website of Spencer Harston - an eternal WIP.
@@ -49,7 +48,7 @@ Using environment variables, the site can be built for production, which will do
  - Generate images for HTML `meta` tags, which makes the build process take longer
  - Minimize the CSS and HTML files 
 
-To build for production, set the `ELEVENTY_ENV` to `production`, like so:
+To build for production, set the `ELEVENTY_ENV` environment variable to `production`, like so:
 
 ```
 ELEVENTY_ENV=production npm run build
@@ -72,7 +71,7 @@ To change fonts, there's a few steps to take.
 ## Credits
 
 * Built with [Eleventy](https://www.11ty.dev)
-* Deployed on [Netlify](https://www.netlify.com)
+* Deployed on [Cloudflare Pages](https://pages.cloudflare.com/)
 * More on the [Colophon page](https://www.spencerharston.com/colophon)
 
 
