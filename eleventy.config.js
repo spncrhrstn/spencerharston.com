@@ -14,7 +14,7 @@ function htmlminTransform(content, outputPath) {
     let minified = htmlmin.minify(content, {
       useShortDoctype: true,
       removeComments: true,
-      collapseWhitespace: true,
+      collapseWhitespace: false,
       minifyJS: true,
       minifyCSS: true
     });
@@ -144,7 +144,7 @@ module.exports = function (eleventyConfig) {
     return collection.getFilteredByGlob(["./src/posts/**/*.md", "./src/posts/drafts/*.md"]);
   });
 
-  // get an array of all tags
+  // get a collection of all tags of a collection
   eleventyConfig.addCollection("tagList", (collection) => {
     let uniqueTags = new Set(); //sets only allow unique items
 
@@ -159,11 +159,10 @@ module.exports = function (eleventyConfig) {
         tag.startsWith("_") || uniqueTags.add(tag);
     });
 
-    //console.log("tags: ", [...uniqueTags]);
     return [...uniqueTags].sort();
   });
 
-  // get an array of all post years
+  // get a collection of years from a collection
   eleventyConfig.addCollection("yearList", (collection) => {
     let uniqueYears = new Set();
 
@@ -171,8 +170,7 @@ module.exports = function (eleventyConfig) {
       if(!("date" in item.data)) return;
       
       // get the year of the post
-      let dateObj = item.date;
-      let itemYear = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toFormat("yyyy");
+      let itemYear = DateTime.fromJSDate(item.date, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toFormat("yyyy");
       uniqueYears.add(itemYear);
     });
 
