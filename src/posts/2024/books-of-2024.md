@@ -2,7 +2,7 @@
 title: Books of 2024
 description: A list of books I'm reading, have read, or may read in 2024.
 date: 2024-01-01 22:25:00
-updated: 2024-02-26 22:44:00
+updated: 2024-03-06 06:49:00
 tags:
     - personal
 ---
@@ -11,14 +11,14 @@ I decided on a whim last January to list the books I read throughout 2023. While
 
 As with last year, I don't have a firm number of books I want to read. However, I managed to read 13 books last year, so 12-14 books seems reasonable. I also started listening to audiobooks last year and though I didn't add them to my list, I ~~may~~ will do it this year. 
 
-The following is a list of books I'm currently reading, have finished, decided to not continue (for one reason or another), and books I'd like to read. Links are to the Goodreads entry or other relevant source for the book.
+The following is a list of books I'm currently reading, have finished, decided to not continue, and books I'd like to read. Links are to the Goodreads entry or other relevant source for the book.
 
 If an entry is prefaced with 🎧, that means I'm listening to the audiobook version. Otherwise, it's the physical/ebook version of the book.
 
 ## Currently Reading
 * [A City on Mars](https://www.goodreads.com/book/show/125084292-a-city-on-mars) by Kelly and Zach Weinersmith
 * 🎧 [The Lord of the Rings: The Fellowship of the Ring](https://www.goodreads.com/book/show/61215351-the-fellowship-of-the-ring) by J.R.R. Tolkien
-* [How to Be Perfect: The Correct Answer to Every Moral Question](https://www.goodreads.com/book/show/58484901-how-to-be-perfect) by Michael Schur
+* [11/22/63](https://www.goodreads.com/book/show/10644930-11-22-63) by Stephen King
 
 ## Finished Reading
 Generally speaking, if I finished a book, it means the book was good enough for me to, well, finish it. A ⭐ means I really enjoyed the book, which is all the qualifications it needs.
@@ -31,7 +31,9 @@ Generally speaking, if I finished a book, it means the book was good enough for 
 * [Starter Villain](https://www.goodreads.com/book/show/61885029-starter-villain) by John Scalzi ⭐
 
 ## Didn't Finish
-None so far...
+While there's usually no specific reason why I choose not to finish a book, generally it's some variation of "just couldn't get into it".
+
+* [How to Be Perfect: The Correct Answer to Every Moral Question](https://www.goodreads.com/book/show/58484901-how-to-be-perfect) by Michael Schur
 
 ## Under Consideration
 * [ADHD Pro: Sustainable Productivity for People with ADHD](https://adhdpro.xyz/) by Robert Merki

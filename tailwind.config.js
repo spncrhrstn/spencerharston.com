@@ -10,7 +10,7 @@ module.exports = {
         current: "current=page"
       },
       fontFamily: {
-        "sans":["\"Arimo\"", ...defaultTheme.fontFamily.sans],
+        "sans":["\"Golos Text\"", ...defaultTheme.fontFamily.sans],
         "mono":["\"Cousine\"", ...defaultTheme.fontFamily.mono]
       },
       typography: (theme) => ({
