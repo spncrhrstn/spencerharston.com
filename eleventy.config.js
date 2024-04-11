@@ -41,7 +41,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "src/static": "static/",
     "src/static/favicons/favicon.ico": "/favicon.ico",
-    "node_modules/@fontsource/golos-text/": "static/fonts/golos-text/",
+    "node_modules/@fontsource/atkinson-hyperlegible/": "static/fonts/atkinson-hyperlegible/",
     "node_modules/@fontsource/cousine/": "static/fonts/cousine/",
     "node_modules/@tabler/icons/tabler-sprite.svg": "static/img/icons/tabler-sprite.svg"
   });

@@ -1,9 +1,12 @@
-@import url('/static/fonts/golos-text/400.css');
+@import url('/static/fonts/atkinson-hyperlegible/400.css');
 @import url('/static/fonts/cousine/400.css');
 
 @tailwind base;
 
 @layer base {
+    html {
+        font-size: 18px;
+    }
     a {
         @apply hover:underline hover:text-blue-600 dark:hover:text-sky-500;
     }
