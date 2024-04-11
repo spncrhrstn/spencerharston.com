@@ -2,27 +2,27 @@ const { createCanvas, registerFont, loadImage } = require("canvas");
 const image = require("@11ty/eleventy-img");
 
 // register fonts
-registerFont("./utils/Arimo-Regular.ttf", { family: "Arimo Regular" });
-registerFont("./utils/Arimo-Italic.ttf", { family: "Arimo Regular", style: "italic" });
+registerFont("./utils/AtkinsonHyperlegible-Regular.ttf", { family: "Atkinson Hyperlegible Regular" });
+registerFont("./utils/AtkinsonHyperlegible-Italic.ttf", { family: "Atkinson Hyperlegible Regular", style: "italic" });
 
 // wrap text in a canvas
 // adapted from https://urre.me/writings/dynamic-open-graph-images/
 async function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
-  let words = text.split(' ')
-  let line = ''
+  let words = text.split(" ");
+  let line = "";
 
   for (let n = 0; n < words.length; n++) {
-    let testLine = line + words[n] + ' '
-    let metrics = ctx.measureText(testLine)
-    let testWidth = metrics.width
+    let testLine = line + words[n] + " ";
+    let metrics = ctx.measureText(testLine);
+    let testWidth = metrics.width;
     if (testWidth > maxWidth && n > 0) {
       drawTextBG(ctx, line, ctx.font, ctx.textAlign, x, y);
 
       // context.fillText(line, x, y)
-      line = words[n] + ' '
-      y += lineHeight
+      line = words[n] + " ";
+      y += lineHeight;
     } else {
-      line = testLine
+      line = testLine;
     }
   }
   drawTextBG(ctx, line, ctx.font, ctx.textAlign, x, y);
@@ -39,10 +39,10 @@ async function drawTextBG(ctx, txt, font, align, x, y) {
   ctx.font = font;
 
   // draw text from top - makes life easier at the moment
-  ctx.textBaseline = 'top';
+  ctx.textBaseline = "top";
 
   // color for background
-  ctx.fillStyle = '#fafafa';
+  ctx.fillStyle = "#cad3f5";
 
   // get text metrics
   let metrics = ctx.measureText(txt);
@@ -55,9 +55,9 @@ async function drawTextBG(ctx, txt, font, align, x, y) {
   }
 
   // text color
-  ctx.fillStyle = '#171717';
+  ctx.fillStyle = "#1e2030";
 
-  ctx.textAlign = align
+  ctx.textAlign = align;
 
   // draw text on top
   ctx.fillText(txt, x, y - metrics.emHeightDescent);
@@ -84,18 +84,18 @@ async function generateMetaImages(titleText) {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   // add the image
-  const bgImage = await loadImage("./utils/clouds-photo.jpg");
+  const bgImage = await loadImage("./utils/gradient.png");
   ctx.drawImage(bgImage, 0, 0);
 
   // add subText text
   ctx.fillStyle = "#fafafa";
-  ctx.font = "italic 48px 'Arimo'";
+  ctx.font = "italic 48px 'Atkinson Hyperlegible'";
   ctx.textAlign = "end";
   // ctx.fillText(imageFooterText, canvas.width - 48, canvas.height - 50);
   drawTextBG(ctx, subText, ctx.font, ctx.textAlign, canvas.width - 48, canvas.height - 50);
 
   // add image title text
-  ctx.font = `normal ${titleFontSize}px "Arimo"`;
+  ctx.font = `normal ${titleFontSize}px "Atkinson Hyperlegible"`;
   ctx.textAlign = "start";
   ctx.fillStyle = "#fafafa";
   wrapText(ctx, titleText, 64, 144, canvas.width - 96, titleLineHeight);
@@ -111,7 +111,7 @@ async function generateMetaImages(titleText) {
     urlPath: `/static/img${this.ctx.page.url}`,
     outputDir: `./dist/static/img${this.ctx.page.url}`,
     sharpPngOptions: {
-      quality: 50
+      quality: 100
     },
     filenameFormat: function (id, src, width, format, options) {
       return `meta-${width}w.${format}`;

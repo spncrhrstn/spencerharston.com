@@ -5,7 +5,7 @@ const safeLinks = require("@sardine/eleventy-plugin-external-links");
 const htmlmin = require("html-minifier");
 const fs = require("node:fs");
 const path = require("node:path");
-const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode } = require("./utils/imageGen");
+// const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode } = require("./utils/imageGen");
 const { generateMetaImages } = require("./utils/metaImages.js");
 const metadata = require("./src/_data/metadata.json");
 
@@ -41,7 +41,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "src/static": "static/",
     "src/static/favicons/favicon.ico": "/favicon.ico",
-    "node_modules/@fontsource/golos-text/": "static/fonts/golos-text/",
+    "node_modules/@fontsource/atkinson-hyperlegible/": "static/fonts/atkinson-hyperlegible/",
     "node_modules/@fontsource/cousine/": "static/fonts/cousine/",
     "node_modules/@tabler/icons/tabler-sprite.svg": "static/img/icons/tabler-sprite.svg"
   });
@@ -130,7 +130,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // shortcode for returning markup for an icon
-  eleventyConfig.addNunjucksShortcode("iconify", function (iconName, size = "20") {
+  eleventyConfig.addNunjucksShortcode("iconify", function (iconName, size = "24") {
     return `<svg class="tabler-icon" width="${size}" height="${size}"><use xlink:href="/static/img/icons/tabler-sprite.svg#tabler-${iconName}" /></svg>`;
   });
 

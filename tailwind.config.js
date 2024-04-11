@@ -10,7 +10,7 @@ module.exports = {
         current: "current=page"
       },
       fontFamily: {
-        "sans":["\"Golos Text\"", ...defaultTheme.fontFamily.sans],
+        "sans":["\"Atkinson Hyperlegible\"", ...defaultTheme.fontFamily.sans],
         "mono":["\"Cousine\"", ...defaultTheme.fontFamily.mono]
       },
       typography: (theme) => ({
