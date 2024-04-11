@@ -11,7 +11,7 @@ layout: layouts/base
 
         <div class="flex flex-col gap-y-2 text-sm">
             <div class="flex flex-row items-center gap-x-2">
-                <span class="inline-flex items-center justify-center">{% iconify "calendar", "20" %}</span>
+                <span class="inline-flex items-center justify-center">{% iconify "calendar", "24" %}</span>
                 <div>
                     Posted: <time datetime="{{ page.date | dateISO }}" title="{{ page.date | dateISO }}">{% dateReadable page.date, false %}</time>
                 </div>            
@@ -19,7 +19,7 @@ layout: layouts/base
             
             {%- if updated %}
             <div class="flex flex-row items-center gap-x-2">
-                <span class="inline-flex items-center justify-center">{% iconify "circle-arrow-up", "20" %}</span>
+                <span class="inline-flex items-center justify-center">{% iconify "circle-arrow-up", "24" %}</span>
                 <div>
                     Updated: <time datetime="{{ updated | dateISO }}" title="{{ updated | dateISO }}">{% dateReadable updated, false %}</time>
                 </div>
@@ -27,7 +27,7 @@ layout: layouts/base
             {%- endif %}
 
             <div class="flex flex-row items-center gap-x-2">
-                <span class="inline-flex items-center justify-center">{% iconify "clock", "20" %}</span>
+                <span class="inline-flex items-center justify-center">{% iconify "clock", "24" %}</span>
                 <span> {{ content | readingTime }} to read </span>
             </div>
         </div>
@@ -42,7 +42,7 @@ layout: layouts/base
 </article>
 
 <div class="inline-flex flex-row items-center gap-x-2">
-    <span class="inline-flex items-center justify-center">{% iconify "tag", "22" %}</span> 
+    <span class="inline-flex items-center justify-center">{% iconify "tag", "24" %}</span> 
     {{ tagsList(tags) }}
 </div>
 

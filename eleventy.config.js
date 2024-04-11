@@ -119,7 +119,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // shortcode for returning markup for an icon
-  eleventyConfig.addNunjucksShortcode("iconify", function (iconName, size = "20") {
+  eleventyConfig.addNunjucksShortcode("iconify", function (iconName, size = "24") {
     return `<svg class="tabler-icon" width="${size}" height="${size}"><use xlink:href="/static/img/icons/tabler-sprite.svg#tabler-${iconName}" /></svg>`;
   });
 

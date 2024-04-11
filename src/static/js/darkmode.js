@@ -5,10 +5,10 @@ function isDarkModeEnabled() {
 function enableDarkMode(isSet) {
   if(isSet){
     document.documentElement.classList.add("dark");
-    darkModeButton.innerHTML = `<svg class="tabler-icon" width="${20}" height="${20}"><use href="/static/img/icons/tabler-sprite.svg#tabler-${"sun"}" /></svg>`;
+    darkModeButton.innerHTML = `<svg class="tabler-icon" width="${24}" height="${24}"><use href="/static/img/icons/tabler-sprite.svg#tabler-${"sun"}" /></svg>`;
   } else {
     document.documentElement.classList.remove("dark");
-    darkModeButton.innerHTML = `<svg class="tabler-icon" width="${20}" height="${20}"><use href="/static/img/icons/tabler-sprite.svg#tabler-${"moon"}" /></svg>`;
+    darkModeButton.innerHTML = `<svg class="tabler-icon" width="${24}" height="${24}"><use href="/static/img/icons/tabler-sprite.svg#tabler-${"moon"}" /></svg>`;
   }
 }
 
