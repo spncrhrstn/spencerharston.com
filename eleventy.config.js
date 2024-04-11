@@ -5,7 +5,7 @@ const safeLinks = require("@sardine/eleventy-plugin-external-links");
 const htmlmin = require("html-minifier");
 const fs = require("node:fs");
 const path = require("node:path");
-const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode } = require("./utils/imageGen");
+// const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode } = require("./utils/imageGen");
 const { generateMetaImages } = require("./utils/metaImages.js");
 const metadata = require("./src/_data/metadata.json");
 
