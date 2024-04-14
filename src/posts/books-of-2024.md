@@ -2,7 +2,7 @@
 title: Books of 2024
 description: A list of books I'm reading, have read, or may read in 2024.
 date: 2024-01-01 22:25:00
-updated: 2024-03-06 06:49:00
+updated: 2024-04-13 23:02:00
 tags:
     - personal
 ---
@@ -19,6 +19,7 @@ If an entry is prefaced with 🎧, that means I'm listening to the audiobook ver
 * [A City on Mars](https://www.goodreads.com/book/show/125084292-a-city-on-mars) by Kelly and Zach Weinersmith
 * 🎧 [The Lord of the Rings: The Fellowship of the Ring](https://www.goodreads.com/book/show/61215351-the-fellowship-of-the-ring) by J.R.R. Tolkien
 * [11/22/63](https://www.goodreads.com/book/show/10644930-11-22-63) by Stephen King
+* [The Women](https://www.goodreads.com/book/show/127305853-the-women) by Kristin Hannah 
 
 ## Finished Reading
 Generally speaking, if I finished a book, it means the book was good enough for me to, well, finish it. A ⭐ means I really enjoyed the book, which is all the qualifications it needs.
