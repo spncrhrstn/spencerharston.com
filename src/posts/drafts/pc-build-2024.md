@@ -48,9 +48,9 @@ I loved this PC, it's done so well for me the last eight years. The CPU/GPU comb
 ## New Year, New PC
 Fast-forward to 2024. The QLC PC still worked decently enough, but I was starting to notice some slow-downs and other signs of "old age". And with the looming deadline of Windows 10, I was itching to try out some Linux distros (more on that below). What better way to try them out than to build a brand new PC?
 
-### COMPONENTS
+### Components
 
-tl;dr: Part list
+tl;dr: the part list (see [below](#gallery) for some pics):
 
 Type|Item
 :----|:----
@@ -64,7 +64,7 @@ Type|Item
 **Power Supply** | [SeaSonic FOCUS GX 850 W 80+ Gold Certified Fully Modular ATX Power Supply](https://pcpartpicker.com/product/7v3mP6/seasonic-focus-gx-850-w-80-gold-certified-fully-modular-atx-power-supply-focus-gx-850)
 **Case Fan** | [ARCTIC P12 PST 56.3 CFM 120 mm Fans 5-Pack](https://pcpartpicker.com/product/LmCFf7/arctic-p12-pst-563-cfm-120-mm-fans-5-pack-acfan00137a)
 **Monitor** | [LG UltraGear 27GR83Q-B 27" 2560 x 1440 240 Hz IPS Monitor](https://pcpartpicker.com/product/6WBzK8/lg-ultragear-270-2560-x-1440-240-hz-monitor-27gr83q-b)
-**Custom** | [EZDIY-FAB PSU Cable Extension Sleeved Custom Mod GPU PC Power Supply Soft Nylon Braided with Comb Kit 24PIN/3x 8PIN to 6+2Pin/ 2X 8PIN to 4+4PIN-300MM/11.8in - Black](https://pcpartpicker.com/product/Ryt9TW/placeholder-)
+**Custom** | [EZDIY-FAB PSU Cable Extension Sleeved Custom Mod](https://pcpartpicker.com/product/Ryt9TW/placeholder-)
 
 [*PCPartPicker link*](https://pcpartpicker.com/list/XxyM28)
 
@@ -112,6 +112,9 @@ My only minor issue with the specific model of card I received is that there's a
 - Because Windows 11 is terrible...
 - Nobara to start...
 - This needs its own post...
+
+### Gallery
+- get some good pics
 
 ### POST-BUILD THOUGHTS
 - would've liked to wait 1-2 months for the 7900 GRE...
