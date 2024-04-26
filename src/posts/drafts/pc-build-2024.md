@@ -76,7 +76,7 @@ The case is what started all this. Out of the blue last year, my brother-in-law 
 Overall, the case has been a pleasure to build in, with a couple minor tweaks to make it better for my needs. There's plenty of space for the components I picked, no tools are needed to access everything, the top panel is removable, it has very good airflow, and the clean, minimal design is perfect for me. My only wishes were that the front panel audio cable was just a little bit shorter (pins on my motherboard were about as far away as possible) and the space between the back panel and chassis needed to be extended by a millimeter or two. It came with a couple fans, but I removed them and added five fans of my own (two intake, two top exhaust, one rear exhaust).
 
 #### CPU: AMD Ryzen 7 7700X
-One of my first requirements for a new PC was to go Team Red. I've had no issues with AMD CPUs in other computers (like my ThinkPad), and I knew that Linux support would be solid. 
+One of my first requirements for a new PC was to go Team Red. I've had no issues with AMD CPUs in other computers (like my ThinkPad), and I knew that Linux support would be solid. It also helped that I got a good deal on this CPU by having Best Buy price match Microcenter. Sure wish Microcenter would come to Utah...
 
 I haven't fully benchmarked the CPU but it has taken everything I've thrown at it so far and handled it like a champ. With the cooler I added, temps have been perfectly fine (upper 30s/low 40s at idle, upper 70s/low 80s at full use). Considered going for a water-cooled system but I decided to keep things simple and less-expensive. No complaints here.
 
@@ -93,25 +93,40 @@ This card has been a great choice for me. Every game I've played so far has been
 
 My only minor issue with the specific model of card I received is that there's a bit of coil whine when under 100% usage. Not a big deal to me, but other models may fare better. I do wish I had waited a month for a better card (more below). Overall though, I think this card will suit me just fine for the next 4+ years.
 
-#### MB
-- Took the longest to decide which to get between the 3...
+#### Motherboard: ASRock B650M PG RIPTIDE WIFI Micro ATX
+The motherboard was the component that I had a tough time deciding on. There were three motherboards I was looking into, one from MSI, Gigabyte and ASRock. All three had features that I was interested in and were priced about the same. The reviews were very similar to one another, but of course each had their pros and cons. In the end, I felt like the ASRock edged out just *slightly* above the others and so that's the one I picked.
 
-#### MONITOR
-- Got a great deal, but next monitor splurge will be OLED...
+The ASRock motherboard has been a good choice. Honestly, there's not much to say about it. It works well, has plenty of features, like the ability to use PCI Gen 5 for an m.2 drive and Wi-Fi 6E. It has one RGB feature under the south bridge heatsink, which I currently keep at a static white, and four SATA connectors, but I'm not going to be using that many SATA devices anyways. So far so good.
 
-#### OTHER
-- RAM
-- Cable extensions
-- Fans
+#### Monitor: LG UltraGear 27GR83Q-B
+I was not planning on buying a new monitor to go with this build. It would've put me way over budget for anything decent. So when I saw this go on sale at Best Buy, I looked to see if I could squeeze it in. Two things made that happen. First, Best Buy had a promotion going on that gave 10% off any new LG monitor by recycling any monitor. My original Asus monitor from the QLC build was finally ready to retire. Second, I was able to use my work rewards and turn them into Best Buy gift cards, which would cover nearly the remainder of the cost. In the end, I spent less than $10 out of pocket to get this. Not bad at all.
 
-#### PRICES AND TRACKING
-- budget was ~$1500 
-- need to remove r/buildapcsales to not get that post-purchase regrets
+This monitor is a 27" 1440p 240Hz IPS display and doesn't disappoint. I actually bought a ultrawide VA display before this, but the black smearing bothered me too much. I'm not a monitor enthusiast, I just need one that looks good. After having experienced 240Hz refresh rate with this, I can never go back. I would've loved to get an OLED monitor, but again, the budget can't handle it. Next time though!
 
-### CHOOSING AN OS
-- Because Windows 11 is terrible...
-- Nobara to start...
-- This needs its own post...
+#### Other Parts
+Don't have much to say about everything else that went into this build. I went with 32 GB of RAM and enabled the EXPO settings on it. I replaced all the stock fans in the case with five Arctic fans. The cooler is beefy but handles well (and the design fits very nicely). I spent a little extra to get some power cable extensions to get that clean look on my cables. A little vain, and it's hard to see behind the glass, but they look very nice. 
+
+#### Tracking the Prices
+I spent the month of January pricing out and collecting all the parts for the build. I used these tools and sites to help me purchase them
+
+- PCPartPicker's price tracking and notification for price thresholds
+- CamelCamelCamel for Amazon tracking
+- Best Buy price matching
+- slickdeals.net RSS feeds for random deals on PC parts
+- The r/buildapcsales subreddit (via RSS feed) for user-posted deals
+
+By waiting and using these sites, I managed to score a few deals and stay within my budget of around $1500. The SSD in particular hit a low price one of the weeks then proceeded to never hit that price again since. My one regret is that I did not remove the r/buildapcsales feed from my RSS reader. Shortly after the AMD 7900 GRE was released earlier this year, it went on sale one time for the same price I paid for the 7800XT card. If I had waited a month, that is the card I would've chosen. Alas.
+
+### The Operating System: The Nobara Project
+Windows has completely gone downhill since 11 was released. The ads, the bloat, AI shoved into every corner, and the general user-hostile experiences (aka [enshittification](https://en.wikipedia.org/wiki/Enshittification))^[This recent [article from The Verge](https://www.theverge.com/2024/4/21/24063379/windows-11-ads-bing-edge-cruft) sums it up nicely.] have completely turned me off of installing it on this new PC. It was time to give Linux another go.
+
+I explored my options before building the PC, and a few distros piqued my interest: Pop!_OS, Mint, Zorin, Garuda, Debian, some random Arch flavors, and Fedora. Then I came across the [Nobara Project](). This distro is built by the same person who has maintained a fork of Valve's Proton project to add fixes and various enhancements. Nobara includes that Proton fork and various other drivers, packages, and enhancements to make it easier to game out of the box. Plus it's built on the Fedora project, with the KDE desktop, which meant a rolling release of packages and kernels. Since my hardware is rather new, I was willing to try the latest.
+
+Overall, it has been a decent experience. Driver support is good, the KDE desktop is fantastic, and gaming has generally worked well. There has been a few  issues pop-up, which some have been addressed by updates. One particular area I'm still working on fixing is that my PC has problems when a second monitor is plugged in and enabled. Sometimes it refuses to go into low-power mode (screens won't go into or stay in standby) and it'll wake from sleep on its own. There was also a period where the OS would crash after logging in with the second monitor enabled, and only a hard reboot would get it working again. I've since left the second monitor disabled unless I'm actively using it. Not sure if it's a software or hardware issue, I need to spend more time investigating.
+
+Nobara is a gaming-oriented distro, and with the work that's gone into Proton, gaming has been a good experience. It has taken a bit of trial-and-error to find the right settings and launch parameters (especially for Helldivers 2), but huge shoutout to [ProtonDB](https://www.protondb.com/) and the user reports to find settings that work well.
+
+I should write up a separate post about my experience with this OS, but suffice to say that I recommend giving Nobara a try, or any distro, because learning and troubleshooting is fun!^[From a certain point of view.]
 
 ### Gallery
 - get some good pics
