@@ -2,7 +2,7 @@ const { DateTime } = require("luxon");
 const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const safeLinks = require("@sardine/eleventy-plugin-external-links");
-const htmlmin = require("html-minifier");
+const htmlmin = require("html-minifier-terser");
 const fs = require("node:fs");
 const path = require("node:path");
 // const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode } = require("./utils/imageGen");
@@ -11,6 +11,7 @@ const metadata = require("./src/_data/metadata.json");
 
 function htmlminTransform(content, outputPath) {
   if (outputPath.endsWith(".html")) {
+    console.log("MINIFYING!");
     let minified = htmlmin.minify(content, {
       useShortDoctype: true,
       removeComments: true,
@@ -100,7 +101,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("dateByFormat", (dateObj, format) => {
     let result = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toFormat(format);
     return result;
-  })
+  });
 
   // filter for sorting a list descending
   eleventyConfig.addFilter("sortDesc", (posts) => {
@@ -178,14 +179,24 @@ module.exports = function (eleventyConfig) {
   });
 
   // configure markdown plugins
-  let markdownIt = require("markdown-it");
-  let markdownItFootnote = require("markdown-it-footnote");
-  let markdownItImageFigures = require("markdown-it-image-figures");
+  const markdownIt = require("markdown-it");
+  const markdownItFootnote = require("markdown-it-footnote");
+  const markdownItImageFigures = require("markdown-it-image-figures");
+  const markdownItAnchor = require("markdown-it-anchor");
+  const markdownItAttrs = require("markdown-it-attrs");
+  
   let markdownItOptions = {
     html: true
   };
+  
+  let markdownItAnchorOptions = {
+    level: [2,3]
+  };
+
   let markdownLib = markdownIt(markdownItOptions)
     .use(markdownItFootnote)
+    .use(markdownItAnchor, markdownItAnchorOptions)
+    .use(markdownItAttrs)
     .use(markdownItImageFigures, { figcaption: true, lazy: true, async: true });
   eleventyConfig.setLibrary("md", markdownLib);
 
