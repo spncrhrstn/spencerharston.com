@@ -126,21 +126,28 @@ Overall, it has been a decent experience. Driver support is good, the KDE deskto
 
 Nobara is a gaming-oriented distro, and with the work that's gone into Proton, gaming has been a good experience. It has taken a bit of trial-and-error to find the right settings and launch parameters (especially for Helldivers 2), but huge shoutout to [ProtonDB](https://www.protondb.com/) and the user reports to find settings that work well.
 
-I should write up a separate post about my experience with this OS, but suffice to say that I recommend giving Nobara a try, or any distro, because learning and troubleshooting is fun!^[From a certain point of view.]
+I should write up a separate post about my experience with Nobara, but suffice to say that I recommend giving it a try, or any distro, because learning and troubleshooting is fun!^[Well, from a certain masochistic point of view.]
 
 ### Gallery
 - get some good pics
 
-### POST-BUILD THOUGHTS
-- would've liked to wait 1-2 months for the 7900 GRE...
-- still wouldn't have minded going for a mini-ITX build...
-- OS has been good (with caveats)...
+### Post-Build Thoughts
+After completing the build, there's just a couple minor things I would change. First off, I wished I had spec'd out a mini-ITX build. I know the prices are higher due to the niche-ness of small-form factor PC parts, but I'm curious if I could've made it work. I'm definitely going to try this next time around, you know, in like eight years.
 
-## RETIRING THE OLD PC
-- what to do with it
-- where to put it
-- too much power draw for a server?
-- kids PC?
+Second, as I mentioned above, the OS I chose has been pretty good, but I have a feeling that I would've had less crashes or other odd behavior had I installed Windows. The thing is, I feel like I can no longer use Windows due to how user-hostile Microsoft has made it, especially since it's a paid license. With that being said, I am curious to see how my build performs in games without all the tweaking and configuring I need to do on Linux. It's a learning experience so I'm sticking with it.
 
-## THE FUTURE
-- Another 8 years to go
+Last, having patience to wait to purchase components or good deals was probably the hardest part. Case in point: the AMD 7900 GRE was released just after I bought everything and put it together. The value of the 7900 GRE seemed like a good deal, the same rate as my 7800 XT. The MSRP was higher of course, but a few weeks later, a specific model of the 7900 GRE went on sale at the same price I paid for mine. If I had to choose, I would've gone for that without hesitation. But oh well, such is life. The thing I've learned with PC components and other technology is that there is always going to be something better right around the corner (Moore's Law and all that). Post-purchase regret is real, but I just have to accept the fact that it's going to happen. I am happy with what I ended up with, and it'll be perfectly fine for years to come.
+
+## Retiring the Old Guy
+The QLC PC has served me well, and now I'm faced with I should do with it. I'm hesitant to get rid of it, I always feel like outdated technology that still works has a use for something. On the other hand, I have no place to put it so that it can be used.^[72% of decision to build a new PC was to downsize the tower, and now I have two. Space is a commodity I'm quickly running out of in my office area.]
+
+If I were to repurpose it, I'd most likely turn it into a home server, replacing the even older laptop that is currently being used as one. Of course where would I put it that's not on a floor, and what would the energy use be compared to the laptop (higher, I'm sure). I could also use it as an HTPC, but again, space is still quite limited (and also the kid factor in the living room). I'm also thinking about saving it as a family PC and start getting the kids familiar with computers, but this couldn't happen until the youngest is less pull-on-every-cord prone. 
+
+For now, it's going to sit unplugged in my basement. I'll decide one day.
+
+## The Next PC Build
+Technology moves fast, there's new stuff every month, and FOMO is real. But for PC components, I feel that the speed has slowed considerably, in that a well-taken care of, four year-old PC can perform decently well enough as a current PC. Obviously depends on one's needs, but for most people, even gamers, it'll be fine. My plan is to use this PC for eight more years, provided it doesn't blow up or something. I bought current-generation parts, which should give me enough of a lead ahead of obsolescence. 
+
+I'll plan, for now, on coming back here in 2032 or so, documenting my new PC build.^[and yes, it'll be mini-ITX or whatever the equivalent will be by then] Of course, how will the personal PC landscape change in those eight years? It'll be interesting to see, and I'm looking forward to it.
+
+Now, back to to configuring Linux. Where did I make that config change at?
