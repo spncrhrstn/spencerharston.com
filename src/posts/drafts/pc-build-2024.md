@@ -87,7 +87,7 @@ This card has been a great choice for me. Every game I've played so far has been
 
 - Doom (2016): max settings, 200 FPS (capped) @ 1440p
 - Firewatch: max settings, 230-240 FPS @ 1440p
-- Tony Hawk's Pro Skater 1+2: TODO: get these stats cause I don't remember
+- Tony Hawk's Pro Skater 1+2: max settings, 180-200 FPS @ 1440p
 - Helldivers 2: high-max settings, 120-140 FPS @ 1440p 
   - My settings could use some tweaking, since I'm running it on Linux. Plus it's still being optimized by the developers
 
@@ -129,7 +129,7 @@ Nobara is a gaming-oriented distro, and with the work that's gone into Proton, g
 I should write up a separate post about my experience with Nobara, but suffice to say that I recommend giving it a try, or any distro, because learning and troubleshooting is fun!^[Well, from a certain masochistic point of view.]
 
 ### Gallery
-- get some good pics
+- TODO: organize and upload pics 
 
 ### Post-Build Thoughts
 After completing the build, there's just a couple minor things I would change. First off, I wished I had spec'd out a mini-ITX build. I know the prices are higher due to the niche-ness of small-form factor PC parts, but I'm curious if I could've made it work. I'm definitely going to try this next time around, you know, in like eight years.
