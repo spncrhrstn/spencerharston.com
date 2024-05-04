@@ -1,21 +1,23 @@
 const { DateTime } = require("luxon");
 const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const safeLinks = require("@sardine/eleventy-plugin-external-links");
 const htmlmin = require("html-minifier-terser");
 const fs = require("node:fs");
 const path = require("node:path");
 // const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode } = require("./utils/imageGen");
-const { generateMetaImages } = require("./utils/metaImages.js");
+const { generateMetaImages } = require("./utils/generateMetaImages.js");
 const metadata = require("./src/_data/metadata.json");
 
 function htmlminTransform(content, outputPath) {
   if (outputPath.endsWith(".html")) {
-    console.log("MINIFYING!");
+    console.log(`[INFO] Minifying  ${outputPath}`);
     let minified = htmlmin.minify(content, {
       useShortDoctype: true,
       removeComments: true,
-      collapseWhitespace: false,
+      collapseWhitespace: true,
+      preserveLineBreaks: true,
       minifyJS: true,
       minifyCSS: true
     });
@@ -38,17 +40,17 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addTransform("htmlmin", htmlminTransform);
   }
 
-  // passthrough copying of static files
+  // passthrough copying of assets files
   eleventyConfig.addPassthroughCopy({
-    "src/static": "static/",
-    "src/static/favicons/favicon.ico": "/favicon.ico",
-    "node_modules/@fontsource/atkinson-hyperlegible/": "static/fonts/atkinson-hyperlegible/",
-    "node_modules/@fontsource/cousine/": "static/fonts/cousine/",
-    "node_modules/@tabler/icons/tabler-sprite.svg": "static/img/icons/tabler-sprite.svg"
+    "src/assets": "assets/",
+    "src/assets/favicons/favicon.ico": "/favicon.ico",
+    "node_modules/@fontsource/atkinson-hyperlegible/": "assets/fonts/atkinson-hyperlegible/",
+    "node_modules/@fontsource/cousine/": "assets/fonts/cousine/",
+    "node_modules/@tabler/icons/tabler-sprite.svg": "assets/img/icons/tabler-sprite.svg"
   });
 
-  // add watch target for tailwind
-  eleventyConfig.addWatchTarget("./src/styles/");
+  // add watch target for css and tailwind
+  eleventyConfig.addWatchTarget("./src/assets/css/");
 
   // get a count of draft files
   const draftsPath = path.join(__dirname, "src/posts/drafts");
@@ -132,7 +134,7 @@ module.exports = function (eleventyConfig) {
 
   // shortcode for returning markup for an icon
   eleventyConfig.addNunjucksShortcode("iconify", function (iconName, size = "24") {
-    return `<svg class="tabler-icon" width="${size}" height="${size}"><use xlink:href="/static/img/icons/tabler-sprite.svg#tabler-${iconName}" /></svg>`;
+    return `<svg class="tabler-icon" width="${size}" height="${size}"><use xlink:href="/assets/img/icons/tabler-sprite.svg#tabler-${iconName}" /></svg>`;
   });
 
   // eleventyConfig.addNunjucksAsyncShortcode("imageHeader", imageHeaderShortcode);
@@ -204,6 +206,29 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(safeLinks);
+
+  // TODO:
+  // figure out adding captions from markdown (possibly need custom html output - eek)
+  // work with markdownItImageFigures or remove it
+  // put post pictures in same directory as the related index.html
+  // figure out the outputDir and urlPath options
+
+  // eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+  //   extensions: "html",
+  //   formats: ["webp", "jpeg"],
+  //   widths: [414, 828],
+  //   defaultAttributes: {
+  //     loading: "lazy",
+  //     decoding: "async",
+  //     sizes: "48rem",
+  //   },
+  //   outputDir: "./dist/assets/img/", // relative to repo root
+  //   urlPath: "/assets/img/",
+  //   filenameFormat: (id, src, width, format) => {
+  //     const { name } = path.parse(src);
+  //     return `${name}-${width}w.${format}`;  
+  //   }
+  // });
 
   return {
     dir: {

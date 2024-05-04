@@ -1,9 +1,9 @@
 const { createCanvas, registerFont, loadImage } = require("canvas");
-const image = require("@11ty/eleventy-img");
+const Image = require("@11ty/eleventy-img");
 
 // register fonts
-registerFont("./utils/AtkinsonHyperlegible-Regular.ttf", { family: "Atkinson Hyperlegible Regular" });
-registerFont("./utils/AtkinsonHyperlegible-Italic.ttf", { family: "Atkinson Hyperlegible Regular", style: "italic" });
+registerFont("./utils/fonts/AtkinsonHyperlegible-Regular.ttf", { family: "Atkinson Hyperlegible Regular" });
+registerFont("./utils/fonts/AtkinsonHyperlegible-Italic.ttf", { family: "Atkinson Hyperlegible Regular", style: "italic" });
 
 // wrap text in a canvas
 // adapted from https://urre.me/writings/dynamic-open-graph-images/
@@ -84,7 +84,7 @@ async function generateMetaImages(titleText) {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   // add the image
-  const bgImage = await loadImage("./utils/gradient.png");
+  const bgImage = await loadImage("./utils/images/gradient.png");
   ctx.drawImage(bgImage, 0, 0);
 
   // add subText text
@@ -105,11 +105,11 @@ async function generateMetaImages(titleText) {
   let buffer = canvas.toBuffer("image/png");
 
   // use 11ty/eleventy-img to save it
-  let metadata = await image(buffer, {
+  let metadata = await Image(buffer, {
     widths: [width],
     formats: ["png"],
-    urlPath: `/static/img${this.ctx.page.url}`,
-    outputDir: `./dist/static/img${this.ctx.page.url}`,
+    urlPath: `/assets/img${this.ctx.page.url}`,
+    outputDir: `./dist/assets/img${this.ctx.page.url}`,
     sharpPngOptions: {
       quality: 100
     },
