@@ -152,6 +152,6 @@ For now, it's going to sit unplugged in my basement. I'll decide one day.
 ## The Next PC Build
 Technology moves fast, there's new stuff every month, and FOMO is real. But for PC components, I feel that the speed of new tech has slowed enough, in that a well-taken care of, a four year-old PC can perform decently well enough as a current PC. Obviously depends on one's needs, but for most people, even gamers, it'll be fine. My plan is to use this PC for eight more years, provided it doesn't blow up or something. I bought current-generation parts, which should give me enough of a lead ahead of obsolescence. 
 
-I'll plan, for now, on coming back here in 2032 or so, documenting my new PC build.^[And yes, it'll be mini-ITX or whatever the equivalent will be by then] Of course, how will the personal PC landscape change in those eight years? It'll be interesting to see, and I'm looking forward to it.
+I'll plan, for now, on coming back here in 2032 or so, documenting my new PC build.^[Yes, it'll be mini-ITX (or whatever the equivalent will be by then) and yes, I will spend too much money on it.] Of course, how will the personal PC landscape change in those eight years? It'll be interesting to see, and I'm looking forward to it.
 
 Now, back to to configuring Linux. Where did I make that config change at?
