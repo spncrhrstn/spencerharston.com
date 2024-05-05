@@ -53,7 +53,7 @@ module.exports = function (eleventyConfig) {
     "src/assets/favicons/favicon.ico": "/favicon.ico",
     "node_modules/@fontsource/atkinson-hyperlegible/": "assets/fonts/atkinson-hyperlegible/",
     "node_modules/@fontsource/cousine/": "assets/fonts/cousine/",
-    "node_modules/@tabler/icons/tabler-sprite.svg": "assets/img/icons/tabler-sprite.svg"
+    "node_modules/@tabler/icons-sprite/dist/tabler-sprite.svg": "assets/img/icons/tabler-sprite.svg"
   });
 
   // add watch target for css and tailwind
