@@ -213,22 +213,22 @@ module.exports = function (eleventyConfig) {
   // put post pictures in same directory as the related index.html
   // figure out the outputDir and urlPath options
 
-  // eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-  //   extensions: "html",
-  //   formats: ["webp", "jpeg"],
-  //   widths: [414, 828],
-  //   defaultAttributes: {
-  //     loading: "lazy",
-  //     decoding: "async",
-  //     sizes: "48rem",
-  //   },
-  //   outputDir: "./dist/assets/img/", // relative to repo root
-  //   urlPath: "/assets/img/",
-  //   filenameFormat: (id, src, width, format) => {
-  //     const { name } = path.parse(src);
-  //     return `${name}-${width}w.${format}`;  
-  //   }
-  // });
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    extensions: "html",
+    formats: ["webp", "jpeg"],
+    widths: [480, 720, 1024],
+    defaultAttributes: {
+      loading: "lazy",
+      decoding: "async",
+      sizes: "500px",
+    },
+    outputDir: "./dist/assets/img/", // relative to repo root
+    urlPath: "/assets/img/", // path prefix, e.g. `/img/` for `<img src="/img/MY_IMAGE.jpeg">`.
+    filenameFormat: (id, src, width, format) => {
+      const { name } = path.parse(src);
+      return `${name}-${width}w.${format}`;  
+    }
+  });
 
   return {
     dir: {
