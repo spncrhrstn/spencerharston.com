@@ -44,7 +44,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, optio ut sequi
 
 [link title](https://www.example.com)
 
-![statik](/assets/img/posts/statik.png "statik")
+![statik](../../assets/img/content/statik.png "statik")
 
 ![An image of a dog](https://picsum.photos/400/ "This is a random image")
 

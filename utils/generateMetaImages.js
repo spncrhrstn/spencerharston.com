@@ -108,13 +108,22 @@ async function generateMetaImages(titleText) {
   let metadata = await Image(buffer, {
     widths: [width],
     formats: ["png"],
-    urlPath: `/assets/img${this.ctx.page.url}`,
-    outputDir: `./dist/assets/img${this.ctx.page.url}`,
+    outputDir: "./dist/assets/img/meta",
+    urlPath: "/assets/img/meta",
     sharpPngOptions: {
       quality: 100
     },
-    filenameFormat: function (id, src, width, format, options) {
-      return `meta-${width}w.${format}`;
+    filenameFormat: (id, src, width, format, options) => {
+      let name = "";
+      let url = `${this.ctx.page.url}`; // the url to the current page
+      if (url === "/") {
+        name = "index"; // for / root
+      } else if (url.startsWith("/") && !url.endsWith("/")) {
+        name = url.substring(1); // for /404.html and similar pages
+      } else {
+        name = url.substring(1, this.ctx.page.url.length - 1).split("/").at(-1); // for /path/to/page/ pages
+      }
+      return `${name}-${width}w.${format}`;
     }
   });
 

@@ -6,6 +6,13 @@ const safeLinks = require("@sardine/eleventy-plugin-external-links");
 const htmlmin = require("html-minifier-terser");
 const fs = require("node:fs");
 const path = require("node:path");
+// configure markdown plugins
+const markdownIt = require("markdown-it");
+const markdownItFootnote = require("markdown-it-footnote");
+const markdownItImageFigures = require("markdown-it-image-figures");
+const markdownItAnchor = require("markdown-it-anchor");
+const markdownItAttrs = require("markdown-it-attrs");
+
 // const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode } = require("./utils/imageGen");
 const { generateMetaImages } = require("./utils/generateMetaImages.js");
 const metadata = require("./src/_data/metadata.json");
@@ -180,13 +187,7 @@ module.exports = function (eleventyConfig) {
     return [...uniqueYears];
   });
 
-  // configure markdown plugins
-  const markdownIt = require("markdown-it");
-  const markdownItFootnote = require("markdown-it-footnote");
-  const markdownItImageFigures = require("markdown-it-image-figures");
-  const markdownItAnchor = require("markdown-it-anchor");
-  const markdownItAttrs = require("markdown-it-attrs");
-  
+  // configure markdown library
   let markdownItOptions = {
     html: true
   };
@@ -199,19 +200,14 @@ module.exports = function (eleventyConfig) {
     .use(markdownItFootnote)
     .use(markdownItAnchor, markdownItAnchorOptions)
     .use(markdownItAttrs)
-    .use(markdownItImageFigures, { figcaption: true, lazy: true, async: true });
+    .use(markdownItImageFigures, { figcaption: true, lazy: true, async: true }); // could be replaced with the image transform plugin below
+  
   eleventyConfig.setLibrary("md", markdownLib);
 
   // add other plugins
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(safeLinks);
-
-  // TODO:
-  // figure out adding captions from markdown (possibly need custom html output - eek)
-  // work with markdownItImageFigures or remove it
-  // put post pictures in same directory as the related index.html
-  // figure out the outputDir and urlPath options
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: "html",
@@ -220,10 +216,10 @@ module.exports = function (eleventyConfig) {
     defaultAttributes: {
       loading: "lazy",
       decoding: "async",
-      sizes: "500px",
+      sizes: "90vw",
     },
-    outputDir: "./dist/assets/img/", // relative to repo root
-    urlPath: "/assets/img/", // path prefix, e.g. `/img/` for `<img src="/img/MY_IMAGE.jpeg">`.
+    outputDir: "./dist/assets/img/content", // relative to repo root
+    urlPath: "/assets/img/content", // path prefix, e.g. `/img/` for `<img src="/img/MY_IMAGE.jpeg">`.
     filenameFormat: (id, src, width, format) => {
       const { name } = path.parse(src);
       return `${name}-${width}w.${format}`;  
