@@ -21,7 +21,7 @@ I'll update this as often as I remember.
   * Mouse: Logitech G305
   * Keyboard: Cooler Master MasterKeys Pro L
   * Monitor: LG UltraGear 27GR83Q-B 27" 1440p 240Hz IPS monitor
-  * More details at [my build writeup](/posts/2024/pc-build-2024)
+  * More details at [my build writeup](/posts/2024/building-a-new-pc-in-2024/)
 
 * Laptop: Lenovo ThinkPad T14 (Gen 1) (2020)
   * CPU: Ryzen 7 Pro 4750U
