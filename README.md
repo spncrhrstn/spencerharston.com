@@ -1,6 +1,6 @@
 # spencerharston.com
 
-![Eleventy](https://img.shields.io/badge/eleventy-2.0.1-blue)
+![Eleventy](https://img.shields.io/badge/eleventy-3.0.0--alpha.10-blue)
 
 The personal website of Spencer Harston - an eternal WIP.
 
