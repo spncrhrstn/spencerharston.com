@@ -7,7 +7,7 @@
     "lint": "eslint \"./**/*.js\"",
     "lint:fix": "eslint \"./**/*.js\" --fix",
     "start": "run-p start:*",
-    "start:eleventy": "eleventy --serve",
+    "start:eleventy": "eleventy --serve --incremental",
     "start:postcss": "postcss src/assets/css/*.css --dir dist/assets/css --watch",
     "build": "run-s clean build:eleventy build:postcss",
     "build:eleventy": "eleventy",
