@@ -19,7 +19,6 @@ const metadata = require("./src/_data/metadata.json");
 
 function htmlminTransform(content, outputPath) {
   if (outputPath.endsWith(".html")) {
-    console.log(`[INFO] Minifying  ${outputPath}`);
     let minified = htmlmin.minify(content, {
       useShortDoctype: true,
       removeComments: true,
