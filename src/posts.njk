@@ -6,6 +6,8 @@ pagination:
     reverse: true
 layout: layouts/default
 title: Posts
+eleventyImport:
+    collections: ["posts", "tagList", "yearList"]
 ---
 {%- from "macros/posts-list.njk" import postsList %}
 {%- from "macros/tags-list.njk" import tagsList %}

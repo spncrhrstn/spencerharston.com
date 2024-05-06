@@ -151,7 +151,7 @@ module.exports = function (eleventyConfig) {
 
   // collection of all posts
   eleventyConfig.addCollection("posts", (collection) => {
-    return collection.getFilteredByGlob(["./src/posts/**/*.md", "./src/posts/drafts/*.md"]);
+    return collection.getFilteredByGlob(["./src/posts/**/*.md"]);
   });
 
   // get a collection of all tags of a collection
@@ -212,7 +212,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: "html",
     formats: ["webp", "jpeg"],
-    widths: [480, 720, 1024],
+    widths: [480, 720, 1000],
     defaultAttributes: {
       loading: "lazy",
       decoding: "async",

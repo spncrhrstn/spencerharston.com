@@ -1,6 +1,6 @@
 ---
-title: PC Build 2024 (WORKING TITLE)
-description: It's been eight years, it's time to build a new PC (WORKING DESCRIPTION)
+title: Building a New PC in 2024
+description: It's been eight years since I put together my current desktop. It's time to build something new.
 date: 2024-04-23 21:06:00
 tags:
     - personal
@@ -8,13 +8,15 @@ tags:
 
 I've been PC user for most of my life. My first experiences with computers was in the late 1990s, using Windows 3.1. It wasn't until I was in college that I was able to build my own PC for the first time. It was a very fun and rewarding experience. Now it's time to build another PC in 2024. Here's my experience of picking new parts, building the PC, and thoughts about the process in general. 
 
+TL;DR: [New PC Specs](#2024-pc-components) | [Images](#images)
+
 ## The Quarter-Life Crisis PC
 
 First, some background on my previous custom PC.
 
-Back in early 2016, I was a sophomore in college and I was going through what I called my quarter-life crisis. I had just ended a relationship, and I felt a bit down in the dumps. Best solution I had to fix this: spend a lot of money and build a new PC. That became my first PC that I put together, and on a college budget, I feel I did a decent job with the parts I used. I dubbed it the *Quarter-Life Crisis PC* (QLC) because life is short. Here's a breakdown of that PC:
+Back in early 2016, I was a sophomore in college and I was going through what I called my quarter-life crisis. I had just ended a relationship, and I felt a bit down in the dumps. Best solution I had to fix this: spend a lot of money and build a new PC. That became my first PC that I put together, and on a college budget, I feel I did a decent job with the parts I used. I dubbed it the *Quarter-Life Crisis PC* (QLC) because apparently I was very dramatic. Here's a breakdown of that PC:
 
-### Part List
+### QLC Components
 
 Type|Item
 :----|:----
@@ -48,9 +50,7 @@ I loved this PC, it's done so well for me the last eight years. The CPU/GPU comb
 ## New Year, New PC
 Fast-forward to 2024. The QLC PC still worked decently enough, but I was starting to notice some slow-downs and other signs of "old age". And with the looming deadline of Windows 10, I was itching to try out some Linux distros (more on that below). What better way to solve both problems than to build a brand new PC?
 
-### Components
-
-tl;dr: the part list (see [below](#gallery) for some pics):
+### 2024 PC Components
 
 Type|Item
 :----|:----
@@ -132,8 +132,16 @@ Nobara is a gaming-oriented distro, and with the work that's gone into Proton, r
 
 I should write up a separate post about my experience with Nobara, but suffice to say that I recommend giving it a try, or any distro, because learning and troubleshooting is fun!^[Well, from a certain masochistic point of view.]
 
-### Gallery
-- TODO: organize and upload pics 
+### Images
+![The PC POST-ing on the first try](../../assets/img/content/pc-build-2024-2.jpg "POST-ing on the first try 🎉")  
+
+![Closeup of the inside of the PC](../../assets/img/content/pc-build-2024-3.jpg "Closeup of the the inside of the PC, showing off my cable management skills")  
+
+![Alternate angle of the inside of the PC](../../assets/img/content/pc-build-2024-4.jpg "Alternate angle of the the inside of the PC")  
+
+![Wider shot of the outside of the PC](../../assets/img/content/pc-build-2024-5.jpg "PC fully assembled")  
+
+![Wide shot of desk with new PC on top next to monitors](../../assets/img/content/pc-build-2024-1.jpg "The full battlestation (don't mind the cables below the desk)")  
 
 ### Post-Build Thoughts
 After completing the build, there's just a couple minor things I would change. First off, I wished I had spec'd out a mini-ITX build. I know the prices are higher due to the niche-ness of small-form factor PC parts, but I'm curious if I could've made it work. I'm definitely going to try this next time around, you know, in like eight years.
@@ -142,8 +150,10 @@ Second, as I mentioned above, the OS I chose has been pretty good, but I have a 
 
 Last, having patience to wait to purchase components or good deals was probably the hardest part. Case in point: the AMD 7900 GRE was released just after I bought everything and put it together. The value of the 7900 GRE seemed like a good deal, the same rate as my 7800 XT. The MSRP was higher of course, but a few weeks later, a specific model of the 7900 GRE went on sale at the same price I paid for mine. If I had to choose, I would've gone for that without hesitation. But oh well, such is life. The thing I've learned with PC components and other technology is that there is always going to be something better right around the corner (Moore's Law and all that). Post-purchase regret is real, but I just have to accept the fact that it's going to happen. I am happy with what I ended up with, and it'll be perfectly fine for years to come.
 
+Oh, and I need a name for this PC.
+
 ## Retiring the Old Guy
-The QLC PC has served me well, and now I'm faced with I should do with it. I'm hesitant to get rid of it, I always feel like there's a use for outdated technology that still works. On the other hand, I have no place to put it so that it can actually be of use.^[Approximately 64% of my decision to build a new PC was to downsize the tower. Now I have two. Space is a commodity I'm quickly running out of in my office area.]
+The QLC PC has served me well, and now I'm faced with I should do with it. I'm hesitant to get rid of it, I always feel like there's a use for outdated technology that still works. On the other hand, I have no place to put it so that it can actually be of use.^[Approximately 48% of my decision to build a new PC was to downsize the tower. Now I have two. Space is a commodity I'm quickly running out of in my office area.]
 
 If I were to repurpose it, I'd most likely turn it into a home server, replacing the even older laptop that is currently being used as one. Of course, where would I put it that's not on a floor, and what would the energy use be compared to the laptop? I could also use it as an HTPC, but again, space is still quite limited (and also the kid factor in the living room). I'm also thinking about saving it as a family PC and start getting the kids familiar with computers, but this couldn't happen until the youngest is less pull-on-every-cord-prone. 
 
