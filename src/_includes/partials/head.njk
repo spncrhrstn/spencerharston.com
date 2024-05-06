@@ -50,12 +50,15 @@
 
 
 <!-- Icons -->
-<link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png?v=3">
-<link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png?v=3">
-<link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png?v=3">
-<link rel="shortcut icon" href="/static/favicons/favicon.ico?v=3">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png?v=3">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v=3">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png?v=3">
+<link rel="shortcut icon" href="/assets/favicons/favicon.ico?v=3">
 
-<link rel="stylesheet" type="text/css" href="/styles/site.css">
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="/assets/css/site.css">
+
+<!-- Scripts for dark mode toggle -->
 <script>
     if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
         document.documentElement.classList.add("dark");
@@ -63,7 +66,7 @@
         document.documentElement.classList.remove("dark");
     }
 </script>
-<script src="/static/js/darkmode.js" defer></script>
+<script src="/assets/scripts/darkmode.js" defer></script>
 
 {%- if env.environment == "production" %}
 <script data-goatcounter="https://suave-sandwich.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

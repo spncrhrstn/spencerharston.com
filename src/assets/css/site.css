@@ -1,5 +1,5 @@
-@import url('/static/fonts/atkinson-hyperlegible/400.css');
-@import url('/static/fonts/cousine/400.css');
+@import url('/assets/fonts/atkinson-hyperlegible/400.css');
+@import url('/assets/fonts/cousine/400.css');
 
 @tailwind base;
 

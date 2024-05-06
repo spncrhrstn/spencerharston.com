@@ -6,6 +6,8 @@ pagination:
     reverse: true
 layout: layouts/default
 title: Posts
+eleventyImport:
+    collections: ["posts", "tagList", "yearList"]
 ---
 {%- from "macros/posts-list.njk" import postsList %}
 {%- from "macros/tags-list.njk" import tagsList %}
@@ -46,4 +48,4 @@ title: Posts
     {{ yearsList(collections.yearList) }}
 </div>
 
-<p class="text-center text-sm">Want to know when a draft becomes a post? <a href="/feed.xml">Add the feed to your RSS reader</a>.</p>
+<p class="text-center text-sm">Current draft count: {{ draftCount }}. Want to know when a draft becomes a post? <a href="/feed.xml">Add the feed to your RSS reader</a>.</p>

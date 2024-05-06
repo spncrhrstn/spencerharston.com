@@ -124,7 +124,7 @@ I'm only including this because I love *Rocket League* (1300+ hours), or at leas
 
 For posterity, here's my Steam 2023 Year in Review
 
-![2023 steam year in review](/static/img/posts/games-of-2023.webp "Steam 2023 Year in Review")
+![2023 steam year in review](../../assets/img/content/games-of-2023.webp "Steam 2023 Year in Review")
 
 ## Next Year
 I don't really have anything I'm looking forward to. The only show I was waiting for was *Andor*, season 2, which was set to be released in August 2024, but as of today, it's been delayed. Probably to sometime in 2025. Maybe if *The Umbrella Academy* releases its final season...
