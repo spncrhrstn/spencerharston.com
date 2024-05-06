@@ -6,7 +6,7 @@ tags:
     - development
     - python
     - tutorial
-    - ubuntu
+    - linux
 image: https://images.unsplash.com/photo-1608501821300-4f99e58bba77
 imageAlt: Dark swirls
 ---

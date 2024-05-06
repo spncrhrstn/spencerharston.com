@@ -6,7 +6,7 @@ updated: 2023-02-02 19:00:00
 tags:
     - self-hosting
     - tips
-    - ubuntu
+    - linux
 image: https://images.unsplash.com/photo-1629654297299-c8506221ca97
 imageAlt: Screenshot of a Ubuntu linux bash terminal
 ---

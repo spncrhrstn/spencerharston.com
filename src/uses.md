@@ -10,24 +10,35 @@ I'll update this as often as I remember.
 
 ## PCs
 
+* Desktop: Custom AMD Micro ATX Desktop (2024)
+  * Case: Fractal Design Meshify 2 Mini
+  * CPU: AMD Ryzen 7 7700X
+  * Motherboard: ASRock B650M PG Riptide Micro ATX
+  * GPU: AMD Radeon RX 7800 XT 16GB
+  * RAM: 32GB
+  * Storage: 2TB NVME SSD + 1TB HDD
+  * OS: Nobara Linux 39
+  * Mouse: Logitech G305
+  * Keyboard: Cooler Master MasterKeys Pro L
+  * Monitor: LG UltraGear 27GR83Q-B 27" 1440p 240Hz IPS monitor
+  * More details at [my build writeup](/posts/2024/pc-build-2024)
+
 * Laptop: Lenovo ThinkPad T14 (Gen 1) (2020)
   * CPU: Ryzen 7 Pro 4750U
   * RAM: 32GB
   * Storage: 500GB + 128GB SSDs
   * OS: Windows 10 Pro
 
-* Desktop: Custom ASUS Desktop (2016)
+* Desktop: Custom Intel Desktop (2016)
+  * Case: Corsair Carbide 200R ATX Mid Tower
   * CPU: Intel Core i5-4690K
   * Motherboard: Asus Z87 Pro
   * GPU: AMD Radeon R9 380 4GB
   * RAM: 16GB
   * Storage: 250GB SSD + 512GB SSD + 1TB HDD
   * OS: Windows 10 Pro
-  * Mouse: Corsair Katar Pro
-  * Keyboard: Cooler Master MasterKeys Pro L
-  * Monitor: Lenovo L24q-30 1440p 75Hz monitor
 
-* Server: Asus X53SV Laptop (2012)
+* Home Server: Asus X53SV Laptop (2012)
   * CPU: Intel Core i7-2670QM
   * RAM: 8GB
   * Storage: 128GB SSD + 1TB HDD
@@ -37,16 +48,16 @@ I'll update this as often as I remember.
 ## Software
 
 ### Applications
-* Windows 10
-* WSL2
-* Windows Terminal
-* VS Code
-* Docker
-* Firefox & Chrome
-* Steam
-* Calibre
-* MusicBee
-* Bitwarden
+* WSL2 (Windows)
+* Windows Terminal (Windows)
+* VS Code (Linux and Windows)
+* Docker/Podman (Linux)
+* Firefox & Chrome (Linux and Windows)
+* Steam (Linux and Windows)
+* Calibre (Linux and Windows)
+* MusicBee (Windows) (still looking for a Linux alternative)
+* KDE Default Apps (Linux)
+* Discord (Windows)/Vesktop (Linux)
 * ...and many more
 
 See also my Default Applications of [2023](/posts/app-defaults-2023)

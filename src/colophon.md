@@ -11,7 +11,7 @@ This website was built with the following:
 * Static site generator: [Eleventy](https://www.11ty.dev)
   * Theme: Customized [TailwindCSS](https://www.tailwindcss.com)
   * Fonts: [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible/) and [Cousine](https://fonts.google.com/specimen/Cousine)
-  * Icons: [Tabler Icons](https://tabler.io)
+  * Icons: [Tabler Icons](https://tabler.io/icons)
 * Hosting: [Cloudflare Pages](https://pages.cloudflare.com/) (deployment) and [GitHub](https://github.com/sphars/spencerharston.com) (source code)
 * Domain registrar: [Porkbun](https://porkbun.com)
 * Editor: [VS Code](https://code.visualstudio.com) 
