@@ -1,12 +1,14 @@
 ---
 title: Building a New PC in 2024
-description: It's been eight years since I put together my current desktop. It's time to build something new.
-date: 2024-04-23 21:06:00
+description: It's been eight years since I put built my current desktop. It's time to build a new PC.
+date: 2024-05-06 08:05:00
 tags:
     - personal
+    - reviews
+    - linux
 ---
 
-I've been PC user for most of my life. My first experiences with computers was in the late 1990s, using Windows 3.1. It wasn't until I was in college that I was able to build my own PC for the first time. It was a very fun and rewarding experience. Now it's time to build another PC in 2024. Here's my experience of picking new parts, building the PC, and thoughts about the process in general. 
+I've been PC user for most of my life. My first experience with computers was in the late 1990s, using MS-DOS and Windows 3.1. It wasn't until I was in college that I was able to build my own PC for the first time. It was a very fun and educational experience for me. Eight years have passed since then, and now it's time to build another PC in 2024. I completed this new build in February this year and have used it for a few months. Here's my experience of picking the parts, building the PC, and thoughts about the process in general. 
 
 TL;DR: [New PC Specs](#2024-pc-components) | [Images](#images)
 
@@ -14,7 +16,7 @@ TL;DR: [New PC Specs](#2024-pc-components) | [Images](#images)
 
 First, some background on my previous custom PC.
 
-Back in early 2016, I was a sophomore in college and I was going through what I called my quarter-life crisis. I had just ended a relationship, and I felt a bit down in the dumps. Best solution I had to fix this: spend a lot of money and build a new PC. That became my first PC that I put together, and on a college budget, I feel I did a decent job with the parts I used. I dubbed it the *Quarter-Life Crisis PC* (QLC) because apparently I was very dramatic. Here's a breakdown of that PC:
+Back in early 2016, I was a sophomore in college and I was going through what I called my quarter-life crisis. I had just ended a relationship, and I felt a bit down in the dumps. Best solution I had to fix this: spend a lot of money and build a new PC. That became my first PC that I put together, and on a college budget, I feel I did a decent job with the parts I used. I dubbed it the *Quarter-Life Crisis PC* (QLC)^[Apparently I was very dramatic back in 2016.]. Here's a breakdown of that PC:
 
 ### QLC Components
 
@@ -77,8 +79,10 @@ The case is what started all this. Out of the blue last year, my brother-in-law 
 
 This case has been a pleasure to build in. There's plenty of space for the components I picked, no tools are needed to access everything, the top panel is removable, it has very good airflow, and the clean, minimal design is perfect for me. My only wishes were that the front panel audio cable was just a little bit longer (pins on my motherboard were about as far away as possible) and the space between the back panel and chassis needed to be extended by a millimeter or two. It came with two fans, but I removed them and added five fans of my own (two intake, two top exhaust, one rear exhaust).
 
+I appreciate that even after eight years since my last build, PC components and cases are still standardized^[Though some newer form factors are coming around, like the MSI Project Zero, where the connectors are on the back of the motherboard. Needs a compatible case, but still.] and I generally followed the same procedure for assembly.
+
 #### CPU: AMD Ryzen 7 7700X
-One of my first requirements for a new PC was to go Team Red. I've had no issues with AMD CPUs in other computers (like my ThinkPad), and I knew that Linux support would be solid. It also helped that I got a good deal on this CPU by having Best Buy price match Microcenter.^[According to other's experiences with BB price-matching, BB won't price match Microcenter if there's not one within a certain distance, like 25 miles or something. The closest MC to me is in the Denver area, over 600 miles away, but I had no problems getting BB to price match. Did it all on their chat in like 5 minutes. Now, who do I need to talk to to get a Microcenter to come to Utah?]
+One of my first requirements for a new PC was to go Team Red. I've had no issues with AMD CPUs in other computers (like my ThinkPad), and I knew that Linux support would be solid. It also helped that I got a good deal on this CPU by having Best Buy price match Microcenter.^[From what I've read about others' experiences with BB price-matching, BB won't price match Microcenter if there's not one within a certain distance, like 25 miles or something. The closest MC to me is in the Denver area, over 600 miles away, but thankfully I had no problems getting BB to price match. Did it all on their chat in like 5 minutes. Now, who do I need to talk to to get a Microcenter to come to Utah?]
 
 I haven't fully benchmarked the CPU but it has taken everything I've thrown at it so far and handled it like a champ. With the cooler I added, temps have been perfectly fine (upper 30s/low 40s at idle, upper 70s/low 80s at full use). Considered going for a water-cooled system but I decided to keep things simple and less-expensive. No complaints here.
 
