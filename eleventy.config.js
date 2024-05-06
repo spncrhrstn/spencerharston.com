@@ -65,7 +65,7 @@ module.exports = function (eleventyConfig) {
 
   // get a count of non-draft files
   const postsPath = path.join(__dirname, "src/posts");
-  const postsFiles = fs.readdirSync(postsPath).filter(file => file.endsWith(".md"));
+  const postsFiles = fs.readdirSync(postsPath, {recursive: true,}).filter(file => !file.includes("draft") && file.endsWith(".md"));
   eleventyConfig.addGlobalData("postCount", postsFiles.length);
 
   // filter to return a date as an ISO string
@@ -127,6 +127,11 @@ module.exports = function (eleventyConfig) {
     return collection.filter((entry) => DateTime.fromJSDate(entry.date).year == year);
   });
 
+  // filter collection by tag
+  eleventyConfig.addFilter("postsByTag", (collection, tag) => {
+    return collection.filter((entry) => entry.data.tags.includes(tag));
+  });
+
   // shortcodes
   // shortcode for returning a github link to the current page's source code
   eleventyConfig.addNunjucksShortcode("page_source_link", function (inner_text) {
@@ -149,15 +154,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("metaImages", generateMetaImages);
 
   // collection of all posts
-  eleventyConfig.addCollection("posts", (collection) => {
-    return collection.getFilteredByGlob(["./src/posts/**/*.md"]);
+  eleventyConfig.addCollection("posts", (collectionApi) => {
+    return collectionApi.getFilteredByGlob(["./src/posts/**/*.md"]);
   });
 
   // get a collection of all tags of a collection
-  eleventyConfig.addCollection("tagList", (collection) => {
+  eleventyConfig.addCollection("tagList", (collectionApi) => {
     let uniqueTags = new Set(); //sets only allow unique items
 
-    collection.getAllSorted().forEach(function (item) {
+    collectionApi.getAllSorted().forEach(function (item) {
       // skip item if there is no tags key
       if (!("tags" in item.data)) return;
 
@@ -172,10 +177,10 @@ module.exports = function (eleventyConfig) {
   });
 
   // get a collection of years from a collection
-  eleventyConfig.addCollection("yearList", (collection) => {
+  eleventyConfig.addCollection("yearList", (collectionApi) => {
     let uniqueYears = new Set();
 
-    collection.getAllSorted().forEach((item) => {
+    collectionApi.getAllSorted().forEach((item) => {
       if(!("date" in item.data)) return;
       
       // get the year of the post
