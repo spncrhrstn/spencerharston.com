@@ -1,19 +1,12 @@
 const { DateTime } = require("luxon");
 const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const safeLinks = require("@sardine/eleventy-plugin-external-links");
 const htmlmin = require("html-minifier-terser");
 const fs = require("node:fs");
 const path = require("node:path");
-// configure markdown plugins
-const markdownIt = require("markdown-it");
-const markdownItFootnote = require("markdown-it-footnote");
-const markdownItImageFigures = require("markdown-it-image-figures");
-const markdownItAnchor = require("markdown-it-anchor");
-const markdownItAttrs = require("markdown-it-attrs");
 
-// const { imageHeaderShortcode, imageMetaShortcode, imageMetaTWShortcode } = require("./utils/imageGen");
+// Custom scripts
 const { generateMetaImages } = require("./utils/generateMetaImages.js");
 const metadata = require("./src/_data/metadata.json");
 
@@ -48,12 +41,16 @@ module.exports = function (eleventyConfig) {
 
   // passthrough copying of assets files
   eleventyConfig.addPassthroughCopy({
-    "src/assets": "assets/",
+    "src/assets/scripts/": "assets/scripts/",
+    "src/assets/favicons/": "assets/favicons/",
     "src/assets/favicons/favicon.ico": "/favicon.ico",
     "node_modules/@fontsource/atkinson-hyperlegible/": "assets/fonts/atkinson-hyperlegible/",
     "node_modules/@fontsource/cousine/": "assets/fonts/cousine/",
     "node_modules/@tabler/icons-sprite/dist/tabler-sprite.svg": "assets/img/icons/tabler-sprite.svg"
   });
+
+  // copy img/ but not img/content - will be handled by markdown plugin & eleventy-img plugin
+  eleventyConfig.addPassthroughCopy({"src/assets/img/*[!content]": "assets/img/"});
 
   // add watch target for css and tailwind
   eleventyConfig.addWatchTarget("./src/assets/css/");
@@ -73,13 +70,6 @@ module.exports = function (eleventyConfig) {
     let result = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toUTC().toISO();
     return result;
   });
-
-  // filter to return a date as a pretty string, like April 1, 2022
-  // eleventyConfig.addFilter("dateReadable", (dateObj) => {
-  //   // console.log(JSON.stringify(metadata));
-  //   let result = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(metadata.timezone, { keepLocalTime: true }).toLocaleString(DateTime.DATE_FULL);
-  //   return result;
-  // });
 
   // shortcode to return a readable date (like April, 1 2022) or with time (April 1, 2022 at 12:12 PM MST)
   eleventyConfig.addShortcode("dateReadable", (dateObj, withTime) => {
@@ -148,9 +138,7 @@ module.exports = function (eleventyConfig) {
     return `<svg class="tabler-icon" width="${size}" height="${size}"><use xlink:href="/assets/img/icons/tabler-sprite.svg#tabler-${iconName}" /></svg>`;
   });
 
-  // eleventyConfig.addNunjucksAsyncShortcode("imageHeader", imageHeaderShortcode);
-  // eleventyConfig.addNunjucksAsyncShortcode("imageMeta", imageMetaShortcode);
-  // eleventyConfig.addNunjucksAsyncShortcode("imageMetaTW", imageMetaTWShortcode);
+  // shortcode for handling generation of meta images
   eleventyConfig.addNunjucksAsyncShortcode("metaImages", generateMetaImages);
 
   // collection of all posts
@@ -192,6 +180,16 @@ module.exports = function (eleventyConfig) {
   });
 
   // configure markdown library
+
+  // markdown plugins
+  const markdownIt = require("markdown-it");
+  const markdownItFootnote = require("markdown-it-footnote");
+  const markdownItImageFigures = require("markdown-it-image-figures");
+  const markdownItAnchor = require("markdown-it-anchor");
+  const markdownItAttrs = require("markdown-it-attrs");
+  const markdownItEleventyImg = require("markdown-it-eleventy-img");
+
+  // markdown plugin options
   let markdownItOptions = {
     html: true
   };
@@ -200,11 +198,31 @@ module.exports = function (eleventyConfig) {
     level: [2,3]
   };
 
+  let markdownItEleventyImgOptions = {
+    imgOptions: {
+      widths: [480, 720, 1000],
+      formats: ["webp", "jpeg"],
+      urlPath: "/assets/img/content",
+      outputDir: "./dist/assets/img/content",
+      filenameFormat: (id, src, width, format) => {
+        const { name } = path.parse(src);
+        return `${name}-${width}w.${format}`;  
+      }
+    },
+    globalAttributes: {
+      decoding: "async",
+      loading: "lazy",
+      sizes: "100vw"
+    },
+    resolvePath: (filepath, env) => path.join(path.dirname(env.page.inputPath), filepath)
+  };
+
   let markdownLib = markdownIt(markdownItOptions)
     .use(markdownItFootnote)
     .use(markdownItAnchor, markdownItAnchorOptions)
     .use(markdownItAttrs)
-    .use(markdownItImageFigures, { figcaption: true, lazy: true, async: true }); // could be replaced with the image transform plugin below
+    .use(markdownItImageFigures, { figcaption: true }) // could be replaced with the image transform plugin below
+    .use(markdownItEleventyImg, markdownItEleventyImgOptions);
   
   eleventyConfig.setLibrary("md", markdownLib);
 
@@ -212,23 +230,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(safeLinks);
-
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    extensions: "html",
-    formats: ["webp", "jpeg"],
-    widths: [480, 720, 1000],
-    defaultAttributes: {
-      loading: "lazy",
-      decoding: "async",
-      sizes: "90vw",
-    },
-    outputDir: "./dist/assets/img/content", // relative to repo root
-    urlPath: "/assets/img/content", // path prefix, e.g. `/img/` for `<img src="/img/MY_IMAGE.jpeg">`.
-    filenameFormat: (id, src, width, format) => {
-      const { name } = path.parse(src);
-      return `${name}-${width}w.${format}`;  
-    }
-  });
 
   return {
     dir: {
