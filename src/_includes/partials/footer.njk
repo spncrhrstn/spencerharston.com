@@ -6,10 +6,10 @@
         </div>
         <div class="flex flex-col gap-1 text-right">
             <div class="flex flex-row items-center gap-x-2 self-end">
-                <a href="/feed.xml" title="RSS Feed of Posts">{% iconify "rss", "24" %}</a></span>
-                <button id="dark-mode-button" class="hover:text-blue-600 dark:hover:text-sky-500" title="Toggle dark mode">{% iconify "moon", "24" %}</button>
+                <a href="/feed.xml" title="RSS Feed of Posts">{% iconify "rss" %}</a></span>
+                <button id="dark-mode-button" class="hover:text-blue-600 dark:hover:text-sky-500" title="Toggle dark mode">{% iconify "moon" %}</button>
             </div>
-            <div class="font-mono text-xs" title="Last updated: {{ git.commit_date }}">{% commit_link git.short_sha %}</div>
+            <div class="font-mono text-xs" title="Last updated: {{ git.commit_date }}">{% commitLink git.short_sha %}</div>
         </div>
     </div>
 </footer>

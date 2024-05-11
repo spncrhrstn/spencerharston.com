@@ -2,8 +2,8 @@ const { createCanvas, registerFont, loadImage } = require("canvas");
 const Image = require("@11ty/eleventy-img");
 
 // register fonts
-registerFont("./utils/fonts/AtkinsonHyperlegible-Regular.ttf", { family: "Atkinson Hyperlegible Regular" });
-registerFont("./utils/fonts/AtkinsonHyperlegible-Italic.ttf", { family: "Atkinson Hyperlegible Regular", style: "italic" });
+registerFont("./config/meta/fonts/AtkinsonHyperlegible-Regular.ttf", { family: "Atkinson Hyperlegible Regular" });
+registerFont("./config/meta/fonts/AtkinsonHyperlegible-Italic.ttf", { family: "Atkinson Hyperlegible Regular", style: "italic" });
 
 // wrap text in a canvas
 // adapted from https://urre.me/writings/dynamic-open-graph-images/
@@ -67,8 +67,13 @@ async function drawTextBG(ctx, txt, font, align, x, y) {
 
 }
 
-// generate images with canvas
-async function generateMetaImages(titleText) {
+/**
+ * Generate an HTML meta image using canvas.
+ * The image will be saved in `./dist/assets/img/meta`
+ * @param string titleText The main text to print on the image
+ * @returns Path to the saved image
+ */
+async function generateMetaImage(titleText) {
   const width = 1200;
   const height = 630;
   let titleFontSize = 72;
@@ -84,7 +89,7 @@ async function generateMetaImages(titleText) {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   // add the image
-  const bgImage = await loadImage("./utils/images/gradient.png");
+  const bgImage = await loadImage("./config/generateMetaImages/images/gradient.png");
   ctx.drawImage(bgImage, 0, 0);
 
   // add subText text
@@ -111,7 +116,7 @@ async function generateMetaImages(titleText) {
     outputDir: "./dist/assets/img/meta",
     urlPath: "/assets/img/meta",
     sharpPngOptions: {
-      quality: 100
+      quality: 95
     },
     filenameFormat: (id, src, width, format, options) => {
       let name = "";
@@ -131,4 +136,4 @@ async function generateMetaImages(titleText) {
   return `${this.ctx.metadata.base_url}${data.url}`;
 }
 
-exports.generateMetaImages = generateMetaImages;
+module.exports = { generateMetaImage };

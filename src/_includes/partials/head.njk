@@ -32,7 +32,7 @@
 {# only generate meta images on production #}
 {%- setAsync "metaImageUrl" %}
 {%- if env.environment === "production" or env.environment === "staging" %}
-{%- metaImages metaTagline or title %}
+{%- generateMetaImage metaTagline or title %}
 {%- else %}
 
 {%- endif %}

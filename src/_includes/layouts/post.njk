@@ -11,23 +11,23 @@ layout: layouts/base
 
         <div class="flex flex-col gap-y-2 text-sm">
             <div class="flex flex-row items-center gap-x-2">
-                <span class="inline-flex items-center justify-center">{% iconify "calendar", "24" %}</span>
+                <span class="inline-flex items-center justify-center">{% iconify "calendar" %}</span>
                 <div>
-                    Posted: <time datetime="{{ page.date | dateISO }}" title="{{ page.date | dateISO }}">{% dateReadable page.date, false %}</time>
+                    Posted: <time datetime="{{ page.date | dateISO }}" title="{{ page.date | dateISO }}">{{ page.date | dateByFormat("MMMM d, y") }}</time>
                 </div>            
             </div>
             
             {%- if updated %}
             <div class="flex flex-row items-center gap-x-2">
-                <span class="inline-flex items-center justify-center">{% iconify "circle-arrow-up", "24" %}</span>
+                <span class="inline-flex items-center justify-center">{% iconify "circle-arrow-up" %}</span>
                 <div>
-                    Updated: <time datetime="{{ updated | dateISO }}" title="{{ updated | dateISO }}">{% dateReadable updated, false %}</time>
+                    Updated: <time datetime="{{ updated | dateISO }}" title="{{ updated | dateISO }}">{{ updated | dateByFormat("MMMM d, y") }}</time>
                 </div>
             </div>
             {%- endif %}
 
             <div class="flex flex-row items-center gap-x-2">
-                <span class="inline-flex items-center justify-center">{% iconify "clock", "24" %}</span>
+                <span class="inline-flex items-center justify-center">{% iconify "clock" %}</span>
                 <span> {{ content | readingTime }} to read </span>
             </div>
         </div>
@@ -42,12 +42,12 @@ layout: layouts/base
 </article>
 
 <div class="inline-flex flex-row items-center gap-x-2">
-    <span class="inline-flex items-center justify-center">{% iconify "tag", "24" %}</span> 
+    <span class="inline-flex items-center justify-center">{% iconify "tag" %}</span> 
     {{ tagsList(tags) }}
 </div>
 
 <p class="mt-4 text-sm">
     The content of this post is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> by the author.
     {#- {%- if image %} Header photo from <a href="{{ image }}">Unsplash</a>.<br>{%- endif %} #}
-    The source for this page is available on {% page_source_link 'GitHub' %}.
+    The source for this page is available on {% pageSourceLink 'GitHub' %}.
 </p>

@@ -19,7 +19,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.tabler-icon {
+.icon-tabler {
     stroke: currentColor;
     stroke-width: 2;
     stroke-linecap: round;
