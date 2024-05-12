@@ -1,4 +1,4 @@
-const { getLatestGitCommitHash, getCurrentGitBranch, getCurrentGitCommitDate } = require("../../config/utils.js");
+const { getLatestGitCommitHash, getCurrentGitBranch, getCurrentGitCommitDate, getCurrentGitStatus } = require("../../config/utils.js");
 const { metadata } = require("../../config/config.js");
 
 /**
@@ -14,6 +14,8 @@ const getBuildInfo = () => {
   }).format(now);
 
   const tzAbbr = now.toLocaleString('en-US', { timeZoneName: "short"}).split(/\s+/).pop();
+
+  console.log(getCurrentGitStatus());
 
   return {
     // Can't use timeZoneName option together with dateStyle, so interpolate manually

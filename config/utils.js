@@ -13,4 +13,6 @@ const getCurrentGitBranch = () => spawnAndGetOutputString(`git branch --show-cur
 
 const getCurrentGitCommitDate = () => spawnAndGetOutputString(`git log -n1 --format=%cd --date=iso-strict`);
 
-module.exports = { getLatestGitCommitHash, getCurrentGitBranch, getCurrentGitCommitDate }
+const getCurrentGitStatus = () => spawnAndGetOutputString(`git status`);
+
+module.exports = { getLatestGitCommitHash, getCurrentGitBranch, getCurrentGitCommitDate, getCurrentGitStatus }
