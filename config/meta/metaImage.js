@@ -89,7 +89,7 @@ async function generateMetaImage(titleText) {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   // add the image
-  const bgImage = await loadImage("./config/generateMetaImages/images/gradient.png");
+  const bgImage = await loadImage("./config/meta/images/gradient.png");
   ctx.drawImage(bgImage, 0, 0);
 
   // add subText text

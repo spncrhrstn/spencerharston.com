@@ -1,12 +1,10 @@
-// packages
-const { DateTime } = require("luxon");
+// Packages
 const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const safeLinks = require("@sardine/eleventy-plugin-external-links");
-const fs = require("node:fs");
-const path = require("node:path");
 
 // Custom configs
+const config = require("./config/config.js");
 const filters = require("./config/filters.js");
 const shortcodes = require("./config/shortcodes.js");
 const collections = require("./config/collections.js");
@@ -40,13 +38,15 @@ module.exports = function (eleventyConfig) {
   // add global data
   eleventyConfig.addGlobalData("postCount", collections.posts.length);
   eleventyConfig.addGlobalData("draftCount", collections.drafts.length);
+  Object.entries(config).forEach(([name, data]) => eleventyConfig.addGlobalData(name, data));
 
+  // add shortcodes
+  Object.entries(shortcodes.shortcodes).forEach(([name, func]) => eleventyConfig.addShortcode(name, func));
+  Object.entries(shortcodes.asyncShortcodes).forEach(([name, func]) => eleventyConfig.addNunjucksAsyncShortcode(name, func));
+  
   // add filters
   Object.entries(filters).forEach(([name, func]) => eleventyConfig.addNunjucksFilter(name, func));
   
-  // add shortcodes
-  Object.entries(shortcodes).forEach(([name, func]) => eleventyConfig.addNunjucksAsyncShortcode(name, func)); 
-
   // add collections
   Object.entries(collections).forEach(([name, func]) => eleventyConfig.addCollection(name, func));
 

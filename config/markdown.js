@@ -17,6 +17,10 @@ const markdownItAnchorOptions = {
   level: [2, 3]
 };
 
+const markdownItImageFiguresOptions = {
+  figcaption: true
+}
+
 const markdownItEleventyImgOptions = {
   imgOptions: {
     widths: [480, 720, 1000],
@@ -40,7 +44,7 @@ const markdownLib = markdownIt(markdownItOptions)
   .use(markdownItFootnote)
   .use(markdownItAnchor, markdownItAnchorOptions)
   .use(markdownItAttrs)
-  .use(markdownItImageFigures, { figcaption: true })
+  .use(markdownItImageFigures, markdownItImageFiguresOptions)
   .use(markdownItEleventyImg, markdownItEleventyImgOptions);
 
 module.exports = { markdownLib }

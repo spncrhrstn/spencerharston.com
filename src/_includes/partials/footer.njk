@@ -1,15 +1,19 @@
-<footer class="w-full p-0 text-sm">
-    <div class="w-full max-w-3xl flex flex-row flex-wrap items-center justify-between gap-1 my-0 mx-auto pt-20 pb-8 px-4">
-        <div class="flex flex-col gap-1">
-            <div>&copy; 2020&ndash;2024 {{ metadata.owner }}</div>
-            <div><a href="/colophon">Colophon</a> | <a href="/uses">Uses</a></div>
-        </div>
-        <div class="flex flex-col gap-1 text-right">
-            <div class="flex flex-row items-center gap-x-2 self-end">
-                <a href="/feed.xml" title="RSS Feed of Posts">{% iconify "rss" %}</a></span>
-                <button id="dark-mode-button" class="hover:text-blue-600 dark:hover:text-sky-500" title="Toggle dark mode">{% iconify "moon" %}</button>
+<footer class="w-full p-0">
+    <div class="w-full max-w-3xl flex flex-col items-stretch justify-between gap-4 my-0 mx-auto pt-20 pb-8 px-4">
+        <div class="flex flex-row items-center justify-between gap-1">
+            <div class="flex flex-col gap-1">
+                <div>&copy; 2020&ndash;2024 {{ metadata.owner }}</div>
+                <div><a href="/colophon">Colophon</a> | <a href="/uses">Uses</a></div>
             </div>
-            <div class="font-mono text-xs" title="Last updated: {{ git.commit_date }}">{% commitLink git.short_sha %}</div>
+            <div class="flex flex-col gap-1 text-right">
+                <div class="flex flex-row items-center gap-x-2 self-end">
+                    <a href="/feed.xml" title="RSS Feed of Posts">{% iconify "rss" %}</a></span>
+                    <button id="dark-mode-button" class="hover:text-blue-600 dark:hover:text-sky-500" title="Toggle dark mode">{% iconify "moon" %}</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-sm">
+            Last built on {{ buildInfo.time.formatted }} [<span class="font-mono" title="Commit date: {{ buildInfo.git.commitDate | dateISO }}"><a href="{{ metadata.repo }}/tree/{{ buildInfo.git.hash.long }}">{{ buildInfo.git.hash.short }}</a></span>]
         </div>
     </div>
 </footer>
