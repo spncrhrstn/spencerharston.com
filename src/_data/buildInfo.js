@@ -10,7 +10,6 @@ const getBuildInfo = () => {
   const buildTime = new Intl.DateTimeFormat('en-US', {
     dateStyle: 'long',
     timeStyle: 'short',
-    timeZone: metadata.timezone,
   }).format(now);
 
   const tzAbbr = now.toLocaleString('en-US', { timeZoneName: "short"}).split(/\s+/).pop();
