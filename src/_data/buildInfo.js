@@ -7,14 +7,15 @@ const { metadata } = require("../../config/config.js");
  */
 const getBuildInfo = () => {
   const now = new Date();
+  console.log(now.toString())
+  console.log(now.toUTCString())
+  console.log(now.toISOString())
   const buildTime = new Intl.DateTimeFormat('en-US', {
     dateStyle: 'long',
     timeStyle: 'short',
   }).format(now);
 
-  const tzAbbr = now.toLocaleString('en-US', { timeZoneName: "short"}).split(/\s+/).pop();
-
-  console.log(getCurrentGitStatus());
+  const tzAbbr = now.toLocaleString('en-US', { timeZoneName: "short"}).split(/\s+/).pop(); // timezone comes from the host and is not stored
 
   return {
     // Can't use timeZoneName option together with dateStyle, so interpolate manually
