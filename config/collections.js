@@ -20,7 +20,7 @@ const drafts = (collectionApi) => {
   const drafts = collectionApi.getFilteredByGlob("./src/posts/drafts/*.md");
   console.log("Drafts: ", drafts.length);
   return drafts;
-}
+};
 
 /**
  * Get an array of unique tags from items in all collections

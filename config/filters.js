@@ -18,10 +18,10 @@ const dateHtmlString = (dateObj) => getDateTimeObj(dateObj).toFormat("yyyy-LL-dd
 const dateRFC3339 = (dateObj) => {
   const dt = getDateTimeObj(dateObj).toUTC().toISO();
 
-  const split = dt.split(".")
+  const split = dt.split(".");
   split.pop();
   return split.join("") + "Z";
-}
+};
 
 const dateByFormat = (dateObj, format = "yyyy-LL-dd") => getDateTimeObj(dateObj).toFormat(format);
 

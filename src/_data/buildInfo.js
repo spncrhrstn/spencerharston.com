@@ -1,4 +1,4 @@
-const { getLatestGitCommitHash, getCurrentGitBranch, getCurrentGitCommitDate, getCurrentGitStatus } = require("../../config/utils.js");
+const { getLatestGitCommitHash, getCurrentGitBranch, getCurrentGitCommitDate } = require("../../config/utils.js");
 const { metadata } = require("../../config/config.js");
 const { DateTime } = require("luxon");
 
@@ -12,12 +12,12 @@ const getBuildInfo = () => {
   const now = DateTime.now();
   const buildTime = now.toLocaleString({ 
     locale: "en-US", 
-    weekday: 'short', 
-    month: 'short', 
-    year: 'numeric',
-    day: '2-digit', 
-    hour: 'numeric', 
-    minute: '2-digit',
+    weekday: "short", 
+    month: "short", 
+    year: "numeric",
+    day: "2-digit", 
+    hour: "numeric", 
+    minute: "2-digit",
     timeZoneName: "short",
     timeZone: metadata.timezone
   });  

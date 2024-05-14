@@ -14,12 +14,12 @@ async function iconify(iconName) {
   const path = `./node_modules/@tabler/icons/icons/outline/${iconName}.svg`;
   const icon = await asyncReadFile(path);
   return icon.toString();
-};
+}
 
 function pageSourceUrl() {
   const branch = getCurrentGitBranch();
   return `${metadata.repo}/blob/${branch}/${this.page.inputPath.slice(2)}`;
 }
 
-module.exports.shortcodes = { pageSourceUrl }
-module.exports.asyncShortcodes = { iconify, generateMetaImage }
+module.exports.shortcodes = { pageSourceUrl }; 
+module.exports.asyncShortcodes = { iconify, generateMetaImage };

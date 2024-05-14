@@ -9,7 +9,7 @@ const metadata = {
   github_handle: "sphars",
   mastodon_handle: "@sphars",
   timezone: "America/Denver"
-}
+};
 
 const env = process.env.ELEVENTY_ENV || "development";
 

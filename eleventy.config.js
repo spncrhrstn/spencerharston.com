@@ -29,8 +29,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets/favicons/": "assets/favicons/" });
   eleventyConfig.addPassthroughCopy({ "src/assets/favicons/favicon.ico": "/favicon.ico" });
   eleventyConfig.addPassthroughCopy({ "src/assets/img/*[!content]": "assets/img/" }); // images except /content, handled by eleventy-img plugin
-  eleventyConfig.addPassthroughCopy({ "node_modules/@fontsource/atkinson-hyperlegible/": "assets/fonts/atkinson-hyperlegible/" });
-  eleventyConfig.addPassthroughCopy({ "node_modules/@fontsource/cousine/": "assets/fonts/cousine/" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/@fontsource": "assets/fonts" }); // copy all fonts, for now, need to optimize further
 
   // add watch target for css and tailwind
   eleventyConfig.addWatchTarget("./src/assets/css/");

@@ -19,7 +19,7 @@ const markdownItAnchorOptions = {
 
 const markdownItImageFiguresOptions = {
   figcaption: true
-}
+};
 
 const markdownItEleventyImgOptions = {
   imgOptions: {
@@ -47,4 +47,4 @@ const markdownLib = markdownIt(markdownItOptions)
   .use(markdownItImageFigures, markdownItImageFiguresOptions)
   .use(markdownItEleventyImg, markdownItEleventyImgOptions);
 
-module.exports = { markdownLib }
+module.exports = { markdownLib };
