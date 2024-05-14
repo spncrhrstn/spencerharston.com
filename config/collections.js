@@ -13,7 +13,7 @@ const posts = (collectionApi) => {
 
 /**
  * Get a collection of all drafts
- * @param {*} collectionApi The callback function from eleventy
+ * @param {*} collectionApi The collection API passed from eleventy
  * @returns An array of markdown template in the posts/drafts subdir
  */
 const drafts = (collectionApi) => {
@@ -24,15 +24,14 @@ const drafts = (collectionApi) => {
 
 /**
  * Get an array of unique tags from items in all collections
- * @param {*} collectionApi The callback function for eleventy
+ * @param {*} collectionApi The collection API passed from eleventy
  * @returns An array of unique tags from posts
  */
 const tagList = (collectionApi) => {
   let uniqueTags = new Set();
 
-  // just look at the posts collection
   collectionApi.getAll().forEach((item) => {
-    if (!("tags" in item.data)) return;
+    if (item.data.type !== "post" || !item.data.tags) return;
 
     const tags = (typeof item.data.tags === "string") ? [item.data.tags] : item.data.tags;
 
@@ -41,9 +40,10 @@ const tagList = (collectionApi) => {
     }
   });
 
-  console.log(`Tags [${[...uniqueTags].length}]: ${[...uniqueTags].sort()}`);
+  const tags = [...uniqueTags].sort();
+  console.log(`Tags [${tags.length}]: ${tags}`);
 
-  return [...uniqueTags].sort();
+  return tags;
 };
 
 /**
@@ -54,15 +54,18 @@ const tagList = (collectionApi) => {
 const yearList = (collectionApi) => {
   let uniqueYears = new Set();
 
+  // console.log(collectionApi.getAll())
+
   collectionApi.getAll().forEach((item) => {
-    if (!item.data["date"]) return;
+    if (item.data.type !== "post" || !item.data.date) return;
 
     const itemYear = DateTime.fromJSDate(item.date).year.toString();
     uniqueYears.add(itemYear);
   });
 
-  console.log(`Years [${[...uniqueYears].length}]: ${[...uniqueYears].sort()}`);
-  return [...uniqueYears].sort();
+  const years = [...uniqueYears].sort();
+  console.log(`Years [${years.length}]: ${years}`);
+  return years;
 };
 
 module.exports = { posts, drafts, tagList, yearList };

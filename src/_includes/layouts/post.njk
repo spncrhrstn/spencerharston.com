@@ -49,5 +49,5 @@ layout: layouts/base
 <p class="mt-4 text-sm">
     The content of this post is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> by the author.
     {#- {%- if image %} Header photo from <a href="{{ image }}">Unsplash</a>.<br>{%- endif %} #}
-    The source for this page is available on <a href="{{ metadata.repo }}/blob/{{ buildInfo.git.branch }}{{ page.inputPath.slice(1) }}">GitHub</a>.
+    The source for this page is available on <a href="{% pageSourceUrl %}">GitHub</a>.
 </p>

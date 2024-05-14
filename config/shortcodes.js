@@ -1,6 +1,8 @@
 const { generateMetaImage } = require("./meta/metaImage.js");
 const { readFile } = require("fs");
 const { promisify } = require("util");
+const { metadata } = require("./config.js");
+const { getCurrentGitBranch } = require("./utils.js");
 const asyncReadFile = promisify(readFile);
 
 /**
@@ -14,6 +16,10 @@ async function iconify(iconName) {
   return icon.toString();
 };
 
-// export the shortcodes separately, because nunjucks has a different method for calling async shortcodes
-module.exports.shortcodes = { }
+function pageSourceUrl() {
+  const branch = getCurrentGitBranch();
+  return `${metadata.repo}/blob/${branch}/${this.page.inputPath.slice(2)}`;
+}
+
+module.exports.shortcodes = { pageSourceUrl }
 module.exports.asyncShortcodes = { iconify, generateMetaImage }

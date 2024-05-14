@@ -1,11 +1,11 @@
 <footer class="w-full p-0">
     <div class="w-full max-w-3xl flex flex-col items-stretch justify-between gap-4 my-0 mx-auto pt-20 pb-8 px-4 text-sm">
         <div class="flex flex-row justify-between gap-1">
-            <div class="flex flex-col gap-1">
+            <div class="flex flex-col gap-2">
                 <div>&copy; 2020&ndash;2024 {{ metadata.owner }}</div>
                 <div class="text-xs">
-                    Built: <span title="ISO: {{ buildInfo.time.raw }}">{{ buildInfo.time.formatted }}</span><br>
-                    Commit: <span class="font-mono" title="Commit date: {{ buildInfo.git.commitDate | dateISO }}"><a href="{{ metadata.repo }}/tree/{{ buildInfo.git.hash.long }}">{{ buildInfo.git.hash.short }}</a></span>
+                    Built: <span class="font-mono" title="{{ buildInfo.time.raw | dateISO }}">{{ buildInfo.time.formatted }}</span><br>
+                    Commit: <span class="font-mono" title="{{ buildInfo.git.commitDate | dateISO }}"><a href="{{ metadata.repo }}/tree/{{ buildInfo.git.hash.long }}">{{ buildInfo.git.hash.short }}</a></span>
                 </div>
             </div>
             <div>

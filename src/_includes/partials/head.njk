@@ -17,7 +17,7 @@
 
 <!-- Open Graph -->
 <meta property="og:title" content="{{ title }}">
-{%- if type == "post" %}
+{%- if type === "post" %}
 <meta property="og:type" content="article">
 <meta property="article:author" content="{{ author or metadata.author }}">
 <meta property="article:published_time" content="{{ date | dateISO }}">
@@ -31,7 +31,7 @@
 
 {# only generate meta images on production #}
 {%- setAsync "metaImageUrl" %}
-{%- if env.environment === "production" or env.environment === "staging" %}
+{%- if env === "production" or env === "staging" %}
 {%- generateMetaImage metaTagline or title %}
 {%- else %}
 
@@ -68,6 +68,6 @@
 </script>
 <script src="/assets/scripts/darkmode.js" defer></script>
 
-{%- if env.environment == "production" %}
+{%- if env === "production" %}
 <script data-goatcounter="https://suave-sandwich.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 {%- endif %}

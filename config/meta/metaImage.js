@@ -132,8 +132,8 @@ async function generateMetaImage(titleText) {
     }
   });
 
-  let data = metadata.png[metadata.png.length - 1];
-  return `${this.ctx.metadata.base_url}${data.url}`;
+  let url = metadata.png[metadata.png.length - 1].url;
+  return this.ctx.env === "production" ? `${this.ctx.metadata.base_url}${url}` : url;
 }
 
 module.exports = { generateMetaImage };

@@ -11,10 +11,6 @@ const metadata = {
   timezone: "America/Denver"
 }
 
-function env() {
-  return {
-    environment: process.env.ELEVENTY_ENV || "development"
-  }
-}
+const env = process.env.ELEVENTY_ENV || "development";
 
 module.exports = { metadata, env };
