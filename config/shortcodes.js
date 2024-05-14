@@ -2,7 +2,7 @@ const { generateMetaImage } = require("./meta/metaImage.js");
 const { readFile } = require("fs");
 const { promisify } = require("util");
 const { metadata } = require("./config.js");
-const { getCurrentGitBranch } = require("./utils.js");
+const { getCurrentGitBranch, getLatestGitCommitHash, getCurrentGitStatus } = require("./utils.js");
 const asyncReadFile = promisify(readFile);
 
 /**
@@ -18,7 +18,11 @@ async function iconify(iconName) {
 
 function pageSourceUrl() {
   const branch = getCurrentGitBranch();
-  return `${metadata.repo}/blob/${branch}/${this.page.inputPath.slice(2)}`;
+  console.log(branch);
+  const hash = getLatestGitCommitHash();
+  console.log(hash);
+  console.log(getCurrentGitStatus());
+  return `${metadata.repo}/blob/${hash}/${this.page.inputPath.slice(2)}`;
 }
 
 module.exports.shortcodes = { pageSourceUrl }; 
