@@ -17,11 +17,7 @@ async function iconify(iconName) {
 }
 
 function pageSourceUrl() {
-  const branch = getCurrentGitBranch();
-  console.log(branch);
-  const hash = getLatestGitCommitHash();
-  console.log(hash);
-  console.log(getCurrentGitStatus());
+  const hash = getLatestGitCommitHash("short");
   return `${metadata.repo}/blob/${hash}/${this.page.inputPath.slice(2)}`;
 }
 
