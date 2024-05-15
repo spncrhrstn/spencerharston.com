@@ -1,4 +1,4 @@
-// Packages
+// External packages/plugins
 const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const safeLinks = require("@sardine/eleventy-plugin-external-links");
@@ -12,7 +12,7 @@ const { htmlMinify } = require("./config/transforms.js");
 const { markdownLib } = require("./config/markdown.js");
 
 /**
- * @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig 
+ * @param {import("@11ty/eleventy").UserConfig} eleventyConfig 
  * @returns {ReturnType<import("@11ty/eleventy/src/defaultConfig")>}
  */
 module.exports = function (eleventyConfig) {
@@ -22,21 +22,24 @@ module.exports = function (eleventyConfig) {
     console.log("BUILDING FOR PRODUCTION");
     eleventyConfig.ignores.add("src/posts/drafts");
     eleventyConfig.addTransform("htmlmin", htmlMinify);
+    eleventyConfig.quietMode = true;
   }
 
   // passthrough copying of assets files
-  eleventyConfig.addPassthroughCopy({ "src/assets/scripts/": "assets/scripts/" });
-  eleventyConfig.addPassthroughCopy({ "src/assets/favicons/": "assets/favicons/" });
-  eleventyConfig.addPassthroughCopy({ "src/assets/favicons/favicon.ico": "/favicon.ico" });
-  eleventyConfig.addPassthroughCopy({ "src/assets/img/*[!content]": "assets/img/" }); // images except /content, handled by eleventy-img plugin
-  eleventyConfig.addPassthroughCopy({ "node_modules/@fontsource": "assets/fonts" }); // copy all fonts, for now, need to optimize further
+  // images, except those in /content subdir as they're handled by the markdown-it-eleventy-img plugin
+  // all fonts are copied over for now. TODO: optimize for specific font files
+  eleventyConfig.addPassthroughCopy({ 
+    "src/assets/scripts/": "assets/scripts/",
+    "src/assets/favicons/": "assets/favicons/",
+    "src/assets/favicons/favicon.ico": "/favicon.ico",
+    "src/assets/img/*[!content]": "assets/img/",
+    "node_modules/@fontsource": "assets/fonts" 
+  });
 
   // add watch target for css and tailwind
   eleventyConfig.addWatchTarget("./src/assets/css/");
 
   // add global data
-  eleventyConfig.addGlobalData("postCount", collections.posts.length);
-  eleventyConfig.addGlobalData("draftCount", collections.drafts.length);
   Object.entries(config).forEach(([name, data]) => eleventyConfig.addGlobalData(name, data));
 
   // add shortcodes

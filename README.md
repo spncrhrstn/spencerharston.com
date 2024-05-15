@@ -9,10 +9,10 @@ The personal website of Spencer Harston - an eternal WIP.
 This site can be copied and modified for personal use by forking and modifying as needed.
 
 > **Note**  
-> While you are free to copy the source code of this website, be aware that the site generation process is rather opinionated, not optimized, and may not fit your needs. And of course the content itself is of my own creation. See [LICENSE](#license) below.
+> While you are free to utilize the source code of this website, be aware that the site generation process is rather opinionated, not optimized, and may not fit your needs. And of course the content itself is of my own creation. See [LICENSE](#license) below.
 
 ### Requirements
-* Node v18 or greater (using [nvm](https://github.com/nvm-sh/nvm) is suggested)
+* Node v20 or greater (using [nvm](https://github.com/nvm-sh/nvm) is suggested)
 * Git
 
 ### Fork and Install Dependencies
@@ -45,13 +45,13 @@ To build the website without starting a server or watching the input files, use 
 npm run build
 ```
 
-Building the website will output all resulting files in the `dist/` directory and is ready for deployment.
+Building the website will output all resulting files in the `./dist` directory and is ready for deployment.
 
 #### Production
 
 By setting a specific environment variable, the site can be built for production, which will do a couple of additional steps:
 
- - Skip any draft pages in `src/posts/drafts`
+ - Skip any draft pages in `./src/posts/drafts`
  - Generate images for HTML `meta` tags, which will make the build process take a bit longer ([script](./config/meta/metaImage.js))
  - Set source code urls to GitHub as specified in the [config](./config/config.js)
  - Minimize the resulting CSS and HTML files 
@@ -70,7 +70,7 @@ Site fonts:
 
 Meta images fonts:
 1. Get the font's `.ttf` files from [Google Fonts](https://fonts.google.com) and copy them to `./config/meta/fonts` to generate the meta images
-    - The @fontsource npm packages currently don't include the `.ttf` files, so getting them directly from Google Fonts is easiest
+    - The Fontsource npm packages currently don't include the `.ttf` files, so getting them directly from Google Fonts is easiest
     - I want to script this at some point
 2. Update the `registerFont()` functions and any `ctx.font =` statements in `./config/meta/metaImages.js` to updated font-family values. Point the location to the downloaded font .ttf files
 
@@ -86,5 +86,5 @@ Favicon fonts:
 * More on the [Colophon page](https://www.spencerharston.com/colophon)
 * Many example projects from the 11ty community
 
-# LICENSE
-The source code to generate this website is licensed under the [MIT license](/LICENSE). The content of this site is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+## LICENSE
+The source code to generate this website is licensed under the [MIT license](/LICENSE). Other licenses may be in use when installing the npm packages. The content of this site is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
