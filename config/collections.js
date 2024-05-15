@@ -54,8 +54,6 @@ const tagList = (collectionApi) => {
 const yearList = (collectionApi) => {
   let uniqueYears = new Set();
 
-  // console.log(collectionApi.getAll())
-
   collectionApi.getAll().forEach((item) => {
     if (item.data.type !== "post" || !item.data.date) return;
 

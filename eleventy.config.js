@@ -48,7 +48,7 @@ module.exports = function (eleventyConfig) {
   
   // add collections
   Object.entries(collections).forEach(([name, func]) => eleventyConfig.addCollection(name, func));
-
+  
   // configure markdown library
   eleventyConfig.setLibrary("md", markdownLib);
 
