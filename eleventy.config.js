@@ -27,7 +27,7 @@ module.exports = function (eleventyConfig) {
 
   // passthrough copying of assets files
   // images, except those in /content subdir as they're handled by the markdown-it-eleventy-img plugin
-  // all fonts are copied over for now. TODO: optimize for specific font files
+  // all files of specific fonts are copied over for now
   eleventyConfig.addPassthroughCopy({ 
     "src/assets/scripts/": "assets/scripts/",
     "src/assets/favicons/": "assets/favicons/",

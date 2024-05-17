@@ -67,6 +67,7 @@ Site fonts:
 1. Install the font package from [Fontsource](https://fontsource.org/)
 2. Update `./src/assets/css/site.css` to import the needed Fontsource CSS files (at least the `400.css` file)
 3. Update `./tailwind.config.js` under `theme.extend.fontFamily` to set the font family 
+4. Update `./eleventy.config.js`'s `eleventy.addPassthroughCopy()` object
 
 Meta images fonts:
 1. Get the font's `.ttf` files from [Google Fonts](https://fonts.google.com) and copy them to `./config/meta/fonts` to generate the meta images
