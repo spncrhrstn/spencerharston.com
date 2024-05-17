@@ -43,7 +43,7 @@ async function imageMetaShortcode(src) {
     sharpJpegOptions: { quality: 90 },
     filenameFormat: function (id, src, width, format, options) {
       const name = "meta";
-      return `meta-${width}w.${format}`;
+      return `${name}-${width}w.${format}`;
     }
   });
 
@@ -62,8 +62,8 @@ async function imageMetaTWShortcode(src) {
     outputDir: `./dist/${this.ctx.permalink}/images`,
     sharpJpegOptions: { quality: 90 },
     filenameFormat: function (id, src, width, format, options) {
-      const name = "meta";
-      return `meta-tw-${width}w.${format}`;
+      const name = "meta-tw";
+      return `${name}-${width}w.${format}`;
     }
   });
 

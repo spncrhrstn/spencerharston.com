@@ -8,7 +8,6 @@ permalink: /posts/{{ year }}/
 eleventyComputed:
     title: Posts in {{ year }}
 ---
-
 {% from "macros/posts-list.njk" import postsList %}
 
 {{ postsList(collections.posts | postsByYear(year)) }}
