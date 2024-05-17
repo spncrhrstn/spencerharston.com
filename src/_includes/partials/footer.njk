@@ -1,14 +1,10 @@
 <footer class="w-full p-0">
-    <div class="w-full max-w-3xl flex flex-row flex-wrap items-end justify-between gap-4 my-0 mx-auto pt-8 pb-4 px-4 text-sm">
-        <div class="flex flex-col gap-1">
-            <div>
-                <a href="/colophon">Colophon</a> | <a href="/uses">Uses</a>
-            </div>
-            <div>
-                &copy; 2020&ndash;2024 {{ metadata.owner }}
-            </div>
+    <div class="w-full max-w-3xl mx-auto py-6 px-4 lg:flex lg:items-center lg:justify-between">
+        <div class="mb-2 lg:mb-0">
+            <a href="/colophon">Colophon</a> | <a href="/uses">Uses</a><br>
+            &copy; 2020&ndash;2024 {{ metadata.owner }}
         </div>
-        <div class="text-xs">
+        <div class="text-xs lg:text-right">
             Built: <span class="font-mono" title="{{ buildInfo.time.raw | dateISO }}">{{ buildInfo.time.formatted }}</span><br>
             Commit: <span class="font-mono" title="{{ buildInfo.git.commitDate | dateISO }}"><a href="{{ metadata.repo }}/tree/{{ buildInfo.git.hash.long }}">{{ buildInfo.git.hash.short }}</a></span>
         </div>
