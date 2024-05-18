@@ -4,6 +4,8 @@
 
 The personal website of Spencer Harston - an eternal WIP.
 
+Powered by [11ty](https://www.11ty.dev/), [Tailwind](https://www.tailwindcss.com/), and ADHD
+
 ## Fork This Website
 
 This site can be copied and modified for personal use by forking and modifying as needed.
