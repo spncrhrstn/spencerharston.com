@@ -2,7 +2,7 @@
 title: Books of 2024
 description: A list of books I'm reading, have read, or may read in 2024.
 date: 2024-01-01 22:25:00
-updated: 2024-05-01 23:11:00
+updated: 2024-05-25 21:38:00
 tags:
     - personal
 ---
@@ -17,7 +17,7 @@ If an entry is prefaced with 🎧, that means I'm listening to the audiobook ver
 
 ## Currently Reading
 * 🎧 [The Lord of the Rings: The Fellowship of the Ring](https://www.goodreads.com/book/show/61215351-the-fellowship-of-the-ring) by J.R.R. Tolkien
-* [Soonish: Ten Emerging Technologies That'll Improve and/or Ruin Everything](https://www.goodreads.com/book/show/34490192-soonish) by Kelly and Zach Weinersmith
+* [Zero Days](https://www.goodreads.com/book/show/62919765-zero-days) by Ruth Ware
 
 ## Finished Reading
 Generally speaking, if I finished a book, it means the book was good enough for me to, well, finish it. A ⭐ means I really enjoyed the book, which is all the qualifications it needs.
@@ -30,6 +30,7 @@ Generally speaking, if I finished a book, it means the book was good enough for 
 * [Starter Villain](https://www.goodreads.com/book/show/61885029-starter-villain) by John Scalzi ⭐
 * [The Women](https://www.goodreads.com/book/show/127305853-the-women) by Kristin Hannah ⭐
 * [11/22/63](https://www.goodreads.com/book/show/10644930-11-22-63) by Stephen King ⭐
+* [Soonish: Ten Emerging Technologies That'll Improve and/or Ruin Everything](https://www.goodreads.com/book/show/34490192-soonish) by Kelly and Zach Weinersmith
 
 ## Didn't Finish
 While there's usually no specific reason why I choose not to finish a book, generally it's some variation of "just couldn't get into it".
