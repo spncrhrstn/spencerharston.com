@@ -1,3 +1,24 @@
 {
-    
+    "now": {
+        "books": [
+            {
+                "title": "Soonish",
+                "author": "Weinersmiths"
+            },
+            {
+                "title": "The Lord of the Rings: The Fellowship of the Ring",
+                "author": "Tolkien"
+            }
+        ],
+        "shows": [
+            {
+                "title": "Brooklyn Nine-Nine"
+            }
+        ],
+        "games": [
+            {
+                "title": "Jedi: Fallen Order"
+            }
+        ]
+    }
 }
