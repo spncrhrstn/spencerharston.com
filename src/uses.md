@@ -60,7 +60,7 @@ I'll update this as often as I remember.
 * Discord (Windows)/Vesktop (Linux)
 * ...and many more
 
-See also my Default Applications of [2023](/posts/app-defaults-2023)
+See also my Default Applications of [2023](/posts/2023/app-defaults-in-2023)
 
 ### Self-hosted Apps
 * FreshRSS (RSS aggregator)
