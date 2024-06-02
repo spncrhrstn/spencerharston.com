@@ -2,8 +2,8 @@ const { createCanvas, registerFont, loadImage } = require("canvas");
 const Image = require("@11ty/eleventy-img");
 
 // register fonts
-registerFont("./config/meta/fonts/AtkinsonHyperlegible-Regular.ttf", { family: "Atkinson Hyperlegible Regular" });
-registerFont("./config/meta/fonts/AtkinsonHyperlegible-Italic.ttf", { family: "Atkinson Hyperlegible Regular", style: "italic" });
+registerFont("./config/meta/fonts/Sintony-Regular.ttf", { family: "Sintony" });
+// registerFont("./config/meta/fonts/Sintony-Regular.ttf", { family: "Sintony", style: "italic" });
 
 // wrap text in a canvas
 // adapted from https://urre.me/writings/dynamic-open-graph-images/
@@ -94,13 +94,14 @@ async function generateMetaImage(titleText) {
 
   // add subText text
   ctx.fillStyle = "#fafafa";
-  ctx.font = "italic 48px 'Atkinson Hyperlegible'";
+  // ctx.font = "italic 48px 'Sintony'";
+  ctx.font = "italic 48px 'Sintony'";
   ctx.textAlign = "end";
   // ctx.fillText(imageFooterText, canvas.width - 48, canvas.height - 50);
   drawTextBG(ctx, subText, ctx.font, ctx.textAlign, canvas.width - 48, canvas.height - 50);
 
   // add image title text
-  ctx.font = `normal ${titleFontSize}px "Atkinson Hyperlegible"`;
+  ctx.font = `normal ${titleFontSize}px "Sintony"`;
   ctx.textAlign = "start";
   ctx.fillStyle = "#fafafa";
   wrapText(ctx, titleText, 64, 144, canvas.width - 96, titleLineHeight);
@@ -124,9 +125,10 @@ async function generateMetaImage(titleText) {
       if (url === "/") {
         name = "index"; // for / root
       } else if (url.startsWith("/") && !url.endsWith("/")) {
-        name = url.substring(1); // for /404.html and similar pages
+        name = url.replace(".", "_").substring(1); // for /404.html and similar pages
       } else {
-        name = url.substring(1, this.ctx.page.url.length - 1).split("/").at(-1); // for /path/to/page/ pages
+        if (url.startsWith("/posts/") && url.match(/\//g).length > 3) name = "post_"; // prefix /posts/xxxx/title/ pages
+        name += url.substring(1, this.ctx.page.url.length - 1).split("/").at(-1); // for /path/to/page/ pages
       }
       return `${name}-${width}w.${format}`;
     }

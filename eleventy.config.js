@@ -33,7 +33,7 @@ module.exports = function (eleventyConfig) {
     "src/assets/favicons/": "assets/favicons/",
     "src/assets/favicons/favicon.ico": "/favicon.ico",
     "src/assets/img/*[!content]": "assets/img/",
-    "node_modules/@fontsource/atkinson-hyperlegible/": "assets/fonts/atkinson-hyperlegible/",
+    "node_modules/@fontsource/sintony/": "assets/fonts/sintony/",
     "node_modules/@fontsource/cousine/": "assets/fonts/cousine/"
   });
 
