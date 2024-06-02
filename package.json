@@ -31,6 +31,7 @@
     "@fontsource/arimo": "^5.0.20",
     "@fontsource/atkinson-hyperlegible": "^5.0.20",
     "@fontsource/cousine": "^5.0.20",
+    "@fontsource/sintony": "^5.0.20",
     "@sardine/eleventy-plugin-external-links": "^1.4.0",
     "@tabler/icons": "^3.3.0",
     "@tailwindcss/typography": "^0.5.13",
