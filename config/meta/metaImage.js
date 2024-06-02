@@ -95,7 +95,7 @@ async function generateMetaImage(titleText) {
   // add subText text
   ctx.fillStyle = "#fafafa";
   // ctx.font = "italic 48px 'Sintony'";
-  ctx.font = "italic 48px 'Sintony'";
+  ctx.font = "normal 48px 'Sintony'";
   ctx.textAlign = "end";
   // ctx.fillText(imageFooterText, canvas.width - 48, canvas.height - 50);
   drawTextBG(ctx, subText, ctx.font, ctx.textAlign, canvas.width - 48, canvas.height - 50);
