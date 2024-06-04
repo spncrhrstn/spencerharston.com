@@ -11,18 +11,18 @@ const { DateTime } = require("luxon");
 const getBuildInfo = () => {
   // const now = DateTime.now({zone: "utc"}).setZone(metadata.timezone, {keepLocalTime: true});
   const dateFormatString = "EEE, MMM dd, y 'at' h:mm:ss a ZZZZ";
-  const now = DateTime.now();
-  const buildTime = now.setZone(metadata.timezone, {keepLocalTime:true}).toFormat(dateFormatString);
+  const buildTime = DateTime.now();
+  const buildTimeFormatted = buildTime.setZone(metadata.timezone).toFormat(dateFormatString);
 
-  console.log(`Build time: ${now.toISO()}`);
+  console.log(`Build time: ${buildTime.toISO()}`);
 
-  const gitCommitJSDate = DateTime.fromISO(getCurrentGitCommitDate()).setZone(metadata.timezone, {keepLocalTime:true})
+  const gitCommitJSDate = DateTime.fromISO(getCurrentGitCommitDate()).setZone(metadata.timezone)
     .toFormat(dateFormatString);
 
   return {
     time: {
-      raw: now.toISO(),
-      formatted: buildTime,
+      raw: buildTime.toISO(),
+      formatted: buildTimeFormatted,
     },
     git: {
       hash: {
