@@ -11,6 +11,10 @@ const getLatestGitCommitHash = (format = "long") => spawnAndGetOutputString(`git
 
 const getCurrentGitBranch = () => spawnAndGetOutputString("git branch --show-current");
 
+/**
+ * Get the date of the last commit
+ * @returns ISO-strict string of commit date
+ */
 const getCurrentGitCommitDate = () => spawnAndGetOutputString("git log -n1 --format=%cI --date=iso-strict");
 
 const getCurrentGitStatus = () => spawnAndGetOutputString("git status");
