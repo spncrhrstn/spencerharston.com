@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Arimo
-- Font Author: Copyright 2020 The Arimo Project Authors (https://github.com/googlefonts/arimo)
-- Font Source: http://fonts.gstatic.com/s/arimo/v29/P5sfzZCDf9_T_3cV7NCUECyoxNk3M8tsBxDAVQI4aA.ttf
-- Font License: Apache License, version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html))
+- Font Title: Barlow
+- Font Author: Copyright 2017 The Barlow Project Authors (https://github.com/jpt/barlow)
+- Font Source: https://fonts.gstatic.com/s/barlow/v12/7cHqv4kjgoGqM7E3t-4c4FAtlT47dw.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
