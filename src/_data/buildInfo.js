@@ -1,5 +1,6 @@
-const { getLatestGitCommitHash, getCurrentGitBranch, getCurrentGitCommitDate } = require("../../config/utils.js");
+const { getLatestGitCommitHash, getCurrentGitBranch, getCurrentGitCommitDate, getGitVersion } = require("../../config/utils.js");
 const { metadata } = require("../../config/config.js");
+const { dateByFormat } = require("../../config/filters.js");
 const { DateTime } = require("luxon");
 
 
@@ -9,21 +10,17 @@ const { DateTime } = require("luxon");
  */
 const getBuildInfo = () => {
   // const now = DateTime.now({zone: "utc"}).setZone(metadata.timezone, {keepLocalTime: true});
+  const dateFormatString = "EEE, MMM dd, y 'at' h:mm:ss a ZZZZ";
   const now = DateTime.now();
-  const buildTime = now.toLocaleString({ 
-    locale: "en-US", 
-    weekday: "short", 
-    month: "short", 
-    year: "numeric",
-    day: "2-digit", 
-    hour: "numeric", 
-    minute: "2-digit",
-    timeZoneName: "short",
-    timeZone: metadata.timezone
-  });  
+  const buildTime = now.toFormat(dateFormatString);
 
   console.log(`Build time: ${now.toISO()}`);
- 
+
+  console.log(getGitVersion());
+
+  const gitCommitJSDate = DateTime.fromISO(getCurrentGitCommitDate())
+    .toFormat(dateFormatString);
+
   return {
     time: {
       raw: now.toISO(),
@@ -35,7 +32,8 @@ const getBuildInfo = () => {
         long: getLatestGitCommitHash("long")
       },
       branch: getCurrentGitBranch(),
-      commitDate: getCurrentGitCommitDate()
+      commitDate: getCurrentGitCommitDate(),
+      commitDateFormatted: gitCommitJSDate
     }
 
   };
