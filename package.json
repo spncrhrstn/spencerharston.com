@@ -30,6 +30,7 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@fontsource/arimo": "^5.0.20",
     "@fontsource/atkinson-hyperlegible": "^5.0.20",
+    "@fontsource/barlow": "^5.0.13",
     "@fontsource/cousine": "^5.0.20",
     "@fontsource/sintony": "^5.0.20",
     "@sardine/eleventy-plugin-external-links": "^1.4.0",

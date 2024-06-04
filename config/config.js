@@ -19,6 +19,9 @@ const postCount = () => {
   const files = fs.readdirSync("./src/posts/", {recursive:true}).filter(item => item.endsWith(".md"));
   const drafts = files.filter(item => item.startsWith("drafts/")).length;
   const posts = files.length - drafts;
+  console.log(`Posts: ${posts}`);
+  console.log(`Drafts: ${drafts}`);
+  
   return {
     posts: posts,
     drafts: drafts

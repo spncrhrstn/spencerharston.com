@@ -7,7 +7,6 @@ const { DateTime } = require("luxon");
  */
 const posts = (collectionApi) => {
   const posts = collectionApi.getFilteredByGlob("./src/posts/**/*.md");
-  console.log("Posts:", posts.length);
   return posts;
 };
 
@@ -18,7 +17,6 @@ const posts = (collectionApi) => {
  */
 const drafts = (collectionApi) => {
   const drafts = collectionApi.getFilteredByGlob("./src/posts/drafts/*.md");
-  console.log("Drafts: ", drafts.length);
   return drafts;
 };
 
