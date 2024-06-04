@@ -22,4 +22,4 @@ More info about the creation of this site on the [Colophon](/colophon) page.
 
 ### Build Info
 
-This site's last commit was on {{ buildInfo.git.time.formatted }}. It was built on {{ buildInfo.time.formatted }}. 
+This site's last commit (`{{ buildInfo.git.hash.short }}`) was on {{ buildInfo.git.time.formatted }}. It was built on {{ buildInfo.time.formatted }}. 

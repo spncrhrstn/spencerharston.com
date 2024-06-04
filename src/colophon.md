@@ -10,7 +10,7 @@ This website was built with the following:
 
 * Static site generator: [Eleventy](https://www.11ty.dev)
   * Theme: Customized [TailwindCSS](https://www.tailwindcss.com)
-  * Fonts: [Sintony](https://fonts.google.com/specimen/Sintony/) and [Cousine](https://fonts.google.com/specimen/Cousine)
+  * Fonts: [Barlow](https://fonts.google.com/specimen/Barlow/) and [Cousine](https://fonts.google.com/specimen/Cousine)
   * Icons: [Tabler Icons](https://tabler.io/icons)
 * Hosting: [Cloudflare Pages](https://pages.cloudflare.com/) (deployment) and [GitHub](https://github.com/sphars/spencerharston.com) (source code)
 * Domain registrar: [Porkbun](https://porkbun.com)
