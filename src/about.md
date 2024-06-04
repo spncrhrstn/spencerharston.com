@@ -26,4 +26,4 @@ More info about the creation of this site on the [Colophon](/colophon) page.
 
 This site's last commit was on {{ buildInfo.git.time.formatted }} and was built on {{ buildInfo.time.formatted }}. 
 
-Commit: `{{ buildInfo.git.hash.long }}`
+Commit: [`{{ buildInfo.git.hash.long }}`]({{ metadata.repo }}/tree/{{ buildInfo.git.hash.long }})
