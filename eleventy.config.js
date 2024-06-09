@@ -34,7 +34,8 @@ module.exports = function (eleventyConfig) {
     "src/assets/favicons/favicon.ico": "/favicon.ico",
     "src/assets/img/*[!content]": "assets/img/",
     "node_modules/@fontsource/barlow/": "assets/fonts/barlow/",
-    "node_modules/@fontsource/cousine/": "assets/fonts/cousine/"
+    "node_modules/@fontsource/cousine/": "assets/fonts/cousine/",
+    "src/robots.txt": "robots.txt"
   });
 
   // add watch target for css and tailwind
