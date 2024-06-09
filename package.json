@@ -28,17 +28,14 @@
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "@fontsource/arimo": "^5.0.20",
-    "@fontsource/atkinson-hyperlegible": "^5.0.20",
     "@fontsource/barlow": "^5.0.13",
     "@fontsource/cousine": "^5.0.20",
-    "@fontsource/sintony": "^5.0.20",
     "@sardine/eleventy-plugin-external-links": "^1.4.0",
-    "@tabler/icons": "^3.3.0",
+    "@tabler/icons": "^3.5.0",
     "@tailwindcss/typography": "^0.5.13",
     "autoprefixer": "^10.4.19",
     "canvas": "^2.11.2",
-    "cssnano": "^7.0.1",
+    "cssnano": "^7.0.2",
     "eleventy-plugin-reading-time": "^0.0.1",
     "eslint": "^8.57.0",
     "html-minifier-terser": "^7.2.0",
@@ -47,9 +44,9 @@
     "markdown-it-eleventy-img": "^0.10.2",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-image-figures": "^2.1.1",
-    "npm-run-all2": "^6.1.2",
+    "npm-run-all2": "^6.2.0",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.4"
   }
 }
