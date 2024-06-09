@@ -2,7 +2,7 @@
 title: Books of 2024
 description: A list of books I'm reading, have read, or may read in 2024.
 date: 2024-01-01 22:25:00
-updated: 2024-05-25 21:38:00
+updated: 2024-06-08 22:47:00
 tags:
     - personal
 ---
@@ -16,8 +16,8 @@ The following is a list of books I'm currently reading, have finished, decided t
 If an entry is prefaced with 🎧, that means I'm listening to the audiobook version. Otherwise, it's the physical/ebook version of the book.
 
 ## Currently Reading
-* 🎧 [The Lord of the Rings: The Fellowship of the Ring](https://www.goodreads.com/book/show/61215351-the-fellowship-of-the-ring) by J.R.R. Tolkien
 * [Zero Days](https://www.goodreads.com/book/show/62919765-zero-days) by Ruth Ware
+* 🎧 [The Lord of the Rings: The Two Towers](https://www.goodreads.com/book/show/61215372-the-two-towers)
 
 ## Finished Reading
 Generally speaking, if I finished a book, it means the book was good enough for me to, well, finish it. A ⭐ means I really enjoyed the book, which is all the qualifications it needs.
@@ -31,9 +31,11 @@ Generally speaking, if I finished a book, it means the book was good enough for 
 * [The Women](https://www.goodreads.com/book/show/127305853-the-women) by Kristin Hannah ⭐
 * [11/22/63](https://www.goodreads.com/book/show/10644930-11-22-63) by Stephen King ⭐
 * [Soonish: Ten Emerging Technologies That'll Improve and/or Ruin Everything](https://www.goodreads.com/book/show/34490192-soonish) by Kelly and Zach Weinersmith
+* 🎧 [The Lord of the Rings: The Fellowship of the Ring](https://www.goodreads.com/book/show/61215351-the-fellowship-of-the-ring) by J.R.R. Tolkien ⭐
+
 
 ## Didn't Finish
-While there's usually no specific reason why I choose not to finish a book, generally it's some variation of "just couldn't get into it".
+While there's usually no specific reason why I choose not to finish a book, generally it comes down to "just couldn't get into it".
 
 * [How to Be Perfect: The Correct Answer to Every Moral Question](https://www.goodreads.com/book/show/58484901-how-to-be-perfect) by Michael Schur
 * [A City on Mars](https://www.goodreads.com/book/show/125084292-a-city-on-mars) by Kelly and Zach Weinersmith (waiting on library copy)
