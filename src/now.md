@@ -2,7 +2,7 @@
 layout: layouts/default
 title: What I'm Doing Now
 description: A somewhat current list of non-work stuff I'm doing, consuming, or being entertained by.
-updated: 2024-06-01
+updated: 2024-06-10
 ---
 
 {{ description }}
@@ -14,8 +14,11 @@ Recently reorganized this website. A lot of things were cleaned up, but some lit
 
 Fixing my sprinklers. Too many have become the victim of an aggressive lawn mower, and it's time to do something about it.
 
+## Learning
+Been thinking about a possible application I want to create to meet my specific needs. I want to make a simple, multi-platform note-taking app^[I know, I know]. Markdown only, very little organization, simple rules and layout. No idea where to start except researching the best stack and start somewhere. In the meantime, I'm working on customizing VS Code specifically for note-taking, since it's already pretty good at notes as is.
+
 ## Reading
-Working through the audiobooks of The Lord of the Rings trilogy, currently in *The Fellowship of the Ring*. Andy Serkis is the narrator, and boy does he do a fantastic job.
+Working through the audiobooks of The Lord of the Rings trilogy, currently listening to *The Two Towers*. Andy Serkis is the narrator, and he do a fantastic job.
 
 Also reading *Zero Days* by Ruth Ware. The theme seemed like something up my alley, having enjoyed listening to many episodes of the *Darknet Diaries* podcast. It's an... okay book so far. At least it's an easy read.
 
