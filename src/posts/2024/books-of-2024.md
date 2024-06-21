@@ -2,7 +2,7 @@
 title: Books of 2024
 description: A list of books I'm reading, have read, or may read in 2024.
 date: 2024-01-01 22:25:00
-updated: 2024-06-15 06:28:00
+updated: 2024-06-20 23:19:00
 tags:
     - personal
 ---
@@ -17,6 +17,7 @@ If an entry is prefaced with 🎧, that means I'm listening to the audiobook ver
 
 ## Currently Reading
 * 🎧 [The Lord of the Rings: The Two Towers](https://www.goodreads.com/book/show/61215372-the-two-towers) by J.R.R. Tolkien
+* [Later](https://www.goodreads.com/book/show/54798175-later) by Stephen King
 
 ## Finished Reading
 Generally speaking, if I finished a book, it means the book was good enough for me to, well, finish it. A ⭐ means I really enjoyed the book, which is all the qualifications it needs.
