@@ -13,6 +13,8 @@ const getDateTimeObj = (jsDateObj) => {
 
 const dateISO = (dateObj) => getDateTimeObj(dateObj).toUTC().toISO();
 
+const dateISOAlt = (dateObj) => getDateTimeObj(dateObj).toISO();
+
 const dateHtmlString = (dateObj) => getDateTimeObj(dateObj).toFormat("yyyy-LL-dd");
 
 const dateRFC3339 = (dateObj) => {
@@ -34,4 +36,4 @@ const postsByYear = (collection, year) => collection.filter(entry => DateTime.fr
 
 const postsByTag = (collection, tag) => collection.filter(entry => entry.data.tags.includes(tag));
 
-module.exports = { dateISO, dateHtmlString, dateRFC3339, dateByFormat, sortDesc, limit, postsByYear, postsByTag };
+module.exports = { dateISO, dateISOAlt, dateHtmlString, dateRFC3339, dateByFormat, sortDesc, limit, postsByYear, postsByTag };
