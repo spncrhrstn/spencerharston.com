@@ -18,7 +18,7 @@ I'll update this as often as I remember.
 * GPU: AMD Radeon RX 7800 XT 16GB
 * RAM: 32GB
 * Storage: 2TB NVME SSD + 1TB HDD
-* OS: Nobara Linux 39
+* OS: Nobara (Fedora) Linux 40
 * Mouse: Logitech G305
 * Keyboard: Cooler Master MasterKeys Pro L
 * Monitor: LG UltraGear 27GR83Q-B 27" 1440p 240Hz IPS monitor
