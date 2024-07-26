@@ -2,7 +2,7 @@
 title: Books of 2024
 description: A list of books I'm reading, have read, or may read in 2024.
 date: 2024-01-01 22:25:00
-updated: 2024-07-11 22:50:00
+updated: 2024-07-25 22:31:00
 tags:
     - personal
 ---
@@ -16,8 +16,9 @@ The following is a list of books I'm currently reading, have finished, decided t
 If an entry is prefaced with 🎧, that means I'm listening to the audiobook version. Otherwise, it's the physical/ebook version of the book.
 
 ## Currently Reading
-* 🎧 [The Lord of the Rings: The Two Towers](https://www.goodreads.com/book/show/61215372-the-two-towers) by J.R.R. Tolkien
+* 🎧 [The Lord of the Rings: The Return of the King](https://www.goodreads.com/book/show/61215384-the-return-of-the-king) by J.R.R. Tolkien
 * [My Friend Anne Frank](https://www.goodreads.com/book/show/62874040-my-friend-anne-frank) by Hannah Pick-Goslar
+* [Under the Dome](https://www.goodreads.com/book/show/6320534-under-the-dome) by Stephen King
 
 ## Finished Reading
 Generally speaking, if I finished a book, it means the book was good enough for me to, well, finish it. A ⭐ means I really enjoyed the book, which is all the qualifications it needs.
@@ -34,6 +35,8 @@ Generally speaking, if I finished a book, it means the book was good enough for 
 * 🎧 [The Lord of the Rings: The Fellowship of the Ring](https://www.goodreads.com/book/show/61215351-the-fellowship-of-the-ring) by J.R.R. Tolkien ⭐
 * [Zero Days](https://www.goodreads.com/book/show/62919765-zero-days) by Ruth Ware
 * [Later](https://www.goodreads.com/book/show/54798175-later) by Stephen King
+* 🎧 [The Lord of the Rings: The Two Towers](https://www.goodreads.com/book/show/61215372-the-two-towers) by J.R.R. Tolkien ⭐
+
 
 ## Didn't Finish
 While there's usually no specific reason why I choose not to finish a book, generally it comes down to "just couldn't get into it".
