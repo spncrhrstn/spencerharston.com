@@ -2,7 +2,7 @@
 layout: layouts/default
 title: What I'm Doing Now
 description: A somewhat current list of non-work stuff I'm doing, consuming, or being entertained by.
-updated: 2024-07-25
+updated: 2024-08-11
 ---
 
 {{ description }}
@@ -12,6 +12,8 @@ updated: 2024-07-25
 ## Doing
 
 I'm creating a fairly simple application to generate math worksheets in the browser, using Typescript and Vite. The app is working well currently, have one more feature I'd like to get in and then I'll consider it v1.0.
+
+I'm also working on a dead simple web app to generate images of Mastodon posts. Sometimes I want to share an image of a post/status/toot/whatever they're called, and screen-shotting and cropping is not idea. This will use the Mastodon API. 
 
 ## Learning
 
@@ -37,6 +39,6 @@ Also watching random movies on Netflix when I'm doing some exercising.
 
 ## Playing
 
-Nearly done with *Jedi: Fallen Order*. It's taken a while but I only have so much time to play. I'm enjoying it though, will consider the sequel later on when it's a good deal.
+Having just finished *Fallen Order*, I'm going to try out either *Descenders* or *Horizon: Zero Dawn*. Not sure which yet.
 
 *Slay the Spire* is my current fallback whenever I want to play something but don't want to start anything new.
