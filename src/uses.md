@@ -77,9 +77,7 @@ See also my Default Applications of [2023](/posts/2023/app-defaults-in-2023)
 * Hover Zoom+
 * Bitwarden
 * Augmented Steam
-* LibRedirect
 * Stylus
-* Dark Reader
 
 ## Other
 * Google Pixel 8

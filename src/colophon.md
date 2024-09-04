@@ -16,8 +16,7 @@ This website was built with the following:
 * Domain registrar: [Porkbun](https://porkbun.com)
 * Editor: [VS Code](https://code.visualstudio.com) 
   * Theme: [Catppuccin Macchiato](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc)
-  * Font: [Commit Mono](https://commitmono.com/)
-* Fluffy bird sitting on twig photo by [Skyer Ewing on Pexels](https://www.pexels.com/photo/fluffy-bird-sitting-on-twig-4756803/)
+  * Font: [Lilex](https://github.com/mishamyrt/Lilex) (this changes constantly)
 * ❤ and 🍀
 
 Made in Ogden, UT
