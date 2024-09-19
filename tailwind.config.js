@@ -10,8 +10,8 @@ module.exports = {
         current: "current=page"
       },
       fontFamily: {
-        "sans":["'Barlow'", ...defaultTheme.fontFamily.sans],
-        "mono":["'Cousine'", ...defaultTheme.fontFamily.mono]
+        "sans":["'Asap'", ...defaultTheme.fontFamily.sans],
+        "mono":["'IBM Plex Mono'", ...defaultTheme.fontFamily.mono]
       },
       typography: (theme) => ({
         DEFAULT: {

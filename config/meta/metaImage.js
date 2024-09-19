@@ -2,8 +2,8 @@ const { createCanvas, registerFont, loadImage } = require("canvas");
 const Image = require("@11ty/eleventy-img");
 
 // register fonts
-registerFont("./config/meta/fonts/Barlow-Regular.ttf", { family: "Barlow" });
-registerFont("./config/meta/fonts/Barlow-Italic.ttf", { family: "Barlow", style: "italic" });
+registerFont("./config/meta/fonts/Asap-Regular.ttf", { family: "Asap" });
+registerFont("./config/meta/fonts/Asap-Italic.ttf", { family: "Asap", style: "italic" });
 
 // wrap text in a canvas
 // adapted from https://urre.me/writings/dynamic-open-graph-images/
@@ -94,13 +94,13 @@ async function generateMetaImage(titleText) {
 
   // add subText text
   ctx.fillStyle = "#fafafa";
-  ctx.font = "italic 48px 'Barlow'";
+  ctx.font = "italic 48px 'Asap'";
   ctx.textAlign = "end";
   // ctx.fillText(imageFooterText, canvas.width - 48, canvas.height - 50);
   drawTextBG(ctx, subText, ctx.font, ctx.textAlign, canvas.width - 48, canvas.height - 50);
 
   // add image title text
-  ctx.font = `normal ${titleFontSize}px "Barlow"`;
+  ctx.font = `normal ${titleFontSize}px "Asap"`;
   ctx.textAlign = "start";
   ctx.fillStyle = "#fafafa";
   wrapText(ctx, titleText, 64, 144, canvas.width - 96, titleLineHeight);

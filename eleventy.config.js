@@ -33,8 +33,8 @@ module.exports = function (eleventyConfig) {
     "src/assets/favicons/": "assets/favicons/",
     "src/assets/favicons/favicon.ico": "/favicon.ico",
     "src/assets/img/*[!content]": "assets/img/",
-    "node_modules/@fontsource/barlow/": "assets/fonts/barlow/",
-    "node_modules/@fontsource/cousine/": "assets/fonts/cousine/",
+    "node_modules/@fontsource/asap/": "assets/fonts/asap/",
+    "node_modules/@fontsource/ibm-plex-mono/": "assets/fonts/ibm-plex-mono/",
     "src/robots.txt": "robots.txt"
   });
 
