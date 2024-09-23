@@ -2,7 +2,7 @@
 layout: layouts/default
 title: What I'm Doing Now
 description: A somewhat current list of non-work stuff I'm doing, consuming, or being entertained by.
-updated: 2024-09-04
+updated: 2024-09-23
 ---
 
 {{ description }}
@@ -23,15 +23,15 @@ While the little app I'm creating above (the math worksheets one) is using Types
 
 ## Reading
 
-Currently reading *Under the Dome* (third Stephen King novel this year), longest book I've read this year so far.
+Going to go a little more light-hearted as I just finished another King novel. *I Hope This Finds You Well* is a book I came across that looked like a fun, simple read.
 
 *See also my [year-to-date page](/posts/2024/books-of-2024/) about what else I've read this year.*
 
 ## Watching
 
-*Young Sheldon* is my current background show when I need something on. It's meh but good enough.
+*Young Sheldon* is my current background show when I need something on. It's meh but good enough. I'll also watch random movies on Netflix when I'm doing some exercising.
 
-Also watching random movies on Netflix when I'm doing some exercising.
+I'm also on the hunt for the adaptations of some of the book I read (namely *Under the Dome*) but I may just have to get a temporary subscription to some random streaming site.
 
 ## Playing
 

@@ -2,7 +2,7 @@
 title: Books of 2024
 description: A list of books I'm reading, have read, or may read in 2024.
 date: 2024-01-01 22:25:00
-updated: 2024-09-04 07:31:00
+updated: 2024-09-23 13:41:00
 tags:
     - personal
 ---
@@ -16,9 +16,11 @@ The following is a list of books I'm currently reading, have finished, decided t
 If an entry is prefaced with 🎧, that means I'm listening to the audiobook version. Otherwise, it's the physical/ebook version of the book.
 
 ## Currently Reading
-* [Under the Dome](https://www.goodreads.com/book/show/6320534-under-the-dome) by Stephen King
+
+* [I Hope This Finds You Well](https://www.goodreads.com/book/show/200987323-i-hope-this-finds-you-well) by Natalie Sue
 
 ## Finished Reading
+
 Generally speaking, if I finished a book, it means the book was good enough for me to, well, finish it. A ⭐ means I really enjoyed the book, which is all the qualifications it needs.
 
 * [Ascension](https://www.goodreads.com/book/show/61813107-ascension) by Nicholas Binge
@@ -35,9 +37,11 @@ Generally speaking, if I finished a book, it means the book was good enough for 
 * [Later](https://www.goodreads.com/book/show/54798175-later) by Stephen King
 * 🎧 [The Lord of the Rings: The Two Towers](https://www.goodreads.com/book/show/61215372-the-two-towers) by J.R.R. Tolkien ⭐
 * 🎧 [The Lord of the Rings: The Return of the King](https://www.goodreads.com/book/show/61215384-the-return-of-the-king) by J.R.R. Tolkien ⭐
+* [Under the Dome](https://www.goodreads.com/book/show/6320534-under-the-dome) by Stephen King ⭐
 
 
 ## Didn't Finish
+
 While there's usually no specific reason why I choose not to finish a book, generally it comes down to "just couldn't get into it".
 
 * [How to Be Perfect: The Correct Answer to Every Moral Question](https://www.goodreads.com/book/show/58484901-how-to-be-perfect) by Michael Schur
@@ -45,6 +49,7 @@ While there's usually no specific reason why I choose not to finish a book, gene
 * [My Friend Anne Frank](https://www.goodreads.com/book/show/62874040-my-friend-anne-frank) by Hannah Pick-Goslar
 
 ## Under Consideration
+
 * [ADHD Pro: Sustainable Productivity for People with ADHD](https://adhdpro.xyz/) by Robert Merki
 * [Taking Charge of Adult ADHD](https://www.guilford.com/books/Taking-Charge-of-Adult-ADHD/Russell-Barkley/9781462546855) by Russell A. Barkley
 * [Extra Focus: The Quick Start Guide to Adult ADHD](https://www.goodreads.com/book/show/197655262-extra-focus) by Jesse J. Anderson
@@ -53,4 +58,5 @@ While there's usually no specific reason why I choose not to finish a book, gene
 I'll get to those ADHD books one day...
 
 ## Not Included
+
 * The innumerable childrens' books that my kids have me read to them
