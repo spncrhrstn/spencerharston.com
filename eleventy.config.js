@@ -1,4 +1,5 @@
 // External packages/plugins
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const safeLinks = require("@sardine/eleventy-plugin-external-links");
@@ -61,6 +62,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(safeLinks);
+  eleventyConfig.addPlugin(UpgradeHelper);
 
   return {
     dir: {
