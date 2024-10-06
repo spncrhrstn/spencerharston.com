@@ -1,6 +1,6 @@
 // External packages/plugins
 const readingTime = require("eleventy-plugin-reading-time");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 const safeLinks = require("@sardine/eleventy-plugin-external-links");
 
 // Custom configs
@@ -59,8 +59,25 @@ module.exports = function (eleventyConfig) {
 
   // add other plugins
   eleventyConfig.addPlugin(readingTime);
-  eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(safeLinks);
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: "atom",
+    outputPath: "/feed.xml",
+    collection: {
+      name: "posts",
+      limit: 10
+    },
+    metadata: {
+      language: "en",
+      title: "Spencer Harston",
+      subtitle: "The personal website of Spencer Harston",
+      base: "https://www.spencerharston.com",
+      author: {
+        name: "Spencer Harston",
+        email: ""
+      }
+    }
+  });
 
   return {
     dir: {
