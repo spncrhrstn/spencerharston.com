@@ -3,6 +3,7 @@
   "version": "3.0.0",
   "description": "The personal website of Spencer Harston",
   "private": true,
+  "type": "module",
   "scripts": {
     "lint": "eslint \"./**/*.js\"",
     "lint:fix": "eslint \"./**/*.js\" --fix",

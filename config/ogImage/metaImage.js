@@ -1,9 +1,9 @@
-const { createCanvas, registerFont, loadImage } = require("canvas");
-const Image = require("@11ty/eleventy-img");
+import { createCanvas, registerFont, loadImage } from "canvas";
+import Image from "@11ty/eleventy-img";
 
 // register fonts
-registerFont("./config/meta/fonts/Asap-Regular.ttf", { family: "Asap" });
-registerFont("./config/meta/fonts/Asap-Italic.ttf", { family: "Asap", style: "italic" });
+registerFont("./config/ogImage/fonts/Asap-Regular.ttf", { family: "Asap" });
+registerFont("./config/ogImage/fonts/Asap-Italic.ttf", { family: "Asap", style: "italic" });
 
 // wrap text in a canvas
 // adapted from https://urre.me/writings/dynamic-open-graph-images/
@@ -89,7 +89,7 @@ async function generateMetaImage(titleText) {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   // add the image
-  const bgImage = await loadImage("./config/meta/images/gradient.png");
+  const bgImage = await loadImage("./config/ogImage/images/gradient.png");
   ctx.drawImage(bgImage, 0, 0);
 
   // add subText text
@@ -137,4 +137,4 @@ async function generateMetaImage(titleText) {
   return this.ctx.env === "production" ? `${this.ctx.metadata.base_url}${url}` : url;
 }
 
-module.exports = { generateMetaImage };
+export default generateMetaImage;

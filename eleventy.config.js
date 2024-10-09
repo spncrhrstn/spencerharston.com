@@ -1,27 +1,36 @@
 // External packages/plugins
-const readingTime = require("eleventy-plugin-reading-time");
-const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
-const safeLinks = require("@sardine/eleventy-plugin-external-links");
+import readingTime from "eleventy-plugin-reading-time";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import safeLinks from "@sardine/eleventy-plugin-external-links";
 
 // Custom configs
-const config = require("./config/config.js");
-const filters = require("./config/filters.js");
-const shortcodes = require("./config/shortcodes.js");
-const collections = require("./config/collections.js");
-const { htmlMinify } = require("./config/transforms.js");
-const { markdownLib } = require("./config/markdown.js");
+// import helpers from "./config/helpers.js";
+// import { shortcodes, asyncShortcodes } from "./config/shortcodes.js";
+// import collections from "./config/collections.js";
+// import { htmlMinify } from "./config/transforms.js";
+// import { markdownLib } from "./config/markdown.js";
+
+// Custom "plugins"
+import filters from "./config/filters/index.js";
+import collections from "./config/collections.js";
+import shortcodes from "./config/shortcodes.js";
+import transforms from "./config/transforms.js";
+import global from "./config/global.js";
+import feed from "./config/feed.js";
+import markdown from "./config/markdown.js";
 
 /**
  * @param {import("@11ty/eleventy").UserConfig} eleventyConfig 
  * @returns {ReturnType<import("@11ty/eleventy/src/defaultConfig")>}
  */
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
 
   // building for production
   if (process.env.ELEVENTY_ENV === "production") {
     console.log("BUILDING FOR PRODUCTION");
     eleventyConfig.ignores.add("src/posts/drafts");
-    eleventyConfig.addTransform("htmlmin", htmlMinify);
+    // eleventyConfig.addTransform("htmlmin", htmlMinify);
+    eleventyConfig.addPlugin(transforms);
     eleventyConfig.quietMode = true;
   }
 
@@ -42,42 +51,48 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/assets/css/");
 
   // add global data
-  Object.entries(config).forEach(([name, data]) => eleventyConfig.addGlobalData(name, data));
+  // Object.entries(helpers).forEach(([name, data]) => eleventyConfig.addGlobalData(name, data));
+  eleventyConfig.addPlugin(global);
 
   // add shortcodes
-  Object.entries(shortcodes.shortcodes).forEach(([name, func]) => eleventyConfig.addShortcode(name, func));
-  Object.entries(shortcodes.asyncShortcodes).forEach(([name, func]) => eleventyConfig.addNunjucksAsyncShortcode(name, func));
+  // Object.entries(shortcodes).forEach(([name, func]) => eleventyConfig.addShortcode(name, func));
+  // Object.entries(asyncShortcodes).forEach(([name, func]) => eleventyConfig.addNunjucksAsyncShortcode(name, func));
+  eleventyConfig.addPlugin(shortcodes);
   
   // add filters
-  Object.entries(filters).forEach(([name, func]) => eleventyConfig.addNunjucksFilter(name, func));
+  // Object.entries(filters).forEach(([name, func]) => eleventyConfig.addNunjucksFilter(name, func));
+  eleventyConfig.addPlugin(filters);
   
   // add collections
-  Object.entries(collections).forEach(([name, func]) => eleventyConfig.addCollection(name, func));
-  
+  // Object.entries(collections).forEach(([name, func]) => eleventyConfig.addCollection(name, func));
+  eleventyConfig.addPlugin(collections);
+
   // configure markdown library
-  eleventyConfig.setLibrary("md", markdownLib);
+  //eleventyConfig.setLibrary("md", markdownLib);
+  eleventyConfig.addPlugin(markdown);
 
   // add other plugins
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(safeLinks);
-  eleventyConfig.addPlugin(feedPlugin, {
-    type: "atom",
-    outputPath: "/feed.xml",
-    collection: {
-      name: "posts",
-      limit: 10
-    },
-    metadata: {
-      language: "en",
-      title: "Spencer Harston",
-      subtitle: "The personal website of Spencer Harston",
-      base: "https://www.spencerharston.com",
-      author: {
-        name: "Spencer Harston",
-        email: ""
-      }
-    }
-  });
+  eleventyConfig.addPlugin(feedPlugin, feed);
+  // eleventyConfig.addPlugin(feedPlugin, {
+  //   type: "atom",
+  //   outputPath: "/feed.xml",
+  //   collection: {
+  //     name: "posts",
+  //     limit: 10
+  //   },
+  //   metadata: {
+  //     language: "en",
+  //     title: "Spencer Harston",
+  //     subtitle: "The personal website of Spencer Harston",
+  //     base: "https://www.spencerharston.com",
+  //     author: {
+  //       name: "Spencer Harston",
+  //       email: ""
+  //     }
+  //   }
+  // });
 
   return {
     dir: {
