@@ -11,8 +11,8 @@ export default {
   base_url: "https://www.spencerharston.com",
   domain: "spencerharston.com",
   social: {
-    github: "sphars",
-    mastodon: "@sphars@mastodon.social"
+    github: "https://github.com/sphars",
+    mastodon: "https://mastodon.social/@sphars"
   },
   timezone: "America/Denver",
   env: process.env.ELEVENTY_ENV || "development"

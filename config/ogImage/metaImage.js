@@ -78,7 +78,7 @@ async function generateMetaImage(titleText) {
   const height = 630;
   let titleFontSize = 72;
   let titleLineHeight = titleFontSize * 1.375;
-  let subText = this.ctx.metadata.domain;
+  let subText = this.ctx.meta.domain;
 
   // create the canvas
   const canvas = createCanvas(width, height);
@@ -110,7 +110,7 @@ async function generateMetaImage(titleText) {
   let buffer = canvas.toBuffer("image/png");
 
   // use 11ty/eleventy-img to save it
-  let metadata = await Image(buffer, {
+  let imgMetadata = await Image(buffer, {
     widths: [width],
     formats: ["png"],
     outputDir: "./dist/assets/img/meta",
@@ -133,8 +133,8 @@ async function generateMetaImage(titleText) {
     }
   });
 
-  let url = metadata.png[metadata.png.length - 1].url;
-  return this.ctx.env === "production" ? `${this.ctx.metadata.base_url}${url}` : url;
+  let url = imgMetadata.png[imgMetadata.png.length - 1].url;
+  return this.ctx.env === "production" ? `${this.ctx.meta.base_url}${url}` : url;
 }
 
 export default generateMetaImage;
