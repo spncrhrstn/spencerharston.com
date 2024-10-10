@@ -2,7 +2,7 @@
 layout: layouts/default
 title: What I'm Doing Now
 description: A somewhat current list of non-work stuff I'm doing, consuming, or being entertained by.
-updated: 2024-10-08
+updated: 2024-10-09
 ---
 
 {{ description }}
@@ -31,11 +31,11 @@ Going to go a little more light-hearted as I just finished another King novel. *
 
 It's October, and that means a new season of *The Great British Baking Show*.
 
-My wife and I are watching the new Kristen Bell show on Netflix, *Nobody Wants This*. Two episodes in, I find it pretty funny.
+My wife and I are watching the new Kristen Bell show on Netflix, *Nobody Wants This*. Two episodes in, and honestly, I find it pretty great.
 
 Final season of *The Umbrella Academy* dropped a few weeks ago, so I'm finishing that up.
 
-I'm also on the hunt for the adaptations of some of the book I read (namely *Under the Dome*) but I may just have to get a temporary subscription to some random streaming site.
+I'm also on the hunt for the adaptations of some of the book I read (namely *Under the Dome*) but I may just have to shell out for a temporary subscription to some random streaming site.
 
 ## Playing
 
