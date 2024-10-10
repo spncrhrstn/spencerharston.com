@@ -1,8 +1,3 @@
-// import {
-//   getLatestGitCommitHash,
-//   getCurrentGitBranch,
-//   getCurrentGitCommitDate,
-// } from "../../config/utils.js";
 import utils from "../../config/utils.js";
 import meta from "./meta.js";
 import { DateTime } from "luxon";
