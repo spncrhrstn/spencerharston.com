@@ -13,7 +13,7 @@ const htmlMinify = (content, outputPath) => {
     return minified;
   }
   return content;
-}
+};
 
 const transforms = {
   htmlMinify
@@ -21,4 +21,4 @@ const transforms = {
 
 export default (eleventyConfig) => {
   return Object.entries(transforms).forEach(([name, func]) => eleventyConfig.addTransform(name, func));
-}
+};

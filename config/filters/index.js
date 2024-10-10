@@ -8,4 +8,4 @@ const filters = {
 
 export default (eleventyConfig) => {
   return Object.entries(filters).forEach(([name, func]) => eleventyConfig.addNunjucksFilter(name, func));
-}
+};

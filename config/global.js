@@ -15,8 +15,8 @@ const postCount = () => {
 
 const global = {
   postCount
-}
+};
 
 export default (eleventyConfig) => {
   return Object.entries(global).forEach(([name, data]) => eleventyConfig.addGlobalData(name, data));
-}
+};

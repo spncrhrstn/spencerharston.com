@@ -15,7 +15,7 @@ const iconify = async (iconName) => {
   const path = `./node_modules/@tabler/icons/icons/outline/${iconName}.svg`;
   const icon = await asyncReadFile(path);
   return icon.toString();
-}
+};
 
 function pageSourceUrl() {
   const hash = utils.getLatestGitCommitHash("short");
@@ -27,8 +27,8 @@ const shortcodes = {
   pageSourceUrl,
   iconify,
   generateMetaImage
-}
+};
 
 export default (eleventyConfig) => {
   return Object.entries(shortcodes).forEach(([name, func]) => eleventyConfig.addShortcode(name, func));
-}
+};
