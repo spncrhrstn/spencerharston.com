@@ -3,7 +3,7 @@
  * @type {import("prettier").Config}
  */
 const config = {
-  plugins: ["prettier-plugin-jinja-template"],
+  plugins: ["prettier-plugin-jinja-template", "prettier-plugin-tailwindcss"],
   overrides: [
     {
       files: "*.njk",

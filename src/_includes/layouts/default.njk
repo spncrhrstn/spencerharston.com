@@ -2,12 +2,12 @@
 layout: layouts/base
 ---
 
-<h1 class="text-4xl font-semibold mt-12 mb-8 mx-0">{{ title }}</h1>
+<h1 class="mx-0 mb-8 mt-12 text-4xl font-semibold">{{ title }}</h1>
 
 <hr class="my-8" />
 
 {% if '.md' in page.inputPath %}
-  <div class="prose prose-code:before:hidden prose-code:after:hidden max-w-none dark:prose-invert">
+  <div class="prose max-w-none dark:prose-invert prose-code:before:hidden prose-code:after:hidden">
     {{ content | safe }}
   </div>
 {% else %}

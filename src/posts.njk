@@ -16,7 +16,7 @@ title: Posts
 
 {{ postsList(pagination.items) }}
 
-<nav class="flex flex-row flex-wrap items-center justify-center my-4" aria-label="Pagination">
+<nav class="my-4 flex flex-row flex-wrap items-center justify-center" aria-label="Pagination">
   {%- if pagination.href.previous %}
     <a href="{{ pagination.href.previous }}">
       <span class="sr-only">Previous</span>
@@ -29,7 +29,7 @@ title: Posts
     <a
       href="{{ pagination.hrefs[loop.index0] }}"
       {% if page.url == pagination.hrefs[loop.index0] %}aria-current="page"{% endif %}
-      class="relative inline-flex items-center px-3 py-1 text-sm aria-current:border aria-current:border-gray-500 aria-current:border-solid aria-current:rounded-md"
+      class="relative inline-flex items-center px-3 py-1 text-sm aria-current:rounded-md aria-current:border aria-current:border-solid aria-current:border-gray-500"
       >{{ loop.index }}</a
     >
   {%- endfor -%}
@@ -43,11 +43,11 @@ title: Posts
   {%- endif %}
 </nav>
 
-<div class="text-center my-4">
+<div class="my-4 text-center">
   <div>Filter posts by tag:</div>
   {{ tagsList(collections.tagList) }}
 </div>
-<div class="text-center my-4">
+<div class="my-4 text-center">
   <div>Filter posts by year:</div>
   {{ yearsList(collections.yearList) }}
 </div>
