@@ -15,7 +15,8 @@
     "build": "run-s clean build:eleventy build:postcss",
     "build:eleventy": "eleventy",
     "build:postcss": "postcss src/assets/css/*.css --dir dist/assets/css",
-    "clean": "rm -rf ./dist"
+    "clean": "rm -rf ./dist",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -46,6 +47,7 @@
     "eslint-config-prettier": "^9.1.0",
     "globals": "^15.10.0",
     "html-minifier-terser": "^7.2.0",
+    "husky": "^9.1.6",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-attrs": "^4.2.0",
     "markdown-it-eleventy-img": "^0.10.2",
