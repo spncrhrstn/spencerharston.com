@@ -2,7 +2,7 @@
 title: Books of 2024
 description: A list of books I'm reading, have read, or may read in 2024.
 date: 2024-01-01 22:25:00
-updated: 2024-09-23 13:41:00
+updated: 2024-10-10 22:16:00
 tags:
     - personal
 ---
@@ -17,7 +17,7 @@ If an entry is prefaced with 🎧, that means I'm listening to the audiobook ver
 
 ## Currently Reading
 
-* [I Hope This Finds You Well](https://www.goodreads.com/book/show/200987323-i-hope-this-finds-you-well) by Natalie Sue
+* [Zero Stars, Do Not Recommend](https://www.goodreads.com/book/show/200174139-zero-stars-do-not-recommend) by M.J. Wassmer
 
 ## Finished Reading
 
@@ -38,7 +38,7 @@ Generally speaking, if I finished a book, it means the book was good enough for 
 * 🎧 [The Lord of the Rings: The Two Towers](https://www.goodreads.com/book/show/61215372-the-two-towers) by J.R.R. Tolkien ⭐
 * 🎧 [The Lord of the Rings: The Return of the King](https://www.goodreads.com/book/show/61215384-the-return-of-the-king) by J.R.R. Tolkien ⭐
 * [Under the Dome](https://www.goodreads.com/book/show/6320534-under-the-dome) by Stephen King ⭐
-
+* [I Hope This Finds You Well](https://www.goodreads.com/book/show/200987323-i-hope-this-finds-you-well) by Natalie Sue
 
 ## Didn't Finish
 

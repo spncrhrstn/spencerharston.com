@@ -2,7 +2,7 @@
 layout: layouts/default
 title: What I'm Doing Now
 description: A somewhat current list of non-work stuff I'm doing, consuming, or being entertained by.
-updated: 2024-10-09
+updated: 2024-10-10
 ---
 
 {{ description }}
@@ -23,7 +23,7 @@ While the little app I'm creating above (the math worksheets one) is using Types
 
 ## Reading
 
-Going to go a little more light-hearted as I just finished another King novel. *I Hope This Finds You Well* is a book I came across that looked like a fun, simple read.
+Trying out another light-hearted book *Zero Stars, Do Not Recommend*. Looked interesting, or at least similar to other books I've enjoyed.
 
 *See also my [year-to-date page](/posts/2024/books-of-2024/) about what else I've read this year.*
 
