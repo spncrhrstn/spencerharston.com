@@ -32,7 +32,7 @@ async function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
 // draw background behind text on canvas
 // adapted from https://stackoverflow.com/a/18901408
 async function drawTextBG(ctx, txt, font, align, x, y) {
-  // save current state as we make a lot of changes        
+  // save current state as we make a lot of changes
   ctx.save();
 
   // set font
@@ -64,7 +64,6 @@ async function drawTextBG(ctx, txt, font, align, x, y) {
 
   // restore original state
   ctx.restore();
-
 }
 
 /**
@@ -127,7 +126,10 @@ async function generateMetaImage(titleText) {
         name = url.replace(".", "_").substring(1); // for /404.html and similar pages
       } else {
         if (url.startsWith("/posts/") && url.match(/\//g).length > 3) name = "post_"; // prefix /posts/xxxx/title/ pages
-        name += url.substring(1, this.ctx.page.url.length - 1).split("/").at(-1); // for /path/to/page/ pages
+        name += url
+          .substring(1, this.ctx.page.url.length - 1)
+          .split("/")
+          .at(-1); // for /path/to/page/ pages
       }
       return `${name}-${width}w.${format}`;
     }

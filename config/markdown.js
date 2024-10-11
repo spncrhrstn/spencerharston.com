@@ -10,15 +10,15 @@ import markdownItEleventyImg from "markdown-it-eleventy-img";
 
 // markdown plugin options
 const markdownItOptions = {
-  html: true,
+  html: true
 };
 
 const markdownItAnchorOptions = {
-  level: [2, 3],
+  level: [2, 3]
 };
 
 const markdownItImageFiguresOptions = {
-  figcaption: true,
+  figcaption: true
 };
 
 const markdownItEleventyImgOptions = {
@@ -30,14 +30,14 @@ const markdownItEleventyImgOptions = {
     filenameFormat: (id, src, width, format) => {
       const { name } = parse(src);
       return `${name}-${width}w.${format}`;
-    },
+    }
   },
   globalAttributes: {
     decoding: "async",
     loading: "lazy",
-    sizes: "100vw",
+    sizes: "100vw"
   },
-  resolvePath: (filepath, env) => join(dirname(env.page.inputPath), filepath),
+  resolvePath: (filepath, env) => join(dirname(env.page.inputPath), filepath)
 };
 
 const markdownLib = markdownIt(markdownItOptions)

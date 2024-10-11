@@ -1,28 +1,28 @@
-@import url('../fonts/inria-sans/index.css');
-@import url('../fonts/ibm-plex-mono/index.css');
+@import url("../fonts/inria-sans/index.css");
+@import url("../fonts/ibm-plex-mono/index.css");
 
 @tailwind base;
 
 @layer base {
-    html {
-        font-size: 18px;
-    }
-    a {
-        @apply hover:underline hover:text-blue-600 dark:hover:text-sky-500;
-    }
-    
-    main a {
-        @apply text-blue-600 hover:text-blue-600 dark:text-sky-500 dark:hover:text-sky-500;
-    }
+  html {
+    font-size: 18px;
+  }
+  a {
+    @apply hover:underline hover:text-blue-600 dark:hover:text-sky-500;
+  }
+
+  main a {
+    @apply text-blue-600 hover:text-blue-600 dark:text-sky-500 dark:hover:text-sky-500;
+  }
 }
 
 @tailwind components;
 @tailwind utilities;
 
 .icon-tabler {
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: none;   
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
 }

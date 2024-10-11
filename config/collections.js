@@ -31,8 +31,7 @@ const tagList = (collectionApi) => {
   collectionApi.getAll().forEach((item) => {
     if (item.data.type !== "post" || !item.data.tags) return;
 
-    const tags =
-      typeof item.data.tags === "string" ? [item.data.tags] : item.data.tags;
+    const tags = typeof item.data.tags === "string" ? [item.data.tags] : item.data.tags;
 
     for (const tag of tags) {
       tag.startsWith("_") || uniqueTags.add(tag);
@@ -69,11 +68,9 @@ const collections = {
   drafts,
   posts,
   tagList,
-  yearList,
+  yearList
 };
 
 export default (eleventyConfig) => {
-  return Object.entries(collections).forEach(([name, func]) =>
-    eleventyConfig.addCollection(name, func)
-  );
+  return Object.entries(collections).forEach(([name, func]) => eleventyConfig.addCollection(name, func));
 };

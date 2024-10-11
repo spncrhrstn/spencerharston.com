@@ -8,8 +8,10 @@ layout: layouts/base
 
 {% if '.md' in page.inputPath %}
 <div class="prose prose-code:before:hidden prose-code:after:hidden max-w-none dark:prose-invert">
-{% else %}
-<div>
-{% endif %}
     {{ content | safe }}
 </div>
+{% else %}
+<div>
+    {{ content | safe }}
+</div>
+{% endif %}

@@ -10,8 +10,8 @@ export default {
         current: "current=page"
       },
       fontFamily: {
-        "sans":["'Inria Sans'", ...defaultTheme.fontFamily.sans],
-        "mono":["'IBM Plex Mono'", ...defaultTheme.fontFamily.mono]
+        sans: ["'Inria Sans'", ...defaultTheme.fontFamily.sans],
+        mono: ["'IBM Plex Mono'", ...defaultTheme.fontFamily.mono]
       },
       typography: (theme) => ({
         DEFAULT: {
@@ -20,7 +20,7 @@ export default {
             a: {
               color: theme("colors.blue.600"),
               textDecoration: "none",
-              "&:hover" : {
+              "&:hover": {
                 textDecoration: theme("underline")
               }
             },
@@ -37,14 +37,12 @@ export default {
           css: {
             color: theme("colors.zinc.200"),
             a: {
-              color: theme("colors.sky.500"),
+              color: theme("colors.sky.500")
             }
           }
         }
-      }),
-    },
+      })
+    }
   },
-  plugins: [
-    require("@tailwindcss/typography")
-  ],
+  plugins: [require("@tailwindcss/typography")]
 };

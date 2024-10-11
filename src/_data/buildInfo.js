@@ -10,15 +10,11 @@ const getBuildInfo = () => {
   const dateFormatString = "EEE, MMM dd, y 'at' h:mm:ss a ZZZZ";
 
   const gitDateRaw = DateTime.fromISO(utils.getCurrentGitCommitDate());
-  const gitDateFormatted = gitDateRaw
-    .setZone(meta.timezone)
-    .toFormat(dateFormatString);
+  const gitDateFormatted = gitDateRaw.setZone(meta.timezone).toFormat(dateFormatString);
 
   const buildTime = DateTime.now();
   const buildTimeRaw = buildTime.toISO();
-  const buildTimeFormatted = buildTime
-    .setZone(meta.timezone)
-    .toFormat(dateFormatString);
+  const buildTimeFormatted = buildTime.setZone(meta.timezone).toFormat(dateFormatString);
 
   console.log(`Commit time: ${gitDateRaw}`);
   console.log(`Build time: ${buildTimeRaw}`);
@@ -27,18 +23,18 @@ const getBuildInfo = () => {
     git: {
       hash: {
         short: utils.getLatestGitCommitHash("short"),
-        long: utils.getLatestGitCommitHash("long"),
+        long: utils.getLatestGitCommitHash("long")
       },
       time: {
         raw: gitDateRaw,
-        formatted: gitDateFormatted,
+        formatted: gitDateFormatted
       },
-      branch: utils.getCurrentGitBranch(),
+      branch: utils.getCurrentGitBranch()
     },
     time: {
       raw: buildTimeRaw,
-      formatted: buildTimeFormatted,
-    },
+      formatted: buildTimeFormatted
+    }
   };
 };
 

@@ -13,11 +13,10 @@ import feed from "./config/feed.js";
 import markdown from "./config/markdown.js";
 
 /**
- * @param {import("@11ty/eleventy").UserConfig} eleventyConfig 
+ * @param {import("@11ty/eleventy").UserConfig} eleventyConfig
  * @returns {ReturnType<import("@11ty/eleventy/src/defaultConfig")>}
  */
 export default function (eleventyConfig) {
-
   // building for production
   if (process.env.ELEVENTY_ENV === "production") {
     console.log("BUILDING FOR PRODUCTION");
@@ -29,7 +28,7 @@ export default function (eleventyConfig) {
   // passthrough copying of assets files
   // images except those in /content subdir as they're handled by the markdown-it-eleventy-img plugin
   // all files of specific fonts are copied over for now
-  eleventyConfig.addPassthroughCopy({ 
+  eleventyConfig.addPassthroughCopy({
     "src/assets/scripts/": "assets/scripts/",
     "src/assets/favicons/": "assets/favicons/",
     "src/assets/favicons/favicon.ico": "/favicon.ico",
@@ -51,7 +50,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(safeLinks);
   eleventyConfig.addPlugin(feedPlugin, feed);
-  
+
   return {
     dir: {
       input: "src",
@@ -59,11 +58,7 @@ export default function (eleventyConfig) {
       includes: "_includes",
       data: "_data"
     },
-    templateFormats: [
-      "md",
-      "html",
-      "njk"
-    ],
+    templateFormats: ["md", "html", "njk"],
     markdownTemplateEngine: "njk"
   };
-};
+}
