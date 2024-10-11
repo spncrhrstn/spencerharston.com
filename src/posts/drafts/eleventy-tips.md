@@ -3,15 +3,15 @@ title: Eleventy Tips
 description: Some little things I've learned while building my Eleventy sites.
 date: 2022-05-04 12:00:00
 tags:
-    - development
-    - eleventy
+  - development
+  - eleventy
 ---
 
 Just wanted to do some short snippets on how I did some aspects of my site.
 
- * Tags pages
- * Doing draft posts (including count of number of drafts)
- * Environment variables
- * Header images maybe?
- * tailwinding
- * generating meta images
+- Tags pages
+- Doing draft posts (including count of number of drafts)
+- Environment variables
+- Header images maybe?
+- tailwinding
+- generating meta images

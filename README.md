@@ -15,8 +15,8 @@ This site can be copied and modified for personal use by forking and modifying a
 
 ### Requirements
 
-* Node v20 or greater (using [nvm](https://github.com/nvm-sh/nvm) is suggested)
-* Git
+- Node v20 or greater (using [nvm](https://github.com/nvm-sh/nvm) is suggested)
+- Git
 
 ### Fork and Install Dependencies
 
@@ -40,7 +40,6 @@ Open a browser to `http://localhost:8080`. This will watch for code changes and 
 
 To skip using a local server, you can also just build the website with
 
-
 ### Building the Site
 
 To build the website without starting a server or watching the input files, use the `build` script:
@@ -55,10 +54,10 @@ Building the website will output all resulting files in the `./dist` directory a
 
 By setting a specific environment variable, the site can be built for production, which will do a couple of additional steps:
 
- - Skip any draft pages in `./src/posts/drafts`
- - Generate images for HTML `meta` tags, which will make the build process take a bit longer ([script](./config/ogImage/metaImage.js))
- - Set source code urls to GitHub as specified in the [metadata](./src/_data/meta.js)
- - Minimize the resulting CSS and HTML files 
+- Skip any draft pages in `./src/posts/drafts`
+- Generate images for HTML `meta` tags, which will make the build process take a bit longer ([script](./config/ogImage/metaImage.js))
+- Set source code urls to GitHub as specified in the [metadata](./src/_data/meta.js)
+- Minimize the resulting CSS and HTML files
 
 Set the `ELEVENTY_ENV` environment variable to `production` in your deployment server and run the build command, or by prefixing to the command like so (useful for building locally):
 
@@ -72,14 +71,14 @@ Site fonts:
 
 1. Install the font package from [Fontsource](https://fontsource.org/)
 2. Update `./src/assets/css/site.css` to import the needed Fontsource CSS files (at least the `400.css` file)
-3. Update `./tailwind.config.js` under `theme.extend.fontFamily` to set the font family 
+3. Update `./tailwind.config.js` under `theme.extend.fontFamily` to set the font family
 4. Update `./eleventy.config.js`'s `eleventy.addPassthroughCopy()` object
 
 Meta images fonts:
 
 1. Get the font's `.ttf` files from [Google Fonts](https://fonts.google.com) and copy them to `./config/ogImage/fonts` to generate the meta images
-    - The Fontsource npm packages currently don't include the `.ttf` files, so getting them directly from Google Fonts is easiest
-    - I want to script this at some point
+   - The Fontsource npm packages currently don't include the `.ttf` files, so getting them directly from Google Fonts is easiest
+   - I want to script this at some point
 2. Update the `registerFont()` functions and any `ctx.font =` statements in `./config/ogImage/metaImages.js` to updated font-family values. Point the location to the downloaded font .ttf files
 
 Favicon fonts:
@@ -89,10 +88,11 @@ Favicon fonts:
 
 ## Credits
 
-* Built with [Eleventy](https://www.11ty.dev)
-* Deployed on [Cloudflare Pages](https://pages.cloudflare.com/)
-* More on the [Colophon page](https://www.spencerharston.com/colophon)
-* Many example projects from the 11ty community
+- Built with [Eleventy](https://www.11ty.dev)
+- Deployed on [Cloudflare Pages](https://pages.cloudflare.com/)
+- More on the [Colophon page](https://www.spencerharston.com/colophon)
+- Many example projects from the 11ty community
 
 ## LICENSE
+
 The source code to generate this website is licensed under the [MIT license](/LICENSE). Other licenses may be in use when installing the npm packages. The content of this site is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

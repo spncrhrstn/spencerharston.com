@@ -7,7 +7,7 @@ updated: 2024-10-10
 
 {{ description }}
 
-*This is a [/now page](https://nownownow.com/about) and was last updated on {{ updated | dateByFormat("MMMM d, y") }}.*
+_This is a [/now page](https://nownownow.com/about) and was last updated on {{ updated | dateByFormat("MMMM d, y") }}._
 
 ## Doing
 
@@ -23,24 +23,24 @@ While the little app I'm creating above (the math worksheets one) is using Types
 
 ## Reading
 
-Trying out another light-hearted book *Zero Stars, Do Not Recommend*. Looked interesting, or at least similar to other books I've enjoyed.
+Trying out another light-hearted book _Zero Stars, Do Not Recommend_. Looked interesting, or at least similar to other books I've enjoyed.
 
-*See also my [year-to-date page](/posts/2024/books-of-2024/) about what else I've read this year.*
+_See also my [year-to-date page](/posts/2024/books-of-2024/) about what else I've read this year._
 
 ## Watching
 
-It's October, and that means a new season of *The Great British Baking Show*.
+It's October, and that means a new season of _The Great British Baking Show_.
 
-My wife and I are watching the new Kristen Bell show on Netflix, *Nobody Wants This*. Two episodes in, and honestly, I find it pretty great.
+My wife and I are watching the new Kristen Bell show on Netflix, _Nobody Wants This_. Two episodes in, and honestly, I find it pretty great.
 
-Final season of *The Umbrella Academy* dropped a few weeks ago, so I'm finishing that up.
+Final season of _The Umbrella Academy_ dropped a few weeks ago, so I'm finishing that up.
 
-I'm also on the hunt for the adaptations of some of the book I read (namely *Under the Dome*) but I may just have to shell out for a temporary subscription to some random streaming site.
+I'm also on the hunt for the adaptations of some of the book I read (namely _Under the Dome_) but I may just have to shell out for a temporary subscription to some random streaming site.
 
 ## Playing
 
-I'm playing *Descenders* for scratching that "just have some fun" itch. 
+I'm playing _Descenders_ for scratching that "just have some fun" itch.
 
-I started *Horizon: Zero Dawn* a couple days ago (and yes, I'm playing on easy difficulty). It runs beautifully on my [Linux PC](/posts/2024/building-a-new-pc-in-2024/).
+I started _Horizon: Zero Dawn_ a couple days ago (and yes, I'm playing on easy difficulty). It runs beautifully on my [Linux PC](/posts/2024/building-a-new-pc-in-2024/).
 
-*Slay the Spire* is my current fallback whenever I want to play something but don't want to start anything new.
+_Slay the Spire_ is my current fallback whenever I want to play something but don't want to start anything new.

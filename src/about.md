@@ -13,8 +13,9 @@ I'm working as a software engineer for $BIG_COMPANY.
 ## Contact Me
 
 If you feel like reaching out, you can find me at
- * Mastodon: [mastodon.social/@sphars]({{meta.social.mastodon}})
- * GitHub: [sphars]({{meta.social.github}})
+
+- Mastodon: [mastodon.social/@sphars]({{meta.social.mastodon}})
+- GitHub: [sphars]({{meta.social.github}})
 
 ## About This Website
 
@@ -24,6 +25,6 @@ More info about the creation of this site on the [Colophon](/colophon) page.
 
 ### Build Info
 
-This site's last commit was on {{ buildInfo.git.time.formatted }} and was built on {{ buildInfo.time.formatted }}. 
+This site's last commit was on {{ buildInfo.git.time.formatted }} and was built on {{ buildInfo.time.formatted }}.
 
 Commit: [`{{ buildInfo.git.hash.short }}`]({{ meta.repo }}/tree/{{ buildInfo.git.hash.long }})
