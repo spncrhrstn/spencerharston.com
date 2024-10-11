@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-{% include 'partials/head.njk' %}
-</head>
-<body class="min-h-screen w-full flex flex-col items-center text-zinc-800 bg-neutral-50 dark:text-zinc-200 dark:bg-neutral-900 transition-colors duration-500 ease-in-out">
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include 'partials/head.njk' %}
+  </head>
+  <body
+    class="min-h-screen w-full flex flex-col items-center text-zinc-800 bg-neutral-50 dark:text-zinc-200 dark:bg-neutral-900 transition-colors duration-500 ease-in-out"
+  >
+    {% include 'partials/header.njk' %}
 
-{% include 'partials/header.njk' %}
+    <main class="flex-grow p-4 mx-auto my-0 w-full max-w-3xl">{{ content | safe }}</main>
 
-<main class="flex-grow p-4 mx-auto my-0 w-full max-w-3xl">
-    {{ content | safe }}
-</main>
-
-{% include 'partials/footer.njk' %}
-</body>
+    {% include 'partials/footer.njk' %}
+  </body>
 </html>

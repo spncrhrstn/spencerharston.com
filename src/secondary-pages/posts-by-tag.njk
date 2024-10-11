@@ -1,13 +1,14 @@
 ---
 pagination:
-    data: collections.tagList
-    size: 1
-    alias: tag
+  data: collections.tagList
+  size: 1
+  alias: tag
 layout: layouts/default
 permalink: /tag/{{ tag }}/
 eleventyComputed:
-    title: Posts tagged '{{ tag }}'
+  title: Posts tagged '{{ tag }}'
 ---
+
 {% from "macros/posts-list.njk" import postsList %}
 
 {{ postsList(collections.posts | postsByTag(tag)) }}

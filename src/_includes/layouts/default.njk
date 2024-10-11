@@ -4,14 +4,12 @@ layout: layouts/base
 
 <h1 class="text-4xl font-semibold mt-12 mb-8 mx-0">{{ title }}</h1>
 
-<hr class="my-8">
+<hr class="my-8" />
 
 {% if '.md' in page.inputPath %}
-<div class="prose prose-code:before:hidden prose-code:after:hidden max-w-none dark:prose-invert">
+  <div class="prose prose-code:before:hidden prose-code:after:hidden max-w-none dark:prose-invert">
     {{ content | safe }}
-</div>
+  </div>
 {% else %}
-<div>
-    {{ content | safe }}
-</div>
+  <div>{{ content | safe }}</div>
 {% endif %}
