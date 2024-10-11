@@ -1,17 +1,19 @@
 <header class="w-full p-0">
-    <div class="flex flex-wrap justify-between items-center gap-2 w-full max-w-3xl mx-auto my-0 py-6 px-4">
-        <a class="text-3xl text-center font-semibold inline-block" href="/" title="Spencer Harston">[sh]</a>
+  <div class="mx-auto my-0 flex w-full max-w-3xl flex-wrap items-center justify-between gap-2 px-4 py-6">
+    <a class="inline-block text-center text-3xl font-semibold" href="/" title="Spencer Harston">[sh]</a>
 
-        <div class="flex flex-wrap justify-around items-center gap-x-8 gap-y-2">
-            <nav>
-                <ul class="flex flex-wrap justify-center items-center gap-x-6 text-lg">
-                    <li><a href='/posts'>Posts</a></li>
-                </ul>
-            </nav>
-            <div class="flex justify-center items-center gap-x-4">
-                <a href="/feed.xml" title="RSS Feed of Posts">{% iconify "rss" %}</a></span>
-                <button id="dark-mode-button" class="hover:text-blue-600 dark:hover:text-sky-500" title="Toggle dark mode">{% iconify "moon" %}</button>
-            </div>
-        </div>
+    <div class="flex flex-wrap items-center justify-around gap-x-8 gap-y-2">
+      <nav>
+        <ul class="flex flex-wrap items-center justify-center gap-x-6 text-lg">
+          <li><a href="/posts">Posts</a></li>
+        </ul>
+      </nav>
+      <div class="flex items-center justify-center gap-x-4">
+        <a href="/feed.xml" title="RSS Feed of Posts">{% iconify "rss" %}</a>
+        <button id="dark-mode-button" class="hover:text-blue-600 dark:hover:text-sky-500" title="Toggle dark mode">
+          {% iconify "moon" %}
+        </button>
+      </div>
     </div>
+  </div>
 </header>

@@ -1,12 +1,13 @@
 ---
 pagination:
-    data: collections.posts
-    size: 10
-    alias: posts
-    reverse: true
+  data: collections.posts
+  size: 10
+  alias: posts
+  reverse: true
 layout: layouts/default
 title: Posts
 ---
+
 {%- from "macros/posts-list.njk" import postsList %}
 {%- from "macros/tags-list.njk" import tagsList %}
 {%- from "macros/years-list.njk" import yearsList %}
@@ -15,35 +16,43 @@ title: Posts
 
 {{ postsList(pagination.items) }}
 
-<nav class="flex flex-row flex-wrap items-center justify-center my-4" aria-label="Pagination">
-{%- if pagination.href.previous %}
+<nav class="my-4 flex flex-row flex-wrap items-center justify-center" aria-label="Pagination">
+  {%- if pagination.href.previous %}
     <a href="{{ pagination.href.previous }}">
-        <span class="sr-only">Previous</span> 
-        {% iconify "chevron-left" %}
+      <span class="sr-only">Previous</span>
+      {% iconify "chevron-left" %}
     </a>
-{% else %}
+  {% else %}
     <span class="dark:text-gray-700">{% iconify "chevron-left" %}</span>
-{%- endif %}
-{%- for pageEntry in pagination.pages %}
-    <a href="{{ pagination.hrefs[loop.index0] }}" {% if page.url == pagination.hrefs[loop.index0] %} aria-current="page" {% endif %} class="relative inline-flex items-center px-3 py-1 text-sm aria-current:border aria-current:border-gray-500 aria-current:border-solid aria-current:rounded-md">{{ loop.index }}</a>
-{%- endfor -%}
-{%- if pagination.href.next %}
+  {%- endif %}
+  {%- for pageEntry in pagination.pages %}
+    <a
+      href="{{ pagination.hrefs[loop.index0] }}"
+      {% if page.url == pagination.hrefs[loop.index0] %}aria-current="page"{% endif %}
+      class="relative inline-flex items-center px-3 py-1 text-sm aria-current:rounded-md aria-current:border aria-current:border-solid aria-current:border-gray-500"
+      >{{ loop.index }}</a
+    >
+  {%- endfor -%}
+  {%- if pagination.href.next %}
     <a href="{{ pagination.href.next }}">
-        <span class="sr-only">Next</span>
-        {% iconify "chevron-right" %}
+      <span class="sr-only">Next</span>
+      {% iconify "chevron-right" %}
     </a>
-{%- else %}
+  {%- else %}
     <span class="dark:text-gray-700">{% iconify "chevron-right" %}</span>
-{%- endif %}
+  {%- endif %}
 </nav>
 
-<div class="text-center my-4">
-    <div>Filter posts by tag:</div>
-    {{ tagsList(collections.tagList) }}
+<div class="my-4 text-center">
+  <div>Filter posts by tag:</div>
+  {{ tagsList(collections.tagList) }}
 </div>
-<div class="text-center my-4">
-    <div>Filter posts by year:</div>
-    {{ yearsList(collections.yearList) }}
+<div class="my-4 text-center">
+  <div>Filter posts by year:</div>
+  {{ yearsList(collections.yearList) }}
 </div>
 
-<p class="text-center text-sm">Current draft count: {{ postCount.drafts }}. Want to know when a draft becomes a post? <a href="/feed.xml">Add the feed to your RSS reader</a>.</p>
+<p class="text-center text-sm">
+  Current draft count: {{ postCount.drafts }}. Want to know when a draft becomes a post?
+  <a href="/feed.xml">Add the feed to your RSS reader</a>.
+</p>

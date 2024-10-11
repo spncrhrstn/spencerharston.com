@@ -10,11 +10,14 @@ const moonIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 </svg>`;
 
 function isDarkModeEnabled() {
-  return localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  return (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+  );
 }
 
 function enableDarkMode(isSet) {
-  if(isSet){
+  if (isSet) {
     document.documentElement.classList.add("dark");
     darkModeButton.innerHTML = sunIcon;
   } else {
@@ -26,11 +29,11 @@ function enableDarkMode(isSet) {
 const darkModeButton = document.getElementById("dark-mode-button");
 darkModeButton.addEventListener("click", () => {
   // handle user explicitly enable/disable theme
-  if(isDarkModeEnabled()){
+  if (isDarkModeEnabled()) {
     enableDarkMode(false);
     localStorage.theme = "light";
     console.log("(•_•)\n( •_•)>⌐■-■\n(⌐■_■)");
-  } else{
+  } else {
     enableDarkMode(true);
     localStorage.theme = "dark";
     console.log("(⌐■_■)\n( •_•)>⌐■-■\n(•_•)");

@@ -1,12 +1,14 @@
 {%- macro yearsList(years) -%}
-
-<ul class="inline-flex flex-row flex-wrap justify-center gap-2">
+  <ul class="inline-flex flex-row flex-wrap justify-center gap-2">
     {%- for year in years %}
-    {%- set yearUrl %}/posts/{{ year }}/{% endset %}
-    <li>
-        <a href="{{ yearUrl }}" class="block border border-solid rounded-md border-gray-500 py-0.5 px-2 hover:no-underline hover:bg-gray-200 dark:hover:bg-neutral-700 text-center text-sm">{{ year }}</a>
-    </li>
+      {%- set yearUrl %}/posts/{{ year }}/{% endset %}
+      <li>
+        <a
+          href="{{ yearUrl }}"
+          class="block rounded-md border border-solid border-gray-500 px-2 py-0.5 text-center text-sm hover:bg-gray-200 hover:no-underline dark:hover:bg-neutral-700"
+          >{{ year }}</a
+        >
+      </li>
     {%- endfor %}
-</ul>
-
+  </ul>
 {% endmacro %}

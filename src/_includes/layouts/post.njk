@@ -1,53 +1,59 @@
 ---
 layout: layouts/base
 ---
+
 {%- from "macros/tags-list.njk" import tagsList %}
 
 <article class="mb-12">
-    <header class="mb-4">
-        <h1 class="text-4xl font-semibold mt-12 mb-8 mx-0 text-balance">{{ title }}</h1>
+  <header class="mb-4">
+    <h1 class="mx-0 mb-8 mt-12 text-balance text-4xl font-semibold">{{ title }}</h1>
 
-        <p class="italic mb-4">{{ description }}</p>
+    <p class="mb-4 italic">{{ description }}</p>
 
-        <div class="flex flex-col gap-y-2 text-sm">
-            <div class="flex flex-row items-center gap-x-2">
-                <span class="inline-flex items-center justify-center">{% iconify "calendar" %}</span>
-                <div>
-                    Posted: <time datetime="{{ page.date | dateISO }}" title="{{ page.date | dateISO }}">{{ page.date | dateByFormat("MMMM d, y") }}</time>
-                </div>            
-            </div>
-            
-            {%- if updated %}
-            <div class="flex flex-row items-center gap-x-2">
-                <span class="inline-flex items-center justify-center">{% iconify "circle-arrow-up" %}</span>
-                <div>
-                    Updated: <time datetime="{{ updated | dateISO }}" title="{{ updated | dateISO }}">{{ updated | dateByFormat("MMMM d, y") }}</time>
-                </div>
-            </div>
-            {%- endif %}
-
-            <div class="flex flex-row items-center gap-x-2">
-                <span class="inline-flex items-center justify-center">{% iconify "clock" %}</span>
-                <span> {{ content | readingTime }} to read </span>
-            </div>
+    <div class="flex flex-col gap-y-2 text-sm">
+      <div class="flex flex-row items-center gap-x-2">
+        <span class="inline-flex items-center justify-center">{% iconify "calendar" %}</span>
+        <div>
+          Posted:
+          <time datetime="{{ page.date | dateISO }}" title="{{ page.date | dateISO }}"
+            >{{ page.date | dateByFormat("MMMM d, y") }}</time
+          >
         </div>
-    </header>
+      </div>
 
-    <hr class="my-8">
+      {%- if updated %}
+        <div class="flex flex-row items-center gap-x-2">
+          <span class="inline-flex items-center justify-center">{% iconify "circle-arrow-up" %}</span>
+          <div>
+            Updated:
+            <time datetime="{{ updated | dateISO }}" title="{{ updated | dateISO }}"
+              >{{ updated | dateByFormat("MMMM d, y") }}</time
+            >
+          </div>
+        </div>
+      {%- endif %}
 
-    <div class="prose prose-code:before:hidden prose-code:after:hidden max-w-none dark:prose-invert">
-        {{ content | safe }}
+      <div class="flex flex-row items-center gap-x-2">
+        <span class="inline-flex items-center justify-center">{% iconify "clock" %}</span>
+        <span> {{ content | readingTime }} to read </span>
+      </div>
     </div>
+  </header>
 
+  <hr class="my-8" />
+
+  <div class="prose max-w-none dark:prose-invert prose-code:before:hidden prose-code:after:hidden">
+    {{ content | safe }}
+  </div>
 </article>
 
 <div class="inline-flex flex-row items-center gap-x-2">
-    <span class="inline-flex items-center justify-center">{% iconify "tag" %}</span> 
-    {{ tagsList(tags) }}
+  <span class="inline-flex items-center justify-center">{% iconify "tag" %}</span>
+  {{ tagsList(tags) }}
 </div>
 
 <p class="mt-4 text-sm">
-    The content of this post is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> by the author.
-    {#- {%- if image %} Header photo from <a href="{{ image }}">Unsplash</a>.<br>{%- endif %} #}
-    The source for this page is available on <a href="{% pageSourceUrl %}">GitHub</a>.
+  The content of this post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> by the
+  author. {#- {%- if image %} Header photo from <a href="{{ image }}">Unsplash</a>.<br>{%- endif %} #} The source for
+  this page is available on <a href="{% pageSourceUrl %}">GitHub</a>.
 </p>

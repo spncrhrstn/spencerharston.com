@@ -3,31 +3,33 @@ layout: layouts/base
 metaTagline: The personal website of Spencer Harston
 ---
 
-<div class="flex flex-col items-center lg:items-start justify-center gap-4">
-    <h1 class="text-3xl text-center font-bold">Spencer Harston</h1>
-    <p class="text-center lg:text-left">A corner of the Internet</p>
-    <div class="flex flex-row items-center gap-x-2">
-        <a class="text-zinc-800 dark:text-zinc-200" href="https://mastodon.social/{{ metadata.mastodon_handle }}" title="Mastodon profile" rel="me">{% iconify "brand-mastodon" %}</a>
-        <a class="text-zinc-800 dark:text-zinc-200" href="https://github.com/{{ metadata.github_handle }}" title="GitHub profile">{% iconify "brand-github" %}</a>
-    </div>
+<div class="flex flex-col items-center justify-center gap-4 lg:items-start">
+  <h1 class="text-center text-3xl font-bold">Spencer Harston</h1>
+  <p class="text-center lg:text-left">A corner of the Internet</p>
+  <div class="flex flex-row items-center gap-x-2">
+    <a class="text-zinc-800 dark:text-zinc-200" href="{{ meta.social.mastodon }}" title="Mastodon profile" rel="me"
+      >{% iconify "brand-mastodon" %}</a
+    >
+    <a class="text-zinc-800 dark:text-zinc-200" href="{{ meta.social.github }}" title="GitHub profile"
+      >{% iconify "brand-github" %}</a
+    >
+  </div>
 </div>
 
-<hr class="my-8">
+<hr class="my-8" />
 
 {% set latestPosts = collections.posts | sortDesc | limit(3) %}
 <section>
-
-    <p class="text-xl">Latest Posts</p>        
-    {% for post in latestPosts -%}
+  <p class="text-xl">Latest Posts</p>
+  {% for post in latestPosts -%}
     <div class="my-2">
-        <div>
-            <a href="{{ post.url }}">{{ post.data.title }}</a>
-        </div>
-        <div class="text-sm">
-            <time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | dateByFormat("MMMM d, y") }}</time>
-        </div>
+      <div>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </div>
+      <div class="text-sm">
+        <time datetime="{{ post.data.date | dateISO }}">{{ post.data.date | dateByFormat("MMMM d, y") }}</time>
+      </div>
     </div>
-    {%- endfor %}
-    <a href="/posts/">See more posts →</a>
-    
+  {%- endfor %}
+  <a href="/posts/">See more posts →</a>
 </section>

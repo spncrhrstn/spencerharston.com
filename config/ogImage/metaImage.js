@@ -1,9 +1,9 @@
-const { createCanvas, registerFont, loadImage } = require("canvas");
-const Image = require("@11ty/eleventy-img");
+import { createCanvas, registerFont, loadImage } from "canvas";
+import Image from "@11ty/eleventy-img";
 
 // register fonts
-registerFont("./config/meta/fonts/Asap-Regular.ttf", { family: "Asap" });
-registerFont("./config/meta/fonts/Asap-Italic.ttf", { family: "Asap", style: "italic" });
+registerFont("./config/ogImage/fonts/Asap-Regular.ttf", { family: "Asap" });
+registerFont("./config/ogImage/fonts/Asap-Italic.ttf", { family: "Asap", style: "italic" });
 
 // wrap text in a canvas
 // adapted from https://urre.me/writings/dynamic-open-graph-images/
@@ -32,7 +32,7 @@ async function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
 // draw background behind text on canvas
 // adapted from https://stackoverflow.com/a/18901408
 async function drawTextBG(ctx, txt, font, align, x, y) {
-  // save current state as we make a lot of changes        
+  // save current state as we make a lot of changes
   ctx.save();
 
   // set font
@@ -64,7 +64,6 @@ async function drawTextBG(ctx, txt, font, align, x, y) {
 
   // restore original state
   ctx.restore();
-
 }
 
 /**
@@ -78,7 +77,7 @@ async function generateMetaImage(titleText) {
   const height = 630;
   let titleFontSize = 72;
   let titleLineHeight = titleFontSize * 1.375;
-  let subText = this.ctx.metadata.domain;
+  let subText = this.ctx.meta.domain;
 
   // create the canvas
   const canvas = createCanvas(width, height);
@@ -89,7 +88,7 @@ async function generateMetaImage(titleText) {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   // add the image
-  const bgImage = await loadImage("./config/meta/images/gradient.png");
+  const bgImage = await loadImage("./config/ogImage/images/gradient.png");
   ctx.drawImage(bgImage, 0, 0);
 
   // add subText text
@@ -110,7 +109,7 @@ async function generateMetaImage(titleText) {
   let buffer = canvas.toBuffer("image/png");
 
   // use 11ty/eleventy-img to save it
-  let metadata = await Image(buffer, {
+  let imgMetadata = await Image(buffer, {
     widths: [width],
     formats: ["png"],
     outputDir: "./dist/assets/img/meta",
@@ -127,14 +126,17 @@ async function generateMetaImage(titleText) {
         name = url.replace(".", "_").substring(1); // for /404.html and similar pages
       } else {
         if (url.startsWith("/posts/") && url.match(/\//g).length > 3) name = "post_"; // prefix /posts/xxxx/title/ pages
-        name += url.substring(1, this.ctx.page.url.length - 1).split("/").at(-1); // for /path/to/page/ pages
+        name += url
+          .substring(1, this.ctx.page.url.length - 1)
+          .split("/")
+          .at(-1); // for /path/to/page/ pages
       }
       return `${name}-${width}w.${format}`;
     }
   });
 
-  let url = metadata.png[metadata.png.length - 1].url;
-  return this.ctx.env === "production" ? `${this.ctx.metadata.base_url}${url}` : url;
+  let url = imgMetadata.png[imgMetadata.png.length - 1].url;
+  return this.ctx.env === "production" ? `${this.ctx.meta.base_url}${url}` : url;
 }
 
-module.exports = { generateMetaImage };
+export default generateMetaImage;

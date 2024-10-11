@@ -1,12 +1,14 @@
 {%- macro tagsList(tags) -%}
-
-<ul class="inline-flex flex-row flex-wrap justify-center gap-2">
+  <ul class="inline-flex flex-row flex-wrap justify-center gap-2">
     {%- for tag in tags %}
-    {%- set tagUrl %}/tag/{{ tag }}/{% endset %}
-    <li>
-        <a href="{{ tagUrl }}" class="block border border-solid rounded-md border-gray-500 py-0.5 px-2 hover:no-underline hover:bg-gray-200 dark:hover:bg-neutral-700 text-center text-sm">{{ tag }}</a>
-    </li>
+      {%- set tagUrl %}/tag/{{ tag }}/{% endset %}
+      <li>
+        <a
+          href="{{ tagUrl }}"
+          class="block rounded-md border border-solid border-gray-500 px-2 py-0.5 text-center text-sm hover:bg-gray-200 hover:no-underline dark:hover:bg-neutral-700"
+          >{{ tag }}</a
+        >
+      </li>
     {%- endfor %}
-</ul>
-
+  </ul>
 {% endmacro %}
