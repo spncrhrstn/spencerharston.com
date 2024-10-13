@@ -33,7 +33,7 @@ export default function (eleventyConfig) {
     "src/assets/favicons/": "assets/favicons/",
     "src/assets/favicons/favicon.ico": "/favicon.ico",
     "src/assets/img/*[!content]": "assets/img/",
-    "node_modules/@fontsource/inria-sans/": "assets/fonts/inria-sans/",
+    "node_modules/@fontsource/noto-sans/": "assets/fonts/noto-sans/",
     "node_modules/@fontsource/ibm-plex-mono/": "assets/fonts/ibm-plex-mono/",
     "src/robots.txt": "robots.txt"
   });

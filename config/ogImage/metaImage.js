@@ -2,8 +2,8 @@ import { createCanvas, registerFont, loadImage } from "canvas";
 import Image from "@11ty/eleventy-img";
 
 // register fonts
-registerFont("./config/ogImage/fonts/Asap-Regular.ttf", { family: "Asap" });
-registerFont("./config/ogImage/fonts/Asap-Italic.ttf", { family: "Asap", style: "italic" });
+registerFont("./config/ogImage/fonts/NotoSans-Regular.ttf", { family: "Noto" });
+registerFont("./config/ogImage/fonts/NotoSans-Italic.ttf", { family: "Noto", style: "italic" });
 
 // wrap text in a canvas
 // adapted from https://urre.me/writings/dynamic-open-graph-images/
@@ -88,18 +88,18 @@ async function generateMetaImage(titleText) {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   // add the image
-  const bgImage = await loadImage("./config/ogImage/images/gradient.png");
+  const bgImage = await loadImage("./config/ogImage/images/gradient2.png");
   ctx.drawImage(bgImage, 0, 0);
 
   // add subText text
   ctx.fillStyle = "#fafafa";
-  ctx.font = "italic 48px 'Asap'";
+  ctx.font = "italic 48px 'Noto'";
   ctx.textAlign = "end";
   // ctx.fillText(imageFooterText, canvas.width - 48, canvas.height - 50);
   drawTextBG(ctx, subText, ctx.font, ctx.textAlign, canvas.width - 48, canvas.height - 50);
 
   // add image title text
-  ctx.font = `normal ${titleFontSize}px "Asap"`;
+  ctx.font = `normal ${titleFontSize}px "Noto"`;
   ctx.textAlign = "start";
   ctx.fillStyle = "#fafafa";
   wrapText(ctx, titleText, 64, 144, canvas.width - 96, titleLineHeight);
@@ -117,7 +117,7 @@ async function generateMetaImage(titleText) {
     sharpPngOptions: {
       quality: 95
     },
-    filenameFormat: (id, src, width, format, options) => {
+    filenameFormat: (id, src, width, format) => {
       let name = "";
       let url = `${this.ctx.page.url}`; // the url to the current page
       if (url === "/") {
