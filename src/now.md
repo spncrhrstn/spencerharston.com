@@ -2,7 +2,7 @@
 layout: layouts/default
 title: What I'm Doing Now
 description: A somewhat current list of non-work stuff I'm doing, consuming, or being entertained by.
-updated: 2024-10-10
+updated: 2024-10-20
 ---
 
 {{ description }}
@@ -23,7 +23,7 @@ While the little app I'm creating above (the math worksheets one) is using Types
 
 ## Reading
 
-Trying out another light-hearted book _Zero Stars, Do Not Recommend_. Looked interesting, or at least similar to other books I've enjoyed.
+Going to start another Stephen King novel, _The Running Man_.
 
 _See also my [year-to-date page](/posts/2024/books-of-2024/) about what else I've read this year._
 
@@ -34,8 +34,6 @@ It's October, and that means a new season of _The Great British Baking Show_.
 My wife and I are watching the new Kristen Bell show on Netflix, _Nobody Wants This_. Two episodes in, and honestly, I find it pretty great.
 
 Final season of _The Umbrella Academy_ dropped a few weeks ago, so I'm finishing that up.
-
-I'm also on the hunt for the adaptations of some of the book I read (namely _Under the Dome_) but I may just have to shell out for a temporary subscription to some random streaming site.
 
 ## Playing
 
