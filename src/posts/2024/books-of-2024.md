@@ -2,7 +2,7 @@
 title: Books of 2024
 description: A list of books I'm reading, have read, or may read in 2024.
 date: 2024-01-01 22:25:00
-updated: 2024-10-20 21:26:00
+updated: 2024-11-20 20:45:00
 tags:
   - personal
 ---
@@ -17,7 +17,7 @@ If an entry is prefaced with 🎧, that means I'm listening to the audiobook ver
 
 ## Currently Reading
 
-- [The Running Man](https://www.goodreads.com/book/show/11607.The_Running_Man) by Richard Bachman (Stephen King)
+- [I Remember You](https://www.goodreads.com/book/show/59948885-i-remember-you) by Brian Freeman
 
 ## Finished Reading
 
@@ -40,6 +40,7 @@ Generally speaking, if I finished a book, it means the book was good enough for 
 - [Under the Dome](https://www.goodreads.com/book/show/6320534-under-the-dome) by Stephen King ⭐
 - [I Hope This Finds You Well](https://www.goodreads.com/book/show/200987323-i-hope-this-finds-you-well) by Natalie Sue
 - [Zero Stars, Do Not Recommend](https://www.goodreads.com/book/show/200174139-zero-stars-do-not-recommend) by M.J. Wassmer
+- [The Running Man](https://www.goodreads.com/book/show/11607.The_Running_Man) by Richard Bachman (Stephen King)
 
 ## Didn't Finish
 

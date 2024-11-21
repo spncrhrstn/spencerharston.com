@@ -2,7 +2,7 @@
 layout: layouts/default
 title: What I'm Doing Now
 description: A somewhat current list of non-work stuff I'm doing, consuming, or being entertained by.
-updated: 2024-10-20
+updated: 2024-11-20
 ---
 
 {{ description }}
@@ -17,28 +17,24 @@ I'm also working on a dead simple web app to generate images of Mastodon posts. 
 
 ## Learning
 
-Been thinking about a possible application I want to create to meet my specific needs. I want to make a simple, multi-platform note-taking app^[I know, I know, these apps are a dime-a-dozen]. Markdown only, very little organization, simple rules and layout. No idea where to start except researching the best stack and start somewhere. In the meantime, I'm working on customizing VS Code specifically for note-taking, since it's already pretty good at notes as is.
-
-While the little app I'm creating above (the math worksheets one) is using Typescript and Vite, I still want to learn a proper framework. Perhaps I can convert this to something (possibly Vue), but honestly that might be overkill. Can't hurt though.
+Not doing a lot in this regard specifically, but I have bookmarked some pages that I want to follow-up on.
 
 ## Reading
 
-Going to start another Stephen King novel, _The Running Man_.
+A thriller, _I Remember You_ by Brian Freeman.
 
 _See also my [year-to-date page](/posts/2024/books-of-2024/) about what else I've read this year._
 
 ## Watching
 
-It's October, and that means a new season of _The Great British Baking Show_.
+Still keeping up with the new season of _The Great British Baking Show_.
 
-My wife and I are watching the new Kristen Bell show on Netflix, _Nobody Wants This_. Two episodes in, and honestly, I find it pretty great.
+Started watching _Killing Eve_. A few episodes in, I like it so far.
 
-Final season of _The Umbrella Academy_ dropped a few weeks ago, so I'm finishing that up.
+For that comedy itch, I came across _Detroiters_. Why haven't I watched any Tim Robinson before?
 
 ## Playing
 
-I'm playing _Descenders_ for scratching that "just have some fun" itch.
-
-I started _Horizon: Zero Dawn_ a couple days ago (and yes, I'm playing on easy difficulty). It runs beautifully on my [Linux PC](/posts/2024/building-a-new-pc-in-2024/).
+I'm about halfway through _Horizon: Zero Dawn_. I am in awe of how beautiful it is, even with it being six years old. Likely my GOTY.
 
 _Slay the Spire_ is my current fallback whenever I want to play something but don't want to start anything new.
