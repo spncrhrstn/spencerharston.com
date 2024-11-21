@@ -12,7 +12,8 @@ export default {
   domain: "spencerharston.com",
   social: {
     github: "https://github.com/sphars",
-    mastodon: "https://mastodon.social/@sphars"
+    mastodon: "https://mastodon.social/@sphars",
+    bluesky: "https://bsky.app/profile/sphars.bsky.social"
   },
   timezone: "America/Denver",
   env: process.env.ELEVENTY_ENV || "development"
