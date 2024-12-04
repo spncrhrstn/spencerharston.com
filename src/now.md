@@ -2,7 +2,7 @@
 layout: layouts/default
 title: What I'm Doing Now
 description: A somewhat current list of non-work stuff I'm doing, consuming, or being entertained by.
-updated: 2024-11-20
+updated: 2024-12-03
 ---
 
 {{ description }}
@@ -21,7 +21,7 @@ Not doing a lot in this regard specifically, but I have bookmarked some pages th
 
 ## Reading
 
-A thriller, _I Remember You_ by Brian Freeman.
+_Sourdough_ by Robin Sloan
 
 _See also my [year-to-date page](/posts/2024/books-of-2024/) about what else I've read this year._
 
@@ -31,10 +31,10 @@ Still keeping up with the new season of _The Great British Baking Show_.
 
 Started watching _Killing Eve_. A few episodes in, I like it so far.
 
-For that comedy itch, I came across _Detroiters_. Why haven't I watched any Tim Robinson before?
+For that comedy itch, I came across _Detroiters_. Why haven't I watched any Tim Robinson before, this is pretty funny.
 
 ## Playing
 
-I'm about halfway through _Horizon: Zero Dawn_. I am in awe of how beautiful it is, even with it being six years old. Likely my GOTY.
+I'm a bit over halfway through _Horizon: Zero Dawn_. Starting to get a little repetitive, but I am still in awe of how beautiful it is, even with it being six years old. Likely my GOTY.
 
 _Slay the Spire_ is my current fallback whenever I want to play something but don't want to start anything new.
