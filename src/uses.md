@@ -18,7 +18,7 @@ I'll update this as often as I remember.
 - GPU: AMD Radeon RX 7800 XT 16GB
 - RAM: 32GB
 - Storage: 2TB NVME SSD + 1TB HDD
-- OS: Nobara (Fedora) Linux 40
+- OS: Nobara (Fedora) Linux 41
 - Mouse: Logitech G305
 - Keyboard: Cooler Master MasterKeys Pro L
 - Monitor: LG UltraGear 27GR83Q-B 27" 1440p 240Hz IPS monitor
@@ -29,9 +29,9 @@ I'll update this as often as I remember.
 - CPU: Ryzen 7 Pro 4750U
 - RAM: 32GB
 - Storage: 500GB + 128GB SSDs
-- OS: Windows 10 Pro
+- OS: Fedora 41 KDE
 
-### Desktop: Custom Intel Desktop (2016)
+### Desktop: Custom Intel Desktop (2016) (Not in Use)
 
 - Case: Corsair Carbide 200R ATX Mid Tower
 - CPU: Intel Core i5-4690K
@@ -48,20 +48,23 @@ I'll update this as often as I remember.
 - Storage: 128GB SSD + 1TB HDD
 - OS: Ubuntu Server 20.04
 
+### Home Assistant Server: Raspberry Pi 5
+
+- RAM: 8GB
+- Storage: 128GB Micro SD Card
+- OS: Home Assistant OS
+
 ## Software
 
 ### Applications
 
-- WSL2 (Windows)
-- Windows Terminal (Windows)
-- VS Code (Linux and Windows)
-- Docker/Podman (Linux)
-- Firefox & Chrome (Linux and Windows)
-- Steam (Linux and Windows)
-- Calibre (Linux and Windows)
-- MusicBee (Windows) (still looking for a Linux alternative)
+- VS Code
+- Docker/Podman
+- Firefox & Chrome
+- Steam
+- Calibre
 - KDE Default Apps (Linux)
-- Discord (Windows)/Vesktop (Linux)
+- Vesktop
 - ...and many more
 
 See also my Default Applications of [2023](/posts/2023/app-defaults-in-2023)
@@ -74,6 +77,7 @@ See also my Default Applications of [2023](/posts/2023/app-defaults-in-2023)
 - Jellyfin (media server)
 - Redlib (reddit alternative frontend)
 - Audiobookshelf (audiobook server)
+- Home Assistant (smart home)
 
 ### Browser Extensions
 
