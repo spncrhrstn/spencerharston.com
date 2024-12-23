@@ -29,6 +29,6 @@ Started watching _Killing Eve_. A few episodes in, I like it so far.
 
 ## Playing
 
-I finished the main story of _Horizon: Zero Dawn_ and started the Frozen Wilds DLC. Definitely  my GOTY.
+I finished the main story of _Horizon: Zero Dawn_ and started the Frozen Wilds DLC. Definitely my GOTY.
 
 _Slay the Spire_ is my current fallback whenever I want to play something but don't want to start anything new.
