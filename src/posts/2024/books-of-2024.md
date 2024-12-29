@@ -2,7 +2,7 @@
 title: Books of 2024
 description: A list of books I'm reading, have read, or may read in 2024.
 date: 2024-01-01 22:25:00
-updated: 2024-12-23 01:24:00
+updated: 2024-12-28 22:02:00
 tags:
   - personal
 ---
@@ -17,8 +17,8 @@ If an entry is prefaced with 🎧, that means I'm listening to the audiobook ver
 
 ## Currently Reading
 
-- [Sourdough](https://www.goodreads.com/book/show/33916024-sourdough) by Robin Sloan
 - [Extra Focus: The Quick Start Guide to Adult ADHD](https://www.goodreads.com/book/show/197655262-extra-focus) by Jesse J. Anderson
+- [The Way of Kings](https://www.goodreads.com/book/show/7235533-the-way-of-kings) by Brandon Sanderson
 
 ## Finished Reading
 
@@ -42,6 +42,7 @@ Generally speaking, if I finished a book, it means the book was good enough for 
 - [I Hope This Finds You Well](https://www.goodreads.com/book/show/200987323-i-hope-this-finds-you-well) by Natalie Sue
 - [Zero Stars, Do Not Recommend](https://www.goodreads.com/book/show/200174139-zero-stars-do-not-recommend) by M.J. Wassmer
 - [The Running Man](https://www.goodreads.com/book/show/11607.The_Running_Man) by Richard Bachman (Stephen King)
+- [I Remember You](https://www.goodreads.com/book/show/59948885-i-remember-you) by Brian Freeman
 
 ## Didn't Finish
 
@@ -50,7 +51,7 @@ While there's usually no specific reason why I choose not to finish a book, gene
 - [How to Be Perfect: The Correct Answer to Every Moral Question](https://www.goodreads.com/book/show/58484901-how-to-be-perfect) by Michael Schur
 - [A City on Mars](https://www.goodreads.com/book/show/125084292-a-city-on-mars) by Kelly and Zach Weinersmith (waiting on library copy)
 - [My Friend Anne Frank](https://www.goodreads.com/book/show/62874040-my-friend-anne-frank) by Hannah Pick-Goslar
-- [I Remember You](https://www.goodreads.com/book/show/59948885-i-remember-you) by Brian Freeman
+- [Sourdough](https://www.goodreads.com/book/show/33916024-sourdough) by Robin Sloan
 
 ## Under Consideration
 
