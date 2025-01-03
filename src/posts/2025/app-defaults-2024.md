@@ -1,13 +1,13 @@
 ---
 title: App Defaults in 2024
-description: A list of default apps I use for various tasks at the end of 2024
+description: A list of default apps I use for various tasks at the end of 2024.
 date: 2025-01-02 21:49:00
 tags:
   - personal
   - apps
 ---
 
-Not much changed from 2023, as a majority of my apps are web-based. But I've moved to Linux full-time for my personal devices, so I've updated entries that were Windows-only. This list does not include apps I use for work, though there is some overlap.
+Not much changed from [2023](/posts/2023/app-defaults-in-2023), as a majority of my apps are web-based. But I've moved to Linux full-time for my personal devices, so I've updated entries that were Windows-only. This list does not include apps I use for work, though there is some overlap.
 
 - **Email**: Gmail
 - **Calendar**: Google Calendar

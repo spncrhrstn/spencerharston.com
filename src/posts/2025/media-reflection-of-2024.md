@@ -11,7 +11,7 @@ Much like last year, I wanted to give a quick review of some of the media I cons
 
 ## Books
 
-A small selection of the books I read this year. See my full list of books in my [Books of 2024](/posts/books-of-2024) post.
+A small selection of the books I read this year. See my full list of books in my [Books of 2024](/posts/2024/books-of-2024) post.
 
 ### _The Hobbit_ and _The Lord of the Rings_ by J.R.R. Tolkien
 
@@ -117,7 +117,7 @@ Unfortunately, not all shows I watched were great. I'm not going to name all the
 
 ## Games
 
-[New PC](/posts/building-a-new-pc-in-2024/) means new games, or games new to me. I've been wanting to play a bunch of games for a long time but never had a computer powerful enough to run them decently. Until now.
+[New PC](/posts/2024/building-a-new-pc-in-2024/) means new games, or games new to me. I've been wanting to play a bunch of games for a long time but never had a computer powerful enough to run them decently. Until now.
 
 Here's a few games I played this year:
 
@@ -133,7 +133,7 @@ For a purely story-driven game, I enjoyed it. But what I think was the clincher 
 
 I've been a, not a diehard, but an enjoyer of all things Star Wars. Some of my favorite video games growing up were Star Wars games (Rogue Squadron, Podracer, Jedi Outcast, Jedi Academy, Battlefront series), and I feel like Fallen Order is right up there with the best of them. Loved the game.
 
-Only gripe was that playing this on Linux meant not using the EA launcher and thus I didn't get any of the achievements. EA sucks.
+Only gripe was that playing this on Linux meant not using the EA launcher and thus I didn't get any of the achievements. Because EA sucks.
 
 ### _Horizon: Zero Dawn_
 

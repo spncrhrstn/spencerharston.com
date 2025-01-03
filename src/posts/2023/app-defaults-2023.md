@@ -1,6 +1,6 @@
 ---
 title: App Defaults in 2023
-description: A list of default apps I use for various tasks at the end of 2023
+description: A list of default apps I use for various tasks at the end of 2023.
 date: 2023-11-30 22:21:00
 updated: 2023-12-06 06:16:00
 tags:
