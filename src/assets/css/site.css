@@ -4,9 +4,6 @@
 @tailwind base;
 
 @layer base {
-  html {
-    font-size: 18px;
-  }
   a {
     @apply hover:text-blue-600 hover:underline dark:hover:text-sky-500;
   }
