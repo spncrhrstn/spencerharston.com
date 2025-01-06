@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Example Title",
+    "author": "Firstname Lastname",
+    "ISBN": "0123456789",
+    "link": "https://www.example.com",
+    "rating": 0,
+    "dateRead": "2024/12/31",
+    "dnf": false,
+    "edition": "ebook"
+  },
+  {
+    "title": "Example Alternate Title That's Longer Than the Others",
+    "author": "Firstname Lastname",
+    "ISBN": "0123456789",
+    "link": "https://www.example.com",
+    "rating": 0,
+    "dateRead": "2023/12/31",
+    "dnf": true,
+    "edition": "ebook"
+  },
+  {
+    "title": "Another!",
+    "author": "Firstname Lastname",
+    "ISBN": "0123456789",
+    "link": "https://www.example.com",
+    "rating": 0,
+    "dateRead": "2023/12/31",
+    "dnf": true,
+    "edition": "ebook"
+  },
+  {
+    "title": "Again??",
+    "author": "Firstname Lastname",
+    "ISBN": "0123456789",
+    "link": "https://www.example.com",
+    "rating": 0,
+    "dateRead": "2023/12/31",
+    "dnf": true,
+    "edition": "ebook"
+  }
+]
