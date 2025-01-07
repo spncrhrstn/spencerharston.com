@@ -1,21 +1,41 @@
 ---
 layout: layouts/default
 title: Books
-metaTagline: A list of books that I've read over the years, to the best of my memory.
+metaTagline: A list of books that I'm currently reading or finished reading, to the best of my memory.
 ---
 
 <div class="prose dark:prose-invert">
-  <p>{{ metaTagline }}</p>
-  <p>Read about how I created this page in <a href="/posts/2025/creating-a-books-page">this blog post</a>.</p>
+  <p>
+    {{ metaTagline }} Read about how I created this page in
+    <a href="/posts/2025/creating-a-books-page">this blog post</a>.
+  </p>
+
+  <p>Last updated: {{ books.lastUpdated }}</p>
 </div>
 
-<div class="mt-8 grid grid-cols-3 gap-8">
-  {%- for book in books %}
-    <div>
-      <img src="https://placehold.co/150x200?text={{ book.title[0] }}" />
-      <p class="font-bold">{{ book.title }}</p>
-      <p>{{ book.author }}</p>
-      <p>{{ book.dateRead }}</p>
-    </div>
-  {%- endfor -%}
+<div class="mt-4">
+  <h2 class="my-2 text-lg font-bold">Currently Reading</h2>
+  <div class="grid grid-cols-3 gap-8">
+    {%- for book in books.current %}
+      <div>
+        <img src="https://placehold.co/150x200?text={{ book.title[0] }}" />
+        <p class="font-bold">{{ book.title }}</p>
+        <p>{{ book.author }}</p>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+<div class="mt-4">
+  <h2 class="my-2 text-lg font-bold">Finished</h2>
+  <div class="grid grid-cols-3 gap-8">
+    {%- for book in books.finished %}
+      <div>
+        <img src="https://placehold.co/150x200?text={{ book.title[0] }}" />
+        <p class="font-bold">{{ book.title }}</p>
+        <p>{{ book.author }}</p>
+        <p>{{ book.dateRead }}</p>
+      </div>
+    {%- endfor -%}
+  </div>
 </div>

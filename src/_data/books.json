@@ -1,42 +1,134 @@
-[
-  {
-    "title": "Example Title",
-    "author": "Firstname Lastname",
-    "ISBN": "0123456789",
-    "link": "https://www.example.com",
-    "rating": 0,
-    "dateRead": "2024/12/31",
-    "dnf": false,
-    "edition": "ebook"
-  },
-  {
-    "title": "Example Alternate Title That's Longer Than the Others",
-    "author": "Firstname Lastname",
-    "ISBN": "0123456789",
-    "link": "https://www.example.com",
-    "rating": 0,
-    "dateRead": "2023/12/31",
-    "dnf": true,
-    "edition": "ebook"
-  },
-  {
-    "title": "Another!",
-    "author": "Firstname Lastname",
-    "ISBN": "0123456789",
-    "link": "https://www.example.com",
-    "rating": 0,
-    "dateRead": "2023/12/31",
-    "dnf": true,
-    "edition": "ebook"
-  },
-  {
-    "title": "Again??",
-    "author": "Firstname Lastname",
-    "ISBN": "0123456789",
-    "link": "https://www.example.com",
-    "rating": 0,
-    "dateRead": "2023/12/31",
-    "dnf": true,
-    "edition": "ebook"
-  }
-]
+{
+  "lastUpdated": "2023-01-07",
+  "current": [
+    {
+      "title": "The Way of Kings",
+      "author": "Brandon Sanderson",
+      "ISBN": "0123456789",
+      "link": "https://www.goodreads.com/book/show/7235533-the-way-of-kings",
+      "rating": 0,
+      "dateRead": "",
+      "edition": "ebook"
+    }
+  ],
+  "finished": [
+    {
+      "title": "I'm Glad My Mom Died",
+      "author": "Jennette McCurdy",
+      "ISBN": "0123456789",
+      "link": "https://www.goodreads.com/book/show/59364173-i-m-glad-my-mom-died",
+      "rating": 0,
+      "dateRead": "2023-01-11",
+      "edition": "ebook"
+    },
+    {
+      "title": "How to Take Over the World",
+      "author": "Ryan North",
+      "ISBN": "0123456789",
+      "link": "https://www.goodreads.com/book/show/58446218-how-to-take-over-the-world",
+      "rating": 0,
+      "dateRead": "2023-01-11",
+      "edition": "ebook"
+    },
+    {
+      "title": "Born a Crime",
+      "author": "Trevor Noah",
+      "ISBN": "0123456789",
+      "link": "https://www.goodreads.com/book/show/29780253-born-a-crime",
+      "rating": 0,
+      "dateRead": "2023-01-15",
+      "edition": "ebook"
+    },
+    {
+      "title": "Lamb: The Gospel According to Biff, Christ's Childhood Pal",
+      "author": "Christopher Moore",
+      "ISBN": "0123456789",
+      "link": "https://www.goodreads.com/book/show/28881.Lamb",
+      "rating": 0,
+      "dateRead": "2023-02-01",
+      "edition": "ebook"
+    },
+    {
+      "title": "Futuristic Violence and Fancy Suits",
+      "author": "Jason Pargin",
+      "ISBN": "0123456789",
+      "link": "https://www.goodreads.com/book/show/20501606-futuristic-violence-and-fancy-suits",
+      "rating": 0,
+      "dateRead": "2023-02-06",
+      "edition": "ebook"
+    },
+    {
+      "title": "The Help",
+      "author": "Kathryn Stockett",
+      "ISBN": "0123456789",
+      "link": "https://www.goodreads.com/book/show/4667024-the-help",
+      "rating": 0,
+      "dateRead": "2023-05-20",
+      "edition": "ebook"
+    },
+    {
+      "title": "Permanent Record",
+      "author": "Edward Snowden",
+      "ISBN": "0123456789",
+      "link": "https://www.goodreads.com/book/show/46223297-permanent-record",
+      "rating": 0,
+      "dateRead": "2023-06-30",
+      "edition": "ebook"
+    },
+    {
+      "title": "The Institute",
+      "author": "Stephen King",
+      "ISBN": "0123456789",
+      "link": "https://www.goodreads.com/book/show/43798285-the-institute",
+      "rating": 0,
+      "dateRead": "2023-08-10",
+      "edition": "ebook"
+    },
+    {
+      "title": "Parable of the Sower",
+      "author": "Octavia Butler",
+      "ISBN": "0123456789",
+      "link": "https://www.goodreads.com/book/show/52397.Parable_of_the_Sower",
+      "rating": 0,
+      "dateRead": "2023-10-09",
+      "edition": "ebook"
+    },
+    {
+      "title": "Because I Said So!",
+      "author": "Ken Jennings",
+      "ISBN": "0123456789",
+      "link": "https://www.goodreads.com/book/show/13547494-because-i-said-so",
+      "rating": 0,
+      "dateRead": "2023-10-22",
+      "edition": "ebook"
+    },
+    {
+      "title": "All the Sinners Bleed",
+      "author": "S.A. Cosby",
+      "ISBN": "0123456789",
+      "link": "https://www.goodreads.com/book/show/61884832-all-the-sinners-bleed",
+      "rating": 0,
+      "dateRead": "2023-11-19",
+      "edition": "ebook"
+    },
+    {
+      "title": "How to (Almost) Make Friends on the Internet",
+      "author": "Michael Cunningham",
+      "ISBN": "0123456789",
+      "link": "https://www.goodreads.com/book/show/55204812-how-to-almost-make-friends-on-the-internet",
+      "rating": 0,
+      "dateRead": "2023-12-20",
+      "edition": "ebook"
+    },
+    {
+      "title": "Blankets",
+      "author": "Craig Thompson",
+      "ISBN": "0123456789",
+      "link": "https://www.goodreads.com/book/show/25179.Blankets",
+      "rating": 0,
+      "dateRead": "2023-12-22",
+      "edition": "ebook"
+    }
+  ],
+  "dnf": []
+}
