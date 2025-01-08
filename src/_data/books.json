@@ -1,13 +1,10 @@
 {
-  "lastUpdated": "2023-01-07",
+  "lastUpdated": "2023-01-08",
   "current": [
     {
       "title": "The Way of Kings",
       "author": "Brandon Sanderson",
-      "ISBN": "0123456789",
       "link": "https://www.goodreads.com/book/show/7235533-the-way-of-kings",
-      "rating": 0,
-      "dateRead": "",
       "edition": "ebook"
     }
   ],
@@ -15,7 +12,6 @@
     {
       "title": "I'm Glad My Mom Died",
       "author": "Jennette McCurdy",
-      "ISBN": "0123456789",
       "link": "https://www.goodreads.com/book/show/59364173-i-m-glad-my-mom-died",
       "rating": 0,
       "dateRead": "2023-01-11",
@@ -24,7 +20,6 @@
     {
       "title": "How to Take Over the World",
       "author": "Ryan North",
-      "ISBN": "0123456789",
       "link": "https://www.goodreads.com/book/show/58446218-how-to-take-over-the-world",
       "rating": 0,
       "dateRead": "2023-01-11",
@@ -33,7 +28,6 @@
     {
       "title": "Born a Crime",
       "author": "Trevor Noah",
-      "ISBN": "0123456789",
       "link": "https://www.goodreads.com/book/show/29780253-born-a-crime",
       "rating": 0,
       "dateRead": "2023-01-15",
@@ -42,7 +36,6 @@
     {
       "title": "Lamb: The Gospel According to Biff, Christ's Childhood Pal",
       "author": "Christopher Moore",
-      "ISBN": "0123456789",
       "link": "https://www.goodreads.com/book/show/28881.Lamb",
       "rating": 0,
       "dateRead": "2023-02-01",
@@ -51,7 +44,6 @@
     {
       "title": "Futuristic Violence and Fancy Suits",
       "author": "Jason Pargin",
-      "ISBN": "0123456789",
       "link": "https://www.goodreads.com/book/show/20501606-futuristic-violence-and-fancy-suits",
       "rating": 0,
       "dateRead": "2023-02-06",
@@ -60,7 +52,6 @@
     {
       "title": "The Help",
       "author": "Kathryn Stockett",
-      "ISBN": "0123456789",
       "link": "https://www.goodreads.com/book/show/4667024-the-help",
       "rating": 0,
       "dateRead": "2023-05-20",
@@ -69,7 +60,6 @@
     {
       "title": "Permanent Record",
       "author": "Edward Snowden",
-      "ISBN": "0123456789",
       "link": "https://www.goodreads.com/book/show/46223297-permanent-record",
       "rating": 0,
       "dateRead": "2023-06-30",
@@ -78,7 +68,6 @@
     {
       "title": "The Institute",
       "author": "Stephen King",
-      "ISBN": "0123456789",
       "link": "https://www.goodreads.com/book/show/43798285-the-institute",
       "rating": 0,
       "dateRead": "2023-08-10",
@@ -87,7 +76,6 @@
     {
       "title": "Parable of the Sower",
       "author": "Octavia Butler",
-      "ISBN": "0123456789",
       "link": "https://www.goodreads.com/book/show/52397.Parable_of_the_Sower",
       "rating": 0,
       "dateRead": "2023-10-09",
@@ -96,7 +84,6 @@
     {
       "title": "Because I Said So!",
       "author": "Ken Jennings",
-      "ISBN": "0123456789",
       "link": "https://www.goodreads.com/book/show/13547494-because-i-said-so",
       "rating": 0,
       "dateRead": "2023-10-22",
@@ -105,7 +92,6 @@
     {
       "title": "All the Sinners Bleed",
       "author": "S.A. Cosby",
-      "ISBN": "0123456789",
       "link": "https://www.goodreads.com/book/show/61884832-all-the-sinners-bleed",
       "rating": 0,
       "dateRead": "2023-11-19",
@@ -114,7 +100,6 @@
     {
       "title": "How to (Almost) Make Friends on the Internet",
       "author": "Michael Cunningham",
-      "ISBN": "0123456789",
       "link": "https://www.goodreads.com/book/show/55204812-how-to-almost-make-friends-on-the-internet",
       "rating": 0,
       "dateRead": "2023-12-20",
@@ -123,12 +108,229 @@
     {
       "title": "Blankets",
       "author": "Craig Thompson",
-      "ISBN": "0123456789",
       "link": "https://www.goodreads.com/book/show/25179.Blankets",
       "rating": 0,
       "dateRead": "2023-12-22",
       "edition": "ebook"
+    },
+    {
+      "title": "Ascension",
+      "author": "Nicholas Binge",
+      "link": "https://www.goodreads.com/book/show/61813107-ascension",
+      "rating": 0,
+      "dateRead": "2024-01-23",
+      "edition": "ebook"
+    },
+    {
+      "title": "Never Lie",
+      "author": "Freida McFadden",
+      "link": "https://www.goodreads.com/book/show/62080187-never-lie",
+      "rating": 0,
+      "dateRead": "2024-01-27",
+      "edition": "ebook"
+    },
+    {
+      "title": "The Kaiju Preservation Society",
+      "author": "John Scalzi",
+      "link": "https://www.goodreads.com/book/show/57693406-the-kaiju-preservation-society",
+      "rating": 0,
+      "dateRead": "2024-02-04",
+      "edition": "ebook"
+    },
+    {
+      "title": "What If? 2: Additional Serious Scientific Answers to Absurd Hypothetical Questions",
+      "author": "Randall Munroe",
+      "link": "https://www.goodreads.com/book/show/60190659-what-if-2",
+      "rating": 0,
+      "dateRead": "2024-02-20",
+      "edition": "ebook"
+    },
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "link": "https://www.goodreads.com/book/show/59733167-the-hobbit",
+      "rating": 0,
+      "dateRead": "2024-02-20",
+      "edition": "audiobook"
+    },
+    {
+      "title": "Starter Villain",
+      "author": "John Scalzi",
+      "link": "https://www.goodreads.com/book/show/61885029-starter-villain",
+      "rating": 0,
+      "dateRead": "2024-02-26",
+      "edition": "ebook"
+    },
+    {
+      "title": "The Women",
+      "author": "Kristin Hannah",
+      "link": "https://www.goodreads.com/book/show/127305853-the-women",
+      "rating": 0,
+      "dateRead": "2024-04-26",
+      "edition": "ebook"
+    },
+    {
+      "title": "11/22/63",
+      "author": "Stephen King",
+      "link": "https://www.goodreads.com/book/show/10644930-11-22-63",
+      "rating": 0,
+      "dateRead": "2024-04-28",
+      "edition": "ebook"
+    },
+    {
+      "title": "Soonish: Ten Emerging Technologies That'll Improve and/or Ruin Everything",
+      "author": "Kelly and Zach Weinersmith",
+      "link": "https://www.goodreads.com/book/show/34490192-soonish",
+      "rating": 0,
+      "dateRead": "2024-05-25",
+      "edition": "ebook"
+    },
+    {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "author": "J.R.R. Tolkien",
+      "link": "https://www.goodreads.com/book/show/61215351-the-fellowship-of-the-ring",
+      "rating": 0,
+      "dateRead": "2024-06-08",
+      "edition": "audiobook"
+    },
+    {
+      "title": "Zero Days",
+      "author": "Ruth Ware",
+      "link": "https://www.goodreads.com/book/show/62919765-zero-days",
+      "rating": 0,
+      "dateRead": "2024-06-15",
+      "edition": "ebook"
+    },
+    {
+      "title": "Later",
+      "author": "Stephen King",
+      "link": "https://www.goodreads.com/book/show/54798175-later",
+      "rating": 0,
+      "dateRead": "2024-07-11",
+      "edition": "ebook"
+    },
+    {
+      "title": "Later",
+      "author": "Stephen King",
+      "link": "https://www.goodreads.com/book/show/54798175-later",
+      "rating": 0,
+      "dateRead": "2024-07-11",
+      "edition": "ebook"
+    },
+    {
+      "title": "The Lord of the Rings: The Two Towers",
+      "author": "J.R.R. Tolkien",
+      "link": "https://www.goodreads.com/book/show/61215372-the-two-towers",
+      "rating": 0,
+      "dateRead": "2024-07-25",
+      "edition": "audiobook"
+    },
+    {
+      "title": "The Lord of the Rings: The Return of the King",
+      "author": "J.R.R. Tolkien",
+      "link": "https://www.goodreads.com/book/show/61215384-the-return-of-the-king",
+      "rating": 0,
+      "dateRead": "2024-09-04",
+      "edition": "audiobook"
+    },
+    {
+      "title": "Under the Dome",
+      "author": "Stephen King",
+      "link": "https://www.goodreads.com/book/show/6320534-under-the-dome",
+      "rating": 0,
+      "dateRead": "2024-09-23",
+      "edition": "ebook"
+    },
+    {
+      "title": "I Hope This Finds You Well",
+      "author": "Natalie Sue",
+      "link": "https://www.goodreads.com/book/show/200987323-i-hope-this-finds-you-well",
+      "rating": 0,
+      "dateRead": "2024-09-23",
+      "edition": "ebook"
+    },
+    {
+      "title": "Zero Stars, Do Not Recommend",
+      "author": "M.J. Wassmer",
+      "link": "https://www.goodreads.com/book/show/200174139-zero-stars-do-not-recommend",
+      "rating": 0,
+      "dateRead": "2024-10-20",
+      "edition": "ebook"
+    },
+    {
+      "title": "The Running Man",
+      "author": "Richard Bachman",
+      "link": "https://www.goodreads.com/book/show/11607.The_Running_Man",
+      "rating": 0,
+      "dateRead": "2024-11-20",
+      "edition": "ebook"
+    },
+    {
+      "title": "I Remember You",
+      "author": "Brian Freeman",
+      "link": "https://www.goodreads.com/book/show/59948885-i-remember-you",
+      "rating": 0,
+      "dateRead": "2024-12-28",
+      "edition": "ebook"
     }
   ],
-  "dnf": []
+  "dnf": [
+    {
+      "title": "The Cartographers",
+      "author": "Peng Shepherd",
+      "link": "https://www.goodreads.com/book/show/55004093-the-cartographers"
+    },
+    {
+      "title": "The Count of Monte Cristo",
+      "author": "Alexandre Dumas",
+      "link": "https://www.goodreads.com/book/show/7126.The_Count_of_Monte_Cristo"
+    },
+    {
+      "title": "This is How You Lose the Time War",
+      "author": "Amal El-Mohtar, Max Gladstone",
+      "link": "https://www.goodreads.com/book/show/43352954-this-is-how-you-lose-the-time-war"
+    },
+    {
+      "title": "Tomorrow, and Tomorrow, and Tomorrow",
+      "author": "Gabrielle Zevin",
+      "link": "https://www.goodreads.com/book/show/58784475-tomorrow-and-tomorrow-and-tomorrow"
+    },
+    {
+      "title": "Flux",
+      "author": "Jinwoo Chong",
+      "link": "https://www.goodreads.com/book/show/61774690-flux"
+    },
+    {
+      "title": "How to Be Perfect: The Correct Answer to Every Moral Question",
+      "author": "Michael Schur",
+      "link": "https://www.goodreads.com/book/show/58484901-how-to-be-perfect"
+    },
+    {
+      "title": "My Friend Anne Frank",
+      "author": "Hannah Pick-Goslar",
+      "link": "https://www.goodreads.com/book/show/62874040-my-friend-anne-frank"
+    },
+    {
+      "title": "Sourdough",
+      "author": "Robin Sloan",
+      "link": "https://www.goodreads.com/book/show/33916024-sourdough"
+    }
+  ],
+  "wtr": [
+    {
+      "title": "ADHD Pro: Sustainable Productivity for People with ADHD",
+      "author": "Robert Merki",
+      "link": "https://adhdpro.xyz/"
+    },
+    {
+      "title": "Taking Charge of Adult ADHD",
+      "author": "Russell A. Barkley",
+      "link": "https://www.guilford.com/books/Taking-Charge-of-Adult-ADHD/Russell-Barkley/9781462546855"
+    },
+    {
+      "title": "Doom Guy: Life in First Person",
+      "author": "John Romero",
+      "link": "https://www.goodreads.com/book/show/60310722-doom-guy"
+    }
+  ]
 }

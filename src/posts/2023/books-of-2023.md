@@ -5,6 +5,7 @@ date: 2023-01-11 20:00:00
 updated: 2023-12-31 12:15:00
 tags:
   - personal
+  - reading
 image: https://images.unsplash.com/photo-1462392627162-2baa2b3518a8
 imageAlt: a photo of a bookshelf full of books
 ---

@@ -5,6 +5,7 @@ date: 2024-01-01 22:25:00
 updated: 2024-12-28 22:02:00
 tags:
   - personal
+  - reading
 ---
 
 I decided on a whim last January to list the books I read throughout 2023. While there are better tools out there to track books, it was fun to share it on my blog (even if no one reads it). So I'm doing it again this year.

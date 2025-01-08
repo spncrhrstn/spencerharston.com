@@ -4,28 +4,33 @@ description: How and why I decided to create a Books page to keep track of my re
 date: 2025-01-05 21:43:00
 tags:
   - personal
+  - reading
 ---
 
-tl;dr: Go to my [Books](/books) page.
+tl;dr: Go to my [/books](/books) page.
 
-I used to use Goodreads to keep track of my books, but it has been several years since I last updated my account.
+For the past couple years, I kept track of my books here on my website. For [2023](/posts/2023/books-of-2023) and [2024](/posts/2024/books-of-2024), I simply updated a post listing the books I'm currently reading, have finished, did not finish, and want to read.
 
-Instead, I started keeping track of my books here on my website. For [2023](/posts/2023/books-of-2023) and [2024](/posts/2024/books-of-2024), I simply updated a post for each year for books I'm currently reading, have finished, decided to not continue (for one reason or another), and potential books.
+This is simple enough of course, but I've now decided to list every book on a single page. The source of data for the page could be managed from a simple JSON file. Moving the data from the post pages to JSON was straightforward enough.
 
-While this is simple enough, I've now decided to list every book on a single page, the source of which could be changed from a single source of data (in this case, a simple JSON file). Here's how I did it.
+I also used to use Goodreads to keep track of my books, but it has been several years since I last updated my account, which has plenty of data that I'd like to use for this. Unfortunately, they [stopped offering API keys in December 2020](https://www.goodreads.com/api), which would've made getting this data _a good amount_ simpler.
+
+Anyways, here's how I built the [/books](/books) page.
 
 ## Collect the data
 
 1. Download a CSV of my Goodreads data
-2. Clean up the data
+   - This is under [My Books > Import and Export](https://www.goodreads.com/review/import), not account settings
+2. Create a script to clean up the data
+3. Merge data from Goodreads with my personal data
+   - Includes data from website plus my personal Calibre library
 
-## Transform the data
+## Extend the data
 
-1. Cleaned data to JSON
-2. Get the ISBN data
-3. Get the cover art
-4. Get links to books
-5. Add a rating, if needed
+1. Get the ISBN or any other missing data
+2. Get link to cover art
+3. Get links to books
+4. Add a rating, if needed
 
 ## Display the data
 
