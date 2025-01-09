@@ -4,14 +4,12 @@ title: Books
 metaTagline: A list of books that I'm currently reading or finished reading, to the best of my memory.
 ---
 
-<div class="prose dark:prose-invert">
-  <p>
-    {{ metaTagline }} Read about how I created this page in
-    <a href="/posts/2025/creating-a-books-page">this blog post</a>.
-  </p>
+<p class="mb-4">
+  {{ metaTagline }} Read about how I created this page in
+  <a href="/posts/2025/creating-a-books-page">this blog post</a>.
+</p>
 
-  <p>Last updated: {{ books.lastUpdated }}</p>
-</div>
+<p class="mb-4">Last updated: {{ books.lastUpdated | dateByFormat("MMMM d, y") }}</p>
 
 <div>
   Jump to:
@@ -28,7 +26,7 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
   <div class="grid grid-cols-3 gap-8">
     {%- for book in books.current %}
       <div>
-        <a href="{{ book.link }}"><img src="https://placehold.co/150x200?text={{ book.title[0] }}" /></a>
+        <a href="{{ book.link }}"><img class="mb-2" src="https://placehold.co/150x200?text={{ book.title[0] }}" /></a>
         <a class="font-bold" href="{{ book.link }}">{{ book.title }}</a>
         <p>{{ book.author }}</p>
       </div>
@@ -37,14 +35,14 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
 </div>
 
 <div class="mt-8">
-  <h2 class="my-4 text-lg font-bold" id="finished">Finished Reading</h2>
+  <h2 class="my-4 text-lg font-bold" id="finished">Finished Reading ({{ books.read.length }})</h2>
   <div class="grid grid-cols-3 gap-8">
-    {%- for book in books.finished %}
+    {%- for book in books.read %}
       <div>
-        <a href="{{ book.link }}"><img src="https://placehold.co/150x200?text={{ book.title[0] }}" /></a>
+        <a href="{{ book.link }}"><img class="mb-2" src="https://placehold.co/150x200?text={{ book.title[0] }}" /></a>
         <a class="font-bold" href="{{ book.link }}">{{ book.title }}</a>
         <p>{{ book.author }}</p>
-        <p>{{ book.dateRead }}</p>
+        <p>{{ book.dateRead | dateByFormat("MMM yyyy") }}</p>
       </div>
     {%- endfor -%}
   </div>
@@ -53,15 +51,18 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
 <div class="mt-8">
   <h2 class="my-4 text-lg font-bold" id="wtr">Want to Read</h2>
   <p class="mb-4">I'll definitely get around to reading those ADHD books one day...</p>
-  <ul>
-    {%- for book in books.wtr %}
-      <li class="mb-2">
-        <a class="font-bold" href="{{ book.link }}">{{ book.title }}</a>
-        <p>{{ book.author }}</p>
-        <p>{{ book.dateRead }}</p>
-      </li>
-    {%- endfor -%}
-  </ul>
+  <details>
+    <summary>List of books</summary>
+    <ul>
+      {%- for book in books.wtr %}
+        <li class="mb-2">
+          <a class="font-bold" href="{{ book.link }}">{{ book.title }}</a>
+          <p>{{ book.author }}</p>
+          <p>{{ book.dateRead }}</p>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </details>
 </div>
 
 <div class="mt-8">
@@ -70,13 +71,16 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
     While there's usually no specific reason why I choose not to finish a book, generally it comes down to "just
     couldn't get into it".
   </p>
-  <ul>
-    {%- for book in books.dnf %}
-      <li class="mb-2">
-        <a class="font-bold" href="{{ book.link }}">{{ book.title }}</a>
-        <p>{{ book.author }}</p>
-        <p>{{ book.dateRead }}</p>
-      </li>
-    {%- endfor -%}
-  </ul>
+  <details>
+    <summary>List of books</summary>
+    <ul>
+      {%- for book in books.dnf %}
+        <li class="mb-2">
+          <a class="font-bold" href="{{ book.link }}">{{ book.title }}</a>
+          <p>{{ book.author }}</p>
+          <p>{{ book.dateRead }}</p>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </details>
 </div>
