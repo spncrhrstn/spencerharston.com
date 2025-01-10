@@ -26,12 +26,12 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
   <div class="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(144px,1fr))]">
     {%- for book in books.current %}
       <div class="w-32 text-sm">
-        <a href="{{ book.link }}"
+        <a href="{{ book.goodreadsLink }}"
           ><img
             class="w-100 mb-2 hover:rounded hover:outline hover:outline-4 hover:outline-blue-600"
             src="https://placehold.co/120x180?text={{ book.title[0] }}"
         /></a>
-        <a class="font-bold" href="{{ book.link }}">{{ book.title }}</a>
+        <a class="font-bold" href="{{ book.goodreadsLink }}">{{ book.title }}</a>
         <p>{{ book.author }}</p>
       </div>
     {%- endfor -%}
@@ -43,12 +43,12 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
   <div class="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(144px,1fr))]">
     {%- for book in books.read %}
       <div class="w-32 text-sm">
-        <a href="{{ book.link }}"
+        <a href="{{ book.goodreadsLink }}"
           ><img
             class="w-100 mb-2 hover:rounded hover:outline hover:outline-4 hover:outline-blue-600"
             src="https://placehold.co/120x180?text={{ book.title[0] }}"
         /></a>
-        <a class="font-bold" href="{{ book.link }}">{{ book.title }}</a>
+        <a class="font-bold" href="{{ book.goodreadsLink }}">{{ book.title }}</a>
         <p>{{ book.author }}</p>
         <p>{{ book.dateRead | dateByFormat("MMM yyyy") }}</p>
       </div>
@@ -64,7 +64,7 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
     <ul>
       {%- for book in books.wtr %}
         <li class="my-2">
-          <a class="font-bold" href="{{ book.link }}">{{ book.title }}</a>
+          <a class="font-bold" href="{{ book.goodreadsLink }}">{{ book.title }}</a>
           {{ book.author }}
         </li>
       {%- endfor -%}
@@ -83,7 +83,7 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
     <ul>
       {%- for book in books.dnf %}
         <li class="my-2">
-          <a class="font-bold" href="{{ book.link }}">{{ book.title }}</a>
+          <a class="font-bold" href="{{ book.goodreadsLink }}">{{ book.title }}</a>
           {{ book.author }}
         </li>
       {%- endfor -%}
