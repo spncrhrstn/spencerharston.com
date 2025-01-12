@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-01-09T05:38:18.566Z",
+  "lastUpdated": "2025-01-12T07:14:33.313Z",
   "current": [
     {
       "goodreadsId": "7235533",
@@ -7,7 +7,8 @@
       "author": "Brandon Sanderson",
       "goodreadsLink": "https://www.goodreads.com/book/show/7235533",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9780765326355",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7429768-M.jpg"
     }
   ],
   "read": [
@@ -19,17 +20,19 @@
       "rating": 0,
       "dateRead": "2024-12-28T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781542035088",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12861424-M.jpg"
     },
     {
       "goodreadsId": "11607",
       "title": "The Running Man",
-      "author": "Richard Bachman",
+      "author": "Stephen King",
       "goodreadsLink": "https://www.goodreads.com/book/show/11607",
       "rating": 0,
       "dateRead": "2024-11-20T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9780613177313",
+      "coverUrl": "https://covers.openlibrary.org/b/id/392132-M.jpg"
     },
     {
       "goodreadsId": "200174139",
@@ -39,7 +42,8 @@
       "rating": 0,
       "dateRead": "2024-10-20T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781464218026",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14649882-M.jpg"
     },
     {
       "goodreadsId": "6320534",
@@ -49,7 +53,8 @@
       "rating": 0,
       "dateRead": "2024-09-23T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781476743943",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14654136-M.jpg"
     },
     {
       "goodreadsId": "200987323",
@@ -59,27 +64,30 @@
       "rating": 0,
       "dateRead": "2024-09-23T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9780063320369",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14630898-M.jpg"
     },
     {
-      "goodreadsId": "61215384",
+      "goodreadsId": "59909326",
       "title": "The Lord of the Rings: The Return of the King",
       "author": "J.R.R. Tolkien",
-      "goodreadsLink": "https://www.goodreads.com/book/show/61215384",
+      "goodreadsLink": "https://www.goodreads.com/book/show/59909326",
       "rating": 0,
       "dateRead": "2024-09-04T00:00:00.000Z",
       "binding": "audiobook",
-      "isbn13": ""
+      "isbn13": "9780008487324",
+      "coverUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1640175526i/59909326.jpg"
     },
     {
-      "goodreadsId": "61215372",
+      "goodreadsId": "59939679",
       "title": "The Lord of the Rings: The Two Towers",
       "author": "J.R.R. Tolkien",
-      "goodreadsLink": "https://www.goodreads.com/book/show/61215372",
+      "goodreadsLink": "https://www.goodreads.com/book/show/59939679",
       "rating": 0,
       "dateRead": "2024-07-25T00:00:00.000Z",
       "binding": "audiobook",
-      "isbn13": ""
+      "isbn13": "9780008487317",
+      "coverUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1640544005i/59939679.jpg"
     },
     {
       "goodreadsId": "54798175",
@@ -89,7 +97,8 @@
       "rating": 0,
       "dateRead": "2024-07-11T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781789098761",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14679320-M.jpg"
     },
     {
       "goodreadsId": "62919765",
@@ -99,17 +108,19 @@
       "rating": 0,
       "dateRead": "2024-06-15T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781982163419",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13220263-M.jpg"
     },
     {
-      "goodreadsId": "61215351",
+      "goodreadsId": "60507687",
       "title": "The Lord of the Rings: The Fellowship of the Ring",
       "author": "J.R.R. Tolkien",
-      "goodreadsLink": "https://www.goodreads.com/book/show/61215351",
+      "goodreadsLink": "https://www.goodreads.com/book/show/60507687",
       "rating": 0,
       "dateRead": "2024-06-08T00:00:00.000Z",
       "binding": "audiobook",
-      "isbn13": ""
+      "isbn13": "9780008487300",
+      "coverUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1645989808i/60507687.jpg"
     },
     {
       "goodreadsId": "34490192",
@@ -119,7 +130,8 @@
       "rating": 0,
       "dateRead": "2024-05-25T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9780399563843",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10097090-M.jpg"
     },
     {
       "goodreadsId": "10644930",
@@ -129,7 +141,8 @@
       "rating": 0,
       "dateRead": "2024-04-28T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781451694956",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14654708-M.jpg"
     },
     {
       "goodreadsId": "127305853",
@@ -139,7 +152,8 @@
       "rating": 0,
       "dateRead": "2024-04-26T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781250178657",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14821539-M.jpg"
     },
     {
       "goodreadsId": "61885029",
@@ -149,7 +163,8 @@
       "rating": 0,
       "dateRead": "2024-02-26T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9780765389220",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14432013-M.jpg"
     },
     {
       "goodreadsId": "60190659",
@@ -159,7 +174,8 @@
       "rating": 0,
       "dateRead": "2024-02-20T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9780525537113",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14380594-M.jpg"
     },
     {
       "goodreadsId": "59733167",
@@ -169,7 +185,8 @@
       "rating": 0,
       "dateRead": "2024-02-20T00:00:00.000Z",
       "binding": "audiobook",
-      "isbn13": ""
+      "isbn13": "9781705009048",
+      "coverUrl": "https://m.media-amazon.com/images/I/71YW2wFe-eL.jpg"
     },
     {
       "goodreadsId": "57693406",
@@ -179,7 +196,8 @@
       "rating": 0,
       "dateRead": "2024-02-04T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9780765389121",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12671374-M.jpg"
     },
     {
       "goodreadsId": "62080187",
@@ -189,7 +207,8 @@
       "rating": 0,
       "dateRead": "2024-01-27T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781088057964",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13198561-M.jpg"
     },
     {
       "goodreadsId": "61813107",
@@ -199,7 +218,8 @@
       "rating": 0,
       "dateRead": "2024-01-23T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9780593539583",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13195719-M.jpg"
     },
     {
       "goodreadsId": "25179",
@@ -209,7 +229,8 @@
       "rating": 0,
       "dateRead": "2023-12-22T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781770462205",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10358001-M.jpg"
     },
     {
       "goodreadsId": "55204812",
@@ -219,7 +240,8 @@
       "rating": 0,
       "dateRead": "2023-12-20T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781398701816",
+      "coverUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1598977311i/55204812.jpg"
     },
     {
       "goodreadsId": "61884832",
@@ -229,7 +251,8 @@
       "rating": 0,
       "dateRead": "2023-11-19T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781250831910",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13478757-M.jpg"
     },
     {
       "goodreadsId": "13547494",
@@ -239,7 +262,8 @@
       "rating": 0,
       "dateRead": "2023-10-22T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781451656251",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9246605-M.jpg"
     },
     {
       "goodreadsId": "52397",
@@ -249,7 +273,8 @@
       "rating": 0,
       "dateRead": "2023-10-09T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781538732182",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8795651-M.jpg"
     },
     {
       "goodreadsId": "43798285",
@@ -259,7 +284,8 @@
       "rating": 0,
       "dateRead": "2023-08-10T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781982110581",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14642380-M.jpg"
     },
     {
       "goodreadsId": "46223297",
@@ -269,7 +295,8 @@
       "rating": 0,
       "dateRead": "2023-06-30T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781250237231",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14567150-M.jpg"
     },
     {
       "goodreadsId": "4667024",
@@ -279,7 +306,8 @@
       "rating": 0,
       "dateRead": "2023-05-20T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9780399155345",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10544713-M.jpg"
     },
     {
       "goodreadsId": "20501606",
@@ -289,7 +317,8 @@
       "rating": 0,
       "dateRead": "2023-02-06T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781250830548",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12414792-M.jpg"
     },
     {
       "goodreadsId": "28881",
@@ -299,7 +328,8 @@
       "rating": 0,
       "dateRead": "2023-02-01T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9780380813810",
+      "coverUrl": "https://covers.openlibrary.org/b/id/237227-M.jpg"
     },
     {
       "goodreadsId": "29780253",
@@ -309,7 +339,8 @@
       "rating": 0,
       "dateRead": "2023-01-15T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781473635302",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9401308-M.jpg"
     },
     {
       "goodreadsId": "59364173",
@@ -319,7 +350,8 @@
       "rating": 0,
       "dateRead": "2023-01-11T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9781982185848",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13117595-M.jpg"
     },
     {
       "goodreadsId": "58446218",
@@ -329,27 +361,30 @@
       "rating": 0,
       "dateRead": "2023-01-11T00:00:00.000Z",
       "binding": "ebook",
-      "isbn13": ""
+      "isbn13": "9780593192016",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13200781-M.jpg"
     },
     {
       "goodreadsId": "54493401",
       "title": "Project Hail Mary",
       "author": "Andy Weir",
-      "isbn13": "9780593135204",
+      "isbn13": "9780593135228",
       "rating": 5,
       "binding": "physical",
       "dateRead": "2021-10-01T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/54493401"
+      "goodreadsLink": "https://www.goodreads.com/book/show/54493401",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14548865-M.jpg"
     },
     {
       "goodreadsId": "378",
       "title": "The Phantom Tollbooth",
       "author": "Norton Juster",
-      "isbn13": "9780394820378",
+      "isbn13": "9780375806704",
       "rating": 3,
       "binding": "physical",
       "dateRead": "2021-09-12T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/378"
+      "goodreadsLink": "https://www.goodreads.com/book/show/378",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8578171-M.jpg"
     },
     {
       "goodreadsId": "53435898",
@@ -359,27 +394,30 @@
       "rating": 3,
       "binding": "physical",
       "dateRead": "2021-06-06T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/53435898"
+      "goodreadsLink": "https://www.goodreads.com/book/show/53435898",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10658922-M.jpg"
     },
     {
       "goodreadsId": "49118403",
       "title": "Infinite",
       "author": "Brian Freeman",
-      "isbn13": "9781542023887",
+      "isbn13": "9781542023863",
       "rating": 4,
       "binding": "ebook",
       "dateRead": "2021-05-07T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/49118403"
+      "goodreadsLink": "https://www.goodreads.com/book/show/49118403",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10589120-M.jpg"
     },
     {
       "goodreadsId": "40940649",
       "title": "I Am Legend",
       "author": "Richard Matheson",
-      "isbn13": "9780795315633",
+      "isbn13": "9780795315640",
       "rating": 3,
       "binding": "ebook",
       "dateRead": "2021-04-04T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/40940649"
+      "goodreadsLink": "https://www.goodreads.com/book/show/40940649",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14641336-M.jpg"
     },
     {
       "goodreadsId": "43834909",
@@ -389,57 +427,63 @@
       "rating": 3,
       "binding": "physical",
       "dateRead": "2021-03-25T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/43834909"
+      "goodreadsLink": "https://www.goodreads.com/book/show/43834909",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9247626-M.jpg"
     },
     {
       "goodreadsId": "28187230",
       "title": "The Woman in Cabin 10",
       "author": "Ruth Ware",
-      "isbn13": "9781501132933",
+      "isbn13": "9781501132957",
       "rating": 2,
       "binding": "physical",
       "dateRead": "2021-03-18T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/28187230"
+      "goodreadsLink": "https://www.goodreads.com/book/show/28187230",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8289386-M.jpg"
     },
     {
       "goodreadsId": "21787",
       "title": "The Princess Bride",
       "author": "William Goldman",
-      "isbn13": "9780345418265",
+      "isbn13": "9780151015443",
       "rating": 4,
       "binding": "physical",
       "dateRead": "2021-03-11T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/21787"
+      "goodreadsLink": "https://www.goodreads.com/book/show/21787",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10656795-M.jpg"
     },
     {
       "goodreadsId": "52578297",
       "title": "The Midnight Library",
       "author": "Matt Haig",
-      "isbn13": "",
+      "isbn13": "9780525559474",
       "rating": 4,
       "binding": "physical",
       "dateRead": "2021-02-22T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/52578297"
+      "goodreadsLink": "https://www.goodreads.com/book/show/52578297",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10313767-M.jpg"
     },
     {
       "goodreadsId": "43852758",
       "title": "How To: Absurd Scientific Advice for Common Real-World Problems",
       "author": "Randall Munroe",
-      "isbn13": "9780525537090",
+      "isbn13": "9780593086377",
       "rating": 5,
       "binding": "physical",
       "dateRead": "2021-02-10T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/43852758"
+      "goodreadsLink": "https://www.goodreads.com/book/show/43852758",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10507141-M.jpg"
     },
     {
       "goodreadsId": "51182571",
       "title": "Blacktop Wasteland",
       "author": "S.A. Cosby",
-      "isbn13": "",
+      "isbn13": "9781250252685",
       "rating": 4,
       "binding": "physical",
       "dateRead": "2021-01-22T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/51182571"
+      "goodreadsLink": "https://www.goodreads.com/book/show/51182571",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10172565-M.jpg"
     },
     {
       "goodreadsId": "52454426",
@@ -449,7 +493,8 @@
       "rating": 3,
       "binding": "physical",
       "dateRead": "2021-01-07T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/52454426"
+      "goodreadsLink": "https://www.goodreads.com/book/show/52454426",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14592672-M.jpg"
     },
     {
       "goodreadsId": "45152372",
@@ -459,7 +504,8 @@
       "rating": 3,
       "binding": "physical",
       "dateRead": "2020-12-26T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/45152372"
+      "goodreadsLink": "https://www.goodreads.com/book/show/45152372",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10310617-M.jpg"
     },
     {
       "goodreadsId": "10256723",
@@ -469,57 +515,52 @@
       "rating": 3,
       "binding": "physical",
       "dateRead": "2020-12-14T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/10256723"
+      "goodreadsLink": "https://www.goodreads.com/book/show/10256723",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7090206-M.jpg"
     },
     {
       "goodreadsId": "50245253",
       "title": "Interference",
       "author": "Brad Parks",
-      "isbn13": "9781542020367",
+      "isbn13": "9781542023399",
       "rating": 3,
       "binding": "ebook",
       "dateRead": "2020-11-15T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/50245253"
+      "goodreadsLink": "https://www.goodreads.com/book/show/50245253",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10413488-M.jpg"
     },
     {
       "goodreadsId": "48693877",
       "title": "The Midnight Library",
       "author": "Matt Haig",
-      "isbn13": "9781786892713",
+      "isbn13": "9780525559474",
       "rating": 3,
       "binding": "ebook",
       "dateRead": "2020-08-25T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/48693877"
+      "goodreadsLink": "https://www.goodreads.com/book/show/48693877",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10313767-M.jpg"
     },
     {
       "goodreadsId": "31140332",
       "title": "Thrawn",
       "author": "Timothy Zahn",
-      "isbn13": "9781780894843",
+      "isbn13": "9780345511270",
       "rating": 3,
       "binding": "physical",
       "dateRead": "2020-08-14T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/31140332"
+      "goodreadsLink": "https://www.goodreads.com/book/show/31140332",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14487856-M.jpg"
     },
     {
       "goodreadsId": "33160796",
       "title": "The End of the World Running Club",
       "author": "Adrian J. Walker",
-      "isbn13": "9781492656029",
+      "isbn13": "9781785032660",
       "rating": 3,
       "binding": "physical",
       "dateRead": "2020-07-11T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/33160796"
-    },
-    {
-      "goodreadsId": "11751648",
-      "title": "Dude, You're Gonna Be a Dad!: How to Get (Both of You) Through the Next 9 Months",
-      "author": "John Pfeiffer",
-      "isbn13": "",
-      "rating": 3,
-      "binding": "ebook",
-      "dateRead": "2020-04-30T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/11751648"
+      "goodreadsLink": "https://www.goodreads.com/book/show/33160796",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8849624-M.jpg"
     },
     {
       "goodreadsId": "35995489",
@@ -529,7 +570,8 @@
       "rating": 5,
       "binding": "physical",
       "dateRead": "2020-04-10T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/35995489"
+      "goodreadsLink": "https://www.goodreads.com/book/show/35995489",
+      "coverUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1510251600i/35995489.jpg"
     },
     {
       "goodreadsId": "42879730",
@@ -539,57 +581,63 @@
       "rating": 3,
       "binding": "ebook",
       "dateRead": "2020-04-03T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/42879730"
+      "goodreadsLink": "https://www.goodreads.com/book/show/42879730",
+      "coverUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1582242788i/42879730.jpg"
     },
     {
       "goodreadsId": "36466858",
       "title": "Contagion",
       "author": "Erin Bowman",
-      "isbn13": "9780062574183",
+      "isbn13": "9780062574169",
       "rating": 3,
       "binding": "ebook",
       "dateRead": "2020-03-26T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/36466858"
+      "goodreadsLink": "https://www.goodreads.com/book/show/36466858",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8797743-M.jpg"
     },
     {
       "goodreadsId": "36440711",
       "title": "Obscura",
       "author": "Joe Hart",
-      "isbn13": "9781503934443",
+      "isbn13": "9781503949881",
       "rating": 4,
       "binding": "ebook",
       "dateRead": "2020-03-05T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/36440711"
+      "goodreadsLink": "https://www.goodreads.com/book/show/36440711",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8825945-M.jpg"
     },
     {
       "goodreadsId": "36511670",
       "title": "Food: A Love Story",
       "author": "Jim Gaffigan",
-      "isbn13": "",
+      "isbn13": "9780804140416",
       "rating": 4,
       "binding": "ebook",
       "dateRead": "2020-02-20T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/36511670"
+      "goodreadsLink": "https://www.goodreads.com/book/show/36511670",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9576620-M.jpg"
     },
     {
       "goodreadsId": "40913832",
       "title": "Master and Apprentice (Star Wars)",
       "author": "Claudia Gray",
-      "isbn13": "9780525619383",
+      "isbn13": "9781984819611",
       "rating": 3,
       "binding": "ebook",
       "dateRead": "2020-02-17T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/40913832"
+      "goodreadsLink": "https://www.goodreads.com/book/show/40913832",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10198811-M.jpg"
     },
     {
       "goodreadsId": "20423680",
       "title": "The Last Town",
       "author": "Blake Crouch",
-      "isbn13": "9781477872581",
+      "isbn13": "9781477822586",
       "rating": 4,
       "binding": "ebook",
       "dateRead": "2019-12-30T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/20423680"
+      "goodreadsLink": "https://www.goodreads.com/book/show/20423680",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12538975-M.jpg"
     },
     {
       "goodreadsId": "17920175",
@@ -599,27 +647,30 @@
       "rating": 4,
       "binding": "physical",
       "dateRead": "2019-12-22T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/17920175"
+      "goodreadsLink": "https://www.goodreads.com/book/show/17920175",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12528790-M.jpg"
     },
     {
       "goodreadsId": "37643296",
       "title": "Pines",
       "author": "Blake Crouch",
-      "isbn13": "",
+      "isbn13": "9781612183954",
       "rating": 4,
       "binding": "ebook",
       "dateRead": "2019-12-07T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/37643296"
+      "goodreadsLink": "https://www.goodreads.com/book/show/37643296",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10114752-M.jpg"
     },
     {
       "goodreadsId": "42046112",
       "title": "Recursion",
       "author": "Blake Crouch",
-      "isbn13": "9781524759780",
+      "isbn13": "9781984826015",
       "rating": 4,
       "binding": "physical",
       "dateRead": "2019-11-16T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/42046112"
+      "goodreadsLink": "https://www.goodreads.com/book/show/42046112",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10526597-M.jpg"
     },
     {
       "goodreadsId": "17980416",
@@ -629,97 +680,107 @@
       "rating": 3,
       "binding": "ebook",
       "dateRead": "2019-10-05T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/17980416"
+      "goodreadsLink": "https://www.goodreads.com/book/show/17980416",
+      "coverUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1369621526i/17980416.jpg"
     },
     {
       "goodreadsId": "17306293",
       "title": "Shift",
       "author": "Hugh Howey",
-      "isbn13": "",
+      "isbn13": "9780544839649",
       "rating": 2,
       "binding": "ebook",
       "dateRead": "2019-09-13T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/17306293"
+      "goodreadsLink": "https://www.goodreads.com/book/show/17306293",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10221366-M.jpg"
     },
     {
       "goodreadsId": "2657",
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
-      "isbn13": "",
+      "isbn13": "9780060173227",
       "rating": 5,
       "binding": "physical",
       "dateRead": "2019-08-17T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/2657"
+      "goodreadsLink": "https://www.goodreads.com/book/show/2657",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14817245-M.jpg"
     },
     {
       "goodreadsId": "36630924",
       "title": "Here and Now and Then",
       "author": "Mike Chen",
-      "isbn13": "9781488099588",
+      "isbn13": "9780778369042",
       "rating": 4,
       "binding": "ebook",
       "dateRead": "2019-08-04T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/36630924"
+      "goodreadsLink": "https://www.goodreads.com/book/show/36630924",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10302648-M.jpg"
     },
     {
       "goodreadsId": "34408713",
       "title": "Little Fires Everywhere",
       "author": "Celeste Ng",
-      "isbn13": "9780525498063",
+      "isbn13": "9781984832924",
       "rating": 4,
       "binding": "audiobook",
       "dateRead": "2019-07-23T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/34408713"
+      "goodreadsLink": "https://www.goodreads.com/book/show/34408713",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9245372-M.jpg"
     },
     {
       "goodreadsId": "37653062",
       "title": "Station Eleven",
       "author": "Emily St. John Mandel",
-      "isbn13": "",
+      "isbn13": "9782743637552",
       "rating": 3,
       "binding": "ebook",
       "dateRead": "2019-07-23T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/37653062"
+      "goodreadsLink": "https://www.goodreads.com/book/show/37653062",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14657674-M.jpg"
     },
     {
       "goodreadsId": "33",
       "title": "The Lord of the Rings",
       "author": "J.R.R. Tolkien",
-      "isbn13": "",
+      "isbn13": "9780618640157",
       "rating": 5,
       "binding": "physical",
       "dateRead": "2019-07-07T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/33"
+      "goodreadsLink": "https://www.goodreads.com/book/show/33",
+      "coverUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1566425108i/33.jpg"
     },
     {
       "goodreadsId": "40961473",
       "title": "The Little Prince",
       "author": "Antoine de Saint-Exupéry",
-      "isbn13": "",
+      "isbn13": "9780152023980",
       "rating": 4,
       "binding": "ebook",
       "dateRead": "2019-05-29T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/40961473"
+      "goodreadsLink": "https://www.goodreads.com/book/show/40961473",
+      "coverUrl": "https://covers.openlibrary.org/b/id/115508-M.jpg"
     },
     {
       "goodreadsId": "38263809",
       "title": "Sh*t My Dad Says",
       "author": "Justin Halpern",
-      "isbn13": "",
+      "isbn13": "9780061992704",
       "rating": 3,
       "binding": "ebook",
       "dateRead": "2019-05-07T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/38263809"
+      "goodreadsLink": "https://www.goodreads.com/book/show/38263809",
+      "coverUrl": "https://covers.openlibrary.org/b/id/6424903-M.jpg"
     },
     {
       "goodreadsId": "34928122",
       "title": "Artemis",
       "author": "Andy Weir",
-      "isbn13": "9780553448122",
+      "isbn13": "9780553448146",
       "rating": 3,
       "binding": "physical",
       "dateRead": "2019-01-12T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/34928122"
+      "goodreadsLink": "https://www.goodreads.com/book/show/34928122",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12065493-M.jpg"
     },
     {
       "goodreadsId": "39026990",
@@ -729,47 +790,52 @@
       "rating": 4,
       "binding": "physical",
       "dateRead": "2018-12-24T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/39026990"
+      "goodreadsLink": "https://www.goodreads.com/book/show/39026990",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8314590-M.jpg"
     },
     {
       "goodreadsId": "27405160",
       "title": "Good Morning, Midnight",
       "author": "Lily Brooks-Dalton",
-      "isbn13": "9780812998900",
+      "isbn13": "9780812988192",
       "rating": 3,
       "binding": "ebook",
       "dateRead": "2018-11-08T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/27405160"
+      "goodreadsLink": "https://www.goodreads.com/book/show/27405160",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9381478-M.jpg"
     },
     {
       "goodreadsId": "27405155",
       "title": "Bounty",
       "author": "Michael Byrnes",
-      "isbn13": "9780804178358",
+      "isbn13": "9780804178341",
       "rating": 3,
       "binding": "ebook",
       "dateRead": "2018-09-19T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/27405155"
+      "goodreadsLink": "https://www.goodreads.com/book/show/27405155",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10208332-M.jpg"
     },
     {
       "goodreadsId": "5907",
       "title": "The Hobbit, or There and Back Again",
       "author": "J.R.R. Tolkien",
-      "isbn13": "",
+      "isbn13": "9780261103283",
       "rating": 4,
       "binding": "physical",
       "dateRead": "2018-06-05T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/5907"
+      "goodreadsLink": "https://www.goodreads.com/book/show/5907",
+      "coverUrl": "https://covers.openlibrary.org/b/id/149276-M.jpg"
     },
     {
       "goodreadsId": "5470",
       "title": "1984",
       "author": "George Orwell",
-      "isbn13": "",
+      "isbn13": "9781782124207",
       "rating": 3,
       "binding": "physical",
       "dateRead": "2018-04-03T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/5470"
+      "goodreadsLink": "https://www.goodreads.com/book/show/5470",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14816996-M.jpg"
     },
     {
       "goodreadsId": "27833670",
@@ -779,37 +845,41 @@
       "rating": 4,
       "binding": "physical",
       "dateRead": "2018-03-17T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/27833670"
+      "goodreadsLink": "https://www.goodreads.com/book/show/27833670",
+      "coverUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1472119680i/27833670.jpg"
     },
     {
       "goodreadsId": "22628",
       "title": "The Perks of Being a Wallflower",
       "author": "Stephen Chbosky",
-      "isbn13": "",
+      "isbn13": "9780671027346",
       "rating": 2,
       "binding": "physical",
       "dateRead": "2018-03-08T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/22628"
+      "goodreadsLink": "https://www.goodreads.com/book/show/22628",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14315052-M.jpg"
     },
     {
       "goodreadsId": "7613",
       "title": "Animal Farm",
       "author": "George Orwell",
-      "isbn13": "",
+      "isbn13": "9781943138425",
       "rating": 3,
       "binding": "physical",
       "dateRead": "2018-02-27T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/7613"
+      "goodreadsLink": "https://www.goodreads.com/book/show/7613",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14821619-M.jpg"
     },
     {
       "goodreadsId": "36313308",
       "title": "Darknet",
       "author": "Matthew Mather",
-      "isbn13": "",
+      "isbn13": "9781987942002",
       "rating": 4,
       "binding": "ebook",
       "dateRead": "2017-10-25T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/36313308"
+      "goodreadsLink": "https://www.goodreads.com/book/show/36313308",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10415251-M.jpg"
     },
     {
       "goodreadsId": "120417",
@@ -819,7 +889,8 @@
       "rating": 1,
       "binding": "physical",
       "dateRead": "2017-10-25T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/120417"
+      "goodreadsLink": "https://www.goodreads.com/book/show/120417",
+      "coverUrl": "https://covers.openlibrary.org/b/id/862407-M.jpg"
     },
     {
       "goodreadsId": "17164655",
@@ -829,7 +900,8 @@
       "rating": 4,
       "binding": "physical",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/17164655"
+      "goodreadsLink": "https://www.goodreads.com/book/show/17164655",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7277737-M.jpg"
     },
     {
       "goodreadsId": "21413662",
@@ -839,7 +911,8 @@
       "rating": 5,
       "binding": "physical",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/21413662"
+      "goodreadsLink": "https://www.goodreads.com/book/show/21413662",
+      "coverUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1451351509i/21413662.jpg"
     },
     {
       "goodreadsId": "216443",
@@ -849,7 +922,8 @@
       "rating": 3,
       "binding": "physical",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/216443"
+      "goodreadsLink": "https://www.goodreads.com/book/show/216443",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11987799-M.jpg"
     },
     {
       "goodreadsId": "26771521",
@@ -859,7 +933,8 @@
       "rating": 3,
       "binding": "physical",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/26771521"
+      "goodreadsLink": "https://www.goodreads.com/book/show/26771521",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10862797-M.jpg"
     },
     {
       "goodreadsId": "33395878",
@@ -869,17 +944,19 @@
       "rating": 3,
       "binding": "ebook",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/33395878"
+      "goodreadsLink": "https://www.goodreads.com/book/show/33395878",
+      "coverUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1481864722i/33395878.jpg"
     },
     {
       "goodreadsId": "26103749",
       "title": "Nomad",
       "author": "Matthew Mather",
-      "isbn13": "",
+      "isbn13": "9781987942040",
       "rating": 3,
       "binding": "ebook",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/26103749"
+      "goodreadsLink": "https://www.goodreads.com/book/show/26103749",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9393969-M.jpg"
     },
     {
       "goodreadsId": "8908",
@@ -889,17 +966,19 @@
       "rating": 4,
       "binding": "physical",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/8908"
+      "goodreadsLink": "https://www.goodreads.com/book/show/8908",
+      "coverUrl": "https://covers.openlibrary.org/b/id/6391724-M.jpg"
     },
     {
       "goodreadsId": "31292355",
       "title": "CyberStorm",
       "author": "Matthew Mather",
-      "isbn13": "",
+      "isbn13": "9780991677191",
       "rating": 4,
       "binding": "ebook",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/31292355"
+      "goodreadsLink": "https://www.goodreads.com/book/show/31292355",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8541860-M.jpg"
     },
     {
       "goodreadsId": "18007564",
@@ -909,17 +988,19 @@
       "rating": 4,
       "binding": "physical",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/18007564"
+      "goodreadsLink": "https://www.goodreads.com/book/show/18007564",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14641755-M.jpg"
     },
     {
       "goodreadsId": "5107",
       "title": "The Catcher in the Rye",
       "author": "J.D. Salinger",
-      "isbn13": "9780316769174",
+      "isbn13": "9780316460002",
       "rating": 3,
       "binding": "physical",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/5107"
+      "goodreadsLink": "https://www.goodreads.com/book/show/5107",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14813206-M.jpg"
     },
     {
       "goodreadsId": "535441",
@@ -929,7 +1010,8 @@
       "rating": 4,
       "binding": "physical",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/535441"
+      "goodreadsLink": "https://www.goodreads.com/book/show/535441",
+      "coverUrl": "https://covers.openlibrary.org/b/id/6307937-M.jpg"
     },
     {
       "goodreadsId": "8303538",
@@ -939,27 +1021,30 @@
       "rating": 3,
       "binding": "physical",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/8303538"
+      "goodreadsLink": "https://www.goodreads.com/book/show/8303538",
+      "coverUrl": "https://covers.openlibrary.org/b/id/6581373-M.jpg"
     },
     {
       "goodreadsId": "976",
       "title": "Deception Point",
       "author": "Dan Brown",
-      "isbn13": "9780671027384",
+      "isbn13": "9780786282296",
       "rating": 3,
       "binding": "physical",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/976"
+      "goodreadsLink": "https://www.goodreads.com/book/show/976",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14618097-M.jpg"
     },
     {
       "goodreadsId": "100915",
       "title": "The Lion, the Witch and the Wardrobe",
       "author": "C.S. Lewis",
-      "isbn13": "",
+      "isbn13": "9780061125232",
       "rating": 4,
       "binding": "physical",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/100915"
+      "goodreadsLink": "https://www.goodreads.com/book/show/100915",
+      "coverUrl": "https://covers.openlibrary.org/b/id/45894-M.jpg"
     },
     {
       "goodreadsId": "3",
@@ -969,17 +1054,19 @@
       "rating": 5,
       "binding": "physical",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/3"
+      "goodreadsLink": "https://www.goodreads.com/book/show/3",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7572543-M.jpg"
     },
     {
       "goodreadsId": "960",
       "title": "Angels & Demons",
       "author": "Dan Brown",
-      "isbn13": "9781416524793",
+      "isbn13": "9780743486224",
       "rating": 4,
       "binding": "physical",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/960"
+      "goodreadsLink": "https://www.goodreads.com/book/show/960",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14815427-M.jpg"
     },
     {
       "goodreadsId": "2767052",
@@ -989,7 +1076,8 @@
       "rating": 5,
       "binding": "physical",
       "dateRead": "2017-08-16T06:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/2767052"
+      "goodreadsLink": "https://www.goodreads.com/book/show/2767052",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14552116-M.jpg"
     }
   ],
   "wtr": [
