@@ -4,6 +4,7 @@ import generateMetaImage from "./ogImage/metaImage.js";
 
 import { readFile } from "fs";
 import { promisify } from "util";
+import Image from "@11ty/eleventy-img";
 const asyncReadFile = promisify(readFile);
 
 /**
@@ -23,10 +24,33 @@ function pageSourceUrl() {
   return `${meta.repo}/blob/${hash}/${path}`;
 }
 
+async function image(src, alt, widths = [300, 600], classes = "", custId = "") {
+  if (alt === undefined) {
+    throw new Error(`Missing \`alt\` on image from: ${src}`);
+  }
+
+  let metadata = await Image(src, {
+    widths: widths,
+    formats: ["jpeg"],
+    outputDir: "./dist/assets/img/content",
+    urlPath: "/assets/img/content",
+    filenameFormat: function (id, src, width, format, options) {
+      return `${custId || id}-${width}w.${format}`;
+    },
+    sharpJpegOptions: {
+      quality: 90
+    }
+  });
+
+  let data = metadata.jpeg[metadata.jpeg.length - 1];
+  return `<img src="${data.url}" class="${classes}" width="${data.width}" height="${data.height}" alt="${alt}" loading="lazy" decoding="async">`;
+}
+
 const shortcodes = {
   pageSourceUrl,
   iconify,
-  generateMetaImage
+  generateMetaImage,
+  image
 };
 
 export default (eleventyConfig) => {

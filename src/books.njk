@@ -16,22 +16,20 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
   <ul>
     <li><a href="#current">Currently Reading</a></li>
     <li><a href="#finished">Finished Reading</a></li>
-    <li><a href="#wtr">Want to Read</a></li>
+    <li><a href="#tbr">To Be Read</a></li>
     <li><a href="#dnf">Did Not Finish</a></li>
   </ul>
 </div>
 
 <div class="mt-8">
   <h2 class="my-4 text-lg font-bold" id="current">Currently Reading</h2>
-  <div class="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(144px,1fr))]">
+  <div class="grid gap-6 [grid-template-columns:repeat(auto-fill,minmax(110px,1fr))]">
     {%- for book in books.current %}
-      <div class="w-32 text-sm">
-        <a href="{{ book.goodreadsLink }}"
-          ><img
-            class="w-100 mb-2 hover:rounded hover:outline hover:outline-4 hover:outline-blue-600"
-            src="{{ book.coverUrl }}"
-            loading="lazy"
-        /></a>
+      <div class="border text-sm">
+        <a href="{{ book.goodreadsLink }}">
+          {% set alt -%}Cover of {{ book.title }} by {{ book.author }}{%- endset %}
+          {% image book.coverUrl, alt, ["110"], "w-100 mb-2 hover:rounded hover:outline hover:outline-4 hover:outline-blue-600", book.goodreadsId %}
+        </a>
         <!-- <a class="font-bold" href="{{ book.goodreadsLink }}">{{ book.title }}</a>
         <p>{{ book.author }}</p> -->
       </div>
@@ -41,15 +39,13 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
 
 <div class="mt-8">
   <h2 class="my-4 text-lg font-bold" id="finished">Finished Reading ({{ books.read.length }})</h2>
-  <div class="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(144px,1fr))]">
+  <div class="grid gap-6 [grid-template-columns:repeat(auto-fill,minmax(110px,1fr))]">
     {%- for book in books.read %}
-      <div class="w-32 text-sm">
-        <a href="{{ book.goodreadsLink }}"
-          ><img
-            class="w-100 mb-2 hover:rounded hover:outline hover:outline-4 hover:outline-blue-600"
-            src="{{ book.coverUrl }}"
-            loading="lazy"
-        /></a>
+      <div class="border text-sm">
+        <a href="{{ book.goodreadsLink }}">
+          {% set alt -%}Cover of {{ book.title }} by {{ book.author }}{%- endset %}
+          {% image book.coverUrl, alt, ["110"], "w-100 b-2 hover:rounded hover:outline hover:outline-4 hover:outline-blue-600", book.goodreadsId %}
+        </a>
         <!-- <a class="font-bold" href="{{ book.goodreadsLink }}">{{ book.title }}</a
         >{%- if book.binding === 'audiobook' -%}🎧{%- endif -%}
         <p>{{ book.author }}</p>
@@ -64,12 +60,12 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
 </div>
 
 <div class="mt-8">
-  <h2 class="my-4 text-lg font-bold" id="wtr">Want to Read</h2>
+  <h2 class="my-4 text-lg font-bold" id="tbr">To Be Read</h2>
   <p class="mb-4">I'll definitely get around to reading those ADHD books one day...</p>
   <details>
     <summary>List of books</summary>
     <ul>
-      {%- for book in books.wtr %}
+      {%- for book in books.tbr %}
         <li class="my-2">
           <a class="font-bold" href="{{ book.goodreadsLink }}">{{ book.title }}</a>
           {{ book.author }}
