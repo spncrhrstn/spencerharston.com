@@ -72,7 +72,7 @@
       "title": "The Lord of the Rings: The Return of the King",
       "author": "J.R.R. Tolkien",
       "goodreadsLink": "https://www.goodreads.com/book/show/59909326",
-      "rating": 0,
+      "rating": 5,
       "dateRead": "2024-09-04T00:00:00.000Z",
       "binding": "audiobook",
       "isbn13": "9780008487324",
@@ -451,17 +451,6 @@
       "dateRead": "2021-03-11T07:00:00.000Z",
       "goodreadsLink": "https://www.goodreads.com/book/show/21787",
       "coverUrl": "https://covers.openlibrary.org/b/id/10656795-M.jpg"
-    },
-    {
-      "goodreadsId": "52578297",
-      "title": "The Midnight Library",
-      "author": "Matt Haig",
-      "isbn13": "9780525559474",
-      "rating": 4,
-      "binding": "physical",
-      "dateRead": "2021-02-22T07:00:00.000Z",
-      "goodreadsLink": "https://www.goodreads.com/book/show/52578297",
-      "coverUrl": "https://covers.openlibrary.org/b/id/10313767-M.jpg"
     },
     {
       "goodreadsId": "43852758",

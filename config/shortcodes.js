@@ -24,7 +24,7 @@ function pageSourceUrl() {
   return `${meta.repo}/blob/${hash}/${path}`;
 }
 
-async function image(src, alt, widths = [300, 600], classes = "", custId = "") {
+async function image(src, alt, title, widths = [300, 600], classes = "", custId = "") {
   if (alt === undefined) {
     throw new Error(`Missing \`alt\` on image from: ${src}`);
   }
@@ -43,7 +43,7 @@ async function image(src, alt, widths = [300, 600], classes = "", custId = "") {
   });
 
   let data = metadata.jpeg[metadata.jpeg.length - 1];
-  return `<img src="${data.url}" class="${classes}" width="${data.width}" height="${data.height}" alt="${alt}" loading="lazy" decoding="async">`;
+  return `<img src="${data.url}" title="${title}" class="${classes}" width="${data.width}" height="${data.height}" alt="${alt}" loading="lazy" decoding="async">`;
 }
 
 const shortcodes = {

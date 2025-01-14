@@ -9,9 +9,7 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
   <a href="/posts/2025/creating-a-books-page">this blog post</a>.
 </p>
 
-<p class="mb-4">Last updated: {{ books.lastUpdated | dateByFormat("MMMM d, y") }}</p>
-
-<div>
+<div class="mb-4">
   Jump to:
   <ul>
     <li><a href="#current">Currently Reading</a></li>
@@ -21,17 +19,18 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
   </ul>
 </div>
 
+<p class="mb-4">Last updated: {{ books.lastUpdated | dateByFormat("MMMM d, y") }}</p>
+
 <div class="mt-8">
   <h2 class="my-4 text-lg font-bold" id="current">Currently Reading</h2>
-  <div class="grid gap-6 [grid-template-columns:repeat(auto-fill,minmax(110px,1fr))]">
+  <div class="grid justify-around gap-5 [grid-template-columns:repeat(auto-fill,100px)]">
     {%- for book in books.current %}
-      <div class="border text-sm">
+      <div>
         <a href="{{ book.goodreadsLink }}">
           {% set alt -%}Cover of {{ book.title }} by {{ book.author }}{%- endset %}
-          {% image book.coverUrl, alt, ["110"], "w-100 mb-2 hover:rounded hover:outline hover:outline-4 hover:outline-blue-600", book.goodreadsId %}
+          {% set title -%}{{ book.title }} by {{ book.author }}{%- endset %}
+          {% image book.coverUrl, alt, title, ["100"], "object-fit b-2 hover:rounded hover:outline hover:outline-4 hover:outline-blue-600", book.goodreadsId %}
         </a>
-        <!-- <a class="font-bold" href="{{ book.goodreadsLink }}">{{ book.title }}</a>
-        <p>{{ book.author }}</p> -->
       </div>
     {%- endfor -%}
   </div>
@@ -39,21 +38,23 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
 
 <div class="mt-8">
   <h2 class="my-4 text-lg font-bold" id="finished">Finished Reading ({{ books.read.length }})</h2>
-  <div class="grid gap-6 [grid-template-columns:repeat(auto-fill,minmax(110px,1fr))]">
+  <div class="grid justify-around gap-5 [grid-template-columns:repeat(auto-fill,100px)]">
     {%- for book in books.read %}
-      <div class="border text-sm">
+      <div class="flex flex-col items-center gap-y-0.5 text-center text-xs">
         <a href="{{ book.goodreadsLink }}">
           {% set alt -%}Cover of {{ book.title }} by {{ book.author }}{%- endset %}
-          {% image book.coverUrl, alt, ["110"], "w-100 b-2 hover:rounded hover:outline hover:outline-4 hover:outline-blue-600", book.goodreadsId %}
+          {% set title -%}{{ book.title }} by {{ book.author }}{%- endset %}
+          {% image book.coverUrl, alt, title, ["100"], "w-100 object-fit b-2 hover:rounded hover:outline hover:outline-4 hover:outline-blue-600", book.goodreadsId %}
         </a>
-        <!-- <a class="font-bold" href="{{ book.goodreadsLink }}">{{ book.title }}</a
-        >{%- if book.binding === 'audiobook' -%}🎧{%- endif -%}
-        <p>{{ book.author }}</p>
-        <p>{{ book.dateRead | dateByFormat("MMM yyyy") }}</p> -->
-        <p class="text-center text-xs">
-          {{ book.dateRead | dateByFormat("MMM yyyy") }}
-          {%- if book.rating > 3 %}<span class="ml-2">⭐</span>{%- endif %}
-        </p>
+        <div>{{ book.dateRead | dateByFormat("MMM yyyy") }}</div>
+        <div>
+          {%- if book.binding === 'audiobook' %}
+            <span>🎧</span>
+          {%- endif %}
+          {%- if book.rating > 3 %}
+            <span>⭐</span>
+          {%- endif %}
+        </div>
       </div>
     {%- endfor -%}
   </div>
