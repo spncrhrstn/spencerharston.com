@@ -19,12 +19,12 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
   </ul>
 </div>
 
-<p class="mb-4">Last updated: {{ books.lastUpdated | dateByFormat("MMMM d, y") }}</p>
+<p class="mb-4 italic">Last updated: {{ bookData.lastUpdated | dateByFormat("MMMM d, y") }}</p>
 
 <div class="mt-8">
-  <h2 class="my-4 text-lg font-bold" id="current">Currently Reading</h2>
+  <h2 class="my-4 text-lg font-bold" id="current">Currently Reading ({{ bookData.current.length }})</h2>
   <div class="grid justify-around gap-5 [grid-template-columns:repeat(auto-fill,100px)]">
-    {%- for book in books.current %}
+    {%- for book in bookData.current %}
       <div>
         <a href="{{ book.goodreadsLink }}">
           {% set alt -%}Cover of {{ book.title }} by {{ book.author }}{%- endset %}
@@ -37,9 +37,10 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
 </div>
 
 <div class="mt-8">
-  <h2 class="my-4 text-lg font-bold" id="finished">Finished Reading ({{ books.read.length }})</h2>
+  <h2 class="my-4 text-lg font-bold" id="finished">Finished Reading ({{ bookData.read.length }})</h2>
+  <p class="mb-4 text-sm">🎧 = audiobook | ⭐ = really liked it</p>
   <div class="grid justify-around gap-5 [grid-template-columns:repeat(auto-fill,100px)]">
-    {%- for book in books.read %}
+    {%- for book in bookData.read %}
       <div class="flex flex-col items-center gap-y-0.5 text-center text-xs">
         <a href="{{ book.goodreadsLink }}">
           {% set alt -%}Cover of {{ book.title }} by {{ book.author }}{%- endset %}
@@ -66,7 +67,7 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
   <details>
     <summary>List of books</summary>
     <ul>
-      {%- for book in books.tbr %}
+      {%- for book in bookData.tbr %}
         <li class="my-2">
           <a class="font-bold" href="{{ book.goodreadsLink }}">{{ book.title }}</a>
           {{ book.author }}
@@ -85,7 +86,7 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
   <details>
     <summary>List of books</summary>
     <ul>
-      {%- for book in books.dnf %}
+      {%- for book in bookData.dnf %}
         <li class="my-2">
           <a class="font-bold" href="{{ book.goodreadsLink }}">{{ book.title }}</a>
           {{ book.author }}

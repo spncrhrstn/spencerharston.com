@@ -35,6 +35,7 @@ async function image(src, alt, title, widths = [300, 600], classes = "", custId 
     outputDir: "./dist/assets/img/content",
     urlPath: "/assets/img/content",
     filenameFormat: function (id, src, width, format, options) {
+      options;
       return `${custId || id}-${width}w.${format}`;
     },
     sharpJpegOptions: {
