@@ -25,13 +25,11 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
   <h2 class="my-4 text-lg font-bold" id="current">Currently Reading ({{ bookData.current.length }})</h2>
   <div class="grid justify-around gap-5 [grid-template-columns:repeat(auto-fill,100px)]">
     {%- for book in bookData.current %}
-      <div>
-        <a href="{{ book.goodreadsLink }}">
-          {% set alt -%}Cover of {{ book.title }} by {{ book.author }}{%- endset %}
-          {% set title -%}{{ book.title }} by {{ book.author }}{%- endset %}
-          {% image book.coverUrl, alt, title, ["100"], "object-fit b-2 hover:rounded hover:outline hover:outline-4 hover:outline-blue-600", book.goodreadsId %}
-        </a>
-      </div>
+      <a href="{{ book.goodreadsLink }}">
+        {% set alt -%}Cover of {{ book.title }} by {{ book.author }}{%- endset %}
+        {% set title -%}{{ book.title }} by {{ book.author }}{%- endset %}
+        {% image book.coverUrl, alt, title, ["100"], "object-fit b-2 hover:rounded hover:outline hover:outline-4 hover:outline-blue-600", book.goodreadsId %}
+      </a>
     {%- endfor -%}
   </div>
 </div>
@@ -41,20 +39,22 @@ metaTagline: A list of books that I'm currently reading or finished reading, to 
   <p class="mb-4 text-sm">🎧 = audiobook | ⭐ = really liked it</p>
   <div class="grid justify-around gap-5 [grid-template-columns:repeat(auto-fill,100px)]">
     {%- for book in bookData.read %}
-      <div class="flex flex-col items-center gap-y-0.5 text-center text-xs">
+      <div class="flex flex-col justify-end gap-y-1">
         <a href="{{ book.goodreadsLink }}">
           {% set alt -%}Cover of {{ book.title }} by {{ book.author }}{%- endset %}
           {% set title -%}{{ book.title }} by {{ book.author }}{%- endset %}
-          {% image book.coverUrl, alt, title, ["100"], "w-100 object-fit b-2 hover:rounded hover:outline hover:outline-4 hover:outline-blue-600", book.goodreadsId %}
+          {% image book.coverUrl, alt, title, ["100"], "object-fit b-2 hover:rounded hover:outline hover:outline-4 hover:outline-blue-600", book.goodreadsId %}
         </a>
-        <div>{{ book.dateRead | dateByFormat("MMM yyyy") }}</div>
-        <div>
-          {%- if book.binding === 'audiobook' %}
-            <span>🎧</span>
-          {%- endif %}
-          {%- if book.rating > 3 %}
-            <span>⭐</span>
-          {%- endif %}
+        <div class="h-9 text-center text-xs">
+          <div>{{ book.dateRead | dateByFormat("MMM yyyy") }}</div>
+          <div>
+            {%- if book.binding === 'audiobook' %}
+              🎧
+            {%- endif %}
+            {%- if book.rating > 3 %}
+              ⭐
+            {%- endif %}
+          </div>
         </div>
       </div>
     {%- endfor -%}
