@@ -290,6 +290,17 @@
       "coverUrl": "https://covers.openlibrary.org/b/id/14642380-M.jpg"
     },
     {
+      "goodreadsId": "59838811",
+      "title": "Upgrade",
+      "author": "Blake Crouch",
+      "goodreadsLink": "https://www.goodreads.com/book/show/59838811",
+      "rating": 3,
+      "dateRead": "2023-07-12T00:00:00.000Z",
+      "binding": "ebook",
+      "isbn13": "9780593157534",
+      "coverUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1643994317i/59838811.jpg"
+    },
+    {
       "goodreadsId": "46223297",
       "title": "Permanent Record",
       "author": "Edward Snowden",
@@ -331,7 +342,7 @@
       "dateRead": "2023-02-01T00:00:00.000Z",
       "binding": "ebook",
       "isbn13": "9780380813810",
-      "coverUrl": "https://covers.openlibrary.org/b/id/237227-M.jpg"
+      "coverUrl": "https://covers.openlibrary.org/b/id/237949-M.jpg"
     },
     {
       "goodreadsId": "29780253",
@@ -365,6 +376,28 @@
       "binding": "ebook",
       "isbn13": "9780593192016",
       "coverUrl": "https://covers.openlibrary.org/b/id/13200781-M.jpg"
+    },
+    {
+      "goodreadsId": "54860585",
+      "title": "Razorblade Tears",
+      "author": "S.A. Cosby",
+      "goodreadsLink": "https://www.goodreads.com/book/show/54860585",
+      "rating": 4,
+      "dateRead": "2022-05-01",
+      "binding": "ebook",
+      "isbn13": "9781250252708",
+      "coverUrl": "https://covers.openlibrary.org/b/id/0011138557-M.jpg"
+    },
+    {
+      "goodreadsId": "62022",
+      "title": "The Queen's Gambit",
+      "author": "Walter Tevis",
+      "goodreadsLink": "https://www.goodreads.com/book/show/62022",
+      "rating": 4,
+      "dateRead": "2022-01-01",
+      "binding": "ebook",
+      "isbn13": "9780795343063",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12625477-M.jpg"
     },
     {
       "goodreadsId": "54493401",
@@ -409,6 +442,17 @@
       "dateRead": "2021-05-07T06:00:00.000Z",
       "goodreadsLink": "https://www.goodreads.com/book/show/49118403",
       "coverUrl": "https://covers.openlibrary.org/b/id/10589120-M.jpg"
+    },
+    {
+      "goodreadsId": "3636",
+      "title": "The Giver",
+      "author": "Lois Lowry",
+      "isbn13": "9780385732550",
+      "rating": 4,
+      "binding": "ebook",
+      "dateRead": "2021-05-01",
+      "goodreadsLink": "https://www.goodreads.com/book/show/3636",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10606253-M.jpg"
     },
     {
       "goodreadsId": "40940649",
@@ -862,6 +906,17 @@
       "coverUrl": "https://covers.openlibrary.org/b/id/14821619-M.jpg"
     },
     {
+      "goodreadsId": "80571",
+      "title": "American Prometheus",
+      "author": "Kai Bird and Martin J. Sherwin",
+      "isbn13": "9780375726262",
+      "rating": 4,
+      "binding": "ebook",
+      "dateRead": "2018-01-01",
+      "goodreadsLink": "https://www.goodreads.com/book/show/80571",
+      "coverUrl": "https://covers.openlibrary.org/b/id/229635-M.jpg"
+    },
+    {
       "goodreadsId": "36313308",
       "title": "Darknet",
       "author": "Matthew Mather",
@@ -1077,12 +1132,6 @@
       "title": "The Apollo Murders",
       "author": "Chris Hadfield",
       "goodreadsLink": "https://www.goodreads.com/book/show/57007683"
-    },
-    {
-      "goodreadsId": "54860585",
-      "title": "Razorblade Tears",
-      "author": "S.A. Cosby",
-      "goodreadsLink": "https://www.goodreads.com/book/show/54860585"
     },
     {
       "goodreadsId": "50623864",

@@ -13,7 +13,7 @@ For the past couple years, I kept track of my books here on my website. For [202
 
 This is simple enough of course, but I've now decided to list every book on a single page. The source of data for the page could be managed from a simple JSON file. Moving the data from the post pages to JSON was straightforward enough.
 
-I also used to use Goodreads to keep track of my books, but it has been several years since I last updated my account, which has plenty of data that I'd like to use for this. Unfortunately, they [stopped offering API keys in December 2020](https://www.goodreads.com/api), which would've made getting this data _a good amount_ simpler.
+I also used to use Goodreads to keep track of my books, but it has been several years since I last updated my account, which has plenty of data that I'd like to use for this. Unfortunately, they [stopped offering API keys in December 2020](https://www.goodreads.com/api), which probably would've made getting this data a bit simpler.
 
 Anyways, here's how I built the [/books](/books) page.
 
@@ -29,6 +29,8 @@ Anyways, here's how I built the [/books](/books) page.
 
 1. Get the ISBN or any other missing data
 2. Get link to cover art
+   - Most are from OpenLibrary
+   - Rest are from Goodreads or elsewhere
 3. Get links to books
 4. Add a rating, if needed
 
@@ -38,3 +40,7 @@ Anyways, here's how I built the [/books](/books) page.
 2. Create the layout
 3. Show the cover art, including default
 4. Show data, including rating
+
+## Thoughts
+
+- I read a lot of fiction, I'd like to read more nonfiction.
