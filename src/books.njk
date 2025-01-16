@@ -19,12 +19,12 @@ metaTagline: A list of books that I'm reading or have finished.
   </ul>
 </div>
 
-<p class="mb-4 italic">Last updated: {{ bookData.lastUpdated | dateByFormat("MMMM d, y") }}</p>
+<p class="mb-4 italic">Last updated: {{ books.lastUpdated | dateByFormat("MMMM d, y") }}</p>
 
 <div class="mt-8">
-  <h2 class="my-4 text-lg font-bold" id="current">Currently Reading ({{ bookData.current.length }})</h2>
+  <h2 class="my-4 text-lg font-bold" id="current">Currently Reading ({{ books.current.length }})</h2>
   <div class="grid justify-around gap-5 [grid-template-columns:repeat(auto-fill,100px)]">
-    {%- for book in bookData.current %}
+    {%- for book in books.current %}
       <a href="{{ book.goodreadsLink }}">
         {% set alt -%}Cover of {{ book.title }} by {{ book.author }}{%- endset %}
         {% set title -%}{{ book.title }} by {{ book.author }}{%- endset %}
@@ -35,10 +35,10 @@ metaTagline: A list of books that I'm reading or have finished.
 </div>
 
 <div class="mt-8">
-  <h2 class="my-4 text-lg font-bold" id="finished">Finished Reading ({{ bookData.read.length }})</h2>
+  <h2 class="my-4 text-lg font-bold" id="finished">Finished Reading ({{ books.read.length }})</h2>
   <p class="mb-4 text-sm">🎧 = audiobook | ⭐ = really liked it</p>
   <div class="grid justify-around gap-5 [grid-template-columns:repeat(auto-fill,100px)]">
-    {%- for book in bookData.read %}
+    {%- for book in books.read | sortDateByKey("dateRead", "desc") %}
       <div class="flex flex-col justify-end gap-y-1">
         <a href="{{ book.goodreadsLink }}">
           {% set alt -%}Cover of {{ book.title }} by {{ book.author }}{%- endset %}
@@ -67,7 +67,7 @@ metaTagline: A list of books that I'm reading or have finished.
   <details>
     <summary>List of books</summary>
     <ul>
-      {%- for book in bookData.tbr %}
+      {%- for book in books.tbr | sortByKey("title") %}
         <li class="my-2">
           <a class="font-bold" href="{{ book.goodreadsLink }}">{{ book.title }}</a>
           {{ book.author }}
@@ -86,7 +86,7 @@ metaTagline: A list of books that I'm reading or have finished.
   <details>
     <summary>List of books</summary>
     <ul>
-      {%- for book in bookData.dnf %}
+      {%- for book in books.dnf | sortByKey("title") %}
         <li class="my-2">
           <a class="font-bold" href="{{ book.goodreadsLink }}">{{ book.title }}</a>
           {{ book.author }}

@@ -8,7 +8,7 @@ metaTagline: The personal website of Spencer Harston
 
 <hr class="my-8" />
 
-{% set latestPosts = collections.posts | sortDesc | limit(3) %}
+{% set latestPosts = collections.posts | sortDateByKey("date", "desc") | limit(3) %}
 <section>
   <p class="text-xl">Latest Posts</p>
   {% for post in latestPosts -%}
