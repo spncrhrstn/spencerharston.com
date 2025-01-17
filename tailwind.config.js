@@ -10,7 +10,7 @@ export default {
         current: "current=page"
       },
       fontFamily: {
-        sans: ["'Chivo Variable'", ...defaultTheme.fontFamily.sans],
+        sans: ["'IBM Plex Sans'", ...defaultTheme.fontFamily.sans],
         mono: ["'IBM Plex Mono'", ...defaultTheme.fontFamily.mono]
       },
       typography: (theme) => ({
