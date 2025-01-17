@@ -3,25 +3,12 @@ layout: layouts/base
 metaTagline: The personal website of Spencer Harston
 ---
 
-<div class="flex flex-col items-center justify-center gap-4 lg:items-start">
-  <h1 class="text-center text-3xl font-bold">Spencer Harston</h1>
-  <p class="text-center lg:text-left">A corner of the Internet</p>
-  <div class="flex flex-row items-center gap-x-2">
-    <a class="text-zinc-800 dark:text-zinc-200" href="{{ meta.social.mastodon }}" title="Mastodon profile" rel="me"
-      >{% iconify "brand-mastodon" %}</a
-    >
-    <a class="text-zinc-800 dark:text-zinc-200" href="{{ meta.social.bluesky }}" title="Bluesky profile" rel="me"
-      >{% iconify "brand-bluesky" %}</a
-    >
-    <a class="text-zinc-800 dark:text-zinc-200" href="{{ meta.social.github }}" title="GitHub profile"
-      >{% iconify "brand-github" %}</a
-    >
-  </div>
-</div>
+<h1 class="mb-4 text-3xl font-bold">Spencer Harston</h1>
+<p>A corner of the Internet</p>
 
 <hr class="my-8" />
 
-{% set latestPosts = collections.posts | sortDesc | limit(3) %}
+{% set latestPosts = collections.posts | sortDateByKey("date", "desc") | limit(3) %}
 <section>
   <p class="text-xl">Latest Posts</p>
   {% for post in latestPosts -%}
@@ -34,5 +21,5 @@ metaTagline: The personal website of Spencer Harston
       </div>
     </div>
   {%- endfor %}
-  <a href="/posts/">See more posts →</a>
+  <a href="/posts/">More →</a>
 </section>
