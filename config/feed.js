@@ -5,7 +5,7 @@ export default {
   outputPath: "/feed.xml",
   collection: {
     name: "posts",
-    limit: 10
+    limit: 20
   },
   metadata: {
     language: meta.language,
