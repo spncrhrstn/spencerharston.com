@@ -1,6 +1,6 @@
 // External plugins
 import readingTime from "eleventy-plugin-reading-time";
-import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import feedPlugin from "@11ty/eleventy-plugin-rss";
 import safeLinks from "@sardine/eleventy-plugin-external-links";
 
 // Custom config "plugins"
@@ -9,7 +9,6 @@ import collections from "./config/collections.js";
 import shortcodes from "./config/shortcodes.js";
 import transforms from "./config/transforms.js";
 import global from "./config/global.js";
-import feed from "./config/feed.js";
 import markdown from "./config/markdown.js";
 
 /**
@@ -49,7 +48,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(markdown);
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(safeLinks);
-  eleventyConfig.addPlugin(feedPlugin, feed);
+  eleventyConfig.addPlugin(feedPlugin);
 
   return {
     dir: {
