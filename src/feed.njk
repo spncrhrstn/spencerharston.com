@@ -1,13 +1,6 @@
 ---
 permalink: feed.xml
-eleventyExcludeFromCollections: true,
-metadata:
-  title: meta.title,
-  description: meta.description,
-  language: meta.language,
-  base: meta.base_url,
-  author:
-    name: meta.author.name
+eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ meta.language or page.lang }}">
