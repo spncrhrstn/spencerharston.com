@@ -1,0 +1,26 @@
+---
+permalink: feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ meta.language or page.lang }}">
+  <title>{{ meta.title }}</title>
+  <subtitle>{{ meta.description }}</subtitle>
+  <link href="{{ permalink | htmlBaseUrl(meta.base_url) }}" rel="self" />
+  <link href="{{ meta.base_url | addPathPrefixToFullUrl }}" />
+  <updated>{{ collections.posts | getNewestCollectionItemDate | getDateTimeObj | dateToJsDate | dateToRfc3339 }}</updated>
+  <id>{{ meta.base_url | addPathPrefixToFullUrl }}</id>
+  <author>
+    <name>{{ meta.author.name }}</name>
+  </author>
+  {%- for post in collections.posts | reverse %}
+    {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(meta.base_url) }}{% endset %}
+    <entry>
+      <title>{{ post.data.title }}</title>
+      <link href="{{ absolutePostUrl }}" />
+      <updated>{{ post.date | getDateTimeObj | dateToJsDate | dateToRfc3339 }}</updated>
+      <id>{{ absolutePostUrl }}</id>
+      <content type="html">{{ post.content | renderTransforms(post.data.page, meta.base_url) }}</content>
+    </entry>
+  {%- endfor %}
+</feed>

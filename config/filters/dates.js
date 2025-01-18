@@ -19,10 +19,13 @@ const dateHtmlString = (dateObj) => getDateTimeObj(dateObj).toFormat("yyyy-LL-dd
 
 const dateByFormat = (dateObj, format = "yyyy-LL-dd") => getDateTimeObj(dateObj).toFormat(format);
 
+const dateToJsDate = (dateObj) => new Date(dateObj);
+
 export default {
   getDateTimeObj,
   dateISO,
   dateISOAlt,
   dateHtmlString,
-  dateByFormat
+  dateByFormat,
+  dateToJsDate
 };
